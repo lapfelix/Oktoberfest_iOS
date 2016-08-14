@@ -1,0 +1,87 @@
+FORMAT: 1A
+HOST: http://felixlapal.me/
+
+# Oktoberfest
+
+L'API du truc de l'évènement où le monde boivent de la bière.
+
+
+## Information générale [/info]
+
+### Get general info [GET]
+
++ Response 200 (application/json)
+    
+        {
+            "start_time": "11-11-2016 21:00"
+        }
+        
+        
+## Programmation [/schedule_items]
+
+### Get All Schedule Items [GET]
+
++ Response 200 (application/json)
+    + Attributes (array)
+        - (Schedule Item)
+            - id: 1
+        - (Schedule Item)
+            - id: 2
+        - (Schedule Item)
+            - id: 3
+
+
+## Horaire bus [/bus_schedule]
+
+### Get horaire bus [GET]
+
++ Response 200 (application/json)
+    + Attributes (array)
+        - (Bus Path)
+            - id: 1
+        - (Bus Path)
+            - id: 2
+        - (Bus Path)
+            - id: 3
+        
+        
+## Coordonnées [/contact]
+
+### Get coordonnées [GET]
+
++ Response 200 (application/json)
+
+        {
+            "snapchat": "oktosherby",
+            "twitter": "Okto_sherbrooke",
+            "facebook": "Oktoberfest Sherbrooke",
+            "facebook_user": "oktoberfest.sherbrooke",
+            "website_url": "http://oktoberfest.ageg.ca/",
+        }
+
+# Data Structures
+
+## Schedule Item (object)
+
+- id: 123 (number, required)
+- name: `Led Zeppelin` (string, required)
+- start_time: `08-08-2016 03:00` (string, required)
+- end_time: `08-08-2016 05:00` (string, required)
+- large_image_url: `http://url.com/image.jpg` (string, required)
+- small_image_url: `http://url.com/image.jpg` (string, required)
+- description: `http://url.com/image.jpg` (string)
+
+## Bus Path (object)
+
+- id: 12 (number, required)
+- path: Coordinate (array[Coordinate])
+- title: `Campus Principal` (required)
+- startTime: `17:30` (required)
+- interval: 30 (number, required)
+- additionnal_string: `Retour seulement`
+- thumbnail_url: `http://url.com/thumbnail.jpg`
+
+## Coordinate (object)
+
+- longitude: `43.555` (number, required)
+- latitude: `-33.555` (number, required)
