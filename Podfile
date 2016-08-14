@@ -6,6 +6,7 @@ target 'okto_ios' do
   # use_frameworks!
 
   # Pods for okto_ios
+  pod 'Masonry'
 
   target 'okto_iosTests' do
     inherit! :search_paths
