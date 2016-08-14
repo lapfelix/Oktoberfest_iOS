@@ -10,12 +10,17 @@
 		DC7454401D61155F00D87656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74543F1D61155F00D87656 /* main.m */; };
 		DC7454431D61155F00D87656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454421D61155F00D87656 /* AppDelegate.m */; };
 		DC7454461D61155F00D87656 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454451D61155F00D87656 /* ViewController.m */; };
-		DC7454491D61155F00D87656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454471D61155F00D87656 /* Main.storyboard */; };
 		DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */; };
 		DC74544E1D61155F00D87656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC74544D1D61155F00D87656 /* Assets.xcassets */; };
 		DC7454511D61155F00D87656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */; };
 		DC74545C1D61155F00D87656 /* okto_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74545B1D61155F00D87656 /* okto_iosTests.m */; };
 		DC7454671D61155F00D87656 /* okto_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454661D61155F00D87656 /* okto_iosUITests.m */; };
+		DC74547F1D6115AD00D87656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC74547D1D6115AD00D87656 /* Main.storyboard */; };
+		DC7454831D6115B400D87656 /* Bienvenue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454801D6115B400D87656 /* Bienvenue.storyboard */; };
+		DC7454841D6115B400D87656 /* Bieres.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454811D6115B400D87656 /* Bieres.storyboard */; };
+		DC7454851D6115B400D87656 /* Programmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454821D6115B400D87656 /* Programmation.storyboard */; };
+		DC7454871D6115DD00D87656 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454861D6115DD00D87656 /* Plan.storyboard */; };
+		DC7454891D6115F500D87656 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454881D6115F500D87656 /* Info.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,6 @@
 		DC7454421D61155F00D87656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DC7454441D61155F00D87656 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DC7454451D61155F00D87656 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DC7454481D61155F00D87656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC74544B1D61155F00D87656 /* okto_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = okto_ios.xcdatamodel; sourceTree = "<group>"; };
 		DC74544D1D61155F00D87656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC7454501D61155F00D87656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,12 @@
 		DC7454621D61155F00D87656 /* okto_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okto_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7454661D61155F00D87656 /* okto_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = okto_iosUITests.m; sourceTree = "<group>"; };
 		DC7454681D61155F00D87656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC74547E1D6115AD00D87656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC7454801D6115B400D87656 /* Bienvenue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bienvenue.storyboard; sourceTree = "<group>"; };
+		DC7454811D6115B400D87656 /* Bieres.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Bieres.storyboard; sourceTree = "<group>"; };
+		DC7454821D6115B400D87656 /* Programmation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Programmation.storyboard; sourceTree = "<group>"; };
+		DC7454861D6115DD00D87656 /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
+		DC7454881D6115F500D87656 /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +117,7 @@
 				DC7454421D61155F00D87656 /* AppDelegate.m */,
 				DC7454441D61155F00D87656 /* ViewController.h */,
 				DC7454451D61155F00D87656 /* ViewController.m */,
-				DC7454471D61155F00D87656 /* Main.storyboard */,
+				DC74548B1D61160300D87656 /* Storyboards */,
 				DC74544D1D61155F00D87656 /* Assets.xcassets */,
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
 				DC7454521D61155F00D87656 /* Info.plist */,
@@ -141,6 +151,27 @@
 				DC7454681D61155F00D87656 /* Info.plist */,
 			);
 			path = okto_iosUITests;
+			sourceTree = "<group>";
+		};
+		DC74548A1D6115FC00D87656 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				DC7454801D6115B400D87656 /* Bienvenue.storyboard */,
+				DC7454811D6115B400D87656 /* Bieres.storyboard */,
+				DC7454821D6115B400D87656 /* Programmation.storyboard */,
+				DC7454861D6115DD00D87656 /* Plan.storyboard */,
+				DC7454881D6115F500D87656 /* Info.storyboard */,
+			);
+			name = Tabs;
+			sourceTree = "<group>";
+		};
+		DC74548B1D61160300D87656 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DC74547D1D6115AD00D87656 /* Main.storyboard */,
+				DC74548A1D6115FC00D87656 /* Tabs */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7454831D6115B400D87656 /* Bienvenue.storyboard in Resources */,
+				DC7454851D6115B400D87656 /* Programmation.storyboard in Resources */,
+				DC7454891D6115F500D87656 /* Info.storyboard in Resources */,
+				DC7454871D6115DD00D87656 /* Plan.storyboard in Resources */,
+				DC74547F1D6115AD00D87656 /* Main.storyboard in Resources */,
 				DC7454511D61155F00D87656 /* LaunchScreen.storyboard in Resources */,
+				DC7454841D6115B400D87656 /* Bieres.storyboard in Resources */,
 				DC74544E1D61155F00D87656 /* Assets.xcassets in Resources */,
-				DC7454491D61155F00D87656 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,20 +354,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DC7454471D61155F00D87656 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC7454481D61155F00D87656 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DC7454501D61155F00D87656 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC74547D1D6115AD00D87656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC74547E1D6115AD00D87656 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
