@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC7454401D61155F00D87656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74543F1D61155F00D87656 /* main.m */; };
+		DC7454431D61155F00D87656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454421D61155F00D87656 /* AppDelegate.m */; };
+		DC7454461D61155F00D87656 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454451D61155F00D87656 /* ViewController.m */; };
+		DC7454491D61155F00D87656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454471D61155F00D87656 /* Main.storyboard */; };
+		DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */; };
+		DC74544E1D61155F00D87656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC74544D1D61155F00D87656 /* Assets.xcassets */; };
+		DC7454511D61155F00D87656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */; };
+		DC74545C1D61155F00D87656 /* okto_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74545B1D61155F00D87656 /* okto_iosTests.m */; };
+		DC7454671D61155F00D87656 /* okto_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454661D61155F00D87656 /* okto_iosUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC7454581D61155F00D87656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7454331D61155F00D87656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC74543A1D61155F00D87656;
+			remoteInfo = okto_ios;
+		};
+		DC7454631D61155F00D87656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7454331D61155F00D87656 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC74543A1D61155F00D87656;
+			remoteInfo = okto_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC74543B1D61155F00D87656 /* okto_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okto_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC74543F1D61155F00D87656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC7454411D61155F00D87656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC7454421D61155F00D87656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC7454441D61155F00D87656 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC7454451D61155F00D87656 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC7454481D61155F00D87656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC74544B1D61155F00D87656 /* okto_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = okto_ios.xcdatamodel; sourceTree = "<group>"; };
+		DC74544D1D61155F00D87656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC7454501D61155F00D87656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC7454521D61155F00D87656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7454571D61155F00D87656 /* okto_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okto_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC74545B1D61155F00D87656 /* okto_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = okto_iosTests.m; sourceTree = "<group>"; };
+		DC74545D1D61155F00D87656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7454621D61155F00D87656 /* okto_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = okto_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7454661D61155F00D87656 /* okto_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = okto_iosUITests.m; sourceTree = "<group>"; };
+		DC7454681D61155F00D87656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC7454381D61155F00D87656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7454541D61155F00D87656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74545F1D61155F00D87656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC7454321D61155F00D87656 = {
+			isa = PBXGroup;
+			children = (
+				DC74543D1D61155F00D87656 /* okto_ios */,
+				DC74545A1D61155F00D87656 /* okto_iosTests */,
+				DC7454651D61155F00D87656 /* okto_iosUITests */,
+				DC74543C1D61155F00D87656 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC74543C1D61155F00D87656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC74543B1D61155F00D87656 /* okto_ios.app */,
+				DC7454571D61155F00D87656 /* okto_iosTests.xctest */,
+				DC7454621D61155F00D87656 /* okto_iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC74543D1D61155F00D87656 /* okto_ios */ = {
+			isa = PBXGroup;
+			children = (
+				DC7454411D61155F00D87656 /* AppDelegate.h */,
+				DC7454421D61155F00D87656 /* AppDelegate.m */,
+				DC7454441D61155F00D87656 /* ViewController.h */,
+				DC7454451D61155F00D87656 /* ViewController.m */,
+				DC7454471D61155F00D87656 /* Main.storyboard */,
+				DC74544D1D61155F00D87656 /* Assets.xcassets */,
+				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
+				DC7454521D61155F00D87656 /* Info.plist */,
+				DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */,
+				DC74543E1D61155F00D87656 /* Supporting Files */,
+			);
+			path = okto_ios;
+			sourceTree = "<group>";
+		};
+		DC74543E1D61155F00D87656 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC74543F1D61155F00D87656 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC74545A1D61155F00D87656 /* okto_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC74545B1D61155F00D87656 /* okto_iosTests.m */,
+				DC74545D1D61155F00D87656 /* Info.plist */,
+			);
+			path = okto_iosTests;
+			sourceTree = "<group>";
+		};
+		DC7454651D61155F00D87656 /* okto_iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC7454661D61155F00D87656 /* okto_iosUITests.m */,
+				DC7454681D61155F00D87656 /* Info.plist */,
+			);
+			path = okto_iosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC74543A1D61155F00D87656 /* okto_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC74546B1D61155F00D87656 /* Build configuration list for PBXNativeTarget "okto_ios" */;
+			buildPhases = (
+				DC7454371D61155F00D87656 /* Sources */,
+				DC7454381D61155F00D87656 /* Frameworks */,
+				DC7454391D61155F00D87656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = okto_ios;
+			productName = okto_ios;
+			productReference = DC74543B1D61155F00D87656 /* okto_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC7454561D61155F00D87656 /* okto_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC74546E1D61155F00D87656 /* Build configuration list for PBXNativeTarget "okto_iosTests" */;
+			buildPhases = (
+				DC7454531D61155F00D87656 /* Sources */,
+				DC7454541D61155F00D87656 /* Frameworks */,
+				DC7454551D61155F00D87656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7454591D61155F00D87656 /* PBXTargetDependency */,
+			);
+			name = okto_iosTests;
+			productName = okto_iosTests;
+			productReference = DC7454571D61155F00D87656 /* okto_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC7454611D61155F00D87656 /* okto_iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7454711D61155F00D87656 /* Build configuration list for PBXNativeTarget "okto_iosUITests" */;
+			buildPhases = (
+				DC74545E1D61155F00D87656 /* Sources */,
+				DC74545F1D61155F00D87656 /* Frameworks */,
+				DC7454601D61155F00D87656 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7454641D61155F00D87656 /* PBXTargetDependency */,
+			);
+			name = okto_iosUITests;
+			productName = okto_iosUITests;
+			productReference = DC7454621D61155F00D87656 /* okto_iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC7454331D61155F00D87656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Felix Lapalme";
+				TargetAttributes = {
+					DC74543A1D61155F00D87656 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DVKB9Z8TQ2;
+						ProvisioningStyle = Automatic;
+					};
+					DC7454561D61155F00D87656 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DVKB9Z8TQ2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC74543A1D61155F00D87656;
+					};
+					DC7454611D61155F00D87656 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DVKB9Z8TQ2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC74543A1D61155F00D87656;
+					};
+				};
+			};
+			buildConfigurationList = DC7454361D61155F00D87656 /* Build configuration list for PBXProject "okto_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC7454321D61155F00D87656;
+			productRefGroup = DC74543C1D61155F00D87656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC74543A1D61155F00D87656 /* okto_ios */,
+				DC7454561D61155F00D87656 /* okto_iosTests */,
+				DC7454611D61155F00D87656 /* okto_iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC7454391D61155F00D87656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7454511D61155F00D87656 /* LaunchScreen.storyboard in Resources */,
+				DC74544E1D61155F00D87656 /* Assets.xcassets in Resources */,
+				DC7454491D61155F00D87656 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7454551D61155F00D87656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7454601D61155F00D87656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC7454371D61155F00D87656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
+				DC7454461D61155F00D87656 /* ViewController.m in Sources */,
+				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
+				DC7454401D61155F00D87656 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7454531D61155F00D87656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC74545C1D61155F00D87656 /* okto_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC74545E1D61155F00D87656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7454671D61155F00D87656 /* okto_iosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC7454591D61155F00D87656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC74543A1D61155F00D87656 /* okto_ios */;
+			targetProxy = DC7454581D61155F00D87656 /* PBXContainerItemProxy */;
+		};
+		DC7454641D61155F00D87656 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC74543A1D61155F00D87656 /* okto_ios */;
+			targetProxy = DC7454631D61155F00D87656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC7454471D61155F00D87656 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7454481D61155F00D87656 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7454501D61155F00D87656 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC7454691D61155F00D87656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC74546A1D61155F00D87656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC74546C1D61155F00D87656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DVKB9Z8TQ2;
+				INFOPLIST_FILE = okto_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapfelix.okto-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC74546D1D61155F00D87656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DVKB9Z8TQ2;
+				INFOPLIST_FILE = okto_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapfelix.okto-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC74546F1D61155F00D87656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DVKB9Z8TQ2;
+				INFOPLIST_FILE = okto_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapfelix.okto-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/okto_ios.app/okto_ios";
+			};
+			name = Debug;
+		};
+		DC7454701D61155F00D87656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DVKB9Z8TQ2;
+				INFOPLIST_FILE = okto_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapfelix.okto-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/okto_ios.app/okto_ios";
+			};
+			name = Release;
+		};
+		DC7454721D61155F00D87656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DVKB9Z8TQ2;
+				INFOPLIST_FILE = okto_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapfelix.okto-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = okto_ios;
+			};
+			name = Debug;
+		};
+		DC7454731D61155F00D87656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DVKB9Z8TQ2;
+				INFOPLIST_FILE = okto_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lapfelix.okto-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = okto_ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC7454361D61155F00D87656 /* Build configuration list for PBXProject "okto_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7454691D61155F00D87656 /* Debug */,
+				DC74546A1D61155F00D87656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC74546B1D61155F00D87656 /* Build configuration list for PBXNativeTarget "okto_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC74546C1D61155F00D87656 /* Debug */,
+				DC74546D1D61155F00D87656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC74546E1D61155F00D87656 /* Build configuration list for PBXNativeTarget "okto_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC74546F1D61155F00D87656 /* Debug */,
+				DC7454701D61155F00D87656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC7454711D61155F00D87656 /* Build configuration list for PBXNativeTarget "okto_iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7454721D61155F00D87656 /* Debug */,
+				DC7454731D61155F00D87656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC74544B1D61155F00D87656 /* okto_ios.xcdatamodel */,
+			);
+			currentVersion = DC74544B1D61155F00D87656 /* okto_ios.xcdatamodel */;
+			path = okto_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DC7454331D61155F00D87656 /* Project object */;
+}
