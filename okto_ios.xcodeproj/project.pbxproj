@@ -12,7 +12,6 @@
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
 		DC7454401D61155F00D87656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74543F1D61155F00D87656 /* main.m */; };
 		DC7454431D61155F00D87656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454421D61155F00D87656 /* AppDelegate.m */; };
-		DC7454461D61155F00D87656 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454451D61155F00D87656 /* ViewController.m */; };
 		DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */; };
 		DC74544E1D61155F00D87656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC74544D1D61155F00D87656 /* Assets.xcassets */; };
 		DC7454511D61155F00D87656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,9 @@
 		DC7454851D6115B400D87656 /* Programmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454821D6115B400D87656 /* Programmation.storyboard */; };
 		DC7454871D6115DD00D87656 /* Plan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454861D6115DD00D87656 /* Plan.storyboard */; };
 		DC7454891D6115F500D87656 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454881D6115F500D87656 /* Info.storyboard */; };
+		DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74548D1D611AFB00D87656 /* OKTFlowController.m */; };
+		DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454901D61483200D87656 /* OKTAPIWrapper.m */; };
+		DC7454941D61487E00D87656 /* OKTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454931D61487E00D87656 /* OKTNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +59,6 @@
 		DC74543F1D61155F00D87656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC7454411D61155F00D87656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC7454421D61155F00D87656 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DC7454441D61155F00D87656 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DC7454451D61155F00D87656 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DC74544B1D61155F00D87656 /* okto_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = okto_ios.xcdatamodel; sourceTree = "<group>"; };
 		DC74544D1D61155F00D87656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC7454501D61155F00D87656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +75,12 @@
 		DC7454821D6115B400D87656 /* Programmation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Programmation.storyboard; sourceTree = "<group>"; };
 		DC7454861D6115DD00D87656 /* Plan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Plan.storyboard; sourceTree = "<group>"; };
 		DC7454881D6115F500D87656 /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		DC74548C1D611AFB00D87656 /* OKTFlowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTFlowController.h; sourceTree = "<group>"; };
+		DC74548D1D611AFB00D87656 /* OKTFlowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTFlowController.m; sourceTree = "<group>"; };
+		DC74548F1D61483200D87656 /* OKTAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTAPIWrapper.h; sourceTree = "<group>"; };
+		DC7454901D61483200D87656 /* OKTAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTAPIWrapper.m; sourceTree = "<group>"; };
+		DC7454921D61487E00D87656 /* OKTNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTNetworkManager.h; sourceTree = "<group>"; };
+		DC7454931D61487E00D87656 /* OKTNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTNetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +161,12 @@
 			children = (
 				DC7454411D61155F00D87656 /* AppDelegate.h */,
 				DC7454421D61155F00D87656 /* AppDelegate.m */,
-				DC7454441D61155F00D87656 /* ViewController.h */,
-				DC7454451D61155F00D87656 /* ViewController.m */,
+				DC74548C1D611AFB00D87656 /* OKTFlowController.h */,
+				DC74548D1D611AFB00D87656 /* OKTFlowController.m */,
+				DC74548F1D61483200D87656 /* OKTAPIWrapper.h */,
+				DC7454901D61483200D87656 /* OKTAPIWrapper.m */,
+				DC7454921D61487E00D87656 /* OKTNetworkManager.h */,
+				DC7454931D61487E00D87656 /* OKTNetworkManager.m */,
 				DC74548B1D61160300D87656 /* Storyboards */,
 				DC74544D1D61155F00D87656 /* Assets.xcassets */,
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
@@ -487,9 +497,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
-				DC7454461D61155F00D87656 /* ViewController.m in Sources */,
 				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
+				DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */,
 				DC7454401D61155F00D87656 /* main.m in Sources */,
+				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
+				DC7454941D61487E00D87656 /* OKTNetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
