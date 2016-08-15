@@ -58,7 +58,41 @@ L'API du truc de l'évènement où le monde boivent de la bière.
             "facebook_user": "oktoberfest.sherbrooke",
             "website_url": "http://oktoberfest.ageg.ca/",
         }
+        
+## Bières [/bieres]
 
+### Liste des bières [GET]
+
++ Response 200 (application/json)
+    + Attributes (array)
+        - (Beer)
+          - id: 1
+        - (Beer)
+          - id: 2
+        - (Beer)
+          - id: 3
+
+## FAQ [/faq]
+
+### Get FAQ as markdown [GET]
+
++ Response 200 (application/json)
+
+        {
+          "markdown": "###Quoi?\nOkay"
+        }
+        
+## Plan [/plan]
+
+### Get plan [GET]
+
++ Response 200 (application/json)
+
+        {
+          "map_url": "http://site.com/image.jpg"
+        }
+    
+          
 # Data Structures
 
 ## Schedule Item (object)
@@ -80,6 +114,13 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 - interval: 30 (number, required)
 - additionnal_string: `Retour seulement`
 - thumbnail_url: `http://url.com/thumbnail.jpg`
+
+## Beer (object)
+
+- id: 12 (number, required)
+- name: `Molson Dry` (required)
+- alcohol: 5.5 (number)
+- description: `Une bière qui coute pas cher`
 
 ## Coordinate (object)
 
