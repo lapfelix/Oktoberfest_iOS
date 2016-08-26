@@ -1,4 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11215.2" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="Beer" representedClassName="Beer" syncable="YES">
+        <attribute name="alcohol" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="beerDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BusPath" representedClassName="BusPath" syncable="YES">
+        <attribute name="additionalString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="interval" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pathPositions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PathPosition" inverseName="path" inverseEntity="PathPosition" syncable="YES"/>
+    </entity>
+    <entity name="ContactInfo" representedClassName="ContactInfo" syncable="YES">
+        <attribute name="facebookDisplayName" optional="YES" syncable="YES"/>
+        <attribute name="facebookUserName" optional="YES" syncable="YES"/>
+        <attribute name="snapchatUserName" optional="YES" syncable="YES"/>
+        <attribute name="twitterUserName" optional="YES" syncable="YES"/>
+        <attribute name="websiteURL" optional="YES" syncable="YES"/>
+    </entity>
+    <entity name="PathPosition" representedClassName="PathPosition" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="path" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BusPath" inverseName="pathPositions" inverseEntity="BusPath" syncable="YES"/>
+    </entity>
+    <entity name="ScheduleItem" representedClassName="ScheduleItem" syncable="YES">
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="largeImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduleItemDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="smallImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Beer" positionX="-254" positionY="135" width="128" height="103"/>
+        <element name="BusPath" positionX="-254" positionY="-52" width="128" height="148"/>
+        <element name="PathPosition" positionX="-702" positionY="-54" width="128" height="103"/>
+        <element name="ScheduleItem" positionX="-56" positionY="-54" width="128" height="148"/>
+        <element name="ContactInfo" positionX="-434" positionY="134" width="128" height="118"/>
+    </elements>
 </model>
