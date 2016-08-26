@@ -16,11 +16,11 @@
         <relationship name="pathPositions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PathPosition" inverseName="path" inverseEntity="PathPosition" syncable="YES"/>
     </entity>
     <entity name="ContactInfo" representedClassName="ContactInfo" syncable="YES">
-        <attribute name="facebookDisplayName" optional="YES" syncable="YES"/>
-        <attribute name="facebookUserName" optional="YES" syncable="YES"/>
-        <attribute name="snapchatUserName" optional="YES" syncable="YES"/>
-        <attribute name="twitterUserName" optional="YES" syncable="YES"/>
-        <attribute name="websiteURL" optional="YES" syncable="YES"/>
+        <attribute name="facebookDisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebookUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snapchatUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitterUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="websiteURL" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="PathPosition" representedClassName="PathPosition" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -40,8 +40,8 @@
     <elements>
         <element name="Beer" positionX="-254" positionY="135" width="128" height="103"/>
         <element name="BusPath" positionX="-254" positionY="-52" width="128" height="148"/>
+        <element name="ContactInfo" positionX="-434" positionY="134" width="128" height="120"/>
         <element name="PathPosition" positionX="-702" positionY="-54" width="128" height="103"/>
         <element name="ScheduleItem" positionX="-56" positionY="-54" width="128" height="148"/>
-        <element name="ContactInfo" positionX="-434" positionY="134" width="128" height="118"/>
     </elements>
 </model>
