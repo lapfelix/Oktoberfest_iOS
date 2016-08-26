@@ -25,7 +25,17 @@
 		DC7454891D6115F500D87656 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7454881D6115F500D87656 /* Info.storyboard */; };
 		DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74548D1D611AFB00D87656 /* OKTFlowController.m */; };
 		DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454901D61483200D87656 /* OKTAPIWrapper.m */; };
-		DC7454941D61487E00D87656 /* OKTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454931D61487E00D87656 /* OKTNetworkManager.m */; };
+		DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454931D61487E00D87656 /* OKTNetworkMethods.m */; };
+		DCB80B2E1D6E740A00EB8A98 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B1B1D6E740A00EB8A98 /* Beer+CoreDataClass.m */; };
+		DCB80B2F1D6E740A00EB8A98 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B1D1D6E740A00EB8A98 /* Beer+CoreDataProperties.m */; };
+		DCB80B301D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B1F1D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m */; };
+		DCB80B311D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B211D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.m */; };
+		DCB80B321D6E740A00EB8A98 /* PathPosition+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B231D6E740A00EB8A98 /* PathPosition+CoreDataClass.m */; };
+		DCB80B331D6E740A00EB8A98 /* PathPosition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B251D6E740A00EB8A98 /* PathPosition+CoreDataProperties.m */; };
+		DCB80B341D6E740A00EB8A98 /* BusPath+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B271D6E740A00EB8A98 /* BusPath+CoreDataClass.m */; };
+		DCB80B351D6E740A00EB8A98 /* BusPath+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B291D6E740A00EB8A98 /* BusPath+CoreDataProperties.m */; };
+		DCB80B361D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B2B1D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m */; };
+		DCB80B371D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B2D1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +89,28 @@
 		DC74548D1D611AFB00D87656 /* OKTFlowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTFlowController.m; sourceTree = "<group>"; };
 		DC74548F1D61483200D87656 /* OKTAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTAPIWrapper.h; sourceTree = "<group>"; };
 		DC7454901D61483200D87656 /* OKTAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTAPIWrapper.m; sourceTree = "<group>"; };
-		DC7454921D61487E00D87656 /* OKTNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTNetworkManager.h; sourceTree = "<group>"; };
-		DC7454931D61487E00D87656 /* OKTNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTNetworkManager.m; sourceTree = "<group>"; };
+		DC7454921D61487E00D87656 /* OKTNetworkMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTNetworkMethods.h; sourceTree = "<group>"; };
+		DC7454931D61487E00D87656 /* OKTNetworkMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTNetworkMethods.m; sourceTree = "<group>"; };
+		DCB80B1A1D6E740A00EB8A98 /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Beer+CoreDataClass.h"; path = "Model/Beer+CoreDataClass.h"; sourceTree = "<group>"; };
+		DCB80B1B1D6E740A00EB8A98 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Beer+CoreDataClass.m"; path = "Model/Beer+CoreDataClass.m"; sourceTree = "<group>"; };
+		DCB80B1C1D6E740A00EB8A98 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Beer+CoreDataProperties.h"; path = "Model/Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DCB80B1D1D6E740A00EB8A98 /* Beer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Beer+CoreDataProperties.m"; path = "Model/Beer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DCB80B1E1D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ScheduleItem+CoreDataClass.h"; path = "Model/ScheduleItem+CoreDataClass.h"; sourceTree = "<group>"; };
+		DCB80B1F1D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ScheduleItem+CoreDataClass.m"; path = "Model/ScheduleItem+CoreDataClass.m"; sourceTree = "<group>"; };
+		DCB80B201D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ScheduleItem+CoreDataProperties.h"; path = "Model/ScheduleItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DCB80B211D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ScheduleItem+CoreDataProperties.m"; path = "Model/ScheduleItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DCB80B221D6E740A00EB8A98 /* PathPosition+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PathPosition+CoreDataClass.h"; path = "Model/PathPosition+CoreDataClass.h"; sourceTree = "<group>"; };
+		DCB80B231D6E740A00EB8A98 /* PathPosition+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PathPosition+CoreDataClass.m"; path = "Model/PathPosition+CoreDataClass.m"; sourceTree = "<group>"; };
+		DCB80B241D6E740A00EB8A98 /* PathPosition+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PathPosition+CoreDataProperties.h"; path = "Model/PathPosition+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DCB80B251D6E740A00EB8A98 /* PathPosition+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PathPosition+CoreDataProperties.m"; path = "Model/PathPosition+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DCB80B261D6E740A00EB8A98 /* BusPath+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BusPath+CoreDataClass.h"; path = "Model/BusPath+CoreDataClass.h"; sourceTree = "<group>"; };
+		DCB80B271D6E740A00EB8A98 /* BusPath+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BusPath+CoreDataClass.m"; path = "Model/BusPath+CoreDataClass.m"; sourceTree = "<group>"; };
+		DCB80B281D6E740A00EB8A98 /* BusPath+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BusPath+CoreDataProperties.h"; path = "Model/BusPath+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DCB80B291D6E740A00EB8A98 /* BusPath+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BusPath+CoreDataProperties.m"; path = "Model/BusPath+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DCB80B2A1D6E740A00EB8A98 /* ContactInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ContactInfo+CoreDataClass.h"; path = "Model/ContactInfo+CoreDataClass.h"; sourceTree = "<group>"; };
+		DCB80B2B1D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ContactInfo+CoreDataClass.m"; path = "Model/ContactInfo+CoreDataClass.m"; sourceTree = "<group>"; };
+		DCB80B2C1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ContactInfo+CoreDataProperties.h"; path = "Model/ContactInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DCB80B2D1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ContactInfo+CoreDataProperties.m"; path = "Model/ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +195,9 @@
 				DC74548D1D611AFB00D87656 /* OKTFlowController.m */,
 				DC74548F1D61483200D87656 /* OKTAPIWrapper.h */,
 				DC7454901D61483200D87656 /* OKTAPIWrapper.m */,
-				DC7454921D61487E00D87656 /* OKTNetworkManager.h */,
-				DC7454931D61487E00D87656 /* OKTNetworkManager.m */,
+				DC7454921D61487E00D87656 /* OKTNetworkMethods.h */,
+				DC7454931D61487E00D87656 /* OKTNetworkMethods.m */,
+				DCB80B381D6E741100EB8A98 /* Model */,
 				DC74548B1D61160300D87656 /* Storyboards */,
 				DC74544D1D61155F00D87656 /* Assets.xcassets */,
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
@@ -224,6 +255,34 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		DCB80B381D6E741100EB8A98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCB80B1A1D6E740A00EB8A98 /* Beer+CoreDataClass.h */,
+				DCB80B1B1D6E740A00EB8A98 /* Beer+CoreDataClass.m */,
+				DCB80B1C1D6E740A00EB8A98 /* Beer+CoreDataProperties.h */,
+				DCB80B1D1D6E740A00EB8A98 /* Beer+CoreDataProperties.m */,
+				DCB80B1E1D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.h */,
+				DCB80B1F1D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m */,
+				DCB80B201D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.h */,
+				DCB80B211D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.m */,
+				DCB80B221D6E740A00EB8A98 /* PathPosition+CoreDataClass.h */,
+				DCB80B231D6E740A00EB8A98 /* PathPosition+CoreDataClass.m */,
+				DCB80B241D6E740A00EB8A98 /* PathPosition+CoreDataProperties.h */,
+				DCB80B251D6E740A00EB8A98 /* PathPosition+CoreDataProperties.m */,
+				DCB80B261D6E740A00EB8A98 /* BusPath+CoreDataClass.h */,
+				DCB80B271D6E740A00EB8A98 /* BusPath+CoreDataClass.m */,
+				DCB80B281D6E740A00EB8A98 /* BusPath+CoreDataProperties.h */,
+				DCB80B291D6E740A00EB8A98 /* BusPath+CoreDataProperties.m */,
+				DCB80B2A1D6E740A00EB8A98 /* ContactInfo+CoreDataClass.h */,
+				DCB80B2B1D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m */,
+				DCB80B2C1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.h */,
+				DCB80B2D1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +296,7 @@
 				DC7454391D61155F00D87656 /* Resources */,
 				9FFF18EBC6E183FED7F90111 /* [CP] Embed Pods Frameworks */,
 				7EA2741E839397B0F89A48FF /* [CP] Copy Pods Resources */,
+				DCB80B191D6E64BE00EB8A98 /* Increase build number */,
 			);
 			buildRules = (
 			);
@@ -489,6 +549,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DCB80B191D6E64BE00EB8A98 /* Increase build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increase build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/buildNumIncrement.sh \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -497,11 +571,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
+				DCB80B351D6E740A00EB8A98 /* BusPath+CoreDataProperties.m in Sources */,
+				DCB80B321D6E740A00EB8A98 /* PathPosition+CoreDataClass.m in Sources */,
+				DCB80B361D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m in Sources */,
 				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
+				DCB80B331D6E740A00EB8A98 /* PathPosition+CoreDataProperties.m in Sources */,
+				DCB80B2E1D6E740A00EB8A98 /* Beer+CoreDataClass.m in Sources */,
 				DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */,
 				DC7454401D61155F00D87656 /* main.m in Sources */,
+				DCB80B311D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.m in Sources */,
+				DCB80B2F1D6E740A00EB8A98 /* Beer+CoreDataProperties.m in Sources */,
+				DCB80B341D6E740A00EB8A98 /* BusPath+CoreDataClass.m in Sources */,
+				DCB80B371D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
-				DC7454941D61487E00D87656 /* OKTNetworkManager.m in Sources */,
+				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,
+				DCB80B301D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
