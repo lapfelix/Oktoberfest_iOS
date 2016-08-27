@@ -6,10 +6,10 @@
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#import "BusPathObject.h"
+#import "BusPath+Methods.h"
 
-static NSString *entityName = @"Beer";
+static NSString *entityName = @"BusPath";
 
-@implementation BusPathObject
+@implementation BusPath (Methods)
 
 @end

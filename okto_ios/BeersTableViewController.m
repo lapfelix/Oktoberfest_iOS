@@ -7,7 +7,7 @@
 //
 
 #import "BeersTableViewController.h"
-#import "BeerObject.h"
+#import "Beer+Methods.h"
 #import "BeerTableViewCell.h"
 #import "AppDelegate.h"
 
@@ -29,6 +29,8 @@ static NSString *CellReuseIdentifier = @"beer";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self initializeFetchedResultsController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,7 +65,7 @@ static NSString *CellReuseIdentifier = @"beer";
 #pragma mark - Core Data stack
 
 - (void)initializeFetchedResultsController {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[BeerObject entityName]];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[Beer entityName]];
     
     NSSortDescriptor *idSort = [NSSortDescriptor sortDescriptorWithKey:@"id" ascending:YES];
     

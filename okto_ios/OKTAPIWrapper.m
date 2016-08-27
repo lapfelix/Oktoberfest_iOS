@@ -13,11 +13,11 @@
 
 // Import Core Data entities
 
-#import "Beer+CoreDataProperties.h"
-#import "ScheduleItem+CoreDataProperties.h"
-#import "BusPath+CoreDataProperties.h"
-#import "PathPosition+CoreDataProperties.h"
-#import "ContactInfo+CoreDataProperties.h"
+#import "Beer+Methods.h"
+#import "ScheduleItem+Methods.h"
+#import "BusPath+Methods.h"
+#import "PathPosition+Methods.h"
+#import "ContactInfo+Methods.h"
 
 static NSString *baseURL = @"https://private-5fca2-oktoberfest.apiary-mock.com/";
 static NSDictionary *endpoints;
@@ -38,20 +38,21 @@ static NSDictionary *endpoints;
     dispatch_once(&once, ^{
         sharedInstance = [[self alloc] init];
         endpoints = @{
-                      NSStringFromClass([Beer class]):@"beers",
-                      NSStringFromClass([ScheduleItem class]):@"schedule_items",
+                      NSStringFromClass([Beer class]):@"bieres",
+                      //NSStringFromClass([ScheduleItemObject class]):@"schedule_items",
                     };
     });
     return sharedInstance;
 }
 
 - (NSURL *)urlFromClass:(Class)class {
-    return endpoints[NSStringFromClass(class)];
+    NSLog(@"dat:%@",NSStringFromClass(class));
+    return [NSURL URLWithString:[baseURL stringByAppendingPathComponent:endpoints[NSStringFromClass(class)]]];
 }
 
-- (void)sync {
-    for (Class class in endpoints.allKeys) {
-        [self downloadForClass:class withCompletionHandler:^(NSObject *object, NSError * _Nullable error) {
+- (void)syncWithServer {
+    for (NSString *classString in endpoints.allKeys) {
+        [self downloadForClass:NSClassFromString(classString) withCompletionHandler:^(NSObject *object, NSError * _Nullable error) {
             //nothing to do with the returned object
         }];
     }
@@ -59,18 +60,25 @@ static NSDictionary *endpoints;
 
 - (void)downloadForClass:(Class)class withCompletionHandler:(void (^)(NSObject *object, NSError * _Nullable error))completionHandler {
     
-    [OKTNetworkMethods getObjectAtURL:[self urlFromClass:[Beer class]] completionHandler:^(NSObject *objectArray, NSError *error) {
+    [OKTNetworkMethods getObjectAtURL:[self urlFromClass:class] completionHandler:^(NSObject *objectArray, NSError *error) {
         Class<OKTModelClass> modelClass = class;
         
         if (objectArray == nil) {
             NSLog(@"Returned object was empty.");
             completionHandler(nil, nil);
+            return;
         }
         
         //hack: force putting stuff in an array
         if (![objectArray isKindOfClass:[NSArray class]]) {
             objectArray = @[objectArray];
         }
+        
+        NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass(class)];
+        NSBatchDeleteRequest *delete = [[NSBatchDeleteRequest alloc] initWithFetchRequest:request];
+        
+        NSError *deleteError = nil;
+        [((AppDelegate *)UIApplication.sharedApplication.delegate).persistentStoreCoordinator executeRequest:delete withContext:self.managedObjectContext error:&deleteError];
         
         for (NSDictionary *obj in (NSArray *)objectArray) {
             if (![obj isKindOfClass:[NSDictionary class]]) {
@@ -82,6 +90,8 @@ static NSDictionary *endpoints;
                 }
             }
         }
+        
+        [self saveContext:self.managedObjectContext];
     }];
 }
 

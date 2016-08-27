@@ -6,7 +6,7 @@
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#import "BeerObject.h"
+#import "Beer+Methods.h"
 #import "BeerTableViewCell.h"
 
 @interface BeerTableViewCell()

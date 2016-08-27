@@ -1,5 +1,5 @@
 //
-//  ContactInfo.h
+//  ScheduleItem.h
 //  okto_ios
 //
 //  Created by Felix Lapalme on 2016-08-26.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "OKTModelClass.h"
-#import "ContactInfo+CoreDataClass.h"
+#import "ScheduleItem+CoreDataClass.h"
 
-@interface ContactInfoObject : ContactInfo<OKTModelClass>
-
+@interface ScheduleItem (Methods) <OKTModelClass>
 @end

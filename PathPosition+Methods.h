@@ -1,5 +1,5 @@
 //
-//  ScheduleItem.h
+//  PathPosition.h
 //  okto_ios
 //
 //  Created by Felix Lapalme on 2016-08-26.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "OKTModelClass.h"
-#import "ScheduleItem+CoreDataClass.h"
+#import "PathPosition+CoreDataClass.h"
 
-@interface ScheduleItemObject : ScheduleItem<OKTModelClass>
+@interface PathPosition (Methods) <OKTModelClass>
 
 @end

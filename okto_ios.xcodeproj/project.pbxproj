@@ -37,11 +37,11 @@
 		DCB80B351D6E740A00EB8A98 /* BusPath+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B291D6E740A00EB8A98 /* BusPath+CoreDataProperties.m */; };
 		DCB80B361D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B2B1D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m */; };
 		DCB80B371D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B2D1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m */; };
-		DCDABDBE1D70CB9600BCC342 /* BeerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDBD1D70CB9600BCC342 /* BeerObject.m */; };
-		DCDABDC31D70CDFB00BCC342 /* ScheduleItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC21D70CDFB00BCC342 /* ScheduleItemObject.m */; };
-		DCDABDC61D70CE1000BCC342 /* PathPositionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC51D70CE1000BCC342 /* PathPositionObject.m */; };
-		DCDABDC91D70CE1900BCC342 /* BusPathObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC81D70CE1900BCC342 /* BusPathObject.m */; };
-		DCDABDCC1D70CE2200BCC342 /* ContactInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDCB1D70CE2200BCC342 /* ContactInfoObject.m */; };
+		DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */; };
+		DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC21D70CDFB00BCC342 /* ScheduleItem+Methods.m */; };
+		DCDABDC61D70CE1000BCC342 /* PathPosition+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC51D70CE1000BCC342 /* PathPosition+Methods.m */; };
+		DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC81D70CE1900BCC342 /* BusPath+Methods.m */; };
+		DCDABDCC1D70CE2200BCC342 /* ContactInfo+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDCB1D70CE2200BCC342 /* ContactInfo+Methods.m */; };
 		DCDABDCF1D70D9EF00BCC342 /* NSDictionary+NilSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */; };
 		DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */; };
 		DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */; };
@@ -122,17 +122,17 @@
 		DCB80B2B1D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ContactInfo+CoreDataClass.m"; path = "Model/ContactInfo+CoreDataClass.m"; sourceTree = "<group>"; };
 		DCB80B2C1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ContactInfo+CoreDataProperties.h"; path = "Model/ContactInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
 		DCB80B2D1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ContactInfo+CoreDataProperties.m"; path = "Model/ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DCDABDBC1D70CB9600BCC342 /* BeerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerObject.h; sourceTree = "<group>"; };
-		DCDABDBD1D70CB9600BCC342 /* BeerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerObject.m; sourceTree = "<group>"; };
+		DCDABDBC1D70CB9600BCC342 /* Beer+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+Methods.h"; sourceTree = "<group>"; };
+		DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+Methods.m"; sourceTree = "<group>"; };
 		DCDABDC01D70CD5200BCC342 /* OKTModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTModelClass.h; sourceTree = "<group>"; };
-		DCDABDC11D70CDFB00BCC342 /* ScheduleItemObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItemObject.h; sourceTree = "<group>"; };
-		DCDABDC21D70CDFB00BCC342 /* ScheduleItemObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItemObject.m; sourceTree = "<group>"; };
-		DCDABDC41D70CE1000BCC342 /* PathPositionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathPositionObject.h; sourceTree = "<group>"; };
-		DCDABDC51D70CE1000BCC342 /* PathPositionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathPositionObject.m; sourceTree = "<group>"; };
-		DCDABDC71D70CE1900BCC342 /* BusPathObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathObject.h; sourceTree = "<group>"; };
-		DCDABDC81D70CE1900BCC342 /* BusPathObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathObject.m; sourceTree = "<group>"; };
-		DCDABDCA1D70CE2200BCC342 /* ContactInfoObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactInfoObject.h; sourceTree = "<group>"; };
-		DCDABDCB1D70CE2200BCC342 /* ContactInfoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactInfoObject.m; sourceTree = "<group>"; };
+		DCDABDC11D70CDFB00BCC342 /* ScheduleItem+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScheduleItem+Methods.h"; sourceTree = "<group>"; };
+		DCDABDC21D70CDFB00BCC342 /* ScheduleItem+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScheduleItem+Methods.m"; sourceTree = "<group>"; };
+		DCDABDC41D70CE1000BCC342 /* PathPosition+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PathPosition+Methods.h"; sourceTree = "<group>"; };
+		DCDABDC51D70CE1000BCC342 /* PathPosition+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PathPosition+Methods.m"; sourceTree = "<group>"; };
+		DCDABDC71D70CE1900BCC342 /* BusPath+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BusPath+Methods.h"; sourceTree = "<group>"; };
+		DCDABDC81D70CE1900BCC342 /* BusPath+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusPath+Methods.m"; sourceTree = "<group>"; };
+		DCDABDCA1D70CE2200BCC342 /* ContactInfo+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+Methods.h"; sourceTree = "<group>"; };
+		DCDABDCB1D70CE2200BCC342 /* ContactInfo+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+Methods.m"; sourceTree = "<group>"; };
 		DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilSupport.h"; sourceTree = "<group>"; };
 		DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilSupport.m"; sourceTree = "<group>"; };
 		DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeersTableViewController.h; sourceTree = "<group>"; };
@@ -337,16 +337,16 @@
 			isa = PBXGroup;
 			children = (
 				DCDABDC01D70CD5200BCC342 /* OKTModelClass.h */,
-				DCDABDBC1D70CB9600BCC342 /* BeerObject.h */,
-				DCDABDBD1D70CB9600BCC342 /* BeerObject.m */,
-				DCDABDC11D70CDFB00BCC342 /* ScheduleItemObject.h */,
-				DCDABDC21D70CDFB00BCC342 /* ScheduleItemObject.m */,
-				DCDABDC41D70CE1000BCC342 /* PathPositionObject.h */,
-				DCDABDC51D70CE1000BCC342 /* PathPositionObject.m */,
-				DCDABDC71D70CE1900BCC342 /* BusPathObject.h */,
-				DCDABDC81D70CE1900BCC342 /* BusPathObject.m */,
-				DCDABDCA1D70CE2200BCC342 /* ContactInfoObject.h */,
-				DCDABDCB1D70CE2200BCC342 /* ContactInfoObject.m */,
+				DCDABDBC1D70CB9600BCC342 /* Beer+Methods.h */,
+				DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */,
+				DCDABDC11D70CDFB00BCC342 /* ScheduleItem+Methods.h */,
+				DCDABDC21D70CDFB00BCC342 /* ScheduleItem+Methods.m */,
+				DCDABDC41D70CE1000BCC342 /* PathPosition+Methods.h */,
+				DCDABDC51D70CE1000BCC342 /* PathPosition+Methods.m */,
+				DCDABDC71D70CE1900BCC342 /* BusPath+Methods.h */,
+				DCDABDC81D70CE1900BCC342 /* BusPath+Methods.m */,
+				DCDABDCA1D70CE2200BCC342 /* ContactInfo+Methods.h */,
+				DCDABDCB1D70CE2200BCC342 /* ContactInfo+Methods.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -650,9 +650,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
-				DCDABDBE1D70CB9600BCC342 /* BeerObject.m in Sources */,
+				DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */,
 				DCB80B351D6E740A00EB8A98 /* BusPath+CoreDataProperties.m in Sources */,
-				DCDABDCC1D70CE2200BCC342 /* ContactInfoObject.m in Sources */,
+				DCDABDCC1D70CE2200BCC342 /* ContactInfo+Methods.m in Sources */,
 				DCB80B321D6E740A00EB8A98 /* PathPosition+CoreDataClass.m in Sources */,
 				DCB80B361D6E740A00EB8A98 /* ContactInfo+CoreDataClass.m in Sources */,
 				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
@@ -662,17 +662,17 @@
 				DCDABDCF1D70D9EF00BCC342 /* NSDictionary+NilSupport.m in Sources */,
 				DC7454401D61155F00D87656 /* main.m in Sources */,
 				DCB80B311D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.m in Sources */,
-				DCDABDC61D70CE1000BCC342 /* PathPositionObject.m in Sources */,
+				DCDABDC61D70CE1000BCC342 /* PathPosition+Methods.m in Sources */,
 				DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */,
 				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DCB80B2F1D6E740A00EB8A98 /* Beer+CoreDataProperties.m in Sources */,
 				DCB80B341D6E740A00EB8A98 /* BusPath+CoreDataClass.m in Sources */,
 				DCB80B371D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
-				DCDABDC31D70CDFB00BCC342 /* ScheduleItemObject.m in Sources */,
+				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
 				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,
 				DCB80B301D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m in Sources */,
-				DCDABDC91D70CE1900BCC342 /* BusPathObject.m in Sources */,
+				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

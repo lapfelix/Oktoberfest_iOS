@@ -12,8 +12,9 @@
 
 + (void)getObjectAtURL:(NSURL *)url completionHandler:(void (^)(NSObject * _Nullable object, NSError * _Nullable error))completionHandler{
     [[self class] getDataAtURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error != nil) {
+        if (error != nil || data == nil) {
             completionHandler(nil, error);
+            return;
         }
         
         NSObject *returnedObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];

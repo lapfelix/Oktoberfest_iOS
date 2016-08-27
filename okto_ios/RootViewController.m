@@ -26,7 +26,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    
+    [[OKTAPIWrapper sharedWrapper] syncWithServer];
 }
 
 /*

@@ -6,10 +6,10 @@
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#import "PathPositionObject.h"
+#import "PathPosition+Methods.h"
 
-static NSString *entityName = @"Beer";
+static NSString *entityName = @"PathPosition";
 
-@implementation PathPositionObject
+@implementation PathPosition (Methods)
 
 @end

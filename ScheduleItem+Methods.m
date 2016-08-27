@@ -6,10 +6,10 @@
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#import "ScheduleItemObject.h"
+#import "ScheduleItem+Methods.h"
 
-static NSString *entityName = @"Beer";
+static NSString *entityName = @"ScheduleItem";
 
-@implementation ScheduleItemObject
+@implementation ScheduleItem (Methods)
 
 @end

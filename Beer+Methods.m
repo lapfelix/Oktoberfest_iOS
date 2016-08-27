@@ -6,11 +6,15 @@
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#import "BeerObject.h"
+#import "Beer+Methods.h"
 
 static NSString *entityName = @"Beer";
 
-@implementation BeerObject
+@implementation Beer (Methods)
+
++ (NSString *)entityName {
+    return entityName;
+}
 
 + (instancetype) modelObjectWithDictionary:(NSDictionary *)dict managedObjectContext:(NSManagedObjectContext *)context {
     return [[self alloc] initWithDictionary:dict managedObjectContext:context];

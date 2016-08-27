@@ -73,7 +73,7 @@
         return _managedObjectModel;
     }
     NSURL *modelURL =
-    [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
+    [[NSBundle mainBundle] URLForResource:@"okto_ios" withExtension:@"momd"];
     _managedObjectModel =
     [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;

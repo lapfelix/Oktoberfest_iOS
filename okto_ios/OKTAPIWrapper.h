@@ -10,4 +10,7 @@
 
 @interface OKTAPIWrapper : NSObject
 
++ (instancetype)sharedWrapper;
+- (void)syncWithServer;
+
 @end

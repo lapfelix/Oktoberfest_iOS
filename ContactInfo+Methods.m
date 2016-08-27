@@ -6,10 +6,10 @@
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#import "ContactInfoObject.h"
+#import "ContactInfo+Methods.h"
 
-static NSString *entityName = @"Beer";
+static NSString *entityName = @"ContactInfo";
 
-@implementation ContactInfoObject
+@implementation ContactInfo (Methods)
 
 @end
