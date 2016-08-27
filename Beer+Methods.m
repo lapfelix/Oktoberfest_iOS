@@ -26,7 +26,7 @@ static NSString *entityName = @"Beer";
         self.id = [dict[@"id"] intValue];
         self.alcohol = [dict[@"alcohol"] floatValue];
         self.beerDescription = [dict objectOrNilForKey:@"description"];
-        self.name = [dict objectOrNilForKey:@"description"];
+        self.name = [dict objectOrNilForKey:@"name"];
     }
     return self;
 }

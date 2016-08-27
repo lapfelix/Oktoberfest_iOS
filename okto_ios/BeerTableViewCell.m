@@ -33,7 +33,7 @@
 - (void)configureWithObject:(Beer *)beer {
     self.nameLabel.text = beer.name;
     self.alcoholLabel.text = [NSString stringWithFormat:@"%.2f%%",beer.alcohol];
-    self.descriptionLabel.text = beer.description;
+    self.descriptionLabel.text = beer.beerDescription;
 }
 
 @end
