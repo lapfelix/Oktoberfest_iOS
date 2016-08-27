@@ -11,10 +11,11 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 ### Get general info [GET]
 
 + Response 200 (application/json)
-    
-        {
-            "start_time": "11-11-2016 21:00"
-        }
+    + Attributes
+        - start_time: "11-11-2016 21:00"
+        - sponsors (array)
+          - (Sponsor)
+          - (Sponsor)
         
         
 ## Programmation [/schedule_items]
@@ -67,10 +68,13 @@ L'API du truc de l'évènement où le monde boivent de la bière.
     + Attributes (array)
         - (Beer)
           - id: 1
+          - name: blblblb
         - (Beer)
           - id: 2
+          - name: aha ahaha aha
         - (Beer)
           - id: 3
+          - name: oohohohoewo
 
 ## FAQ [/faq]
 
@@ -127,3 +131,9 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 
 - longitude: `43.555` (number, required)
 - latitude: `-33.555` (number, required)
+
+## Sponsor (object)
+
+- name: `Blabla` (required)
+- image_url: `http://url.com/image.jpg` (required)
+- website_url: `http://apple.com/`
