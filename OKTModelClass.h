@@ -15,6 +15,9 @@
 @protocol OKTModelClass <NSObject>
 
 @required
++ (NSString *)entityName;
+
+@required
 + (instancetype) modelObjectWithDictionary:(NSDictionary *)dict managedObjectContext:(NSManagedObjectContext *)context;
 
 @optional

@@ -12,4 +12,6 @@
 
 @interface BeerObject: Beer<OKTModelClass>
 
++ (NSString *)entityName;
+
 @end

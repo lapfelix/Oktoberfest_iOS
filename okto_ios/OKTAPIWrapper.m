@@ -49,6 +49,13 @@ static NSDictionary *endpoints;
     return endpoints[NSStringFromClass(class)];
 }
 
+- (void)sync {
+    for (Class class in endpoints.allKeys) {
+        [self downloadForClass:class withCompletionHandler:^(NSObject *object, NSError * _Nullable error) {
+            //nothing to do with the returned object
+        }];
+    }
+}
 
 - (void)downloadForClass:(Class)class withCompletionHandler:(void (^)(NSObject *object, NSError * _Nullable error))completionHandler {
     
@@ -82,7 +89,6 @@ static NSDictionary *endpoints;
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
-//@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This

@@ -10,6 +10,7 @@
 		2127C8221819815E31E87DE1 /* libPods-okto_iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412A411285FFBDA944AA26A /* libPods-okto_iosUITests.a */; };
 		36563FFFB45F24F0FA3F9B10 /* libPods-okto_iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */; };
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
+		DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B008A1D712869001C5A83 /* RootViewController.m */; };
 		DC7454401D61155F00D87656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74543F1D61155F00D87656 /* main.m */; };
 		DC7454431D61155F00D87656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454421D61155F00D87656 /* AppDelegate.m */; };
 		DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */; };
@@ -42,6 +43,8 @@
 		DCDABDC91D70CE1900BCC342 /* BusPathObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC81D70CE1900BCC342 /* BusPathObject.m */; };
 		DCDABDCC1D70CE2200BCC342 /* ContactInfoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDCB1D70CE2200BCC342 /* ContactInfoObject.m */; };
 		DCDABDCF1D70D9EF00BCC342 /* NSDictionary+NilSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */; };
+		DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */; };
+		DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,8 @@
 		9BEAA1A84801F6EC1CB9BE26 /* Pods-okto_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_iosUITests/Pods-okto_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3CE05E2EA3DC44C7CECA6EC /* Pods-okto_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C77115BDDE96F5E61082E601 /* Pods-okto_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DC5B00891D712869001C5A83 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DC5B008A1D712869001C5A83 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DC74543B1D61155F00D87656 /* okto_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okto_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC74543F1D61155F00D87656 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC7454411D61155F00D87656 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +135,10 @@
 		DCDABDCB1D70CE2200BCC342 /* ContactInfoObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactInfoObject.m; sourceTree = "<group>"; };
 		DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NilSupport.h"; sourceTree = "<group>"; };
 		DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NilSupport.m"; sourceTree = "<group>"; };
+		DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeersTableViewController.h; sourceTree = "<group>"; };
+		DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeersTableViewController.m; sourceTree = "<group>"; };
+		DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerTableViewCell.h; sourceTree = "<group>"; };
+		DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +192,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DC5B00871D711800001C5A83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B00881D711806001C5A83 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DC5B00881D711806001C5A83 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */,
+				DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		DC7454321D61155F00D87656 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +246,8 @@
 				DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */,
 				DCB80B381D6E741100EB8A98 /* Model */,
 				DC74548B1D61160300D87656 /* Storyboards */,
+				DCDABDD01D71154C00BCC342 /* View Controllers */,
+				DC5B00871D711800001C5A83 /* Views */,
 				DC74544D1D61155F00D87656 /* Assets.xcassets */,
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
 				DC7454521D61155F00D87656 /* Info.plist */,
@@ -321,6 +349,17 @@
 				DCDABDCB1D70CE2200BCC342 /* ContactInfoObject.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		DCDABDD01D71154C00BCC342 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC5B00891D712869001C5A83 /* RootViewController.h */,
+				DC5B008A1D712869001C5A83 /* RootViewController.m */,
+				DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */,
+				DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -624,6 +663,8 @@
 				DC7454401D61155F00D87656 /* main.m in Sources */,
 				DCB80B311D6E740A00EB8A98 /* ScheduleItem+CoreDataProperties.m in Sources */,
 				DCDABDC61D70CE1000BCC342 /* PathPositionObject.m in Sources */,
+				DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */,
+				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DCB80B2F1D6E740A00EB8A98 /* Beer+CoreDataProperties.m in Sources */,
 				DCB80B341D6E740A00EB8A98 /* BusPath+CoreDataClass.m in Sources */,
 				DCB80B371D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m in Sources */,
@@ -632,6 +673,7 @@
 				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,
 				DCB80B301D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPathObject.m in Sources */,
+				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
