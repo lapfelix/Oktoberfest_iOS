@@ -13,6 +13,4 @@
 
 @interface Beer (Methods) <OKTModelProtocol>
 
-+ (NSString *)entityName;
-
 @end
