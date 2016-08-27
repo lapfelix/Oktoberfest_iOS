@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OKTModelClass.h"
+#import "OKTModelProtocol.h"
 #import "PathPosition+CoreDataClass.h"
 
-@interface PathPosition (Methods) <OKTModelClass>
+@interface PathPosition (Methods) <OKTModelProtocol>
 
 @end

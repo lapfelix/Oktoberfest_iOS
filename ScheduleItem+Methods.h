@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OKTModelClass.h"
+#import "OKTModelProtocol.h"
 #import "ScheduleItem+CoreDataClass.h"
 
-@interface ScheduleItem (Methods) <OKTModelClass>
+@interface ScheduleItem (Methods) <OKTModelProtocol>
 @end

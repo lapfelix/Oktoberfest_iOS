@@ -124,7 +124,7 @@
 		DCB80B2D1D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ContactInfo+CoreDataProperties.m"; path = "Model/ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		DCDABDBC1D70CB9600BCC342 /* Beer+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+Methods.h"; sourceTree = "<group>"; };
 		DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+Methods.m"; sourceTree = "<group>"; };
-		DCDABDC01D70CD5200BCC342 /* OKTModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTModelClass.h; sourceTree = "<group>"; };
+		DCDABDC01D70CD5200BCC342 /* OKTModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTModelProtocol.h; sourceTree = "<group>"; };
 		DCDABDC11D70CDFB00BCC342 /* ScheduleItem+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScheduleItem+Methods.h"; sourceTree = "<group>"; };
 		DCDABDC21D70CDFB00BCC342 /* ScheduleItem+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScheduleItem+Methods.m"; sourceTree = "<group>"; };
 		DCDABDC41D70CE1000BCC342 /* PathPosition+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PathPosition+Methods.h"; sourceTree = "<group>"; };
@@ -336,7 +336,7 @@
 		DCDABDBF1D70CB9B00BCC342 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DCDABDC01D70CD5200BCC342 /* OKTModelClass.h */,
+				DCDABDC01D70CD5200BCC342 /* OKTModelProtocol.h */,
 				DCDABDBC1D70CB9600BCC342 /* Beer+Methods.h */,
 				DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */,
 				DCDABDC11D70CDFB00BCC342 /* ScheduleItem+Methods.h */,

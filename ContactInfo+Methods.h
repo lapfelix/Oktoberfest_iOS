@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OKTModelClass.h"
+#import "OKTModelProtocol.h"
 #import "ContactInfo+CoreDataClass.h"
 
-@interface ContactInfo (Methods) <OKTModelClass>
+@interface ContactInfo (Methods) <OKTModelProtocol>
 
 @end

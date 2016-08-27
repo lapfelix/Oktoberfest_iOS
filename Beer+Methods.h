@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OKTModelClass.h"
+#import "OKTModelProtocol.h"
 #import "Beer+CoreDataClass.h"
 #import "Beer+CoreDataProperties.h"
 
-@interface Beer (Methods) <OKTModelClass>
+@interface Beer (Methods) <OKTModelProtocol>
 
 + (NSString *)entityName;
 

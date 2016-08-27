@@ -1,18 +1,18 @@
 //
-//  OKTModelClass.h
+//  OKTModelProtocol.h
 //  okto_ios
 //
 //  Created by Felix Lapalme on 2016-08-26.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#ifndef OKTModelClass_h
-#define OKTModelClass_h
+#ifndef OKTModelProtocol_h
+#define OKTModelProtocol_h
 
 #import <CoreData/CoreData.h>
 #import "NSDictionary+NilSupport.h"
 
-@protocol OKTModelClass <NSObject>
+@protocol OKTModelProtocol <NSObject>
 
 @required
 + (NSString *)entityName;
@@ -28,4 +28,4 @@
 
 @end
 
-#endif /* OKTModelClass_h */
+#endif /* OKTModelProtocol_h */

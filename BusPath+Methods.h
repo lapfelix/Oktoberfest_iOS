@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OKTModelClass.h"
+#import "OKTModelProtocol.h"
 #import "BusPath+CoreDataClass.h"
 
-@interface BusPath (Methods) <OKTModelClass>
+@interface BusPath (Methods) <OKTModelProtocol>
 
 @end

@@ -8,7 +8,7 @@
 
 #import "OKTAPIWrapper.h"
 #import "OKTNetworkMethods.h"
-#import "OKTModelClass.h"
+#import "OKTModelProtocol.h"
 #import "AppDelegate.h"
 
 // Import Core Data entities
@@ -61,7 +61,7 @@ static NSDictionary *endpoints;
 - (void)downloadForClass:(Class)class withCompletionHandler:(void (^)(NSObject *object, NSError * _Nullable error))completionHandler {
     
     [OKTNetworkMethods getObjectAtURL:[self urlFromClass:class] completionHandler:^(NSObject *objectArray, NSError *error) {
-        Class<OKTModelClass> modelClass = class;
+        Class<OKTModelProtocol> modelClass = class;
         
         if (objectArray == nil) {
             NSLog(@"Returned object was empty.");
