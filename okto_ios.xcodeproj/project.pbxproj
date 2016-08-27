@@ -27,6 +27,10 @@
 		DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74548D1D611AFB00D87656 /* OKTFlowController.m */; };
 		DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454901D61483200D87656 /* OKTAPIWrapper.m */; };
 		DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454931D61487E00D87656 /* OKTNetworkMethods.m */; };
+		DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */; };
+		DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */; };
+		DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E51D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m */; };
+		DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */; };
 		DCB80B2E1D6E740A00EB8A98 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B1B1D6E740A00EB8A98 /* Beer+CoreDataClass.m */; };
 		DCB80B2F1D6E740A00EB8A98 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B1D1D6E740A00EB8A98 /* Beer+CoreDataProperties.m */; };
 		DCB80B301D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB80B1F1D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m */; };
@@ -102,6 +106,15 @@
 		DC7454901D61483200D87656 /* OKTAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTAPIWrapper.m; sourceTree = "<group>"; };
 		DC7454921D61487E00D87656 /* OKTNetworkMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTNetworkMethods.h; sourceTree = "<group>"; };
 		DC7454931D61487E00D87656 /* OKTNetworkMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTNetworkMethods.m; sourceTree = "<group>"; };
+		DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
+		DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewController.m; sourceTree = "<group>"; };
+		DCA9F7E11D7205C400C19FA8 /* OKTBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTBaseTableViewController.h; sourceTree = "<group>"; };
+		DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTBaseTableViewController.m; sourceTree = "<group>"; };
+		DCA9F7E41D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OKTBaseTableViewController+FetchedResultsController.h"; sourceTree = "<group>"; };
+		DCA9F7E51D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OKTBaseTableViewController+FetchedResultsController.m"; sourceTree = "<group>"; };
+		DCA9F7EA1D7209CF00C19FA8 /* ScheduleItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItemTableViewCell.h; sourceTree = "<group>"; };
+		DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItemTableViewCell.m; sourceTree = "<group>"; };
+		DCA9F7F31D720A4B00C19FA8 /* OKTObjectConfigurableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTObjectConfigurableProtocol.h; sourceTree = "<group>"; };
 		DCB80B1A1D6E740A00EB8A98 /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Beer+CoreDataClass.h"; path = "Model/Beer+CoreDataClass.h"; sourceTree = "<group>"; };
 		DCB80B1B1D6E740A00EB8A98 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Beer+CoreDataClass.m"; path = "Model/Beer+CoreDataClass.m"; sourceTree = "<group>"; };
 		DCB80B1C1D6E740A00EB8A98 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Beer+CoreDataProperties.h"; path = "Model/Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -205,6 +218,8 @@
 			children = (
 				DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */,
 				DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */,
+				DCA9F7EA1D7209CF00C19FA8 /* ScheduleItemTableViewCell.h */,
+				DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -242,16 +257,17 @@
 				DC7454901D61483200D87656 /* OKTAPIWrapper.m */,
 				DC7454921D61487E00D87656 /* OKTNetworkMethods.h */,
 				DC7454931D61487E00D87656 /* OKTNetworkMethods.m */,
-				DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */,
-				DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */,
 				DCB80B381D6E741100EB8A98 /* Model */,
 				DC74548B1D61160300D87656 /* Storyboards */,
+				DCA9F7DD1D7203F800C19FA8 /* BaseClasses */,
 				DCDABDD01D71154C00BCC342 /* View Controllers */,
 				DC5B00871D711800001C5A83 /* Views */,
 				DC74544D1D61155F00D87656 /* Assets.xcassets */,
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
 				DC7454521D61155F00D87656 /* Info.plist */,
 				DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */,
+				DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */,
+				DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */,
 				DC74543E1D61155F00D87656 /* Supporting Files */,
 			);
 			path = okto_ios;
@@ -302,6 +318,18 @@
 				DC74548A1D6115FC00D87656 /* Tabs */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		DCA9F7DD1D7203F800C19FA8 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9F7E11D7205C400C19FA8 /* OKTBaseTableViewController.h */,
+				DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */,
+				DCA9F7E41D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.h */,
+				DCA9F7E51D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m */,
+				DCA9F7F31D720A4B00C19FA8 /* OKTObjectConfigurableProtocol.h */,
+			);
+			name = BaseClasses;
 			sourceTree = "<group>";
 		};
 		DCB80B381D6E741100EB8A98 /* Model */ = {
@@ -356,6 +384,8 @@
 			children = (
 				DC5B00891D712869001C5A83 /* RootViewController.h */,
 				DC5B008A1D712869001C5A83 /* RootViewController.m */,
+				DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */,
+				DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */,
 				DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */,
 				DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */,
 			);
@@ -666,14 +696,18 @@
 				DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */,
 				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DCB80B2F1D6E740A00EB8A98 /* Beer+CoreDataProperties.m in Sources */,
+				DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */,
 				DCB80B341D6E740A00EB8A98 /* BusPath+CoreDataClass.m in Sources */,
+				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
 				DCB80B371D6E740A00EB8A98 /* ContactInfo+CoreDataProperties.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
 				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,
+				DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */,
 				DCB80B301D6E740A00EB8A98 /* ScheduleItem+CoreDataClass.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
+				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

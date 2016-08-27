@@ -39,7 +39,7 @@ static NSDictionary *endpoints;
         sharedInstance = [[self alloc] init];
         endpoints = @{
                       NSStringFromClass([Beer class]):@"bieres",
-                      //NSStringFromClass([ScheduleItemObject class]):@"schedule_items",
+                      NSStringFromClass([ScheduleItem class]):@"schedule_items",
                     };
     });
     return sharedInstance;

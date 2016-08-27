@@ -30,10 +30,13 @@
     // Configure the view for the selected state
 }
 
-- (void)configureWithObject:(Beer *)beer {
-    self.nameLabel.text = beer.name;
-    self.alcoholLabel.text = [NSString stringWithFormat:@"%.2f%%",beer.alcohol];
-    self.descriptionLabel.text = beer.beerDescription;
+- (void)configureWithObject:(NSObject *)object {
+    if ([object isKindOfClass:[Beer class]]) {
+        Beer *beer = (Beer *)object;
+        self.nameLabel.text = beer.name;
+        self.alcoholLabel.text = [NSString stringWithFormat:@"%.2f%%",beer.alcohol];
+        self.descriptionLabel.text = beer.beerDescription;
+    }
 }
 
 @end

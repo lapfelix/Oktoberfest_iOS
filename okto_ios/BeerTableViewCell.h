@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OKTObjectConfigurableProtocol.h"
 
-@interface BeerTableViewCell : UITableViewCell
+@interface BeerTableViewCell : UITableViewCell<OKTObjectConfigurableProtocol>
 
-- (void)configureWithObject:(Beer *)beer;
 
 @end

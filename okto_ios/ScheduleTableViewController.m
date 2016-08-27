@@ -1,23 +1,20 @@
 //
-//  BeersTableViewController.m
+//  ScheduleTableViewController.m
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-08-26.
+//  Created by Felix Lapalme on 2016-08-27.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
-#import "BeersTableViewController.h"
-#import "Beer+Methods.h"
-#import "BeerTableViewCell.h"
+#import "ScheduleTableViewController.h"
+#import "ScheduleItem+Methods.h"
+#import "ScheduleItemTableViewCell.h"
+#import "OKTObjectConfigurableProtocol.h"
 #import "AppDelegate.h"
 
-static NSString *CellReuseIdentifier = @"beer";
+static NSString *CellReuseIdentifier = @"scheduleitem";
 
-@interface BeersTableViewController ()
-
-@end
-
-@implementation BeersTableViewController
+@implementation ScheduleTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +32,8 @@ static NSString *CellReuseIdentifier = @"beer";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Table view data source
 
 #pragma mark - UITableViewDataSource
 
@@ -63,7 +62,7 @@ static NSString *CellReuseIdentifier = @"beer";
 #pragma mark - Core Data stack
 
 - (void)initializeFetchedResultsController {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[Beer entityName]];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[ScheduleItem entityName]];
     
     NSSortDescriptor *idSort = [NSSortDescriptor sortDescriptorWithKey:@"id" ascending:YES];
     
@@ -80,5 +79,6 @@ static NSString *CellReuseIdentifier = @"beer";
         abort();
     }
 }
+
 
 @end
