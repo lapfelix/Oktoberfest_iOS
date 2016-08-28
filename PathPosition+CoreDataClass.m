@@ -7,7 +7,8 @@
 //
 
 #import "PathPosition+CoreDataClass.h"
-#import "BusPath.h"
+#import "BusPath+CoreDataClass.h"
+
 @implementation PathPosition
 
 @end

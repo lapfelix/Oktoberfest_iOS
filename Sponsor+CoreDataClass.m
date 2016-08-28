@@ -7,7 +7,7 @@
 //
 
 #import "Sponsor+CoreDataClass.h"
-#import "WelcomeInfo.h"
+#import "WelcomeInfo+CoreDataClass.h"
 @implementation Sponsor
 
 @end

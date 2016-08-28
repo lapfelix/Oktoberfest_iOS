@@ -17,6 +17,7 @@
 @dynamic url;
 @dynamic image;
 @dynamic id;
+@dynamic name;
 @dynamic welcomeInfo;
 
 @end

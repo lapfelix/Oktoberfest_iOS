@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *url;
 @property (nullable, nonatomic, retain) NSData *image;
 @property (nonatomic) int16_t id;
+@property (nullable, nonatomic, copy) NSString *name;
 @property (nullable, nonatomic, retain) WelcomeInfo *welcomeInfo;
 
 @end

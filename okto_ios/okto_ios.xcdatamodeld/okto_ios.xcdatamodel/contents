@@ -43,6 +43,7 @@
     <entity name="Sponsor" representedClassName="Sponsor" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="welcomeInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WelcomeInfo" inverseName="sponsors" inverseEntity="WelcomeInfo" syncable="YES"/>
     </entity>
@@ -57,7 +58,7 @@
         <element name="PathPosition" positionX="-702" positionY="-54" width="128" height="103"/>
         <element name="ScheduleItem" positionX="-56" positionY="-54" width="128" height="148"/>
         <element name="WelcomeInfo" positionX="-549" positionY="-180" width="128" height="73"/>
-        <element name="Sponsor" positionX="-378" positionY="-306" width="128" height="103"/>
+        <element name="Sponsor" positionX="-378" positionY="-306" width="128" height="118"/>
         <element name="FAQ" positionX="-351" positionY="-108" width="128" height="60"/>
     </elements>
 </model>
