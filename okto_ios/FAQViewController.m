@@ -7,8 +7,14 @@
 //
 
 #import "FAQViewController.h"
+#import "FAQ+Methods.h"
+#import "AppDelegate.h"
+#import <TSMarkdownParser/TSMarkdownParser.h>
 
 @interface FAQViewController ()
+
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 @end
 
@@ -17,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self initializeFetchedResultsController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +32,54 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateText];
 }
+
+- (void)updateText {
+    NSArray *fetchedObjects = [[self fetchedResultsController] fetchedObjects];
+    
+    if (fetchedObjects.count > 0) {
+        FAQ *faq = fetchedObjects[0];
+        
+        NSAttributedString *attributedString = [[TSMarkdownParser standardParser] attributedStringFromMarkdown:faq.markdown];
+
+        self.textView.attributedText = attributedString;
+    }
+}
+
+/*
+ 
 */
+
+#pragma mark - Fetched Results Controller Delegate methods
+
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self updateText];
+}
+
+
+#pragma mark - Core Data stack
+
+- (void)initializeFetchedResultsController {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[FAQ entityName]];
+    
+    NSSortDescriptor *idSort = [NSSortDescriptor sortDescriptorWithKey:@"markdown" ascending:YES];
+    
+    [request setSortDescriptors:@[idSort]];
+    
+    NSManagedObjectContext *moc = ((AppDelegate *)UIApplication.sharedApplication.delegate).managedObjectContext;
+    
+    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:nil cacheName:nil]];
+    [[self fetchedResultsController] setDelegate:self];
+    
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Failed to initialize FetchedResultsController: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
+}
+
 
 @end

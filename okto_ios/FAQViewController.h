@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreData;
 
-@interface FAQViewController : UIViewController
+@interface FAQViewController : UIViewController<NSFetchedResultsControllerDelegate>
 
 @end

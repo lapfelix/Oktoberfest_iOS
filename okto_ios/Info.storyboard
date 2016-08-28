@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xzx-UT-G10">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2rF-LF-GJ9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Infos-->
         <scene sceneID="kad-xT-y9M">
             <objects>
-                <viewController id="xzx-UT-G10" sceneMemberID="viewController">
+                <viewController title="Infos" id="xzx-UT-G10" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Owd-pt-EgT"/>
                         <viewControllerLayoutGuide type="bottom" id="b4e-i3-abl"/>
@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
                                 <frame key="frameInset" minX="55" minY="357" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Plan autobus"/>
+                                <state key="normal" title="Horaire autobus"/>
                                 <connections>
                                     <segue destination="uV3-qw-Jom" kind="show" id="5AZ-3p-Gcf"/>
                                 </connections>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="66" y="168"/>
         </scene>
-        <!--View Controller-->
+        <!--Horaire Autobus-->
         <scene sceneID="t6x-Zx-pwF">
             <objects>
-                <viewController id="uV3-qw-Jom" sceneMemberID="viewController">
+                <viewController title="Horaire Autobus" id="uV3-qw-Jom" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SJ2-Cl-txN"/>
                         <viewControllerLayoutGuide type="bottom" id="MLi-5d-YUQ"/>
@@ -60,19 +60,37 @@
             </objects>
             <point key="canvasLocation" x="1110" y="-134"/>
         </scene>
-        <!--View Controller-->
+        <!--Infos-->
+        <scene sceneID="yKj-ok-jro">
+            <objects>
+                <navigationController title="Infos" id="2rF-LF-GJ9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5a-pS-XAS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xzx-UT-G10" kind="relationship" relationship="rootViewController" id="oEe-xY-kIf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8q-yY-eZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-748" y="168"/>
+        </scene>
+        <!--FAQ-->
         <scene sceneID="Rle-PR-1Jk">
             <objects>
-                <viewController id="tJF-Kf-LfF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dR7-lF-eAP"/>
-                        <viewControllerLayoutGuide type="bottom" id="jwQ-vk-4y1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hDs-dL-Emy">
+                <viewController title="FAQ" id="tJF-Kf-LfF" customClass="FAQViewController" sceneMemberID="viewController">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="mHP-vh-rvI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <connections>
+                        <outlet property="textView" destination="mHP-vh-rvI" id="35T-un-6Jl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRO-ss-uIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
