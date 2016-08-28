@@ -23,12 +23,9 @@ static NSString *entityName = @"PathPosition";
 - (instancetype) initWithDictionary:(NSDictionary *)dict managedObjectContext:(NSManagedObjectContext *)context {
     self = [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext: context];
     if([dict isKindOfClass:[NSDictionary class]]) {
-        /*
-         self.id = [dict[@"id"] intValue];
-         self.alcohol = [dict[@"alcohol"] floatValue];
-         self.beerDescription = [dict objectOrNilForKey:@"description"];
-         self.name = [dict objectOrNilForKey:@"name"];
-         */
+        self.id = [dict[@"id"] intValue];
+        self.latitude = [dict[@"latitude"] doubleValue];
+        self.longitude = [dict[@"longitude"] doubleValue];
     }
     return self;
 }
