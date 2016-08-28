@@ -22,6 +22,9 @@
         <attribute name="twitterUserName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="websiteURL" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="FAQ" representedClassName="FAQ" syncable="YES">
+        <attribute name="markdown" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="PathPosition" representedClassName="PathPosition" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -37,13 +40,24 @@
         <attribute name="smallImage" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
     </entity>
-    <entity name="WelcomeInfo" syncable="YES"/>
+    <entity name="Sponsor" representedClassName="Sponsor" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="welcomeInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WelcomeInfo" inverseName="sponsors" inverseEntity="WelcomeInfo" syncable="YES"/>
+    </entity>
+    <entity name="WelcomeInfo" representedClassName="WelcomeInfo" syncable="YES">
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="sponsors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sponsor" inverseName="welcomeInfo" inverseEntity="Sponsor" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Beer" positionX="-254" positionY="135" width="128" height="105"/>
         <element name="BusPath" positionX="-254" positionY="-52" width="128" height="150"/>
         <element name="ContactInfo" positionX="-434" positionY="134" width="128" height="120"/>
         <element name="PathPosition" positionX="-702" positionY="-54" width="128" height="103"/>
         <element name="ScheduleItem" positionX="-56" positionY="-54" width="128" height="148"/>
-        <element name="WelcomeInfo" positionX="-495" positionY="81" width="128" height="45"/>
+        <element name="WelcomeInfo" positionX="-549" positionY="-180" width="128" height="73"/>
+        <element name="Sponsor" positionX="-378" positionY="-306" width="128" height="103"/>
+        <element name="FAQ" positionX="-351" positionY="-108" width="128" height="60"/>
     </elements>
 </model>
