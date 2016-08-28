@@ -18,6 +18,8 @@
 #import "BusPath+Methods.h"
 #import "PathPosition+Methods.h"
 #import "ContactInfo+Methods.h"
+#import "WelcomeInfo+Methods.h"
+#import "Sponsor+Methods.h"
 
 static NSString *baseURL = @"https://private-5fca2-oktoberfest.apiary-mock.com/";
 static NSDictionary *endpoints;
@@ -40,6 +42,7 @@ static NSDictionary *endpoints;
         endpoints = @{
                       NSStringFromClass([Beer class]):@"bieres",
                       NSStringFromClass([ScheduleItem class]):@"schedule_items",
+                      NSStringFromClass([WelcomeInfo class]):@"info",
                     };
     });
     return sharedInstance;
@@ -74,11 +77,16 @@ static NSDictionary *endpoints;
             objectArray = @[objectArray];
         }
         
-        NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:NSStringFromClass(class)];
-        NSBatchDeleteRequest *delete = [[NSBatchDeleteRequest alloc] initWithFetchRequest:request];
+        [self deleteEntityWithName:NSStringFromClass(class)];
         
-        NSError *deleteError = nil;
-        [((AppDelegate *)UIApplication.sharedApplication.delegate).persistentStoreCoordinator executeRequest:delete withContext:self.managedObjectContext error:&deleteError];
+        //special cases. There's probably a better way to do this but _gotta go fast_
+        if ([NSStringFromClass(class) isEqual: @"WelcomeInfo"]) {
+            [self deleteEntityWithName:@"Sponsor"];
+        }
+        
+        if ([NSStringFromClass(class) isEqual: @"BusPath"]) {
+            [self deleteEntityWithName:@"PathPosition"];
+        }
         
         for (NSDictionary *obj in (NSArray *)objectArray) {
             if (![obj isKindOfClass:[NSDictionary class]]) {
@@ -93,6 +101,14 @@ static NSDictionary *endpoints;
         
         [self saveContext:self.managedObjectContext];
     }];
+}
+
+- (void)deleteEntityWithName:(NSString *)entityName {
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:entityName];
+    NSBatchDeleteRequest *delete = [[NSBatchDeleteRequest alloc] initWithFetchRequest:request];
+    
+    NSError *deleteError = nil;
+    [((AppDelegate *)UIApplication.sharedApplication.delegate).persistentStoreCoordinator executeRequest:delete withContext:self.managedObjectContext error:&deleteError];
 }
 
 #pragma mark - Core Data stack
