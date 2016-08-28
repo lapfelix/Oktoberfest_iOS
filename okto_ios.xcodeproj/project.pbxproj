@@ -29,6 +29,9 @@
 		DC372D4E1D737DE40023270F /* FAQ+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D3C1D737DE40023270F /* FAQ+CoreDataProperties.m */; };
 		DC372D4F1D737DE40023270F /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D3E1D737DE40023270F /* Beer+CoreDataClass.m */; };
 		DC372D501D737DE40023270F /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D401D737DE40023270F /* Beer+CoreDataProperties.m */; };
+		DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D521D73800B0023270F /* WelcomeViewController.m */; };
+		DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D571D7382C30023270F /* SponsorCollectionViewCell.m */; };
+		DC372D5B1D7387190023270F /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */; };
 		DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B008A1D712869001C5A83 /* RootViewController.m */; };
 		DC7454401D61155F00D87656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74543F1D61155F00D87656 /* main.m */; };
 		DC7454431D61155F00D87656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454421D61155F00D87656 /* AppDelegate.m */; };
@@ -125,6 +128,12 @@
 		DC372D3E1D737DE40023270F /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
 		DC372D3F1D737DE40023270F /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
 		DC372D401D737DE40023270F /* Beer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC372D511D73800B0023270F /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		DC372D521D73800B0023270F /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		DC372D561D7382C30023270F /* SponsorCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SponsorCollectionViewCell.h; sourceTree = "<group>"; };
+		DC372D571D7382C30023270F /* SponsorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorCollectionViewCell.m; sourceTree = "<group>"; };
+		DC372D591D7387190023270F /* UICollectionView+NSFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+NSFetchedResultsController.h"; path = "../UICollectionView+NSFetchedResultsController.h"; sourceTree = "<group>"; };
+		DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+NSFetchedResultsController.m"; path = "../UICollectionView+NSFetchedResultsController.m"; sourceTree = "<group>"; };
 		DC5B00891D712869001C5A83 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		DC5B008A1D712869001C5A83 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DC74543B1D61155F00D87656 /* okto_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okto_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +280,26 @@
 			name = "Automatically generated";
 			sourceTree = "<group>";
 		};
+		DC372D541D7382A40023270F /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */,
+				DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */,
+				DCA9F7EA1D7209CF00C19FA8 /* ScheduleItemTableViewCell.h */,
+				DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */,
+			);
+			name = "Table View";
+			sourceTree = "<group>";
+		};
+		DC372D551D7382AC0023270F /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				DC372D561D7382C30023270F /* SponsorCollectionViewCell.h */,
+				DC372D571D7382C30023270F /* SponsorCollectionViewCell.m */,
+			);
+			name = "Collection View";
+			sourceTree = "<group>";
+		};
 		DC5B00871D711800001C5A83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,10 +311,8 @@
 		DC5B00881D711806001C5A83 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */,
-				DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */,
-				DCA9F7EA1D7209CF00C19FA8 /* ScheduleItemTableViewCell.h */,
-				DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */,
+				DC372D551D7382AC0023270F /* Collection View */,
+				DC372D541D7382A40023270F /* Table View */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -332,6 +359,8 @@
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
 				DC7454521D61155F00D87656 /* Info.plist */,
 				DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */,
+				DC372D591D7387190023270F /* UICollectionView+NSFetchedResultsController.h */,
+				DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */,
 				DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */,
 				DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */,
 				DC74543E1D61155F00D87656 /* Supporting Files */,
@@ -437,6 +466,8 @@
 			children = (
 				DC5B00891D712869001C5A83 /* RootViewController.h */,
 				DC5B008A1D712869001C5A83 /* RootViewController.m */,
+				DC372D511D73800B0023270F /* WelcomeViewController.h */,
+				DC372D521D73800B0023270F /* WelcomeViewController.m */,
 				DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */,
 				DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */,
 				DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */,
@@ -733,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC372D471D737DE40023270F /* BusPath+CoreDataClass.m in Sources */,
+				DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */,
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
 				DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */,
 				DC372D411D737DE40023270F /* PathPosition+CoreDataClass.m in Sources */,
@@ -743,6 +775,7 @@
 				DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */,
 				DC372D461D737DE40023270F /* Sponsor+CoreDataProperties.m in Sources */,
 				DC372D451D737DE40023270F /* Sponsor+CoreDataClass.m in Sources */,
+				DC372D5B1D7387190023270F /* UICollectionView+NSFetchedResultsController.m in Sources */,
 				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
 				DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */,
 				DC372D1D1D737A3F0023270F /* Sponsor+Methods.m in Sources */,
@@ -758,6 +791,7 @@
 				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */,
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
+				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
 				DC372D4A1D737DE40023270F /* ScheduleItem+CoreDataProperties.m in Sources */,
