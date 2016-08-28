@@ -63,6 +63,8 @@
 		DCDABDCF1D70D9EF00BCC342 /* NSDictionary+NilSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */; };
 		DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */; };
 		DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */; };
+		DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */; };
+		DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +196,10 @@
 		DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeersTableViewController.m; sourceTree = "<group>"; };
 		DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerTableViewCell.h; sourceTree = "<group>"; };
 		DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerTableViewCell.m; sourceTree = "<group>"; };
+		DCFFE76D1D73A5B8002302A1 /* BusPathTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewCell.h; sourceTree = "<group>"; };
+		DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewCell.m; sourceTree = "<group>"; };
+		DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewController.h; sourceTree = "<group>"; };
+		DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +295,8 @@
 		DC372D541D7382A40023270F /* Table View */ = {
 			isa = PBXGroup;
 			children = (
+				DCFFE76D1D73A5B8002302A1 /* BusPathTableViewCell.h */,
+				DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */,
 				DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */,
 				DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */,
 				DCA9F7EA1D7209CF00C19FA8 /* ScheduleItemTableViewCell.h */,
@@ -478,6 +486,8 @@
 				DC372D521D73800B0023270F /* WelcomeViewController.m */,
 				DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */,
 				DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */,
+				DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */,
+				DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */,
 				DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */,
 				DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */,
 				DC372D601D7399580023270F /* FAQViewController.h */,
@@ -796,6 +806,7 @@
 				DCDABDC61D70CE1000BCC342 /* PathPosition+Methods.m in Sources */,
 				DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */,
 				DC372D4C1D737DE40023270F /* WelcomeInfo+CoreDataProperties.m in Sources */,
+				DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */,
 				DC372D431D737DE40023270F /* ContactInfo+CoreDataClass.m in Sources */,
 				DC372D4B1D737DE40023270F /* WelcomeInfo+CoreDataClass.m in Sources */,
 				DC372D491D737DE40023270F /* ScheduleItem+CoreDataClass.m in Sources */,
@@ -812,6 +823,7 @@
 				DC372D501D737DE40023270F /* Beer+CoreDataProperties.m in Sources */,
 				DC372D4E1D737DE40023270F /* FAQ+CoreDataProperties.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
+				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
 				DC372D4D1D737DE40023270F /* FAQ+CoreDataClass.m in Sources */,

@@ -45,6 +45,7 @@ static NSDictionary *endpoints;
                       NSStringFromClass([ScheduleItem class]):@"schedule_items",
                       NSStringFromClass([WelcomeInfo class]):@"info",
                       NSStringFromClass([FAQ class]):@"faq",
+                      NSStringFromClass([BusPath class]):@"bus_schedule",
                     };
     });
     return sharedInstance;

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
-                                <frame key="frameInset" minX="84" minY="418" width="30" height="30"/>
+                                <frame key="frameInset" minX="172" minY="617" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="FAQ"/>
                                 <connections>
@@ -26,11 +26,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
-                                <frame key="frameInset" minX="55" minY="357" width="89" height="30"/>
+                                <frame key="frameInset" minX="143" minY="562" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Horaire autobus"/>
                                 <connections>
-                                    <segue destination="uV3-qw-Jom" kind="show" id="5AZ-3p-Gcf"/>
+                                    <segue destination="cHj-6U-Fon" kind="show" id="DHc-0K-x6l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,22 +43,68 @@
             <point key="canvasLocation" x="66" y="168"/>
         </scene>
         <!--Horaire Autobus-->
-        <scene sceneID="t6x-Zx-pwF">
+        <scene sceneID="NOi-lb-2UM">
             <objects>
-                <viewController title="Horaire Autobus" id="uV3-qw-Jom" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SJ2-Cl-txN"/>
-                        <viewControllerLayoutGuide type="bottom" id="MLi-5d-YUQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WcW-US-FTJ">
+                <tableViewController title="Horaire Autobus" id="cHj-6U-Fon" customClass="BusPathTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="28" sectionFooterHeight="28" id="WLL-oY-6sZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C2A-Dy-oXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buspath" rowHeight="143" id="FJl-Fy-rcm" customClass="BusPathTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="375" height="143"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FJl-Fy-rcm" id="mSK-U0-OqW">
+                                    <frame key="frameInset" width="375" height="142"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i6-Z8-PLC">
+                                            <frame key="frameInset" minX="8" minY="8" width="147" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Additionnal String" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUD-ap-oGM">
+                                            <frame key="frameInset" minX="8" minY="37" width="147" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VT-7K-uWa">
+                                            <frame key="frameInset" minX="8" minY="66" width="147" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW2-hw-gkA">
+                                            <frame key="frameInset" minX="8" minY="95" width="147" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="additionalLabel" destination="MUD-ap-oGM" id="DG3-Ee-bnA"/>
+                                    <outlet property="intervalLabel" destination="hW2-hw-gkA" id="zRp-di-ihY"/>
+                                    <outlet property="startTimeLabel" destination="8VT-7K-uWa" id="Bkc-ay-zBC"/>
+                                    <outlet property="titleLabel" destination="9i6-Z8-PLC" id="jUR-Kx-oge"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cHj-6U-Fon" id="nhh-4v-P7o"/>
+                            <outlet property="delegate" destination="cHj-6U-Fon" id="lwV-PU-2wE"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uL1-e4-fuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1110" y="-134"/>
+            <point key="canvasLocation" x="1109.5999999999999" y="-106.59670164917542"/>
         </scene>
         <!--Infos-->
         <scene sceneID="yKj-ok-jro">
