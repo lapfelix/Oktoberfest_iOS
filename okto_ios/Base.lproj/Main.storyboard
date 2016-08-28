@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Infos-->
         <scene sceneID="GEZ-nX-laI">
             <objects>
-                <navigationController id="lcZ-EC-AWS" sceneMemberID="viewController">
+                <navigationController title="Infos" id="lcZ-EC-AWS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dsl-rx-NcA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Lh-Mo-uJT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -20,22 +20,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCk-q3-aVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="2617"/>
+            <point key="canvasLocation" x="566" y="2616"/>
         </scene>
         <!--Info-->
         <scene sceneID="omj-os-Dct">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oTI-U1-P2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Info" id="yOh-43-VIJ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="CCz-7T-f7Q"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTI-U1-P2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1615" y="2616"/>
         </scene>
-        <!--Item-->
+        <!--Plan-->
         <scene sceneID="qhw-PU-M1Y">
             <objects>
-                <navigationController id="R2G-GS-VP2" sceneMemberID="viewController">
+                <navigationController title="Plan" id="R2G-GS-VP2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="bak-JP-G2X"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yEq-Ug-esB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -47,22 +47,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hY-lJ-Dqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="1952"/>
+            <point key="canvasLocation" x="566" y="1910"/>
         </scene>
         <!--Plan-->
         <scene sceneID="P5F-7y-7SB">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tBi-fk-1ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Plan" id="Gx9-On-qBn" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="RYQ-3E-46m"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBi-fk-1ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1631" y="1950"/>
         </scene>
-        <!--Item-->
+        <!--Programmation-->
         <scene sceneID="z8P-eg-acm">
             <objects>
-                <navigationController id="sZi-wv-yGV" sceneMemberID="viewController">
+                <navigationController title="Programmation" id="sZi-wv-yGV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9nE-Ua-gQd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mfh-gx-vTz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -79,17 +79,17 @@
         <!--Programmation-->
         <scene sceneID="dah-fw-uhA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bY0-JB-hIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Programmation" id="jMC-Ge-afp" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="De3-xE-adC"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bY0-JB-hIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1630" y="1267"/>
         </scene>
-        <!--Item-->
+        <!--Bières-->
         <scene sceneID="au7-7R-5qO">
             <objects>
-                <navigationController id="OOW-GR-Yvy" sceneMemberID="viewController">
+                <navigationController title="Bières" id="OOW-GR-Yvy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="bSO-uy-OgJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hqS-1J-s10">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -106,17 +106,17 @@
         <!--Bieres-->
         <scene sceneID="b0C-RX-vah">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jNX-LO-0Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Bieres" id="TaS-sr-yGz" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="E0y-2i-mlP"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNX-LO-0Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1556" y="596"/>
         </scene>
-        <!--Item-->
+        <!--Bienvenue-->
         <scene sceneID="Mp7-Xm-Yua">
             <objects>
-                <navigationController id="OhR-vS-WTJ" sceneMemberID="viewController">
+                <navigationController title="Bienvenue" id="OhR-vS-WTJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="cAX-cH-Odc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZcQ-4U-pZX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -149,15 +149,15 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UH7-6U-T1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1671" y="1952"/>
+            <point key="canvasLocation" x="-2122" y="2143"/>
         </scene>
         <!--Bienvenue-->
         <scene sceneID="LiW-ZL-LM5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wc7-bJ-Rbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Bienvenue" id="s1U-wF-btz" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ilx-rr-Gs0"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wc7-bJ-Rbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1575" y="-64"/>
         </scene>

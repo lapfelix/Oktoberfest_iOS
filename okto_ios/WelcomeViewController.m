@@ -51,7 +51,7 @@
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
-    [self.sponsorsCollectionView commitChanges];
+   [self.sponsorsCollectionView commitChanges];
 }
 
 #pragma mark - UICollectionViewDatasource and delegate methods
