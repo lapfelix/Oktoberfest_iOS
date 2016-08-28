@@ -1,12 +1,15 @@
 PODS:
   - Masonry (1.0.1)
+  - TSMarkdownParser (2.1.1)
 
 DEPENDENCIES:
   - Masonry
+  - TSMarkdownParser (~> 2.1)
 
 SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  TSMarkdownParser: 64cb52fe5a518b4875a6167a650cb0ed4b18cea5
 
-PODFILE CHECKSUM: 2e8fc2fde6cd7eac09328485f5fae41ac35e10c9
+PODFILE CHECKSUM: 1dcdde58d5e6aae15f1d85aef5d6d46b9b578120
 
 COCOAPODS: 1.0.1

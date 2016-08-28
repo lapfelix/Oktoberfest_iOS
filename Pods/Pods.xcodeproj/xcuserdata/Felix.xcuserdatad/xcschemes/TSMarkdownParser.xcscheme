@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '691B020362287F3DBB25AE5B245CBF9C'
-               BlueprintName = 'Pods-okto_ios'
+               BlueprintIdentifier = '12C6CAF837EAF7569B4A94AE378F35B7'
+               BlueprintName = 'TSMarkdownParser'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-okto_ios.a'>
+               BuildableName = 'libTSMarkdownParser.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

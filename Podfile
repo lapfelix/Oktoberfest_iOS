@@ -7,6 +7,7 @@ target 'okto_ios' do
 
   # Pods for okto_ios
   pod 'Masonry'
+  pod 'TSMarkdownParser', '~> 2.1'
 
   target 'okto_iosTests' do
     inherit! :search_paths
