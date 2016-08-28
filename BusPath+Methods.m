@@ -40,7 +40,7 @@ static NSString *entityName = @"BusPath";
         self.startTime = [self.class.dateFormatter dateFromString:[dict objectOrNilForKey:@"start_time"]];
         self.interval = [dict[@"interval"] floatValue];
         NSArray *coordinates = [dict objectOrNilForKey:@"path"];
-        NSMutableArray<PathPosition *> *pathPositions = [NSMutableArray array];
+        NSMutableSet<PathPosition *> *pathPositions = [NSMutableSet set];
         for (NSDictionary *coordinateDictionary in coordinates) {
             PathPosition *position = [PathPosition modelObjectWithDictionary:coordinateDictionary managedObjectContext:context];
             [pathPositions addObject:position];

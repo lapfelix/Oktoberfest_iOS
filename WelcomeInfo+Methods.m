@@ -37,7 +37,7 @@ static NSString *entityName = @"WelcomeInfo";
         self.startDate = [[[self class] dateFormatter] dateFromString:[dict objectOrNilForKey:@"start_time"]];
         
         NSArray *sponsorsDics = [dict objectOrNilForKey:@"sponsors"];
-        NSMutableArray<Sponsor *> *modelledSponsors = [NSMutableArray array];
+        NSMutableSet<Sponsor *> *modelledSponsors = [NSMutableSet set];
         for (NSDictionary *sponsorDic in sponsorsDics) {
             Sponsor *sponsor = [Sponsor modelObjectWithDictionary:sponsorDic managedObjectContext:context];
             [modelledSponsors addObject:sponsor];
