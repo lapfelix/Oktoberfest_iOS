@@ -117,7 +117,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XJV-2G-UCQ"/>
+                    <navigationItem key="navigationItem" id="XJV-2G-UCQ">
+                        <barButtonItem key="leftBarButtonItem" title="Quitter" style="plain" id="Wcc-F2-08g">
+                            <connections>
+                                <segue destination="etb-WO-XSL" kind="custom" customClass="DismissSegue" id="Sxe-2O-b5b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sn-aJ-olT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

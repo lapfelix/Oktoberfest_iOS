@@ -32,6 +32,7 @@
 		DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D521D73800B0023270F /* WelcomeViewController.m */; };
 		DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D571D7382C30023270F /* SponsorCollectionViewCell.m */; };
 		DC372D5B1D7387190023270F /* UICollectionView+NSFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */; };
+		DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D5D1D73955E0023270F /* DismissSegue.m */; };
 		DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B008A1D712869001C5A83 /* RootViewController.m */; };
 		DC7454401D61155F00D87656 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74543F1D61155F00D87656 /* main.m */; };
 		DC7454431D61155F00D87656 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454421D61155F00D87656 /* AppDelegate.m */; };
@@ -134,6 +135,8 @@
 		DC372D571D7382C30023270F /* SponsorCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorCollectionViewCell.m; sourceTree = "<group>"; };
 		DC372D591D7387190023270F /* UICollectionView+NSFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+NSFetchedResultsController.h"; path = "../UICollectionView+NSFetchedResultsController.h"; sourceTree = "<group>"; };
 		DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+NSFetchedResultsController.m"; path = "../UICollectionView+NSFetchedResultsController.m"; sourceTree = "<group>"; };
+		DC372D5C1D73955E0023270F /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		DC372D5D1D73955E0023270F /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 		DC5B00891D712869001C5A83 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		DC5B008A1D712869001C5A83 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DC74543B1D61155F00D87656 /* okto_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okto_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +362,8 @@
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
 				DC7454521D61155F00D87656 /* Info.plist */,
 				DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */,
+				DC372D5C1D73955E0023270F /* DismissSegue.h */,
+				DC372D5D1D73955E0023270F /* DismissSegue.m */,
 				DC372D591D7387190023270F /* UICollectionView+NSFetchedResultsController.h */,
 				DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */,
 				DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */,
@@ -791,6 +796,7 @@
 				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */,
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
+				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
