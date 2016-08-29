@@ -63,6 +63,7 @@
 		DCDABDCF1D70D9EF00BCC342 /* NSDictionary+NilSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */; };
 		DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */; };
 		DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */; };
+		DCFBAAA61D74E01E006AEEE8 /* Tommaso.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCFBAAA51D74E01E006AEEE8 /* Tommaso.ttf */; };
 		DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */; };
 		DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -196,6 +197,7 @@
 		DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeersTableViewController.m; sourceTree = "<group>"; };
 		DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerTableViewCell.h; sourceTree = "<group>"; };
 		DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerTableViewCell.m; sourceTree = "<group>"; };
+		DCFBAAA51D74E01E006AEEE8 /* Tommaso.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tommaso.ttf; sourceTree = "<group>"; };
 		DCFFE76D1D73A5B8002302A1 /* BusPathTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewCell.h; sourceTree = "<group>"; };
 		DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewCell.m; sourceTree = "<group>"; };
 		DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewController.h; sourceTree = "<group>"; };
