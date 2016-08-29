@@ -11,6 +11,7 @@
 #import "BusPath+Methods.h"
 #import "OKTObjectConfigurableProtocol.h"
 #import "AppDelegate.h"
+#import "BusPathViewController.h"
 
 static NSString *CellReuseIdentifier = @"buspath";
 
@@ -54,6 +55,14 @@ static NSString *CellReuseIdentifier = @"buspath";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     id< NSFetchedResultsSectionInfo> sectionInfo = [[self fetchedResultsController] sections][section];
     return [sectionInfo numberOfObjects];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    //initialize a BusPathViewController
+    [self showViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"buspath"] sender:nil];
+
 }
 
 #pragma mark - Core Data stack
