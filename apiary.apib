@@ -12,14 +12,13 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 
 + Response 200 (application/json)
     + Attributes
-        - start_time: "11-11-2016 21:00"
+        - start_time: `11-11-2016 21:00` (string)
         - sponsors (array)
           - (Sponsor)
-            - id: 1
+              - id: 1
           - (Sponsor)
-            - id: 
-        
-        
+              - id: 2
+
 ## Programmation [/schedule_items]
 
 ### Get All Schedule Items [GET]
@@ -85,7 +84,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 + Response 200 (application/json)
 
         {
-          "markdown": "###Quoi?\nOkay"
+          "markdown": "### Quoi?\nOkay\n\n### Où?\nLà!"
         }
         
 ## Plan [/plan]
@@ -133,6 +132,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 
 - longitude: `43.555` (number, required)
 - latitude: `-33.555` (number, required)
+- annotation_image_url: `http://overlay.com/image.png` (string)
 
 ## Sponsor (object)
 
