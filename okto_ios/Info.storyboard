@@ -17,17 +17,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
-                                <frame key="frameInset" minX="172" minY="617" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6vH-ql-NRB"/>
+                                    <constraint firstAttribute="width" constant="30" id="ZHm-b1-mS6"/>
+                                </constraints>
                                 <state key="normal" title="FAQ"/>
                                 <connections>
                                     <segue destination="tJF-Kf-LfF" kind="show" id="8Eg-lS-odk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
-                                <frame key="frameInset" minX="143" minY="562" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="kTp-1l-5yd"/>
+                                    <constraint firstAttribute="height" constant="30" id="rv5-Yt-1Fy"/>
+                                </constraints>
                                 <state key="normal" title="Horaire autobus"/>
                                 <connections>
                                     <segue destination="cHj-6U-Fon" kind="show" id="DHc-0K-x6l"/>
@@ -35,6 +39,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DPi-y2-oDo" firstAttribute="centerX" secondItem="Fql-fa-ADT" secondAttribute="centerX" id="6zx-V4-2hH"/>
+                            <constraint firstItem="ZQw-O6-U3W" firstAttribute="centerX" secondItem="Fql-fa-ADT" secondAttribute="centerX" id="C8c-g2-XOg"/>
+                            <constraint firstItem="ZQw-O6-U3W" firstAttribute="top" secondItem="DPi-y2-oDo" secondAttribute="bottom" constant="25" id="gCd-bQ-GNp"/>
+                            <constraint firstItem="b4e-i3-abl" firstAttribute="top" secondItem="ZQw-O6-U3W" secondAttribute="bottom" constant="20" id="ws9-ws-BoR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ceK-Iu-7F9"/>
                 </viewController>
