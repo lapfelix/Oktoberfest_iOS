@@ -9,7 +9,7 @@
         <scene sceneID="54T-YD-M1M">
             <objects>
                 <navigationController title="Horaire" id="3Np-qN-VXC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VDd-Oy-0rl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VDd-Oy-0rl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -26,15 +26,15 @@
             <objects>
                 <tableViewController title="Horaire" id="uFd-Nu-PMy" customClass="ScheduleTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" id="YtY-KC-swr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleitem" rowHeight="104" id="nel-H8-qN2" customClass="ScheduleItemTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="375" height="104"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nel-H8-qN2" id="kEY-pg-bfD">
-                                    <frame key="frameInset" width="375" height="103"/>
+                                    <frame key="frameInset" width="320" height="103"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42r-fu-m0X">
@@ -65,12 +65,23 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-fF-3qF">
+                                            <frame key="frameInset" minX="218" minY="-1" width="102" height="104"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3m-5e-gOb">
+                                            <frame key="frameInset" minX="40" minY="8" width="73" height="59"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.74031355570000001" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="backgroundImage" destination="3gZ-fF-3qF" id="PU6-i8-za7"/>
                                     <outlet property="descriptionLabel" destination="c3c-BA-ORb" id="jtl-WH-iJe"/>
                                     <outlet property="endLabel" destination="Gh6-ug-x0f" id="sCL-zn-jZF"/>
                                     <outlet property="nameLabel" destination="42r-fu-m0X" id="5wn-ad-2aa"/>
+                                    <outlet property="smallImage" destination="W3m-5e-gOb" id="uIO-Ub-Y68"/>
                                     <outlet property="startLabel" destination="DE7-20-hJl" id="QXB-ES-XZy"/>
                                 </connections>
                             </tableViewCell>
@@ -84,7 +95,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="268-SM-uZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109.59999999999999" y="130.88455772113943"/>
+            <point key="canvasLocation" x="108.75" y="129.92957746478874"/>
         </scene>
     </scenes>
 </document>
