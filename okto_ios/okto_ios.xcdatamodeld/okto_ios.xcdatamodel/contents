@@ -4,6 +4,7 @@
         <attribute name="alcohol" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="beerDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="BusPath" representedClassName="BusPath" syncable="YES">
@@ -52,7 +53,7 @@
         <relationship name="sponsors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sponsor" inverseName="welcomeInfo" inverseEntity="Sponsor" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Beer" positionX="-4536" positionY="-4383" width="128" height="105"/>
+        <element name="Beer" positionX="-4536" positionY="-4383" width="128" height="120"/>
         <element name="BusPath" positionX="-4392" positionY="-4455" width="128" height="150"/>
         <element name="ContactInfo" positionX="-4392" positionY="-4293" width="128" height="120"/>
         <element name="FAQ" positionX="-4536" positionY="-4254" width="128" height="60"/>

@@ -18,5 +18,6 @@
 @dynamic beerDescription;
 @dynamic id;
 @dynamic name;
+@dynamic imageURL;
 
 @end

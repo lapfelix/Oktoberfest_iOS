@@ -35,22 +35,22 @@
 		DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC74548D1D611AFB00D87656 /* OKTFlowController.m */; };
 		DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454901D61483200D87656 /* OKTAPIWrapper.m */; };
 		DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454931D61487E00D87656 /* OKTNetworkMethods.m */; };
-		DC98ECC51D76071D0016DDF4 /* ContactInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECA61D76071D0016DDF4 /* ContactInfo+CoreDataClass.m */; };
-		DC98ECC61D76071D0016DDF4 /* ContactInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECA81D76071D0016DDF4 /* ContactInfo+CoreDataProperties.m */; };
-		DC98ECC71D76071D0016DDF4 /* ScheduleItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECAA1D76071D0016DDF4 /* ScheduleItem+CoreDataClass.m */; };
-		DC98ECC81D76071D0016DDF4 /* ScheduleItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECAC1D76071D0016DDF4 /* ScheduleItem+CoreDataProperties.m */; };
-		DC98ECC91D76071D0016DDF4 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECAE1D76071D0016DDF4 /* Beer+CoreDataClass.m */; };
-		DC98ECCA1D76071D0016DDF4 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECB01D76071D0016DDF4 /* Beer+CoreDataProperties.m */; };
-		DC98ECCB1D76071D0016DDF4 /* BusPath+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECB21D76071D0016DDF4 /* BusPath+CoreDataClass.m */; };
-		DC98ECCC1D76071D0016DDF4 /* BusPath+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECB41D76071D0016DDF4 /* BusPath+CoreDataProperties.m */; };
-		DC98ECCD1D76071D0016DDF4 /* FAQ+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECB61D76071D0016DDF4 /* FAQ+CoreDataClass.m */; };
-		DC98ECCE1D76071D0016DDF4 /* FAQ+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECB81D76071D0016DDF4 /* FAQ+CoreDataProperties.m */; };
-		DC98ECCF1D76071D0016DDF4 /* PathPosition+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECBA1D76071D0016DDF4 /* PathPosition+CoreDataClass.m */; };
-		DC98ECD01D76071D0016DDF4 /* PathPosition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECBC1D76071D0016DDF4 /* PathPosition+CoreDataProperties.m */; };
-		DC98ECD11D76071D0016DDF4 /* WelcomeInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECBE1D76071D0016DDF4 /* WelcomeInfo+CoreDataClass.m */; };
-		DC98ECD21D76071D0016DDF4 /* WelcomeInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECC01D76071D0016DDF4 /* WelcomeInfo+CoreDataProperties.m */; };
-		DC98ECD31D76071D0016DDF4 /* Sponsor+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECC21D76071D0016DDF4 /* Sponsor+CoreDataClass.m */; };
-		DC98ECD41D76071D0016DDF4 /* Sponsor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECC41D76071D0016DDF4 /* Sponsor+CoreDataProperties.m */; };
+		DC98ECF51D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECD61D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.m */; };
+		DC98ECF61D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECD81D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.m */; };
+		DC98ECF71D7621D60016DDF4 /* FAQ+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECDA1D7621D60016DDF4 /* FAQ+CoreDataClass.m */; };
+		DC98ECF81D7621D60016DDF4 /* FAQ+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECDC1D7621D60016DDF4 /* FAQ+CoreDataProperties.m */; };
+		DC98ECF91D7621D60016DDF4 /* ContactInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECDE1D7621D60016DDF4 /* ContactInfo+CoreDataClass.m */; };
+		DC98ECFA1D7621D60016DDF4 /* ContactInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECE01D7621D60016DDF4 /* ContactInfo+CoreDataProperties.m */; };
+		DC98ECFB1D7621D60016DDF4 /* PathPosition+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECE21D7621D60016DDF4 /* PathPosition+CoreDataClass.m */; };
+		DC98ECFC1D7621D60016DDF4 /* PathPosition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECE41D7621D60016DDF4 /* PathPosition+CoreDataProperties.m */; };
+		DC98ECFD1D7621D60016DDF4 /* ScheduleItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECE61D7621D60016DDF4 /* ScheduleItem+CoreDataClass.m */; };
+		DC98ECFE1D7621D60016DDF4 /* ScheduleItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECE81D7621D60016DDF4 /* ScheduleItem+CoreDataProperties.m */; };
+		DC98ECFF1D7621D60016DDF4 /* Sponsor+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECEA1D7621D60016DDF4 /* Sponsor+CoreDataClass.m */; };
+		DC98ED001D7621D60016DDF4 /* Sponsor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECEC1D7621D60016DDF4 /* Sponsor+CoreDataProperties.m */; };
+		DC98ED011D7621D60016DDF4 /* BusPath+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECEE1D7621D60016DDF4 /* BusPath+CoreDataClass.m */; };
+		DC98ED021D7621D60016DDF4 /* BusPath+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECF01D7621D60016DDF4 /* BusPath+CoreDataProperties.m */; };
+		DC98ED031D7621D60016DDF4 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECF21D7621D60016DDF4 /* Beer+CoreDataClass.m */; };
+		DC98ED041D7621D60016DDF4 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECF41D7621D60016DDF4 /* Beer+CoreDataProperties.m */; };
 		DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */; };
 		DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */; };
 		DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E51D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m */; };
@@ -141,38 +141,38 @@
 		DC7454901D61483200D87656 /* OKTAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTAPIWrapper.m; sourceTree = "<group>"; };
 		DC7454921D61487E00D87656 /* OKTNetworkMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTNetworkMethods.h; sourceTree = "<group>"; };
 		DC7454931D61487E00D87656 /* OKTNetworkMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTNetworkMethods.m; sourceTree = "<group>"; };
-		DC98ECA51D76071D0016DDF4 /* ContactInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECA61D76071D0016DDF4 /* ContactInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECA71D76071D0016DDF4 /* ContactInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECA81D76071D0016DDF4 /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC98ECA91D76071D0016DDF4 /* ScheduleItem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScheduleItem+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECAA1D76071D0016DDF4 /* ScheduleItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScheduleItem+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECAB1D76071D0016DDF4 /* ScheduleItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScheduleItem+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECAC1D76071D0016DDF4 /* ScheduleItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScheduleItem+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC98ECAD1D76071D0016DDF4 /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECAE1D76071D0016DDF4 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECAF1D76071D0016DDF4 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECB01D76071D0016DDF4 /* Beer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC98ECB11D76071D0016DDF4 /* BusPath+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BusPath+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECB21D76071D0016DDF4 /* BusPath+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusPath+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECB31D76071D0016DDF4 /* BusPath+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BusPath+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECB41D76071D0016DDF4 /* BusPath+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusPath+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC98ECB51D76071D0016DDF4 /* FAQ+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAQ+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECB61D76071D0016DDF4 /* FAQ+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FAQ+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECB71D76071D0016DDF4 /* FAQ+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAQ+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECB81D76071D0016DDF4 /* FAQ+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FAQ+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC98ECB91D76071D0016DDF4 /* PathPosition+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PathPosition+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECBA1D76071D0016DDF4 /* PathPosition+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PathPosition+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECBB1D76071D0016DDF4 /* PathPosition+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PathPosition+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECBC1D76071D0016DDF4 /* PathPosition+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PathPosition+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC98ECBD1D76071D0016DDF4 /* WelcomeInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WelcomeInfo+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECBE1D76071D0016DDF4 /* WelcomeInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WelcomeInfo+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECBF1D76071D0016DDF4 /* WelcomeInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WelcomeInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECC01D76071D0016DDF4 /* WelcomeInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WelcomeInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC98ECC11D76071D0016DDF4 /* Sponsor+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sponsor+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC98ECC21D76071D0016DDF4 /* Sponsor+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sponsor+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC98ECC31D76071D0016DDF4 /* Sponsor+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sponsor+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC98ECC41D76071D0016DDF4 /* Sponsor+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sponsor+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECD51D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WelcomeInfo+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECD61D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WelcomeInfo+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECD71D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WelcomeInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECD81D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WelcomeInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECD91D7621D60016DDF4 /* FAQ+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAQ+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECDA1D7621D60016DDF4 /* FAQ+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FAQ+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECDB1D7621D60016DDF4 /* FAQ+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FAQ+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECDC1D7621D60016DDF4 /* FAQ+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FAQ+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECDD1D7621D60016DDF4 /* ContactInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECDE1D7621D60016DDF4 /* ContactInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECDF1D7621D60016DDF4 /* ContactInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECE01D7621D60016DDF4 /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECE11D7621D60016DDF4 /* PathPosition+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PathPosition+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECE21D7621D60016DDF4 /* PathPosition+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PathPosition+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECE31D7621D60016DDF4 /* PathPosition+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PathPosition+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECE41D7621D60016DDF4 /* PathPosition+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PathPosition+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECE51D7621D60016DDF4 /* ScheduleItem+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScheduleItem+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECE61D7621D60016DDF4 /* ScheduleItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScheduleItem+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECE71D7621D60016DDF4 /* ScheduleItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScheduleItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECE81D7621D60016DDF4 /* ScheduleItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScheduleItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECE91D7621D60016DDF4 /* Sponsor+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sponsor+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECEA1D7621D60016DDF4 /* Sponsor+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sponsor+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECEB1D7621D60016DDF4 /* Sponsor+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sponsor+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECEC1D7621D60016DDF4 /* Sponsor+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Sponsor+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECED1D7621D60016DDF4 /* BusPath+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BusPath+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECEE1D7621D60016DDF4 /* BusPath+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusPath+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECEF1D7621D60016DDF4 /* BusPath+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BusPath+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECF01D7621D60016DDF4 /* BusPath+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusPath+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ECF11D7621D60016DDF4 /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC98ECF21D7621D60016DDF4 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC98ECF31D7621D60016DDF4 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC98ECF41D7621D60016DDF4 /* Beer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataProperties.m"; sourceTree = "<group>"; };
 		DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
 		DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewController.m; sourceTree = "<group>"; };
 		DCA9F7E11D7205C400C19FA8 /* OKTBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTBaseTableViewController.h; sourceTree = "<group>"; };
@@ -265,38 +265,38 @@
 		DC372CE71D7378430023270F /* Automatically generated */ = {
 			isa = PBXGroup;
 			children = (
-				DC98ECA51D76071D0016DDF4 /* ContactInfo+CoreDataClass.h */,
-				DC98ECA61D76071D0016DDF4 /* ContactInfo+CoreDataClass.m */,
-				DC98ECA71D76071D0016DDF4 /* ContactInfo+CoreDataProperties.h */,
-				DC98ECA81D76071D0016DDF4 /* ContactInfo+CoreDataProperties.m */,
-				DC98ECA91D76071D0016DDF4 /* ScheduleItem+CoreDataClass.h */,
-				DC98ECAA1D76071D0016DDF4 /* ScheduleItem+CoreDataClass.m */,
-				DC98ECAB1D76071D0016DDF4 /* ScheduleItem+CoreDataProperties.h */,
-				DC98ECAC1D76071D0016DDF4 /* ScheduleItem+CoreDataProperties.m */,
-				DC98ECAD1D76071D0016DDF4 /* Beer+CoreDataClass.h */,
-				DC98ECAE1D76071D0016DDF4 /* Beer+CoreDataClass.m */,
-				DC98ECAF1D76071D0016DDF4 /* Beer+CoreDataProperties.h */,
-				DC98ECB01D76071D0016DDF4 /* Beer+CoreDataProperties.m */,
-				DC98ECB11D76071D0016DDF4 /* BusPath+CoreDataClass.h */,
-				DC98ECB21D76071D0016DDF4 /* BusPath+CoreDataClass.m */,
-				DC98ECB31D76071D0016DDF4 /* BusPath+CoreDataProperties.h */,
-				DC98ECB41D76071D0016DDF4 /* BusPath+CoreDataProperties.m */,
-				DC98ECB51D76071D0016DDF4 /* FAQ+CoreDataClass.h */,
-				DC98ECB61D76071D0016DDF4 /* FAQ+CoreDataClass.m */,
-				DC98ECB71D76071D0016DDF4 /* FAQ+CoreDataProperties.h */,
-				DC98ECB81D76071D0016DDF4 /* FAQ+CoreDataProperties.m */,
-				DC98ECB91D76071D0016DDF4 /* PathPosition+CoreDataClass.h */,
-				DC98ECBA1D76071D0016DDF4 /* PathPosition+CoreDataClass.m */,
-				DC98ECBB1D76071D0016DDF4 /* PathPosition+CoreDataProperties.h */,
-				DC98ECBC1D76071D0016DDF4 /* PathPosition+CoreDataProperties.m */,
-				DC98ECBD1D76071D0016DDF4 /* WelcomeInfo+CoreDataClass.h */,
-				DC98ECBE1D76071D0016DDF4 /* WelcomeInfo+CoreDataClass.m */,
-				DC98ECBF1D76071D0016DDF4 /* WelcomeInfo+CoreDataProperties.h */,
-				DC98ECC01D76071D0016DDF4 /* WelcomeInfo+CoreDataProperties.m */,
-				DC98ECC11D76071D0016DDF4 /* Sponsor+CoreDataClass.h */,
-				DC98ECC21D76071D0016DDF4 /* Sponsor+CoreDataClass.m */,
-				DC98ECC31D76071D0016DDF4 /* Sponsor+CoreDataProperties.h */,
-				DC98ECC41D76071D0016DDF4 /* Sponsor+CoreDataProperties.m */,
+				DC98ECD51D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.h */,
+				DC98ECD61D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.m */,
+				DC98ECD71D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.h */,
+				DC98ECD81D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.m */,
+				DC98ECD91D7621D60016DDF4 /* FAQ+CoreDataClass.h */,
+				DC98ECDA1D7621D60016DDF4 /* FAQ+CoreDataClass.m */,
+				DC98ECDB1D7621D60016DDF4 /* FAQ+CoreDataProperties.h */,
+				DC98ECDC1D7621D60016DDF4 /* FAQ+CoreDataProperties.m */,
+				DC98ECDD1D7621D60016DDF4 /* ContactInfo+CoreDataClass.h */,
+				DC98ECDE1D7621D60016DDF4 /* ContactInfo+CoreDataClass.m */,
+				DC98ECDF1D7621D60016DDF4 /* ContactInfo+CoreDataProperties.h */,
+				DC98ECE01D7621D60016DDF4 /* ContactInfo+CoreDataProperties.m */,
+				DC98ECE11D7621D60016DDF4 /* PathPosition+CoreDataClass.h */,
+				DC98ECE21D7621D60016DDF4 /* PathPosition+CoreDataClass.m */,
+				DC98ECE31D7621D60016DDF4 /* PathPosition+CoreDataProperties.h */,
+				DC98ECE41D7621D60016DDF4 /* PathPosition+CoreDataProperties.m */,
+				DC98ECE51D7621D60016DDF4 /* ScheduleItem+CoreDataClass.h */,
+				DC98ECE61D7621D60016DDF4 /* ScheduleItem+CoreDataClass.m */,
+				DC98ECE71D7621D60016DDF4 /* ScheduleItem+CoreDataProperties.h */,
+				DC98ECE81D7621D60016DDF4 /* ScheduleItem+CoreDataProperties.m */,
+				DC98ECE91D7621D60016DDF4 /* Sponsor+CoreDataClass.h */,
+				DC98ECEA1D7621D60016DDF4 /* Sponsor+CoreDataClass.m */,
+				DC98ECEB1D7621D60016DDF4 /* Sponsor+CoreDataProperties.h */,
+				DC98ECEC1D7621D60016DDF4 /* Sponsor+CoreDataProperties.m */,
+				DC98ECED1D7621D60016DDF4 /* BusPath+CoreDataClass.h */,
+				DC98ECEE1D7621D60016DDF4 /* BusPath+CoreDataClass.m */,
+				DC98ECEF1D7621D60016DDF4 /* BusPath+CoreDataProperties.h */,
+				DC98ECF01D7621D60016DDF4 /* BusPath+CoreDataProperties.m */,
+				DC98ECF11D7621D60016DDF4 /* Beer+CoreDataClass.h */,
+				DC98ECF21D7621D60016DDF4 /* Beer+CoreDataClass.m */,
+				DC98ECF31D7621D60016DDF4 /* Beer+CoreDataProperties.h */,
+				DC98ECF41D7621D60016DDF4 /* Beer+CoreDataProperties.m */,
 			);
 			name = "Automatically generated";
 			sourceTree = "<group>";
@@ -796,52 +796,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC98ECFA1D7621D60016DDF4 /* ContactInfo+CoreDataProperties.m in Sources */,
 				DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */,
-				DC98ECC81D76071D0016DDF4 /* ScheduleItem+CoreDataProperties.m in Sources */,
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
-				DC98ECC51D76071D0016DDF4 /* ContactInfo+CoreDataClass.m in Sources */,
+				DC98ECF81D7621D60016DDF4 /* FAQ+CoreDataProperties.m in Sources */,
 				DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */,
 				DCDABDCC1D70CE2200BCC342 /* ContactInfo+Methods.m in Sources */,
+				DC98ED001D7621D60016DDF4 /* Sponsor+CoreDataProperties.m in Sources */,
 				DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */,
 				DC372D5B1D7387190023270F /* UICollectionView+NSFetchedResultsController.m in Sources */,
 				DC372D621D7399580023270F /* FAQViewController.m in Sources */,
-				DC98ECD01D76071D0016DDF4 /* PathPosition+CoreDataProperties.m in Sources */,
-				DC98ECC91D76071D0016DDF4 /* Beer+CoreDataClass.m in Sources */,
+				DC98ECF71D7621D60016DDF4 /* FAQ+CoreDataClass.m in Sources */,
 				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
+				DC98ECFD1D7621D60016DDF4 /* ScheduleItem+CoreDataClass.m in Sources */,
 				DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */,
 				DC372D1D1D737A3F0023270F /* Sponsor+Methods.m in Sources */,
-				DC98ECCA1D76071D0016DDF4 /* Beer+CoreDataProperties.m in Sources */,
-				DC98ECC71D76071D0016DDF4 /* ScheduleItem+CoreDataClass.m in Sources */,
 				DCDABDCF1D70D9EF00BCC342 /* NSDictionary+NilSupport.m in Sources */,
-				DC98ECCD1D76071D0016DDF4 /* FAQ+CoreDataClass.m in Sources */,
 				DC7454401D61155F00D87656 /* main.m in Sources */,
-				DC98ECCB1D76071D0016DDF4 /* BusPath+CoreDataClass.m in Sources */,
+				DC98ED021D7621D60016DDF4 /* BusPath+CoreDataProperties.m in Sources */,
 				DCDABDC61D70CE1000BCC342 /* PathPosition+Methods.m in Sources */,
 				DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */,
 				DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */,
-				DC98ECCC1D76071D0016DDF4 /* BusPath+CoreDataProperties.m in Sources */,
-				DC98ECD31D76071D0016DDF4 /* Sponsor+CoreDataClass.m in Sources */,
-				DC98ECD21D76071D0016DDF4 /* WelcomeInfo+CoreDataProperties.m in Sources */,
 				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */,
-				DC98ECD41D76071D0016DDF4 /* Sponsor+CoreDataProperties.m in Sources */,
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
 				DCFFE7751D73C9BB002302A1 /* BusPathViewController.m in Sources */,
+				DC98ECFE1D7621D60016DDF4 /* ScheduleItem+CoreDataProperties.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
 				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,
+				DC98ECFC1D7621D60016DDF4 /* PathPosition+CoreDataProperties.m in Sources */,
+				DC98ECFF1D7621D60016DDF4 /* Sponsor+CoreDataClass.m in Sources */,
 				DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */,
+				DC98ECF51D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.m in Sources */,
+				DC98ED041D7621D60016DDF4 /* Beer+CoreDataProperties.m in Sources */,
+				DC98ECF91D7621D60016DDF4 /* ContactInfo+CoreDataClass.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
-				DC98ECC61D76071D0016DDF4 /* ContactInfo+CoreDataProperties.m in Sources */,
+				DC98ECF61D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.m in Sources */,
+				DC98ED031D7621D60016DDF4 /* Beer+CoreDataClass.m in Sources */,
+				DC98ED011D7621D60016DDF4 /* BusPath+CoreDataClass.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
+				DC98ECFB1D7621D60016DDF4 /* PathPosition+CoreDataClass.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
-				DC98ECCF1D76071D0016DDF4 /* PathPosition+CoreDataClass.m in Sources */,
-				DC98ECCE1D76071D0016DDF4 /* FAQ+CoreDataProperties.m in Sources */,
 				DC372D201D737A500023270F /* FAQ+Methods.m in Sources */,
-				DC98ECD11D76071D0016DDF4 /* WelcomeInfo+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
