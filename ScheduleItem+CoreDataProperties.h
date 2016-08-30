@@ -2,7 +2,7 @@
 //  ScheduleItem+CoreDataProperties.h
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-08-28.
+//  Created by Felix Lapalme on 2016-08-30.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
@@ -17,10 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, copy) NSDate *endTime;
 @property (nonatomic) int16_t id;
-@property (nullable, nonatomic, retain) NSData *largeImage;
+@property (nullable, nonatomic, copy) NSString *largeImage;
 @property (nullable, nonatomic, copy) NSString *name;
 @property (nullable, nonatomic, copy) NSString *scheduleItemDescription;
-@property (nullable, nonatomic, retain) NSData *smallImage;
+@property (nullable, nonatomic, copy) NSString *smallImage;
 @property (nullable, nonatomic, copy) NSDate *startTime;
 
 @end

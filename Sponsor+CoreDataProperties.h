@@ -2,7 +2,7 @@
 //  Sponsor+CoreDataProperties.h
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-08-28.
+//  Created by Felix Lapalme on 2016-08-30.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
@@ -15,10 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Sponsor *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *url;
-@property (nullable, nonatomic, retain) NSData *image;
 @property (nonatomic) int16_t id;
+@property (nullable, nonatomic, copy) NSString *image;
 @property (nullable, nonatomic, copy) NSString *name;
+@property (nullable, nonatomic, copy) NSString *url;
 @property (nullable, nonatomic, retain) WelcomeInfo *welcomeInfo;
 
 @end

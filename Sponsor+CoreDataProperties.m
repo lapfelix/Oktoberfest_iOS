@@ -2,7 +2,7 @@
 //  Sponsor+CoreDataProperties.m
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-08-28.
+//  Created by Felix Lapalme on 2016-08-30.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
@@ -14,10 +14,10 @@
 	return [[NSFetchRequest alloc] initWithEntityName:@"Sponsor"];
 }
 
-@dynamic url;
-@dynamic image;
 @dynamic id;
+@dynamic image;
 @dynamic name;
+@dynamic url;
 @dynamic welcomeInfo;
 
 @end
