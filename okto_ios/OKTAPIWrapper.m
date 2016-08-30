@@ -11,6 +11,8 @@
 #import "OKTModelProtocol.h"
 #import "AppDelegate.h"
 
+#import <SDWebImage/SDWebImagePrefetcher.h>
+
 // Import Core Data entities
 
 #import "Beer+Methods.h"
@@ -69,6 +71,8 @@ static NSDictionary *endpoints;
     [OKTNetworkMethods getObjectAtURL:[self urlFromClass:class] completionHandler:^(NSObject *objectArray, NSError *error) {
         Class<OKTModelProtocol> modelClass = class;
         
+        NSMutableArray<NSString *> *imageURLs = [NSMutableArray<NSString *> array];
+        
         if (objectArray == nil) {
             NSLog(@"Returned object was empty.");
             completionHandler(nil, nil);
@@ -99,10 +103,21 @@ static NSDictionary *endpoints;
                 if (modelledObject == nil) {
                     NSLog(@"Failed to save object of class %@: %@",NSStringFromClass(class),objectArray.description);
                 }
+                
+                if ([modelledObject respondsToSelector:@selector(getImageURLs)]) {
+                    NSArray *urls = [modelledObject getImageURLs];
+                    if (urls.count != 0) {
+                        [imageURLs addObjectsFromArray:urls];
+                    }
+                }
             }
         }
         
         [self saveContext:self.managedObjectContext];
+        
+        SDWebImagePrefetcher *prefetcher = [SDWebImagePrefetcher new];
+        //TODO: show prefetch status somewhere ?
+        [prefetcher prefetchURLs:imageURLs];
     }];
 }
 

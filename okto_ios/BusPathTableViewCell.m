@@ -9,12 +9,15 @@
 #import "BusPathTableViewCell.h"
 #import "BusPath+Methods.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface BusPathTableViewCell()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *additionalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *intervalLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbnailImageView;
 
 @end
 
@@ -43,6 +46,13 @@
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         [dateFormatter setDateFormat:@"HH:mm"];
         self.startTimeLabel.text = [NSString stringWithFormat:@"À partir de %@",[dateFormatter stringFromDate:busPath.startTime]];
+        
+        if (busPath.thumbnailImage != nil) {
+            NSURL *imageURL = [NSURL URLWithString:busPath.thumbnailImage];
+            [self.thumbnailImageView sd_setImageWithURL:imageURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //cached! or taken from cache
+            }];
+        }
     }
 }
 

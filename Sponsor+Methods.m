@@ -26,8 +26,13 @@ static NSString *entityName = @"Sponsor";
         self.id = [dict[@"id"] intValue];
         self.name = [dict objectOrNilForKey:@"name"];
         self.url = [dict objectOrNilForKey:@"website_url"];
+        self.image = [dict objectOrNilForKey:@"image_url"];
     }
     return self;
+}
+
+- (NSArray<NSString *> *)getImageURLs {
+    return @[self.image];
 }
 
 @end

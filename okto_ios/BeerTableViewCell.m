@@ -9,11 +9,14 @@
 #import "Beer+Methods.h"
 #import "BeerTableViewCell.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface BeerTableViewCell()
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *alcoholLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *beerImage;
 
 @end
 
@@ -36,6 +39,13 @@
         self.nameLabel.text = beer.name;
         self.alcoholLabel.text = [NSString stringWithFormat:@"%.2f%%",beer.alcohol];
         self.descriptionLabel.text = beer.beerDescription;
+        
+        if (beer.imageURL != nil) {
+            NSURL *imageURL = [NSURL URLWithString:beer.imageURL];
+            [self.beerImage sd_setImageWithURL:imageURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //cached! or taken from cache
+            }];
+        }
     }
 }
 

@@ -26,6 +26,9 @@
 @required
 - (instancetype) initWithDictionary:(NSDictionary *)dict managedObjectContext:(NSManagedObjectContext *)context;
 
+@optional
+- (NSArray<NSString *> *)getImageURLs;
+
 @end
 
 #endif /* OKTModelProtocol_h */

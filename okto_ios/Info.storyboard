@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="b4e-i3-abl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fql-fa-ADT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
@@ -57,15 +57,15 @@
             <objects>
                 <tableViewController title="Horaire Autobus" id="cHj-6U-Fon" customClass="BusPathTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="28" sectionFooterHeight="28" id="WLL-oY-6sZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buspath" rowHeight="143" id="FJl-Fy-rcm" customClass="BusPathTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="375" height="143"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="143"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FJl-Fy-rcm" id="mSK-U0-OqW">
-                                    <frame key="frameInset" width="375" height="142"/>
+                                    <frame key="frameInset" width="320" height="142"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i6-Z8-PLC">
@@ -96,12 +96,23 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zPj-QT-KZF">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="uVC-4E-69m"/>
+                                                <constraint firstAttribute="height" constant="100" id="w6W-XC-Kqu"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zPj-QT-KZF" firstAttribute="centerY" secondItem="mSK-U0-OqW" secondAttribute="centerY" id="Qis-Ed-ygD"/>
+                                        <constraint firstAttribute="trailing" secondItem="zPj-QT-KZF" secondAttribute="trailing" constant="8" id="b51-9U-cht"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="additionalLabel" destination="MUD-ap-oGM" id="DG3-Ee-bnA"/>
                                     <outlet property="intervalLabel" destination="hW2-hw-gkA" id="zRp-di-ihY"/>
                                     <outlet property="startTimeLabel" destination="8VT-7K-uWa" id="Bkc-ay-zBC"/>
+                                    <outlet property="thumbnailImageView" destination="zPj-QT-KZF" id="ncI-Uc-BQP"/>
                                     <outlet property="titleLabel" destination="9i6-Z8-PLC" id="jUR-Kx-oge"/>
                                 </connections>
                             </tableViewCell>
@@ -125,17 +136,17 @@
                         <viewControllerLayoutGuide type="bottom" id="gWH-UM-BiK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vaa-gr-CQO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-ja-HRa"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="leading" secondItem="vaa-gr-CQO" secondAttribute="leading" id="CQN-ll-5zM"/>
-                            <constraint firstItem="gWH-UM-BiK" firstAttribute="top" secondItem="0Uj-ja-HRa" secondAttribute="bottom" id="DRb-jk-Bnt"/>
-                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="top" secondItem="jAY-5r-gng" secondAttribute="bottom" id="Hcd-Xl-scx"/>
-                            <constraint firstAttribute="trailing" secondItem="0Uj-ja-HRa" secondAttribute="trailing" id="z2m-Pe-529"/>
+                            <constraint firstItem="gWH-UM-BiK" firstAttribute="top" secondItem="0Uj-ja-HRa" secondAttribute="bottom" id="2g8-1U-FAx"/>
+                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="top" secondItem="jAY-5r-gng" secondAttribute="bottom" id="FfY-c9-XhA"/>
+                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="leading" secondItem="vaa-gr-CQO" secondAttribute="leading" id="KGd-VQ-YzF"/>
+                            <constraint firstAttribute="trailing" secondItem="0Uj-ja-HRa" secondAttribute="trailing" id="o4K-74-uq9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -144,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eP-3C-4ol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1877" y="-110"/>
+            <point key="canvasLocation" x="1876.875" y="-110.91549295774648"/>
         </scene>
         <!--Infos-->
         <scene sceneID="yKj-ok-jro">
@@ -167,7 +178,7 @@
             <objects>
                 <viewController title="FAQ" id="tJF-Kf-LfF" customClass="FAQViewController" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="mHP-vh-rvI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>

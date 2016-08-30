@@ -27,8 +27,14 @@ static NSString *entityName = @"Beer";
         self.alcohol = [dict[@"alcohol"] floatValue];
         self.beerDescription = [dict objectOrNilForKey:@"description"];
         self.name = [dict objectOrNilForKey:@"name"];
+        self.imageURL = [dict objectOrNilForKey:@"image_url"];
+        
     }
     return self;
+}
+
+- (NSArray<NSString *> *)getImageURLs {
+    return @[self.imageURL];
 }
 
 @end

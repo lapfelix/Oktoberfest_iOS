@@ -46,8 +46,13 @@ static NSString *entityName = @"BusPath";
             [pathPositions addObject:position];
         }
         self.pathPositions = pathPositions.copy;
+        self.thumbnailImage = [dict objectOrNilForKey:@"thumbnail_url"];
     }
     return self;
+}
+
+- (NSArray<NSString *> *)getImageURLs {
+    return @[self.thumbnailImage];
 }
 
 @end

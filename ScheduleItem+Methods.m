@@ -41,29 +41,8 @@ static NSString *entityName = @"ScheduleItem";
         self.name = [dict objectOrNilForKey:@"name"];
         self.scheduleItemDescription = [dict objectOrNilForKey:@"description"];
         
-        //TODO: make this nice
-        SDWebImageManager *manager = [SDWebImageManager sharedManager];
-        
-        NSString *largeImageURLString = [dict objectOrNilForKey:@"large_image_url"];
-        self.largeImage = largeImageURLString;
-        if (largeImageURLString != nil) {
-            NSURL *imageURL = [NSURL URLWithString:largeImageURLString];
-            
-            [manager downloadImageWithURL:imageURL
-                                  options:0
-                                 progress:nil
-                                completed:nil];
-        }
-        NSString *smallImageURLString = [dict objectOrNilForKey:@"large_image_url"];
-        self.smallImage = largeImageURLString;
-        if (smallImageURLString != nil) {
-            NSURL *imageURL = [NSURL URLWithString:smallImageURLString];
-            
-            [manager downloadImageWithURL:imageURL
-                                  options:0
-                                 progress:nil
-                                completed:nil];
-        }
+        self.largeImage = [dict objectOrNilForKey:@"large_image_url"];
+        self.smallImage =  [dict objectOrNilForKey:@"small_image_url"];
         
     }
     return self;
@@ -84,4 +63,9 @@ static NSString *entityName = @"ScheduleItem";
         }
     }
 }
+
+- (NSArray<NSString *> *)getImageURLs {
+    return @[self.smallImage, self.largeImage];
+}
+
 @end

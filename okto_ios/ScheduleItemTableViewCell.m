@@ -9,12 +9,16 @@
 #import "ScheduleItemTableViewCell.h"
 #import "ScheduleItem+Methods.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface ScheduleItemTableViewCell()
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *startLabel;
 @property (weak, nonatomic) IBOutlet UILabel *endLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet UIImageView *smallImage;
 
 
 @end
@@ -43,6 +47,19 @@
         [dateFormatter setDateFormat:@"HH:mm"];
         self.startLabel.text = [dateFormatter stringFromDate:scheduleItem.startTime];
         self.endLabel.text = [dateFormatter stringFromDate:scheduleItem.endTime];
+        
+        if (scheduleItem.largeImage != nil) {
+            NSURL *imageURL = [NSURL URLWithString:scheduleItem.largeImage];
+            [self.backgroundImage sd_setImageWithURL:imageURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //cached! or taken from cache
+            }];
+        }
+        if (scheduleItem.smallImage != nil) {
+            NSURL *imageURL = [NSURL URLWithString:scheduleItem.smallImage];
+            [self.smallImage sd_setImageWithURL:imageURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //cached! or taken from cache
+            }];
+        }
     }
 }
 

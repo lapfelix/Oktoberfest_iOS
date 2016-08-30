@@ -8,10 +8,12 @@
 
 #import "SponsorCollectionViewCell.h"
 #import "Sponsor+CoreDataClass.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface SponsorCollectionViewCell()
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -21,6 +23,13 @@
     if ([object isKindOfClass:[Sponsor class]]) {
         Sponsor *sponsor = (Sponsor *)object;
         self.nameLabel.text = sponsor.name;
+        
+        if (sponsor.image != nil) {
+            NSURL *imageURL = [NSURL URLWithString:sponsor.image];
+            [self.imageView sd_setImageWithURL:imageURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                //cached! or taken from cache
+            }];
+        }
     }
 }
 
