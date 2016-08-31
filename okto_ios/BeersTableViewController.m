@@ -24,6 +24,8 @@ static NSString *CellReuseIdentifier = @"beer";
     
     self.tableView.allowsSelection = NO;
 
+    self.title = @"Bières";
+    
     [self initializeFetchedResultsController];
 }
 
