@@ -48,10 +48,6 @@
     }
 }
 
-/*
- 
-*/
-
 #pragma mark - Fetched Results Controller Delegate methods
 
 

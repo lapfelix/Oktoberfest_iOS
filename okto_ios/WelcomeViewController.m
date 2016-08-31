@@ -38,8 +38,7 @@
     [self updateWelcomeInfo];
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
+- (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 
