@@ -7,6 +7,7 @@
 //
 
 #import "BeersTableViewController.h"
+#import "BeerCategory+Methods.h"
 #import "Beer+Methods.h"
 #import "BeerTableViewCell.h"
 #import "AppDelegate.h"
@@ -49,6 +50,14 @@ static NSString *CellReuseIdentifier = @"beer";
     return cell;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [[[self fetchedResultsController] sections][section] name];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 30;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [[[self fetchedResultsController] sections] count];
 }
@@ -69,7 +78,7 @@ static NSString *CellReuseIdentifier = @"beer";
     
     NSManagedObjectContext *moc = ((AppDelegate *)UIApplication.sharedApplication.delegate).managedObjectContext;
     
-    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:nil cacheName:nil]];
+    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:@"category.name" cacheName:nil]];
     [[self fetchedResultsController] setDelegate:self];
     
     NSError *error = nil;

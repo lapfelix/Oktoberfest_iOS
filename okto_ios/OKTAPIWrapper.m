@@ -15,7 +15,7 @@
 
 // Import Core Data entities
 
-#import "Beer+Methods.h"
+#import "BeerCategory+Methods.h"
 #import "ScheduleItem+Methods.h"
 #import "BusPath+Methods.h"
 #import "PathPosition+Methods.h"
@@ -44,12 +44,12 @@ static NSDictionary *endpoints;
     dispatch_once(&once, ^{
         sharedInstance = [[self alloc] init];
         endpoints = @{
-                      NSStringFromClass([Beer class]):@"bieres",
-                      NSStringFromClass([ScheduleItem class]):@"schedule_items",
-                      NSStringFromClass([WelcomeInfo class]):@"info",
-                      NSStringFromClass([FAQ class]):@"faq",
-                      NSStringFromClass([BusPath class]):@"bus_schedule",
-                      NSStringFromClass([ContactInfo class]):@"contact",
+                      NSStringFromClass([BeerCategory class]) : @"bieres",
+                      NSStringFromClass([ScheduleItem class]) : @"schedule_items",
+                      NSStringFromClass([WelcomeInfo class])  : @"info",
+                      NSStringFromClass([FAQ class])          : @"faq",
+                      NSStringFromClass([BusPath class])      : @"bus_schedule",
+                      NSStringFromClass([ContactInfo class])  : @"contact",
                     };
     });
     return sharedInstance;
@@ -89,12 +89,17 @@ static NSDictionary *endpoints;
         [self deleteEntityWithName:NSStringFromClass(class)];
         
         //special cases. There's probably a better way to do this but _gotta go fast_
+        // (IS IT EVEN NECESSARY?)
         if ([NSStringFromClass(class) isEqual: @"WelcomeInfo"]) {
             [self deleteEntityWithName:@"Sponsor"];
         }
         
         if ([NSStringFromClass(class) isEqual: @"BusPath"]) {
             [self deleteEntityWithName:@"PathPosition"];
+        }
+        
+        if ([NSStringFromClass(class) isEqual: @"BeerCategory"]) {
+            [self deleteEntityWithName:@"Beer"];
         }
         
         for (NSDictionary *obj in (NSArray *)objectArray) {

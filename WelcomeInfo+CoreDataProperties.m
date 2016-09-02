@@ -2,7 +2,7 @@
 //  WelcomeInfo+CoreDataProperties.m
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-08-30.
+//  Created by Felix Lapalme on 2016-09-01.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 

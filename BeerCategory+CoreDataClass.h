@@ -1,5 +1,5 @@
 //
-//  PathPosition+CoreDataClass.h
+//  BeerCategory+CoreDataClass.h
 //  okto_ios
 //
 //  Created by Felix Lapalme on 2016-09-01.
@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class BusPath;
+@class Beer;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PathPosition : NSManagedObject
+@interface BeerCategory : NSManagedObject
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "PathPosition+CoreDataProperties.h"
+#import "BeerCategory+CoreDataProperties.h"

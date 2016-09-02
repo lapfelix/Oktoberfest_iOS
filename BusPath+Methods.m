@@ -39,13 +39,15 @@ static NSString *entityName = @"BusPath";
         self.additionalString = [dict objectOrNilForKey:@"additionnal_string"];
         self.startTime = [self.class.dateFormatter dateFromString:[dict objectOrNilForKey:@"start_time"]];
         self.interval = [dict[@"interval"] floatValue];
-        NSArray *coordinates = [dict objectOrNilForKey:@"path"];
+        
+        NSArray *coordinatesDictionary = [dict objectOrNilForKey:@"path"];
         NSMutableSet<PathPosition *> *pathPositions = [NSMutableSet set];
-        for (NSDictionary *coordinateDictionary in coordinates) {
+        for (NSDictionary *coordinateDictionary in coordinatesDictionary) {
             PathPosition *position = [PathPosition modelObjectWithDictionary:coordinateDictionary managedObjectContext:context];
             [pathPositions addObject:position];
         }
         self.pathPositions = pathPositions.copy;
+        
         self.thumbnailImage = [dict objectOrNilForKey:@"thumbnail_url"];
     }
     return self;
