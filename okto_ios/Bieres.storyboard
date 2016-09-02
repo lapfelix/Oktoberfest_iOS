@@ -9,7 +9,7 @@
         <!--Bières-->
         <scene sceneID="7yH-AD-0GX">
             <objects>
-                <navigationController title="Bières" hidesBarsOnSwipe="YES" id="5KN-4j-LtI" sceneMemberID="viewController">
+                <navigationController title="Bières" id="5KN-4j-LtI" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ia-5F-ibL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
