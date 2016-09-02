@@ -23,12 +23,13 @@ static NSString *entityName = @"ContactInfo";
 - (instancetype) initWithDictionary:(NSDictionary *)dict managedObjectContext:(NSManagedObjectContext *)context {
     self = [NSEntityDescription insertNewObjectForEntityForName:entityName inManagedObjectContext: context];
     if([dict isKindOfClass:[NSDictionary class]]) {
-        /*
-         self.id = [dict[@"id"] intValue];
-         self.alcohol = [dict[@"alcohol"] floatValue];
-         self.beerDescription = [dict objectOrNilForKey:@"description"];
-         self.name = [dict objectOrNilForKey:@"name"];
-         */
+        self.email = [dict objectOrNilForKey:@"email"];
+        self.physicalAddress = [dict objectOrNilForKey:@"physical_address"];
+        self.facebookUserName = [dict objectOrNilForKey:@"facebook_user"];
+        self.facebookDisplayName = [dict objectOrNilForKey:@"facebook"];
+        self.websiteURL = [dict objectOrNilForKey:@"website_url"];
+        self.snapchatUserName = [dict objectOrNilForKey:@"snapchat"];
+        self.twitterUserName = [dict objectOrNilForKey:@"twitter"];
     }
     return self;
 }
