@@ -54,6 +54,7 @@
 		DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078EA1D790BEE0035715C /* PathPosition+CoreDataClass.m */; };
 		DC9078FE1D790BEE0035715C /* PathPosition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078EC1D790BEE0035715C /* PathPosition+CoreDataProperties.m */; };
 		DC9079011D790C650035715C /* BeerCategory+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9079001D790C650035715C /* BeerCategory+Methods.m */; };
+		DC9079041D79C7D90035715C /* RoundedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9079031D79C7D90035715C /* RoundedRectangle.m */; };
 		DC98ED071D773AE70016DDF4 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ED061D773AE60016DDF4 /* InfoViewController.m */; };
 		DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */; };
 		DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */; };
@@ -183,6 +184,8 @@
 		DC9078EC1D790BEE0035715C /* PathPosition+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PathPosition+CoreDataProperties.m"; sourceTree = "<group>"; };
 		DC9078FF1D790C650035715C /* BeerCategory+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BeerCategory+Methods.h"; sourceTree = "<group>"; };
 		DC9079001D790C650035715C /* BeerCategory+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BeerCategory+Methods.m"; sourceTree = "<group>"; };
+		DC9079021D79C7D90035715C /* RoundedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedRectangle.h; sourceTree = "<group>"; };
+		DC9079031D79C7D90035715C /* RoundedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedRectangle.m; sourceTree = "<group>"; };
 		DC98ED051D773AE60016DDF4 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		DC98ED061D773AE60016DDF4 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 			isa = PBXGroup;
 			children = (
 				DC5B00881D711806001C5A83 /* Cells */,
+				DC9079021D79C7D90035715C /* RoundedRectangle.h */,
+				DC9079031D79C7D90035715C /* RoundedRectangle.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -844,6 +849,7 @@
 				DC9078EE1D790BEE0035715C /* BusPath+CoreDataProperties.m in Sources */,
 				DC9078F61D790BEE0035715C /* ContactInfo+CoreDataProperties.m in Sources */,
 				DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */,
+				DC9079041D79C7D90035715C /* RoundedRectangle.m in Sources */,
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
 				DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */,
