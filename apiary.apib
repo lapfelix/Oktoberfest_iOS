@@ -16,8 +16,22 @@ L'API du truc de l'évènement où le monde boivent de la bière.
         - sponsors (array)
           - (Sponsor)
               - id: 1
+              - image_url: `https://unsplash.it/74/75?random`
           - (Sponsor)
               - id: 2
+              - image_url: `https://unsplash.it/75/75?random`
+          - (Sponsor)
+              - id: 3
+              - image_url: `https://unsplash.it/75/74?random`
+          - (Sponsor)
+              - id: 4
+              - image_url: `https://unsplash.it/76/75?random`  
+          - (Sponsor)
+              - id: 5
+              - image_url: `https://unsplash.it/75/76?random`
+          - (Sponsor)
+              - id: 6
+              - image_url: `https://unsplash.it/74/76?random`
 
 ## Programmation [/schedule_items]
 
@@ -27,11 +41,13 @@ L'API du truc de l'évènement où le monde boivent de la bière.
     + Attributes (array)
         - (Schedule Item)
             - id: 1
+            - large_image_url: `http://lorempixel.com/400/200/`
         - (Schedule Item)
             - id: 2
+            - large_image_url: `http://lorempixel.com/400/201/`
         - (Schedule Item)
             - id: 3
-
+            - large_image_url: `http://lorempixel.com/401/200/`
 
 ## Horaire bus [/bus_schedule]
 
@@ -67,15 +83,32 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 
 + Response 200 (application/json)
     + Attributes (array)
-        - (Beer)
-          - id: 1
-          - name: blblblb
-        - (Beer)
-          - id: 2
-          - name: aha ahaha aha
-        - (Beer)
-          - id: 3
-          - name: oohohohoewo
+        - (BeerCategory)
+            - id: 1
+            - name: Artisanale
+            - beers (array[Beer])
+                - (Beer)
+                   - id: 1
+                   - name: blblbll
+                - (Beer)
+                  - id: 2
+                  - name: aha ahaha aha
+                - (Beer)
+                  - id: 3
+                  - name: oohohohoewo
+        - (BeerCategory)
+            - id: 2
+            - name: Non-artisanales
+            - beers (array[Beer])
+                - (Beer)
+                   - id: 4
+                   - name: blblbll
+                - (Beer)
+                  - id: 5
+                  - name: aha ahaha aha
+                - (Beer)
+                  - id: 6
+                  - name: oohohohoewo
 
 ## FAQ [/faq]
 
@@ -108,8 +141,8 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 - start_time: `08-08-2016 03:00` (string, required)
 - end_time: `08-08-2016 05:00` (string, required)
 - large_image_url: `http://lorempixel.com/400/200/` (string, required)
-- small_image_url: `http://url.com/image.jpg` (string, required)
-- description: `http://url.com/image.jpg` (string)
+- small_image_url: `http://felixlapal.me/okto/beer.png` (string, required)
+- description: `une description normale là` (string)
 
 ## Bus Path (object)
 
@@ -127,6 +160,13 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 - name: `Molson Dry` (required)
 - alcohol: 5.5 (number)
 - description: `Une bière qui coute pas cher`
+- image_url: `http://felixlapal.me/okto/keith.png`
+
+## BeerCategory (object)
+
+- id: 1 (number, required)
+- name: `Artisanales` (required)
+- beers: Beer (array[Beer])
 
 ## Coordinate (object)
 
