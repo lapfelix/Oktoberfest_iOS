@@ -21,5 +21,6 @@
 @dynamic twitterUserName;
 @dynamic websiteURL;
 @dynamic physicalAddress;
+@dynamic phone;
 
 @end

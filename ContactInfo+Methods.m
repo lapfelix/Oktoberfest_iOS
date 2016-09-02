@@ -30,6 +30,7 @@ static NSString *entityName = @"ContactInfo";
         self.websiteURL = [dict objectOrNilForKey:@"website_url"];
         self.snapchatUserName = [dict objectOrNilForKey:@"snapchat"];
         self.twitterUserName = [dict objectOrNilForKey:@"twitter"];
+        self.phone = [dict objectOrNilForKey:@"phone"];
     }
     return self;
 }

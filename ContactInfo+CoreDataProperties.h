@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *twitterUserName;
 @property (nullable, nonatomic, copy) NSString *websiteURL;
 @property (nullable, nonatomic, copy) NSString *physicalAddress;
+@property (nullable, nonatomic, copy) NSString *phone;
 
 @end
 

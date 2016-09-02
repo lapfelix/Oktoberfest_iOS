@@ -53,8 +53,8 @@
 		DC9078FE1D790BEE0035715C /* PathPosition+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078EC1D790BEE0035715C /* PathPosition+CoreDataProperties.m */; };
 		DC9079011D790C650035715C /* BeerCategory+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9079001D790C650035715C /* BeerCategory+Methods.m */; };
 		DC9079041D79C7D90035715C /* RoundedRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9079031D79C7D90035715C /* RoundedRectangle.m */; };
-		DC90790F1D79F72C0035715C /* ContactInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90790C1D79F72C0035715C /* ContactInfo+CoreDataClass.m */; };
-		DC9079101D79F72C0035715C /* ContactInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC90790E1D79F72C0035715C /* ContactInfo+CoreDataProperties.m */; };
+		DC9079151D7A23E70035715C /* ContactInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9079121D7A23E70035715C /* ContactInfo+CoreDataClass.m */; };
+		DC9079161D7A23E70035715C /* ContactInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9079141D7A23E70035715C /* ContactInfo+CoreDataProperties.m */; };
 		DC98ED071D773AE70016DDF4 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ED061D773AE60016DDF4 /* InfoViewController.m */; };
 		DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */; };
 		DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */; };
@@ -182,10 +182,10 @@
 		DC9079001D790C650035715C /* BeerCategory+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BeerCategory+Methods.m"; sourceTree = "<group>"; };
 		DC9079021D79C7D90035715C /* RoundedRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedRectangle.h; sourceTree = "<group>"; };
 		DC9079031D79C7D90035715C /* RoundedRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedRectangle.m; sourceTree = "<group>"; };
-		DC90790B1D79F72C0035715C /* ContactInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC90790C1D79F72C0035715C /* ContactInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC90790D1D79F72C0035715C /* ContactInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC90790E1D79F72C0035715C /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC9079111D7A23E70035715C /* ContactInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC9079121D7A23E70035715C /* ContactInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC9079131D7A23E70035715C /* ContactInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC9079141D7A23E70035715C /* ContactInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
 		DC98ED051D773AE60016DDF4 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		DC98ED061D773AE60016DDF4 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
@@ -280,10 +280,10 @@
 		DC372CE71D7378430023270F /* Automatically generated */ = {
 			isa = PBXGroup;
 			children = (
-				DC90790B1D79F72C0035715C /* ContactInfo+CoreDataClass.h */,
-				DC90790C1D79F72C0035715C /* ContactInfo+CoreDataClass.m */,
-				DC90790D1D79F72C0035715C /* ContactInfo+CoreDataProperties.h */,
-				DC90790E1D79F72C0035715C /* ContactInfo+CoreDataProperties.m */,
+				DC9079111D7A23E70035715C /* ContactInfo+CoreDataClass.h */,
+				DC9079121D7A23E70035715C /* ContactInfo+CoreDataClass.m */,
+				DC9079131D7A23E70035715C /* ContactInfo+CoreDataProperties.h */,
+				DC9079141D7A23E70035715C /* ContactInfo+CoreDataProperties.m */,
 				DC9078C91D790BEE0035715C /* BusPath+CoreDataClass.h */,
 				DC9078CA1D790BEE0035715C /* BusPath+CoreDataClass.m */,
 				DC9078CB1D790BEE0035715C /* BusPath+CoreDataProperties.h */,
@@ -824,7 +824,7 @@
 				DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */,
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
 				DC9079011D790C650035715C /* BeerCategory+Methods.m in Sources */,
-				DC9079101D79F72C0035715C /* ContactInfo+CoreDataProperties.m in Sources */,
+				DC9079161D7A23E70035715C /* ContactInfo+CoreDataProperties.m in Sources */,
 				DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */,
 				DCDABDCC1D70CE2200BCC342 /* ContactInfo+Methods.m in Sources */,
 				DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */,
@@ -860,7 +860,7 @@
 				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,
 				DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */,
 				DC9078FE1D790BEE0035715C /* PathPosition+CoreDataProperties.m in Sources */,
-				DC90790F1D79F72C0035715C /* ContactInfo+CoreDataClass.m in Sources */,
+				DC9079151D7A23E70035715C /* ContactInfo+CoreDataClass.m in Sources */,
 				DC98ED071D773AE70016DDF4 /* InfoViewController.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,

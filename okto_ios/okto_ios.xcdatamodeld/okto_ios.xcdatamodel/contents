@@ -26,6 +26,7 @@
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="facebookDisplayName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="facebookUserName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="physicalAddress" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="snapchatUserName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="twitterUserName" optional="YES" attributeType="String" syncable="YES"/>
@@ -64,7 +65,7 @@
         <element name="Beer" positionX="-4734" positionY="-4383" width="128" height="133"/>
         <element name="BeerCategory" positionX="-4536" positionY="-4381" width="128" height="88"/>
         <element name="BusPath" positionX="-4392" positionY="-4455" width="128" height="150"/>
-        <element name="ContactInfo" positionX="-4392" positionY="-4293" width="128" height="148"/>
+        <element name="ContactInfo" positionX="-4392" positionY="-4293" width="128" height="163"/>
         <element name="FAQ" positionX="-4536" positionY="-4281" width="128" height="60"/>
         <element name="PathPosition" positionX="-4185" positionY="-4410" width="128" height="103"/>
         <element name="ScheduleItem" positionX="-4538" positionY="-4545" width="128" height="150"/>
