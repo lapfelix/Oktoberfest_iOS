@@ -15,12 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<ContactInfo *> *)fetchRequest;
 
+@property (nullable, nonatomic, copy) NSString *email;
 @property (nullable, nonatomic, copy) NSString *facebookDisplayName;
 @property (nullable, nonatomic, copy) NSString *facebookUserName;
 @property (nullable, nonatomic, copy) NSString *snapchatUserName;
 @property (nullable, nonatomic, copy) NSString *twitterUserName;
 @property (nullable, nonatomic, copy) NSString *websiteURL;
-@property (nullable, nonatomic, copy) NSString *email;
+@property (nullable, nonatomic, copy) NSString *physicalAddress;
 
 @end
 

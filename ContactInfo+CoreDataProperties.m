@@ -14,11 +14,12 @@
 	return [[NSFetchRequest alloc] initWithEntityName:@"ContactInfo"];
 }
 
+@dynamic email;
 @dynamic facebookDisplayName;
 @dynamic facebookUserName;
 @dynamic snapchatUserName;
 @dynamic twitterUserName;
 @dynamic websiteURL;
-@dynamic email;
+@dynamic physicalAddress;
 
 @end
