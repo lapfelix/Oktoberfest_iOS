@@ -42,10 +42,6 @@
         return [self topViewController:[(UINavigationController*)parent topViewController]];
     }
 
-    if ([parent isKindOfClass:UITabBarController.class]) {
-        return [self topViewController:[(UITabBarController*)parent selectedViewController]];
-    }
-
     return parent;
 }
 
