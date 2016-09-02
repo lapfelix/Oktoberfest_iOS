@@ -2,7 +2,7 @@
 //  ContactInfo+CoreDataProperties.h
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-09-01.
+//  Created by Felix Lapalme on 2016-09-02.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *snapchatUserName;
 @property (nullable, nonatomic, copy) NSString *twitterUserName;
 @property (nullable, nonatomic, copy) NSString *websiteURL;
+@property (nullable, nonatomic, copy) NSString *email;
 
 @end
 
