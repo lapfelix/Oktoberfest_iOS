@@ -79,6 +79,26 @@ EOM
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-Defaults.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKBrowserHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKFacebookHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKGPlusHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKMailHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKMapsHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKTwitterHandler.bundle"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-Defaults.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKBrowserHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKFacebookHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKGPlusHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKMailHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKMapsHandler.bundle"
+  install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKTwitterHandler.bundle"
+fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

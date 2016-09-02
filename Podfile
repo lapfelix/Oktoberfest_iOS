@@ -9,7 +9,8 @@ target 'okto_ios' do
   pod 'Masonry'
   pod 'TSMarkdownParser', '~> 2.1'
   pod 'SDWebImage', '~>3.8'
-
+  pod 'IntentKit'
+  
   target 'okto_iosTests' do
     inherit! :search_paths
     # Pods for testing
