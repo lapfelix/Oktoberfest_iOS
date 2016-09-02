@@ -9,7 +9,7 @@ target 'okto_ios' do
   pod 'Masonry'
   pod 'TSMarkdownParser', '~> 2.1'
   pod 'SDWebImage', '~>3.8'
-  pod 'IntentKit'
+  pod 'IntentKit', :git => 'git@github.com:lapfelix/IntentKit.git'
   
   target 'okto_iosTests' do
     inherit! :search_paths
