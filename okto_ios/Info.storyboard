@@ -8,7 +8,7 @@
         <!--Infos-->
         <scene sceneID="kad-xT-y9M">
             <objects>
-                <viewController title="Infos" id="xzx-UT-G10" sceneMemberID="viewController">
+                <viewController title="Infos" id="xzx-UT-G10" customClass="InfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Owd-pt-EgT"/>
                         <viewControllerLayoutGuide type="bottom" id="b4e-i3-abl"/>
@@ -37,6 +37,13 @@
                                     <segue destination="cHj-6U-Fon" kind="show" id="DHc-0K-x6l"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-Ez-4J1">
+                                <frame key="frameInset" minX="115" minY="155" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -65,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="92" width="320" height="143"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FJl-Fy-rcm" id="mSK-U0-OqW">
-                                    <frame key="frameInset" width="320" height="142"/>
+                                    <frame key="frameInset" width="320" height="142.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i6-Z8-PLC">
@@ -161,7 +168,7 @@
         <scene sceneID="yKj-ok-jro">
             <objects>
                 <navigationController title="Infos" id="2rF-LF-GJ9" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5a-pS-XAS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="c5a-pS-XAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

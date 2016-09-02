@@ -23,6 +23,7 @@
 #import "WelcomeInfo+Methods.h"
 #import "Sponsor+Methods.h"
 #import "FAQ+Methods.h"
+#import "ContactInfo+Methods.h"
 
 static NSString *baseURL = @"https://private-5fca2-oktoberfest.apiary-mock.com/";
 static NSDictionary *endpoints;
@@ -48,6 +49,7 @@ static NSDictionary *endpoints;
                       NSStringFromClass([WelcomeInfo class]):@"info",
                       NSStringFromClass([FAQ class]):@"faq",
                       NSStringFromClass([BusPath class]):@"bus_schedule",
+                      NSStringFromClass([ContactInfo class]):@"contact",
                     };
     });
     return sharedInstance;

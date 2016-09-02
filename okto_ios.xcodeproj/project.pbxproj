@@ -51,6 +51,7 @@
 		DC98ED021D7621D60016DDF4 /* BusPath+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECF01D7621D60016DDF4 /* BusPath+CoreDataProperties.m */; };
 		DC98ED031D7621D60016DDF4 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECF21D7621D60016DDF4 /* Beer+CoreDataClass.m */; };
 		DC98ED041D7621D60016DDF4 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ECF41D7621D60016DDF4 /* Beer+CoreDataProperties.m */; };
+		DC98ED071D773AE70016DDF4 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC98ED061D773AE60016DDF4 /* InfoViewController.m */; };
 		DCA9F7D91D7200FA00C19FA8 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */; };
 		DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */; };
 		DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E51D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m */; };
@@ -173,6 +174,8 @@
 		DC98ECF21D7621D60016DDF4 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
 		DC98ECF31D7621D60016DDF4 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
 		DC98ECF41D7621D60016DDF4 /* Beer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC98ED051D773AE60016DDF4 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		DC98ED061D773AE60016DDF4 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
 		DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewController.m; sourceTree = "<group>"; };
 		DCA9F7E11D7205C400C19FA8 /* OKTBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTBaseTableViewController.h; sourceTree = "<group>"; };
@@ -504,6 +507,8 @@
 				DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */,
 				DC372D601D7399580023270F /* FAQViewController.h */,
 				DC372D611D7399580023270F /* FAQViewController.m */,
+				DC98ED051D773AE60016DDF4 /* InfoViewController.h */,
+				DC98ED061D773AE60016DDF4 /* InfoViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -833,6 +838,7 @@
 				DC98ECF51D7621D60016DDF4 /* WelcomeInfo+CoreDataClass.m in Sources */,
 				DC98ED041D7621D60016DDF4 /* Beer+CoreDataProperties.m in Sources */,
 				DC98ECF91D7621D60016DDF4 /* ContactInfo+CoreDataClass.m in Sources */,
+				DC98ED071D773AE70016DDF4 /* InfoViewController.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
 				DC98ECF61D7621D60016DDF4 /* WelcomeInfo+CoreDataProperties.m in Sources */,
