@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5D64C4C65CB00671F061EECF9D337647'
-               BlueprintName = 'IntentKit-IntentKit-INKTwitterHandler'
+               BlueprintIdentifier = 'E2FE5544A63DC1254763E490E69DF115'
+               BlueprintName = 'IntentKit-IntentKit-Localizations'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'IntentKit-INKTwitterHandler.bundle'>
+               BuildableName = 'IntentKit-Localizations.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

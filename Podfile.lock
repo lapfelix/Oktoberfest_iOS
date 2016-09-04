@@ -26,27 +26,28 @@ PODS:
   - TSMarkdownParser (2.1.1)
 
 DEPENDENCIES:
-  - IntentKit (from `git@github.com:lapfelix/IntentKit.git`)
+  - IntentKit (from `git@github.com:lapfelix/IntentKit.git`, commit `2fcad6fc2a7024348153d5e055c7aff7319c1268`)
   - Masonry
   - SDWebImage (~> 3.8)
   - TSMarkdownParser (~> 2.1)
 
 EXTERNAL SOURCES:
   IntentKit:
+    :commit: 2fcad6fc2a7024348153d5e055c7aff7319c1268
     :git: git@github.com:lapfelix/IntentKit.git
 
 CHECKOUT OPTIONS:
   IntentKit:
-    :commit: 8e449da4ef2de13e189f91c9612b7a7452d85755
+    :commit: 2fcad6fc2a7024348153d5e055c7aff7319c1268
     :git: git@github.com:lapfelix/IntentKit.git
 
 SPEC CHECKSUMS:
-  IntentKit: 7a8af5b98093773105241b335d747d2f00886caf
+  IntentKit: 0ae146dd4eb439279fbd6eb5c5bdfb161c4dc0b0
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MWLayoutHelpers: 8af2eedae30fe06b75106b7be28b9fee1298512a
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   TSMarkdownParser: 64cb52fe5a518b4875a6167a650cb0ed4b18cea5
 
-PODFILE CHECKSUM: ed45865fcb525eb3451890a629714ec16f56269a
+PODFILE CHECKSUM: 78a03ab61dc6a2e60c236008c07ec3fb631ae3e8
 
 COCOAPODS: 1.0.1

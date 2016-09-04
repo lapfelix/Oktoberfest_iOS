@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '490E94AF31A5382BE41864F4A756C067'
+               BlueprintIdentifier = 'F209A47AE564AC5EEE3503C4D583F0D6'
                BlueprintName = 'IntentKit-IntentKit-INKBrowserHandler'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'IntentKit-INKBrowserHandler.bundle'>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D2BD792967B124836FD8BEA6C42EB3C0'
+               BlueprintIdentifier = 'E56242C5D8ED96597036FB1CE513B759'
                BlueprintName = 'IntentKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libIntentKit.a'>

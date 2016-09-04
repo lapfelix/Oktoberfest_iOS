@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '997B66E09E26B65DCB45E88CB1A315E8'
+               BlueprintIdentifier = '31AB0926B249E59B4431140E9CC59370'
                BlueprintName = 'IntentKit-IntentKit-INKMapsHandler'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'IntentKit-INKMapsHandler.bundle'>

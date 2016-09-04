@@ -17,6 +17,7 @@
 @import CoreData;
 
 @interface InfoViewController ()<NSFetchedResultsControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (copy, nonatomic) ContactInfo *contactInfo;

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '77A8889990A7AD83D47DB94FB81A580B'
+               BlueprintIdentifier = '5CB086A7422EEC96588F65DFBB7014CC'
                BlueprintName = 'MWLayoutHelpers'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libMWLayoutHelpers.a'>

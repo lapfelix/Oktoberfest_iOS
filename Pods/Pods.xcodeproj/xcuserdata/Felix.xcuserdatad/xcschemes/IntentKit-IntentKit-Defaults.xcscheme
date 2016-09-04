@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7C83EFB90ED6D5C4006DF246542DA1BF'
+               BlueprintIdentifier = 'A39F6B0B29D606097589C051D67A76A4'
                BlueprintName = 'IntentKit-IntentKit-Defaults'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'IntentKit-Defaults.bundle'>

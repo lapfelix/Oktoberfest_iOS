@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>IntentKit-IntentKit-Localizations.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IntentKit-IntentKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -87,7 +92,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>12E60F8B1DA0217865BC5CD38BFAC47A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>153C53FC363DA8218B992985A6927487</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>304DDE9F8DBFD2415823988FB02D17A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31AB0926B249E59B4431140E9CC59370</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +117,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>490E94AF31A5382BE41864F4A756C067</key>
+		<key>3A04D1E6D343D06DBF6E30482E64F627</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C23EECC3CAE1A891D086E9230CB6E6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,22 +137,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77A8889990A7AD83D47DB94FB81A580B</key>
+		<key>5CB086A7422EEC96588F65DFBB7014CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C83EFB90ED6D5C4006DF246542DA1BF</key>
+		<key>5D64C4C65CB00671F061EECF9D337647</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>997B66E09E26B65DCB45E88CB1A315E8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A109C4206D0FE1DBBCDFF6D45BABE803</key>
+		<key>A39F6B0B29D606097589C051D67A76A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,17 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9C83D1BE5D188A2CA39B65ED49B9DC4</key>
+		<key>E2FE5544A63DC1254763E490E69DF115</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D2BD792967B124836FD8BEA6C42EB3C0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D6DFA7F4C3B29C3A7A2F6F19F6AFA8B3</key>
+		<key>E56242C5D8ED96597036FB1CE513B759</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,12 +172,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E9A2481347B691B5C069011E4048F27F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EBEAD76C42C71E15D8FCB0C426B02306</key>
+		<key>F209A47AE564AC5EEE3503C4D583F0D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

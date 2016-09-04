@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C9C83D1BE5D188A2CA39B65ED49B9DC4'
+               BlueprintIdentifier = '304DDE9F8DBFD2415823988FB02D17A5'
                BlueprintName = 'IntentKit-IntentKit-INKMailHandler'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'IntentKit-INKMailHandler.bundle'>

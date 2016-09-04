@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A109C4206D0FE1DBBCDFF6D45BABE803'
+               BlueprintIdentifier = '12E60F8B1DA0217865BC5CD38BFAC47A'
                BlueprintName = 'IntentKit-IntentKit-INKFacebookHandler'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'IntentKit-INKFacebookHandler.bundle'>

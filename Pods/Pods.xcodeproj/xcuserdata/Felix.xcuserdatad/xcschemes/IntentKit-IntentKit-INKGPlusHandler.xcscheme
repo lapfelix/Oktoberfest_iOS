@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D6DFA7F4C3B29C3A7A2F6F19F6AFA8B3'
+               BlueprintIdentifier = '3A04D1E6D343D06DBF6E30482E64F627'
                BlueprintName = 'IntentKit-IntentKit-INKGPlusHandler'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'IntentKit-INKGPlusHandler.bundle'>
