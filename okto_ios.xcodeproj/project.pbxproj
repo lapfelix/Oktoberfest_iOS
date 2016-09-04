@@ -69,6 +69,8 @@
 		DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */; };
 		DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */; };
 		DCFBAAA61D74E01E006AEEE8 /* Tommaso.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCFBAAA51D74E01E006AEEE8 /* Tommaso.ttf */; };
+		DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFC1291D7B352C0008C501 /* OKTLetterView.m */; };
+		DCFFC12D1D7B3EAB0008C501 /* OKTLetterKeyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFC12C1D7B3EAB0008C501 /* OKTLetterKeyLayer.m */; };
 		DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */; };
 		DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */; };
 		DCFFE7751D73C9BB002302A1 /* BusPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7741D73C9BB002302A1 /* BusPathViewController.m */; };
@@ -215,6 +217,10 @@
 		DCDABDD41D71170600BCC342 /* BeerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerTableViewCell.h; sourceTree = "<group>"; };
 		DCDABDD51D71170600BCC342 /* BeerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerTableViewCell.m; sourceTree = "<group>"; };
 		DCFBAAA51D74E01E006AEEE8 /* Tommaso.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tommaso.ttf; sourceTree = "<group>"; };
+		DCFFC1281D7B352C0008C501 /* OKTLetterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTLetterView.h; sourceTree = "<group>"; };
+		DCFFC1291D7B352C0008C501 /* OKTLetterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTLetterView.m; sourceTree = "<group>"; };
+		DCFFC12B1D7B3EAB0008C501 /* OKTLetterKeyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTLetterKeyLayer.h; sourceTree = "<group>"; };
+		DCFFC12C1D7B3EAB0008C501 /* OKTLetterKeyLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTLetterKeyLayer.m; sourceTree = "<group>"; };
 		DCFFE76D1D73A5B8002302A1 /* BusPathTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewCell.h; sourceTree = "<group>"; };
 		DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewCell.m; sourceTree = "<group>"; };
 		DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewController.h; sourceTree = "<group>"; };
@@ -347,6 +353,10 @@
 			children = (
 				DC5B00881D711806001C5A83 /* Cells */,
 				DC9079021D79C7D90035715C /* RoundedRectangle.h */,
+				DCFFC1281D7B352C0008C501 /* OKTLetterView.h */,
+				DCFFC1291D7B352C0008C501 /* OKTLetterView.m */,
+				DCFFC12B1D7B3EAB0008C501 /* OKTLetterKeyLayer.h */,
+				DCFFC12C1D7B3EAB0008C501 /* OKTLetterKeyLayer.m */,
 				DC9079031D79C7D90035715C /* RoundedRectangle.m */,
 			);
 			name = Views;
@@ -855,6 +865,7 @@
 				DC9078EF1D790BEE0035715C /* Beer+CoreDataClass.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
 				DCFFE7751D73C9BB002302A1 /* BusPathViewController.m in Sources */,
+				DCFFC12D1D7B3EAB0008C501 /* OKTLetterKeyLayer.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
 				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,
@@ -864,6 +875,7 @@
 				DC98ED071D773AE70016DDF4 /* InfoViewController.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
+				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 				DC9078F01D790BEE0035715C /* Beer+CoreDataProperties.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,

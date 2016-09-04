@@ -44,7 +44,12 @@ static NSString *entityName = @"BusPath";
         NSMutableSet<PathPosition *> *pathPositions = [NSMutableSet set];
         for (NSDictionary *coordinateDictionary in coordinatesDictionary) {
             PathPosition *position = [PathPosition modelObjectWithDictionary:coordinateDictionary managedObjectContext:context];
-            [pathPositions addObject:position];
+            if (position != nil) {
+                [pathPositions addObject:position];
+            } else {
+                //we have a problem
+                NSLog(@"emtpy path position encountered");
+            }
         }
         self.pathPositions = pathPositions.copy;
         
