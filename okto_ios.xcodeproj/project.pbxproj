@@ -10,6 +10,8 @@
 		2127C8221819815E31E87DE1 /* libPods-okto_iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412A411285FFBDA944AA26A /* libPods-okto_iosUITests.a */; };
 		36563FFFB45F24F0FA3F9B10 /* libPods-okto_iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */; };
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
+		DC1CB8041D7FB8300004E145 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */; };
+		DC1CB8051D7FB8300004E145 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB8031D7FB8300004E145 /* Beer+CoreDataProperties.m */; };
 		DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D191D737A340023270F /* WelcomeInfo+Methods.m */; };
 		DC372D1D1D737A3F0023270F /* Sponsor+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D1C1D737A3F0023270F /* Sponsor+Methods.m */; };
 		DC372D201D737A500023270F /* FAQ+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D1F1D737A500023270F /* FAQ+Methods.m */; };
@@ -37,8 +39,6 @@
 		DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7454931D61487E00D87656 /* OKTNetworkMethods.m */; };
 		DC9078ED1D790BEE0035715C /* BusPath+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078CA1D790BEE0035715C /* BusPath+CoreDataClass.m */; };
 		DC9078EE1D790BEE0035715C /* BusPath+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078CC1D790BEE0035715C /* BusPath+CoreDataProperties.m */; };
-		DC9078EF1D790BEE0035715C /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078CE1D790BEE0035715C /* Beer+CoreDataClass.m */; };
-		DC9078F01D790BEE0035715C /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078D01D790BEE0035715C /* Beer+CoreDataProperties.m */; };
 		DC9078F11D790BEE0035715C /* WelcomeInfo+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078D21D790BEE0035715C /* WelcomeInfo+CoreDataClass.m */; };
 		DC9078F21D790BEE0035715C /* WelcomeInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078D41D790BEE0035715C /* WelcomeInfo+CoreDataProperties.m */; };
 		DC9078F31D790BEE0035715C /* BeerCategory+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9078D61D790BEE0035715C /* BeerCategory+CoreDataClass.m */; };
@@ -105,6 +105,10 @@
 		9BEAA1A84801F6EC1CB9BE26 /* Pods-okto_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_iosUITests/Pods-okto_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3CE05E2EA3DC44C7CECA6EC /* Pods-okto_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C77115BDDE96F5E61082E601 /* Pods-okto_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DC1CB8001D7FB8300004E145 /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC1CB8021D7FB8300004E145 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC1CB8031D7FB8300004E145 /* Beer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataProperties.m"; sourceTree = "<group>"; };
 		DC372D181D737A340023270F /* WelcomeInfo+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WelcomeInfo+Methods.h"; sourceTree = "<group>"; };
 		DC372D191D737A340023270F /* WelcomeInfo+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WelcomeInfo+Methods.m"; sourceTree = "<group>"; };
 		DC372D1B1D737A3F0023270F /* Sponsor+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Sponsor+Methods.h"; sourceTree = "<group>"; };
@@ -153,10 +157,6 @@
 		DC9078CA1D790BEE0035715C /* BusPath+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusPath+CoreDataClass.m"; sourceTree = "<group>"; };
 		DC9078CB1D790BEE0035715C /* BusPath+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BusPath+CoreDataProperties.h"; sourceTree = "<group>"; };
 		DC9078CC1D790BEE0035715C /* BusPath+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BusPath+CoreDataProperties.m"; sourceTree = "<group>"; };
-		DC9078CD1D790BEE0035715C /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataClass.h"; sourceTree = "<group>"; };
-		DC9078CE1D790BEE0035715C /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
-		DC9078CF1D790BEE0035715C /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
-		DC9078D01D790BEE0035715C /* Beer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataProperties.m"; sourceTree = "<group>"; };
 		DC9078D11D790BEE0035715C /* WelcomeInfo+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WelcomeInfo+CoreDataClass.h"; sourceTree = "<group>"; };
 		DC9078D21D790BEE0035715C /* WelcomeInfo+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WelcomeInfo+CoreDataClass.m"; sourceTree = "<group>"; };
 		DC9078D31D790BEE0035715C /* WelcomeInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WelcomeInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -289,6 +289,10 @@
 		DC372CE71D7378430023270F /* Automatically generated */ = {
 			isa = PBXGroup;
 			children = (
+				DC1CB8001D7FB8300004E145 /* Beer+CoreDataClass.h */,
+				DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */,
+				DC1CB8021D7FB8300004E145 /* Beer+CoreDataProperties.h */,
+				DC1CB8031D7FB8300004E145 /* Beer+CoreDataProperties.m */,
 				DC9079111D7A23E70035715C /* ContactInfo+CoreDataClass.h */,
 				DC9079121D7A23E70035715C /* ContactInfo+CoreDataClass.m */,
 				DC9079131D7A23E70035715C /* ContactInfo+CoreDataProperties.h */,
@@ -297,10 +301,6 @@
 				DC9078CA1D790BEE0035715C /* BusPath+CoreDataClass.m */,
 				DC9078CB1D790BEE0035715C /* BusPath+CoreDataProperties.h */,
 				DC9078CC1D790BEE0035715C /* BusPath+CoreDataProperties.m */,
-				DC9078CD1D790BEE0035715C /* Beer+CoreDataClass.h */,
-				DC9078CE1D790BEE0035715C /* Beer+CoreDataClass.m */,
-				DC9078CF1D790BEE0035715C /* Beer+CoreDataProperties.h */,
-				DC9078D01D790BEE0035715C /* Beer+CoreDataProperties.m */,
 				DC9078D11D790BEE0035715C /* WelcomeInfo+CoreDataClass.h */,
 				DC9078D21D790BEE0035715C /* WelcomeInfo+CoreDataClass.m */,
 				DC9078D31D790BEE0035715C /* WelcomeInfo+CoreDataProperties.h */,
@@ -836,6 +836,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1CB8041D7FB8300004E145 /* Beer+CoreDataClass.m in Sources */,
 				DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */,
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
 				DC9079011D790C650035715C /* BeerCategory+Methods.m in Sources */,
@@ -848,6 +849,7 @@
 				DC9078F31D790BEE0035715C /* BeerCategory+CoreDataClass.m in Sources */,
 				DC372D5B1D7387190023270F /* UICollectionView+NSFetchedResultsController.m in Sources */,
 				DC9078F21D790BEE0035715C /* WelcomeInfo+CoreDataProperties.m in Sources */,
+				DC1CB8051D7FB8300004E145 /* Beer+CoreDataProperties.m in Sources */,
 				DC372D621D7399580023270F /* FAQViewController.m in Sources */,
 				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
 				DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */,
@@ -868,7 +870,6 @@
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
 				DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */,
-				DC9078EF1D790BEE0035715C /* Beer+CoreDataClass.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
 				DCFFE7751D73C9BB002302A1 /* BusPathViewController.m in Sources */,
 				DCFFC12D1D7B3EAB0008C501 /* OKTLetterKeyLayer.m in Sources */,
@@ -883,7 +884,6 @@
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
 				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
-				DC9078F01D790BEE0035715C /* Beer+CoreDataProperties.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
 				DC9078F81D790BEE0035715C /* FAQ+CoreDataProperties.m in Sources */,
 				DC9078F11D790BEE0035715C /* WelcomeInfo+CoreDataClass.m in Sources */,
