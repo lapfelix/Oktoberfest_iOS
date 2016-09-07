@@ -19,26 +19,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="damier" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-QQ-d02"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BN2-cg-LDR"/>
-                                    <constraint firstAttribute="width" constant="89" id="RWy-cD-mbY"/>
-                                </constraints>
-                                <state key="normal" title="Horaire autobus"/>
-                                <connections>
-                                    <segue destination="cHj-6U-Fon" kind="show" id="DHc-0K-x6l"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8XN-8h-nak"/>
-                                    <constraint firstAttribute="width" constant="30" id="k21-bZ-vVv"/>
-                                </constraints>
-                                <state key="normal" title="FAQ"/>
-                                <connections>
-                                    <segue destination="tJF-Kf-LfF" kind="show" id="8Eg-lS-odk"/>
-                                </connections>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAf-z5-yjG">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-Ez-4J1">
@@ -55,13 +35,9 @@
                                                 <frame key="frameInset" minX="8" minY="10" width="119" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-1A-dWa">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-1A-dWa">
                                                 <frame key="frameInset" minX="135" minY="10" width="145" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Association genie allo genie (AGEG)
-1111 rue blabla
-local c1-2333
-Sherbrooke Quebec</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -340,6 +316,26 @@ Sherbrooke Quebec</string>
                                     <constraint firstItem="9PB-yu-V6I" firstAttribute="centerX" secondItem="BAf-z5-yjG" secondAttribute="centerX" id="zaf-aZ-SLQ"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BN2-cg-LDR"/>
+                                    <constraint firstAttribute="width" constant="89" id="RWy-cD-mbY"/>
+                                </constraints>
+                                <state key="normal" title="Horaire autobus"/>
+                                <connections>
+                                    <segue destination="cHj-6U-Fon" kind="show" id="DHc-0K-x6l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8XN-8h-nak"/>
+                                    <constraint firstAttribute="width" constant="30" id="k21-bZ-vVv"/>
+                                </constraints>
+                                <state key="normal" title="FAQ"/>
+                                <connections>
+                                    <segue destination="tJF-Kf-LfF" kind="show" id="8Eg-lS-odk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -361,6 +357,7 @@ Sherbrooke Quebec</string>
                     </view>
                     <navigationItem key="navigationItem" id="ceK-Iu-7F9"/>
                     <connections>
+                        <outlet property="addressLabel" destination="BmS-1A-dWa" id="pKL-HY-6w3"/>
                         <outlet property="scrollView" destination="BAf-z5-yjG" id="6Yy-bB-jIk"/>
                     </connections>
                 </viewController>
@@ -477,7 +474,7 @@ Sherbrooke Quebec</string>
         <scene sceneID="yKj-ok-jro">
             <objects>
                 <navigationController title="Infos" id="2rF-LF-GJ9" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5a-pS-XAS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="c5a-pS-XAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
