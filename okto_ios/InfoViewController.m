@@ -18,6 +18,7 @@
 
 @interface InfoViewController ()<NSFetchedResultsControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (copy, nonatomic) ContactInfo *contactInfo;
@@ -112,6 +113,7 @@
     
     if (fetchedObjects.count > 0) {
         _contactInfo = fetchedObjects[0];
+        self.addressLabel.text = _contactInfo.physicalAddress;
     } else {
         self.contactInfo = nil;
     }
