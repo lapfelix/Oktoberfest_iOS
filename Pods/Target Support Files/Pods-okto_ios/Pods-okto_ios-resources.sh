@@ -80,6 +80,7 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-Defaults.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKBrowserHandler.bundle"
@@ -91,6 +92,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKTwitterHandler.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-Defaults.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/IntentKit/IntentKit-INKBrowserHandler.bundle"

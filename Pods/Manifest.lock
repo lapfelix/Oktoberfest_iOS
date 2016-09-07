@@ -1,4 +1,9 @@
 PODS:
+  - GoogleMaps (2.0.1):
+    - GoogleMaps/Maps (= 2.0.1)
+  - GoogleMaps/Base (2.0.1)
+  - GoogleMaps/Maps (2.0.1):
+    - GoogleMaps/Base (= 2.0.1)
   - IntentKit (0.7.3):
     - IntentKit/Core (= 0.7.3)
     - IntentKit/Facebook (= 0.7.3)
@@ -26,6 +31,7 @@ PODS:
   - TSMarkdownParser (2.1.1)
 
 DEPENDENCIES:
+  - GoogleMaps
   - IntentKit (from `git@github.com:lapfelix/IntentKit.git`, commit `2fcad6fc2a7024348153d5e055c7aff7319c1268`)
   - Masonry
   - SDWebImage (~> 3.8)
@@ -42,12 +48,13 @@ CHECKOUT OPTIONS:
     :git: git@github.com:lapfelix/IntentKit.git
 
 SPEC CHECKSUMS:
+  GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
   IntentKit: 0ae146dd4eb439279fbd6eb5c5bdfb161c4dc0b0
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MWLayoutHelpers: 8af2eedae30fe06b75106b7be28b9fee1298512a
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   TSMarkdownParser: 64cb52fe5a518b4875a6167a650cb0ed4b18cea5
 
-PODFILE CHECKSUM: 78a03ab61dc6a2e60c236008c07ec3fb631ae3e8
+PODFILE CHECKSUM: 673451b6b30bdd8d2e27dd29ced42a51165f9f00
 
 COCOAPODS: 1.0.1
