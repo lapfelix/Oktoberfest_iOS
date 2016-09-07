@@ -7,7 +7,7 @@
 //
 
 #import "Beer+CoreDataClass.h"
-#import "BeerCategory.h"
+#import "BeerCategory+CoreDataClass.h"
 @implementation Beer
 
 @end
