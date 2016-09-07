@@ -94,10 +94,6 @@ static NSDictionary *endpoints;
             [self deleteEntityWithName:@"Sponsor"];
         }
         
-        if ([NSStringFromClass(class) isEqual: @"BusPath"]) {
-            [self deleteEntityWithName:@"PathPosition"];
-        }
-        
         if ([NSStringFromClass(class) isEqual: @"BeerCategory"]) {
             [self deleteEntityWithName:@"Beer"];
         }

@@ -17,10 +17,10 @@
         <attribute name="additionalString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
         <attribute name="interval" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="kmlString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="thumbnailImage" optional="YES" attributeType="String" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="pathPositions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PathPosition" inverseName="path" inverseEntity="PathPosition" syncable="YES"/>
     </entity>
     <entity name="ContactInfo" representedClassName="ContactInfo" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
@@ -34,12 +34,6 @@
     </entity>
     <entity name="FAQ" representedClassName="FAQ" syncable="YES">
         <attribute name="markdown" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
-    <entity name="PathPosition" representedClassName="PathPosition" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <relationship name="path" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BusPath" inverseName="pathPositions" inverseEntity="BusPath" syncable="YES"/>
     </entity>
     <entity name="ScheduleItem" representedClassName="ScheduleItem" syncable="YES">
         <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -64,10 +58,9 @@
     <elements>
         <element name="Beer" positionX="-4734" positionY="-4383" width="128" height="133"/>
         <element name="BeerCategory" positionX="-4536" positionY="-4381" width="128" height="88"/>
-        <element name="BusPath" positionX="-4392" positionY="-4455" width="128" height="150"/>
+        <element name="BusPath" positionX="-4392" positionY="-4455" width="128" height="148"/>
         <element name="ContactInfo" positionX="-4392" positionY="-4293" width="128" height="163"/>
         <element name="FAQ" positionX="-4536" positionY="-4281" width="128" height="60"/>
-        <element name="PathPosition" positionX="-4185" positionY="-4410" width="128" height="103"/>
         <element name="ScheduleItem" positionX="-4538" positionY="-4545" width="128" height="150"/>
         <element name="Sponsor" positionX="-4187" positionY="-4545" width="128" height="120"/>
         <element name="WelcomeInfo" positionX="-4392" positionY="-4545" width="128" height="73"/>

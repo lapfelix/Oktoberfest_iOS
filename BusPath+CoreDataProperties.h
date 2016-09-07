@@ -2,7 +2,7 @@
 //  BusPath+CoreDataProperties.h
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-09-01.
+//  Created by Felix Lapalme on 2016-09-03.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
@@ -21,16 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSDate *startTime;
 @property (nullable, nonatomic, copy) NSString *thumbnailImage;
 @property (nullable, nonatomic, copy) NSString *title;
-@property (nullable, nonatomic, retain) NSSet<PathPosition *> *pathPositions;
-
-@end
-
-@interface BusPath (CoreDataGeneratedAccessors)
-
-- (void)addPathPositionsObject:(PathPosition *)value;
-- (void)removePathPositionsObject:(PathPosition *)value;
-- (void)addPathPositions:(NSSet<PathPosition *> *)values;
-- (void)removePathPositions:(NSSet<PathPosition *> *)values;
+@property (nullable, nonatomic, copy) NSString *kmlString;
 
 @end
 

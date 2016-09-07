@@ -2,7 +2,7 @@
 //  BusPath+CoreDataProperties.m
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-09-01.
+//  Created by Felix Lapalme on 2016-09-03.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
@@ -20,6 +20,6 @@
 @dynamic startTime;
 @dynamic thumbnailImage;
 @dynamic title;
-@dynamic pathPositions;
+@dynamic kmlString;
 
 @end

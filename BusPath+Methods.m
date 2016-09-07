@@ -40,18 +40,21 @@ static NSString *entityName = @"BusPath";
         self.startTime = [self.class.dateFormatter dateFromString:[dict objectOrNilForKey:@"start_time"]];
         self.interval = [dict[@"interval"] floatValue];
         
-        NSArray *coordinatesDictionary = [dict objectOrNilForKey:@"path"];
-        NSMutableSet<PathPosition *> *pathPositions = [NSMutableSet set];
-        for (NSDictionary *coordinateDictionary in coordinatesDictionary) {
-            PathPosition *position = [PathPosition modelObjectWithDictionary:coordinateDictionary managedObjectContext:context];
-            if (position != nil) {
-                [pathPositions addObject:position];
-            } else {
-                //we have a problem
-                NSLog(@"emtpy path position encountered");
-            }
-        }
-        self.pathPositions = pathPositions.copy;
+//        NSArray *coordinatesDictionary = [dict objectOrNilForKey:@"path"];
+//        NSMutableSet<PathPosition *> *pathPositions = [NSMutableSet set];
+//        for (NSDictionary *coordinateDictionary in coordinatesDictionary) {
+//            PathPosition *position = [PathPosition modelObjectWithDictionary:coordinateDictionary managedObjectContext:context];
+//            if (position != nil) {
+//                [pathPositions addObject:position];
+//            } else {
+//                //we have a problem
+//                NSLog(@"emtpy path position encountered");
+//            }
+//        }
+//        self.pathPositions = pathPositions.copy;
+        
+    
+        self.kmlString = [dict objectOrNilForKey:@"kml"];
         
         self.thumbnailImage = [dict objectOrNilForKey:@"thumbnail_url"];
     }
