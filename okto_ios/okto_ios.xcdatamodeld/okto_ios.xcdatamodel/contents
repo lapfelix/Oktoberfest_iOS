@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11215.2" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11224.2" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="Beer" representedClassName="Beer" syncable="YES">
         <attribute name="alcohol" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="beerDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
         <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BeerCategory" inverseName="beers" inverseEntity="BeerCategory" syncable="YES"/>
     </entity>
@@ -56,7 +57,7 @@
         <relationship name="sponsors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sponsor" inverseName="welcomeInfo" inverseEntity="Sponsor" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Beer" positionX="-4734" positionY="-4383" width="128" height="133"/>
+        <element name="Beer" positionX="-4734" positionY="-4383" width="128" height="150"/>
         <element name="BeerCategory" positionX="-4536" positionY="-4381" width="128" height="88"/>
         <element name="BusPath" positionX="-4392" positionY="-4455" width="128" height="148"/>
         <element name="ContactInfo" positionX="-4392" positionY="-4293" width="128" height="163"/>

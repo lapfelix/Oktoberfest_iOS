@@ -28,6 +28,7 @@ static NSString *entityName = @"Beer";
         self.beerDescription = [dict objectOrNilForKey:@"description"];
         self.name = [dict objectOrNilForKey:@"name"];
         self.imageURL = [dict objectOrNilForKey:@"image_url"];
+        self.location = [dict objectOrNilForKey:@"location"];
         
     }
     return self;
