@@ -71,6 +71,7 @@
 		DCFBAAA61D74E01E006AEEE8 /* Tommaso.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCFBAAA51D74E01E006AEEE8 /* Tommaso.ttf */; };
 		DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFC1291D7B352C0008C501 /* OKTLetterView.m */; };
 		DCFFC12D1D7B3EAB0008C501 /* OKTLetterKeyLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFC12C1D7B3EAB0008C501 /* OKTLetterKeyLayer.m */; };
+		DCFFC1301D7BC27D0008C501 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFC12F1D7BC27D0008C501 /* MapViewController.m */; };
 		DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */; };
 		DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */; };
 		DCFFE7751D73C9BB002302A1 /* BusPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7741D73C9BB002302A1 /* BusPathViewController.m */; };
@@ -221,6 +222,8 @@
 		DCFFC1291D7B352C0008C501 /* OKTLetterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTLetterView.m; sourceTree = "<group>"; };
 		DCFFC12B1D7B3EAB0008C501 /* OKTLetterKeyLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTLetterKeyLayer.h; sourceTree = "<group>"; };
 		DCFFC12C1D7B3EAB0008C501 /* OKTLetterKeyLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTLetterKeyLayer.m; sourceTree = "<group>"; };
+		DCFFC12E1D7BC27D0008C501 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DCFFC12F1D7BC27D0008C501 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		DCFFE76D1D73A5B8002302A1 /* BusPathTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewCell.h; sourceTree = "<group>"; };
 		DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewCell.m; sourceTree = "<group>"; };
 		DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewController.h; sourceTree = "<group>"; };
@@ -539,6 +542,8 @@
 				DC372D611D7399580023270F /* FAQViewController.m */,
 				DC98ED051D773AE60016DDF4 /* InfoViewController.h */,
 				DC98ED061D773AE60016DDF4 /* InfoViewController.m */,
+				DCFFC12E1D7BC27D0008C501 /* MapViewController.h */,
+				DCFFC12F1D7BC27D0008C501 /* MapViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -852,6 +857,7 @@
 				DCDABDCF1D70D9EF00BCC342 /* NSDictionary+NilSupport.m in Sources */,
 				DC7454401D61155F00D87656 /* main.m in Sources */,
 				DCDABDC61D70CE1000BCC342 /* PathPosition+Methods.m in Sources */,
+				DCFFC1301D7BC27D0008C501 /* MapViewController.m in Sources */,
 				DC9078ED1D790BEE0035715C /* BusPath+CoreDataClass.m in Sources */,
 				DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */,
 				DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */,
