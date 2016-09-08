@@ -22,6 +22,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSDate *startTime;
 @property (nullable, nonatomic, copy) NSString *thumbnailImage;
 @property (nullable, nonatomic, copy) NSString *title;
+@property (nullable, nonatomic, retain) NSSet<ImportantPlace *> *importantPlaces;
+
+@end
+
+@interface BusPath (CoreDataGeneratedAccessors)
+
+- (void)addImportantPlacesObject:(ImportantPlace *)value;
+- (void)removeImportantPlacesObject:(ImportantPlace *)value;
+- (void)addImportantPlaces:(NSSet<ImportantPlace *> *)values;
+- (void)removeImportantPlaces:(NSSet<ImportantPlace *> *)values;
 
 @end
 

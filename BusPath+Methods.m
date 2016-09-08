@@ -8,6 +8,7 @@
 
 #import "BusPath+Methods.h"
 #import "PathPosition+Methods.h"
+#import "ImportantPlace+Methods.h"
 
 static NSString *entityName = @"BusPath";
 
@@ -43,6 +44,14 @@ static NSString *entityName = @"BusPath";
         self.csvString = [dict objectOrNilForKey:@"csv"];
         
         self.thumbnailImage = [dict objectOrNilForKey:@"thumbnail_url"];
+        
+        NSArray *importantPlacesDics = [dict objectOrNilForKey:@"importantPoints"];
+        NSMutableSet<ImportantPlace *> *modelledImportantPlaces = [NSMutableSet set];
+        for (NSDictionary *importantPlaceDic in importantPlacesDics) {
+            ImportantPlace *sponsor = [ImportantPlace modelObjectWithDictionary:importantPlaceDic managedObjectContext:context];
+            [modelledImportantPlaces addObject:sponsor];
+        }
+        self.importantPlaces = modelledImportantPlaces.copy;
     }
     return self;
 }
