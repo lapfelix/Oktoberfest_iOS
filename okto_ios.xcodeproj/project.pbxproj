@@ -10,6 +10,7 @@
 		2127C8221819815E31E87DE1 /* libPods-okto_iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412A411285FFBDA944AA26A /* libPods-okto_iosUITests.a */; };
 		36563FFFB45F24F0FA3F9B10 /* libPods-okto_iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */; };
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
+		DC0EEA341D80FD8F00738A9A /* BusPathMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */; };
 		DC1CB8041D7FB8300004E145 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */; };
 		DC1CB8051D7FB8300004E145 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB8031D7FB8300004E145 /* Beer+CoreDataProperties.m */; };
 		DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D191D737A340023270F /* WelcomeInfo+Methods.m */; };
@@ -74,7 +75,6 @@
 		DCFFC1301D7BC27D0008C501 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFC12F1D7BC27D0008C501 /* MapViewController.m */; };
 		DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */; };
 		DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */; };
-		DCFFE7751D73C9BB002302A1 /* BusPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7741D73C9BB002302A1 /* BusPathViewController.m */; };
 		DCFFE7771D74B925002302A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE7761D74B925002302A1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +105,8 @@
 		9BEAA1A84801F6EC1CB9BE26 /* Pods-okto_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_iosUITests/Pods-okto_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3CE05E2EA3DC44C7CECA6EC /* Pods-okto_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C77115BDDE96F5E61082E601 /* Pods-okto_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DC0EEA321D80FD8F00738A9A /* BusPathMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathMapViewController.h; sourceTree = "<group>"; };
+		DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathMapViewController.m; sourceTree = "<group>"; };
 		DC1CB8001D7FB8300004E145 /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataClass.h"; sourceTree = "<group>"; };
 		DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
 		DC1CB8021D7FB8300004E145 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -228,8 +230,6 @@
 		DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewCell.m; sourceTree = "<group>"; };
 		DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewController.h; sourceTree = "<group>"; };
 		DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewController.m; sourceTree = "<group>"; };
-		DCFFE7731D73C9BB002302A1 /* BusPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathViewController.h; sourceTree = "<group>"; };
-		DCFFE7741D73C9BB002302A1 /* BusPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathViewController.m; sourceTree = "<group>"; };
 		DCFFE7761D74B925002302A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -534,8 +534,8 @@
 				DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */,
 				DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */,
 				DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */,
-				DCFFE7731D73C9BB002302A1 /* BusPathViewController.h */,
-				DCFFE7741D73C9BB002302A1 /* BusPathViewController.m */,
+				DC0EEA321D80FD8F00738A9A /* BusPathMapViewController.h */,
+				DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */,
 				DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */,
 				DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */,
 				DC372D601D7399580023270F /* FAQViewController.h */,
@@ -871,7 +871,6 @@
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
 				DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
-				DCFFE7751D73C9BB002302A1 /* BusPathViewController.m in Sources */,
 				DCFFC12D1D7B3EAB0008C501 /* OKTLetterKeyLayer.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
@@ -885,6 +884,7 @@
 				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
+				DC0EEA341D80FD8F00738A9A /* BusPathMapViewController.m in Sources */,
 				DC9078F81D790BEE0035715C /* FAQ+CoreDataProperties.m in Sources */,
 				DC9078F11D790BEE0035715C /* WelcomeInfo+CoreDataClass.m in Sources */,
 				DC9078F71D790BEE0035715C /* FAQ+CoreDataClass.m in Sources */,

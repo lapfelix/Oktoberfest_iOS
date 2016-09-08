@@ -11,7 +11,7 @@
 #import "BusPath+Methods.h"
 #import "OKTObjectConfigurableProtocol.h"
 #import "AppDelegate.h"
-#import "BusPathViewController.h"
+#import "BusPathMapViewController.h"
 
 static NSString *CellReuseIdentifier = @"buspath";
 
@@ -60,8 +60,14 @@ static NSString *CellReuseIdentifier = @"buspath";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //initialize a BusPathViewController
-    [self showViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"buspath"] sender:nil];
+    //gets the associated object
+    BusPath *busPath = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    
+    BusPathMapViewController *mapView = [self.storyboard instantiateViewControllerWithIdentifier:@"buspath"];
+    
+    mapView.csvString = busPath.csvString;
+
+    [self showViewController:mapView sender:nil];
 
 }
 

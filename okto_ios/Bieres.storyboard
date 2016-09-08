@@ -10,7 +10,7 @@
         <scene sceneID="7yH-AD-0GX">
             <objects>
                 <navigationController title="Bières" id="5KN-4j-LtI" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ia-5F-ibL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6ia-5F-ibL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="301"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BL4-G6-wyr" id="S2u-AJ-nia">
-                                    <frame key="frameInset" width="375" height="300.5"/>
+                                    <frame key="frameInset" width="375" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5A-Ff-eKk">

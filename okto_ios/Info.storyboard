@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11191" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2rF-LF-GJ9">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2rF-LF-GJ9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="b4e-i3-abl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fql-fa-ADT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="damier" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-QQ-d02"/>
@@ -370,7 +370,7 @@
             <objects>
                 <tableViewController title="Horaire Autobus" id="cHj-6U-Fon" customClass="BusPathTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="28" sectionFooterHeight="28" id="WLL-oY-6sZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -440,35 +440,39 @@
             </objects>
             <point key="canvasLocation" x="1109.5999999999999" y="-106.59670164917542"/>
         </scene>
-        <!--Bus Path View Controller-->
+        <!--Bus Path Map View Controller-->
         <scene sceneID="Wlf-j9-rk1">
             <objects>
-                <viewController storyboardIdentifier="buspath" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e2r-k4-IVz" customClass="BusPathViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buspath" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e2r-k4-IVz" customClass="BusPathMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jAY-5r-gng"/>
                         <viewControllerLayoutGuide type="bottom" id="gWH-UM-BiK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vaa-gr-CQO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-ja-HRa"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-ja-HRa">
+                                <connections>
+                                    <outlet property="delegate" destination="e2r-k4-IVz" id="X6m-wA-d6E"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gWH-UM-BiK" firstAttribute="top" secondItem="0Uj-ja-HRa" secondAttribute="bottom" id="2g8-1U-FAx"/>
-                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="top" secondItem="jAY-5r-gng" secondAttribute="bottom" id="FfY-c9-XhA"/>
-                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="leading" secondItem="vaa-gr-CQO" secondAttribute="leading" id="KGd-VQ-YzF"/>
-                            <constraint firstAttribute="trailing" secondItem="0Uj-ja-HRa" secondAttribute="trailing" id="o4K-74-uq9"/>
+                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="leading" secondItem="vaa-gr-CQO" secondAttribute="leading" id="00e-4e-654"/>
+                            <constraint firstAttribute="trailing" secondItem="0Uj-ja-HRa" secondAttribute="trailing" id="2yL-3d-QXV"/>
+                            <constraint firstAttribute="bottom" secondItem="0Uj-ja-HRa" secondAttribute="bottom" id="WSx-5u-qpa"/>
+                            <constraint firstItem="0Uj-ja-HRa" firstAttribute="top" secondItem="vaa-gr-CQO" secondAttribute="top" id="afM-s7-bJb"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="0Uj-ja-HRa" id="x2R-Nf-e9c"/>
+                        <outlet property="mapView" destination="0Uj-ja-HRa" id="4Oe-Rp-mst"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eP-3C-4ol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1876.875" y="-110.91549295774648"/>
+            <point key="canvasLocation" x="1876.875" y="-111.25"/>
         </scene>
         <!--Infos-->
         <scene sceneID="yKj-ok-jro">
@@ -491,7 +495,7 @@
             <objects>
                 <viewController title="FAQ" id="tJF-Kf-LfF" customClass="FAQViewController" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="mHP-vh-rvI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
