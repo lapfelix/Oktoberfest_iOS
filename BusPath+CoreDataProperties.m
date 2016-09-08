@@ -21,5 +21,6 @@
 @dynamic startTime;
 @dynamic thumbnailImage;
 @dynamic title;
+@dynamic importantPlaces;
 
 @end

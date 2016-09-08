@@ -11,6 +11,9 @@
 		36563FFFB45F24F0FA3F9B10 /* libPods-okto_iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */; };
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
 		DC0EEA341D80FD8F00738A9A /* BusPathMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */; };
+		DC0EEA391D81180000738A9A /* ImportantPlace+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA361D81180000738A9A /* ImportantPlace+CoreDataClass.m */; };
+		DC0EEA3A1D81180000738A9A /* ImportantPlace+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA381D81180000738A9A /* ImportantPlace+CoreDataProperties.m */; };
+		DC0EEA3D1D81184D00738A9A /* ImportantPlace+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA3C1D81184D00738A9A /* ImportantPlace+Methods.m */; };
 		DC1CB8041D7FB8300004E145 /* Beer+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */; };
 		DC1CB8051D7FB8300004E145 /* Beer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1CB8031D7FB8300004E145 /* Beer+CoreDataProperties.m */; };
 		DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC372D191D737A340023270F /* WelcomeInfo+Methods.m */; };
@@ -107,6 +110,12 @@
 		C77115BDDE96F5E61082E601 /* Pods-okto_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0EEA321D80FD8F00738A9A /* BusPathMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathMapViewController.h; sourceTree = "<group>"; };
 		DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathMapViewController.m; sourceTree = "<group>"; };
+		DC0EEA351D81180000738A9A /* ImportantPlace+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImportantPlace+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC0EEA361D81180000738A9A /* ImportantPlace+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImportantPlace+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC0EEA371D81180000738A9A /* ImportantPlace+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImportantPlace+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC0EEA381D81180000738A9A /* ImportantPlace+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImportantPlace+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC0EEA3B1D81184D00738A9A /* ImportantPlace+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImportantPlace+Methods.h"; sourceTree = "<group>"; };
+		DC0EEA3C1D81184D00738A9A /* ImportantPlace+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ImportantPlace+Methods.m"; sourceTree = "<group>"; };
 		DC1CB8001D7FB8300004E145 /* Beer+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataClass.h"; sourceTree = "<group>"; };
 		DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+CoreDataClass.m"; sourceTree = "<group>"; };
 		DC1CB8021D7FB8300004E145 /* Beer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -289,6 +298,10 @@
 		DC372CE71D7378430023270F /* Automatically generated */ = {
 			isa = PBXGroup;
 			children = (
+				DC0EEA351D81180000738A9A /* ImportantPlace+CoreDataClass.h */,
+				DC0EEA361D81180000738A9A /* ImportantPlace+CoreDataClass.m */,
+				DC0EEA371D81180000738A9A /* ImportantPlace+CoreDataProperties.h */,
+				DC0EEA381D81180000738A9A /* ImportantPlace+CoreDataProperties.m */,
 				DC1CB8001D7FB8300004E145 /* Beer+CoreDataClass.h */,
 				DC1CB8011D7FB8300004E145 /* Beer+CoreDataClass.m */,
 				DC1CB8021D7FB8300004E145 /* Beer+CoreDataProperties.h */,
@@ -509,6 +522,8 @@
 				DCDABDC21D70CDFB00BCC342 /* ScheduleItem+Methods.m */,
 				DCDABDC41D70CE1000BCC342 /* PathPosition+Methods.h */,
 				DCDABDC51D70CE1000BCC342 /* PathPosition+Methods.m */,
+				DC0EEA3B1D81184D00738A9A /* ImportantPlace+Methods.h */,
+				DC0EEA3C1D81184D00738A9A /* ImportantPlace+Methods.m */,
 				DCDABDC71D70CE1900BCC342 /* BusPath+Methods.h */,
 				DCDABDC81D70CE1900BCC342 /* BusPath+Methods.m */,
 				DCDABDCA1D70CE2200BCC342 /* ContactInfo+Methods.h */,
@@ -836,6 +851,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0EEA391D81180000738A9A /* ImportantPlace+CoreDataClass.m in Sources */,
 				DC1CB8041D7FB8300004E145 /* Beer+CoreDataClass.m in Sources */,
 				DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */,
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
@@ -871,6 +887,7 @@
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
 				DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
+				DC0EEA3A1D81180000738A9A /* ImportantPlace+CoreDataProperties.m in Sources */,
 				DCFFC12D1D7B3EAB0008C501 /* OKTLetterKeyLayer.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
@@ -881,6 +898,7 @@
 				DC98ED071D773AE70016DDF4 /* InfoViewController.m in Sources */,
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
+				DC0EEA3D1D81184D00738A9A /* ImportantPlace+Methods.m in Sources */,
 				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
