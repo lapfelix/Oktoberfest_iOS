@@ -158,6 +158,9 @@
                                                     <constraint firstAttribute="width" constant="66" id="Hah-Q2-4AK"/>
                                                 </constraints>
                                                 <state key="normal" title="Concours"/>
+                                                <connections>
+                                                    <segue destination="bx1-Bb-84j" kind="presentation" id="ONQ-rJ-iVW"/>
+                                                </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h2O-XU-8RI">
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -276,7 +279,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egk-sN-CY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="-135"/>
+            <point key="canvasLocation" x="1270" y="-88"/>
         </scene>
         <!--Contest View Controller-->
         <scene sceneID="l6d-9b-6GW">
@@ -315,6 +318,9 @@
                                 <frame key="frameInset" minX="145" minY="547" width="84" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Commencer"/>
+                                <connections>
+                                    <segue destination="nU0-kW-2zo" kind="show" id="qCT-Ud-ssx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="En trouvant la marque des 8 bières suivantes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-pk-zDg">
                                 <frame key="frameInset" minX="39" minY="327" width="285" height="92"/>
@@ -348,12 +354,7 @@
                                 <frame key="frameInset" minX="67" minY="186" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auu-bB-EPR">
-                                <frame key="frameInset" minX="67" minY="28" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-yv-PYz">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Réponse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-yv-PYz">
                                 <frame key="frameInset" minX="139" minY="387" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -368,23 +369,35 @@
                                     <action selector="validateTap:" destination="nU0-kW-2zo" eventType="touchUpInside" id="Bmy-fM-IDn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deviner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvA-B7-4oN">
+                                <frame key="frameInset" minX="83" minY="346" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-lX-1jm">
+                                <frame key="frameInset" minX="112" minY="121" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="r4w-yv-PYz" id="B3i-SU-Rjy"/>
                         <outlet property="beerImage" destination="9pN-hT-c1Z" id="cKg-os-19T"/>
-                        <outlet property="stepSummaryView" destination="auu-bB-EPR" id="7ry-NK-JgO"/>
+                        <outlet property="resultLabel" destination="zvA-B7-4oN" id="nC5-Hk-0Oa"/>
+                        <outlet property="stepProgressView" destination="qfe-lX-1jm" id="HJ3-zO-sOE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kx-4r-Crb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3073" y="-88"/>
+            <point key="canvasLocation" x="3072.8000000000002" y="-88.605697151424295"/>
         </scene>
         <!--Contest Done View Controller-->
         <scene sceneID="Ciu-as-Kd1">
             <objects>
-                <viewController id="Iwx-fl-7VC" customClass="ContestDoneViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContestDoneViewControllerIdentifier" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iwx-fl-7VC" customClass="ContestDoneViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UNn-K5-AfD"/>
                         <viewControllerLayoutGuide type="bottom" id="LMN-ay-k4j"/>
@@ -393,18 +406,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlO-Fd-ZX1">
-                                <frame key="frameInset" minX="67" minY="47" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUCCÈS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-9L-2U8">
-                                <frame key="frameInset" minX="166" minY="230" width="72" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRT-ZQ-Im2">
                                 <frame key="frameInset" minX="139" minY="318" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -434,13 +435,19 @@
                                     <action selector="sendTap:" destination="Iwx-fl-7VC" eventType="touchUpInside" id="ueC-0G-vRx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SUCCÈS!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arh-9L-2U8">
+                                <frame key="frameInset" minX="139" minY="156" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="I7M-QM-1nP" id="vQ0-y5-hWQ"/>
                         <outlet property="nameTextField" destination="fRT-ZQ-Im2" id="1mC-7a-lgE"/>
-                        <outlet property="stepSummaryView" destination="JlO-Fd-ZX1" id="c0C-p0-YLB"/>
                         <outlet property="universityTextField" destination="XtL-8V-4Mz" id="nti-ya-zd2"/>
                     </connections>
                 </viewController>

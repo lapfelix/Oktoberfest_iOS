@@ -9,14 +9,20 @@
 #import "ContestStepViewController.h"
 
 @interface ContestStepViewController ()
-@property (weak, nonatomic) IBOutlet UIView *stepSummaryView;
+
+@property (weak, nonatomic) IBOutlet UIProgressView *stepProgressView;
 @property (weak, nonatomic) IBOutlet UIImageView *beerImage;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 - (IBAction)validateTap:(UIButton *)sender;
 
 @end
 
 @implementation ContestStepViewController
+
+NSString *correctAnswer = @"Pabst";
+int currentStep = 0;
+int totalStep = 6;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,6 +45,22 @@
 */
 
 - (IBAction)validateTap:(UIButton *)sender {
+    
+    if ([[_answerTextField.text lowercaseString] isEqualToString:[correctAnswer lowercaseString]]) {
+        
+        currentStep++;
+        if (currentStep >= totalStep) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Bienvenue" bundle:nil];
+            UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ContestDoneViewControllerIdentifier"];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        float progress = (float)currentStep/totalStep;
+        [_stepProgressView setProgress:progress];
+        [_resultLabel setText:@"Deviner"];
+        [_answerTextField setText:@""];
+    } else {
+        [_resultLabel setText:@"Mauvaise réponse..."];
+    }
     
 }
 
