@@ -2,7 +2,7 @@
 //  BusPath+CoreDataProperties.h
 //  okto_ios
 //
-//  Created by Felix Lapalme on 2016-09-03.
+//  Created by Felix Lapalme on 2016-09-07.
 //  Copyright © 2016 Felix Lapalme. All rights reserved.
 //
 
@@ -18,10 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *additionalString;
 @property (nonatomic) int16_t id;
 @property (nonatomic) float interval;
+@property (nullable, nonatomic, copy) NSString *csvString;
 @property (nullable, nonatomic, copy) NSDate *startTime;
 @property (nullable, nonatomic, copy) NSString *thumbnailImage;
 @property (nullable, nonatomic, copy) NSString *title;
-@property (nullable, nonatomic, copy) NSString *kmlString;
 
 @end
 
