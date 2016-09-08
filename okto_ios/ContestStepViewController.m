@@ -49,19 +49,29 @@ int totalStep = 6;
     if ([[_answerTextField.text lowercaseString] isEqualToString:[correctAnswer lowercaseString]]) {
         
         currentStep++;
+        
         if (currentStep >= totalStep) {
-            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Bienvenue" bundle:nil];
-            UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ContestDoneViewControllerIdentifier"];
-            [self.navigationController pushViewController:vc animated:YES];
+            [self showSuccessStep];
         }
-        float progress = (float)currentStep/totalStep;
-        [_stepProgressView setProgress:progress];
-        [_resultLabel setText:@"Deviner"];
-        [_answerTextField setText:@""];
+
+        [_stepProgressView setProgress:(float)currentStep/totalStep];
+        [self resetLabels];
+        
     } else {
         [_resultLabel setText:@"Mauvaise réponse..."];
     }
     
+}
+
+- (void)resetLabels {
+    [_resultLabel setText:@"Deviner"];
+    [_answerTextField setText:@""];
+}
+
+- (void)showSuccessStep {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Bienvenue" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ContestDoneViewControllerIdentifier"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
