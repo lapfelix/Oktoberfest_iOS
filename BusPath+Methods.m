@@ -53,8 +53,7 @@ static NSString *entityName = @"BusPath";
 //        }
 //        self.pathPositions = pathPositions.copy;
         
-    
-        self.kmlString = [dict objectOrNilForKey:@"kml"];
+        self.csvString = [dict objectOrNilForKey:@"csv"];
         
         self.thumbnailImage = [dict objectOrNilForKey:@"thumbnail_url"];
     }
