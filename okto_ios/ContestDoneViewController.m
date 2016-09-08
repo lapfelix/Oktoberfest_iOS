@@ -9,6 +9,11 @@
 #import "ContestDoneViewController.h"
 
 @interface ContestDoneViewController ()
+@property (weak, nonatomic) IBOutlet UIView *stepSummaryView;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UITextField *universityTextField;
+- (IBAction)sendTap:(UIButton *)sender;
 
 @end
 
@@ -34,4 +39,6 @@
 }
 */
 
+- (IBAction)sendTap:(UIButton *)sender {
+}
 @end

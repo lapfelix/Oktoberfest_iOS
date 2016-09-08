@@ -9,6 +9,10 @@
 #import "ContestStepViewController.h"
 
 @interface ContestStepViewController ()
+@property (weak, nonatomic) IBOutlet UIView *stepSummaryView;
+@property (weak, nonatomic) IBOutlet UIImageView *beerImage;
+@property (weak, nonatomic) IBOutlet UITextField *answerTextField;
+- (IBAction)validateTap:(UIButton *)sender;
 
 @end
 
@@ -33,5 +37,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)validateTap:(UIButton *)sender {
+    
+}
 
 @end
