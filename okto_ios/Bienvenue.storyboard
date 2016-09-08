@@ -270,6 +270,77 @@
             </objects>
             <point key="canvasLocation" x="1122.4000000000001" y="901.79910044977521"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yso-P8-OLj">
+            <objects>
+                <navigationController id="bx1-Bb-84j" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="95K-hb-hGe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="24z-4W-uXX" kind="relationship" relationship="rootViewController" id="FSO-l7-WFY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egk-sN-CY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="-135"/>
+        </scene>
+        <!--Contest View Controller-->
+        <scene sceneID="l6d-9b-6GW">
+            <objects>
+                <viewController id="24z-4W-uXX" customClass="ContestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Wc-NW-1nl"/>
+                        <viewControllerLayoutGuide type="bottom" id="c4n-Qs-Swo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lBm-r6-hHv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O9W-nC-tC9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmd-we-zHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2154" y="-87"/>
+        </scene>
+        <!--Contest Step View Controller-->
+        <scene sceneID="Ir3-oO-kba">
+            <objects>
+                <viewController id="nU0-kW-2zo" customClass="ContestStepViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FjV-Nl-i4Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="6CX-bE-Mcv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b0N-Ei-ZTD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kx-4r-Crb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3058" y="400"/>
+        </scene>
+        <!--Contest Done View Controller-->
+        <scene sceneID="Ciu-as-Kd1">
+            <objects>
+                <viewController id="Iwx-fl-7VC" customClass="ContestDoneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UNn-K5-AfD"/>
+                        <viewControllerLayoutGuide type="bottom" id="LMN-ay-k4j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWg-p1-02v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPH-aQ-ufx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3900" y="397"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo" width="1144" height="1171"/>
