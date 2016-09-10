@@ -43,6 +43,14 @@
         <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="busPath" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BusPath" inverseName="importantPlaces" inverseEntity="BusPath" syncable="YES"/>
     </entity>
+    <entity name="Map" representedClassName="Map" syncable="YES">
+        <attribute name="east" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="north" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rotation" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="south" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="west" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="ScheduleItem" representedClassName="ScheduleItem" syncable="YES">
         <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -68,10 +76,11 @@
         <element name="BeerCategory" positionX="-4536" positionY="-4381" width="128" height="88"/>
         <element name="BusPath" positionX="-4392" positionY="-4455" width="128" height="163"/>
         <element name="ContactInfo" positionX="-4392" positionY="-4276" width="128" height="163"/>
-        <element name="FAQ" positionX="-4536" positionY="-4281" width="128" height="60"/>
+        <element name="FAQ" positionX="-4536" positionY="-4281" width="128" height="58"/>
+        <element name="ImportantPlace" positionX="-4205" positionY="-4455" width="128" height="103"/>
+        <element name="Map" positionX="-4205" positionY="-4329" width="128" height="135"/>
         <element name="ScheduleItem" positionX="-4538" positionY="-4545" width="128" height="150"/>
         <element name="Sponsor" positionX="-4203" positionY="-4590" width="128" height="120"/>
         <element name="WelcomeInfo" positionX="-4392" positionY="-4545" width="128" height="73"/>
-        <element name="ImportantPlace" positionX="-4205" positionY="-4455" width="128" height="103"/>
     </elements>
 </model>

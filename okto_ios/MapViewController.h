@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreData;
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController<NSFetchedResultsControllerDelegate>
 
 @end
