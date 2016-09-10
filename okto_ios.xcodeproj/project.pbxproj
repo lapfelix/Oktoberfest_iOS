@@ -11,6 +11,9 @@
 		36563FFFB45F24F0FA3F9B10 /* libPods-okto_iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */; };
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
 		DC078ED71D84659F002229F3 /* ImportantPlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078ED61D84659F002229F3 /* ImportantPlaceAnnotation.m */; };
+		DC078EDC1D84A1F4002229F3 /* Map+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078ED91D84A1F4002229F3 /* Map+CoreDataClass.m */; };
+		DC078EDD1D84A1F4002229F3 /* Map+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078EDB1D84A1F4002229F3 /* Map+CoreDataProperties.m */; };
+		DC078EE01D84A207002229F3 /* Map+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078EDF1D84A207002229F3 /* Map+Methods.m */; };
 		DC0EEA341D80FD8F00738A9A /* BusPathMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */; };
 		DC0EEA391D81180000738A9A /* ImportantPlace+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA361D81180000738A9A /* ImportantPlace+CoreDataClass.m */; };
 		DC0EEA3A1D81180000738A9A /* ImportantPlace+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA381D81180000738A9A /* ImportantPlace+CoreDataProperties.m */; };
@@ -114,6 +117,12 @@
 		C77115BDDE96F5E61082E601 /* Pods-okto_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		DC078ED51D84659F002229F3 /* ImportantPlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportantPlaceAnnotation.h; sourceTree = "<group>"; };
 		DC078ED61D84659F002229F3 /* ImportantPlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportantPlaceAnnotation.m; sourceTree = "<group>"; };
+		DC078ED81D84A1F4002229F3 /* Map+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Map+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC078ED91D84A1F4002229F3 /* Map+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Map+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC078EDA1D84A1F4002229F3 /* Map+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Map+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC078EDB1D84A1F4002229F3 /* Map+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Map+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DC078EDE1D84A207002229F3 /* Map+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Map+Methods.h"; sourceTree = "<group>"; };
+		DC078EDF1D84A207002229F3 /* Map+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Map+Methods.m"; sourceTree = "<group>"; };
 		DC0EEA321D80FD8F00738A9A /* BusPathMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathMapViewController.h; sourceTree = "<group>"; };
 		DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathMapViewController.m; sourceTree = "<group>"; };
 		DC0EEA351D81180000738A9A /* ImportantPlace+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImportantPlace+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -310,6 +319,10 @@
 		DC372CE71D7378430023270F /* Automatically generated */ = {
 			isa = PBXGroup;
 			children = (
+				DC078ED81D84A1F4002229F3 /* Map+CoreDataClass.h */,
+				DC078ED91D84A1F4002229F3 /* Map+CoreDataClass.m */,
+				DC078EDA1D84A1F4002229F3 /* Map+CoreDataProperties.h */,
+				DC078EDB1D84A1F4002229F3 /* Map+CoreDataProperties.m */,
 				DC0EEA351D81180000738A9A /* ImportantPlace+CoreDataClass.h */,
 				DC0EEA361D81180000738A9A /* ImportantPlace+CoreDataClass.m */,
 				DC0EEA371D81180000738A9A /* ImportantPlace+CoreDataProperties.h */,
@@ -548,6 +561,8 @@
 				DC372D1C1D737A3F0023270F /* Sponsor+Methods.m */,
 				DC372D1E1D737A500023270F /* FAQ+Methods.h */,
 				DC372D1F1D737A500023270F /* FAQ+Methods.m */,
+				DC078EDE1D84A207002229F3 /* Map+Methods.h */,
+				DC078EDF1D84A207002229F3 /* Map+Methods.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -876,6 +891,7 @@
 				DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */,
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
 				DC9079011D790C650035715C /* BeerCategory+Methods.m in Sources */,
+				DC078EE01D84A207002229F3 /* Map+Methods.m in Sources */,
 				DC9079161D7A23E70035715C /* ContactInfo+CoreDataProperties.m in Sources */,
 				DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */,
 				DCDABDCC1D70CE2200BCC342 /* ContactInfo+Methods.m in Sources */,
@@ -908,9 +924,11 @@
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
 				DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */,
+				DC078EDD1D84A1F4002229F3 /* Map+CoreDataProperties.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
 				DC0EEA3A1D81180000738A9A /* ImportantPlace+CoreDataProperties.m in Sources */,
 				DCFFC12D1D7B3EAB0008C501 /* OKTLetterKeyLayer.m in Sources */,
+				DC078EDC1D84A1F4002229F3 /* Map+CoreDataClass.m in Sources */,
 				DC7454911D61483200D87656 /* OKTAPIWrapper.m in Sources */,
 				DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */,
 				DC7454941D61487E00D87656 /* OKTNetworkMethods.m in Sources */,

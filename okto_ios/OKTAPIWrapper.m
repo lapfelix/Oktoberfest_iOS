@@ -24,6 +24,7 @@
 #import "Sponsor+Methods.h"
 #import "FAQ+Methods.h"
 #import "ContactInfo+Methods.h"
+#import "Map+Methods.h"
 
 static NSString *baseURL = @"https://private-5fca2-oktoberfest.apiary-mock.com/";
 static NSDictionary *endpoints;
@@ -50,6 +51,7 @@ static NSDictionary *endpoints;
                       NSStringFromClass([FAQ class])          : @"faq",
                       NSStringFromClass([BusPath class])      : @"bus_schedule",
                       NSStringFromClass([ContactInfo class])  : @"contact",
+                      NSStringFromClass([Map class])          : @"map",
                     };
     });
     return sharedInstance;
