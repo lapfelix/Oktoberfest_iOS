@@ -57,7 +57,16 @@ static NSString *entityName = @"BusPath";
 }
 
 - (NSArray<NSString *> *)getImageURLs {
-    return @[self.thumbnailImage];
+    
+    NSMutableArray *importantPlacesImages = [NSMutableArray array];
+    
+    for (ImportantPlace *place in self.importantPlaces) {
+        [importantPlacesImages addObject:[place getImageURLs]];
+    }
+    
+    [importantPlacesImages addObject:self.thumbnailImage];
+    
+    return importantPlacesImages.copy;
 }
 
 @end
