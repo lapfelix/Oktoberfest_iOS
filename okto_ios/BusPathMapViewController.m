@@ -24,15 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
     
     [self displayPathFromCsv:self.busPath.csvString];
     [self displayImportantPlaces:self.busPath.importantPlaces];
@@ -41,7 +32,7 @@
 - (void)displayImportantPlaces:(NSSet<ImportantPlace *> *)importantPlaces {
     [self.mapView removeAnnotations:self.mapView.annotations];
 
-    for (ImportantPlace *place in importantPlaces) {        
+    for (ImportantPlace *place in importantPlaces) {
         ImportantPlaceAnnotation *annotation = [ImportantPlaceAnnotation new];
         annotation.imageURL = place.imageUrl;
         
@@ -125,9 +116,6 @@
     }
     
     annotationView.annotation = annotation;
-    
-    // add below line of code to enable selection on annotation view
-    // annotationView.canShowCallout = YES;
     
     return annotationView;
 }
