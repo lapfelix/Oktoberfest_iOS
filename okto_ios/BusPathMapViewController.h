@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 @import MapKit;
 
+@class BusPath;
+
 @interface BusPathMapViewController : UIViewController<MKMapViewDelegate>
 
-@property (copy, nonatomic) IBOutlet NSString *csvString;
+@property (assign, nonatomic) IBOutlet BusPath *busPath;
 
 //- (void)displayPathFromCsv:(NSString *)csvString;
 

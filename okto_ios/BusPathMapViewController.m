@@ -7,6 +7,11 @@
 //
 
 #import "BusPathMapViewController.h"
+#import "BusPath+CoreDataClass.h"
+#import "ImportantPlace+CoreDataClass.h"
+#import "ImportantPlaceAnnotation.h"
+
+#import <SDWebImage/SDWebImageManager.h>
 
 @interface BusPathMapViewController ()
 
@@ -29,12 +34,31 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self displayPathFromCsv:self.csvString];
+    [self displayPathFromCsv:self.busPath.csvString];
+    [self displayImportantPlaces:self.busPath.importantPlaces];
+}
+
+- (void)displayImportantPlaces:(NSSet<ImportantPlace *> *)importantPlaces {
+    [self.mapView removeAnnotations:self.mapView.annotations];
+
+    for (ImportantPlace *place in importantPlaces) {        
+        ImportantPlaceAnnotation *annotation = [ImportantPlaceAnnotation new];
+        annotation.imageURL = place.imageUrl;
+        
+        NSArray<NSString *> *coordinatesStringArray = [place.coordinatesString componentsSeparatedByString:@","];
+        
+        if (coordinatesStringArray.count >= 2) {
+            
+            annotation.coordinate = CLLocationCoordinate2DMake(coordinatesStringArray[1].doubleValue, coordinatesStringArray[0].doubleValue);
+            
+            [self.mapView addAnnotation:annotation];
+        }
+    }
 }
 
 - (void)displayPathFromCsv:(NSString *)csvString {
     MKPolyline *overlay = [self overlayFromCsvString:csvString];
-
+    
     [self.mapView removeOverlays:[self.mapView overlaysInLevel:MKOverlayLevelAboveRoads]];
     [self.mapView addOverlay:overlay level:MKOverlayLevelAboveRoads];
     self.mapView.visibleMapRect = [self.mapView mapRectThatFits:overlay.boundingMapRect];
@@ -75,4 +99,36 @@
     return renderer;
 }
 
+- (MKAnnotationView *)mapView:(MKMapView *)map viewForAnnotation:(ImportantPlaceAnnotation *)annotation {
+    static NSString *annotationViewReuseIdentifier = @"annotationViewReuseIdentifier";
+    
+    MKAnnotationView *annotationView = (MKAnnotationView *)[map dequeueReusableAnnotationViewWithIdentifier:annotationViewReuseIdentifier];
+    
+    if (annotationView == nil)
+    {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationViewReuseIdentifier];
+        
+    }
+    
+    NSURL *url = [NSURL URLWithString:annotation.imageURL];
+    
+    if (url != nil) {
+        [[SDWebImageManager sharedManager] downloadImageWithURL:url options:SDWebImageHighPriority progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+            if (image != nil) {
+                MKAnnotationView *annotation = [[MKAnnotationView alloc] init];
+                annotation.image = image;
+                if (annotationView != nil) {
+                    annotationView.image = image;
+                }
+            }
+        }];
+    }
+    
+    annotationView.annotation = annotation;
+    
+    // add below line of code to enable selection on annotation view
+    // annotationView.canShowCallout = YES;
+    
+    return annotationView;
+}
 @end

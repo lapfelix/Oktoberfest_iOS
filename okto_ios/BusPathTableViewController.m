@@ -65,7 +65,7 @@ static NSString *CellReuseIdentifier = @"buspath";
     
     BusPathMapViewController *mapView = [self.storyboard instantiateViewControllerWithIdentifier:@"buspath"];
     
-    mapView.csvString = busPath.csvString;
+    mapView.busPath = busPath;
 
     [self showViewController:mapView sender:nil];
 

@@ -10,6 +10,7 @@
 		2127C8221819815E31E87DE1 /* libPods-okto_iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412A411285FFBDA944AA26A /* libPods-okto_iosUITests.a */; };
 		36563FFFB45F24F0FA3F9B10 /* libPods-okto_iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */; };
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
+		DC078ED71D84659F002229F3 /* ImportantPlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078ED61D84659F002229F3 /* ImportantPlaceAnnotation.m */; };
 		DC0EEA341D80FD8F00738A9A /* BusPathMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */; };
 		DC0EEA391D81180000738A9A /* ImportantPlace+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA361D81180000738A9A /* ImportantPlace+CoreDataClass.m */; };
 		DC0EEA3A1D81180000738A9A /* ImportantPlace+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0EEA381D81180000738A9A /* ImportantPlace+CoreDataProperties.m */; };
@@ -108,6 +109,8 @@
 		9BEAA1A84801F6EC1CB9BE26 /* Pods-okto_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_iosUITests/Pods-okto_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3CE05E2EA3DC44C7CECA6EC /* Pods-okto_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C77115BDDE96F5E61082E601 /* Pods-okto_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DC078ED51D84659F002229F3 /* ImportantPlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportantPlaceAnnotation.h; sourceTree = "<group>"; };
+		DC078ED61D84659F002229F3 /* ImportantPlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportantPlaceAnnotation.m; sourceTree = "<group>"; };
 		DC0EEA321D80FD8F00738A9A /* BusPathMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathMapViewController.h; sourceTree = "<group>"; };
 		DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathMapViewController.m; sourceTree = "<group>"; };
 		DC0EEA351D81180000738A9A /* ImportantPlace+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImportantPlace+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -367,6 +370,8 @@
 		DC5B00871D711800001C5A83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC078ED51D84659F002229F3 /* ImportantPlaceAnnotation.h */,
+				DC078ED61D84659F002229F3 /* ImportantPlaceAnnotation.m */,
 				DC5B00881D711806001C5A83 /* Cells */,
 				DC9079021D79C7D90035715C /* RoundedRectangle.h */,
 				DCFFC1281D7B352C0008C501 /* OKTLetterView.h */,
@@ -900,6 +905,7 @@
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
 				DC0EEA3D1D81184D00738A9A /* ImportantPlace+Methods.m in Sources */,
 				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
+				DC078ED71D84659F002229F3 /* ImportantPlaceAnnotation.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
 				DC0EEA341D80FD8F00738A9A /* BusPathMapViewController.m in Sources */,
