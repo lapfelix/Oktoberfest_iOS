@@ -80,6 +80,9 @@
 		DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */; };
 		DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */; };
 		DCFFE7771D74B925002302A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE7761D74B925002302A1 /* MapKit.framework */; };
+		F0996E5E1D80F59000F84CE7 /* ContestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0996E5D1D80F59000F84CE7 /* ContestViewController.m */; };
+		F0996E611D80FB6600F84CE7 /* ContestStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0996E601D80FB6600F84CE7 /* ContestStepViewController.m */; };
+		F0996E641D80FB8B00F84CE7 /* ContestDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0996E631D80FB8B00F84CE7 /* ContestDoneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +246,12 @@
 		DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewController.h; sourceTree = "<group>"; };
 		DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewController.m; sourceTree = "<group>"; };
 		DCFFE7761D74B925002302A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F0996E5C1D80F59000F84CE7 /* ContestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestViewController.h; sourceTree = "<group>"; };
+		F0996E5D1D80F59000F84CE7 /* ContestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestViewController.m; sourceTree = "<group>"; };
+		F0996E5F1D80FB6600F84CE7 /* ContestStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestStepViewController.h; sourceTree = "<group>"; };
+		F0996E601D80FB6600F84CE7 /* ContestStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestStepViewController.m; sourceTree = "<group>"; };
+		F0996E621D80FB8B00F84CE7 /* ContestDoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestDoneViewController.h; sourceTree = "<group>"; };
+		F0996E631D80FB8B00F84CE7 /* ContestDoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestDoneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -564,6 +573,12 @@
 				DC98ED061D773AE60016DDF4 /* InfoViewController.m */,
 				DCFFC12E1D7BC27D0008C501 /* MapViewController.h */,
 				DCFFC12F1D7BC27D0008C501 /* MapViewController.m */,
+				F0996E5C1D80F59000F84CE7 /* ContestViewController.h */,
+				F0996E5D1D80F59000F84CE7 /* ContestViewController.m */,
+				F0996E5F1D80FB6600F84CE7 /* ContestStepViewController.h */,
+				F0996E601D80FB6600F84CE7 /* ContestStepViewController.m */,
+				F0996E621D80FB8B00F84CE7 /* ContestDoneViewController.h */,
+				F0996E631D80FB8B00F84CE7 /* ContestDoneViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -864,6 +879,7 @@
 				DC9079161D7A23E70035715C /* ContactInfo+CoreDataProperties.m in Sources */,
 				DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */,
 				DCDABDCC1D70CE2200BCC342 /* ContactInfo+Methods.m in Sources */,
+				F0996E5E1D80F59000F84CE7 /* ContestViewController.m in Sources */,
 				DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */,
 				DC9078FA1D790BEE0035715C /* ScheduleItem+CoreDataProperties.m in Sources */,
 				DC9078FB1D790BEE0035715C /* Sponsor+CoreDataClass.m in Sources */,
@@ -871,6 +887,7 @@
 				DC372D5B1D7387190023270F /* UICollectionView+NSFetchedResultsController.m in Sources */,
 				DC9078F21D790BEE0035715C /* WelcomeInfo+CoreDataProperties.m in Sources */,
 				DC1CB8051D7FB8300004E145 /* Beer+CoreDataProperties.m in Sources */,
+				F0996E641D80FB8B00F84CE7 /* ContestDoneViewController.m in Sources */,
 				DC372D621D7399580023270F /* FAQViewController.m in Sources */,
 				DC7454431D61155F00D87656 /* AppDelegate.m in Sources */,
 				DC74548E1D611AFB00D87656 /* OKTFlowController.m in Sources */,
@@ -907,6 +924,7 @@
 				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
 				DC078ED71D84659F002229F3 /* ImportantPlaceAnnotation.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
+				F0996E611D80FB6600F84CE7 /* ContestStepViewController.m in Sources */,
 				DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */,
 				DC0EEA341D80FD8F00738A9A /* BusPathMapViewController.m in Sources */,
 				DC9078F81D790BEE0035715C /* FAQ+CoreDataProperties.m in Sources */,
