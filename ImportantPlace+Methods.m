@@ -30,4 +30,7 @@ static NSString *entityName = @"ImportantPlace";
     return self;
 }
 
+- (NSArray<NSString *> *)getImageURLs {
+    return @[self.imageUrl];
+}
 @end

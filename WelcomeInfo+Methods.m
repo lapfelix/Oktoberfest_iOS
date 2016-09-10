@@ -47,4 +47,15 @@ static NSString *entityName = @"WelcomeInfo";
     return self;
 }
 
+- (NSArray<NSString *> *)getImageURLs {
+    
+    NSMutableArray *sponsorsImages = [NSMutableArray array];
+    
+    for (Sponsor *sponsor in self.sponsors) {
+        [sponsorsImages addObject:[sponsor getImageURLs]];
+    }
+    
+    return sponsorsImages.copy;
+}
+
 @end
