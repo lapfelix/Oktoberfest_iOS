@@ -7,7 +7,7 @@
 //
 
 #import "BusPath+CoreDataClass.h"
-
+#import "ImportantPlace+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

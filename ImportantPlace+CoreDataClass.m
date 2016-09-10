@@ -7,7 +7,7 @@
 //
 
 #import "ImportantPlace+CoreDataClass.h"
-#import "BusPath.h"
+#import "BusPath+CoreDataClass.h"
 @implementation ImportantPlace
 
 @end
