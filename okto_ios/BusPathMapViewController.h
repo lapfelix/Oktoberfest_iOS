@@ -15,6 +15,4 @@
 
 @property (assign, nonatomic) IBOutlet BusPath *busPath;
 
-//- (void)displayPathFromCsv:(NSString *)csvString;
-
 @end

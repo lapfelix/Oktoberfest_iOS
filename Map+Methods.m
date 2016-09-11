@@ -8,7 +8,7 @@
 
 #import "Map+Methods.h"
 
-static NSString *entityName = @"Beer";
+static NSString *entityName = @"Map";
 
 @implementation Map (Methods)
 
