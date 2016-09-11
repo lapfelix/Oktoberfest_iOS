@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *sponsorsCollectionView;
 @property (nonatomic, strong) NSFetchedResultsController *sponsorsFetchedResultsController;
 @property (nonatomic, strong) NSFetchedResultsController *welcomeInfoFetchedResultsController;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *daysLabel;
 @property (weak, nonatomic) IBOutlet UILabel *hoursLabel;
 @property (weak, nonatomic) IBOutlet UILabel *minutesLabel;
@@ -36,6 +37,8 @@
     
     [self initializeFetchedResultsControllers];
     [self updateWelcomeInfo];
+    
+    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 25, 0);
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {

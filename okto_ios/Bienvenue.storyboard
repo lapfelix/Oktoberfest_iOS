@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="etb-WO-XSL">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="etb-WO-XSL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -26,7 +26,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IJ-Ec-gnf">
                                 <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-pc-C4D">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-pc-C4D">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIm-53-hOq">
                                         <subviews>
@@ -236,6 +236,7 @@
                                     <constraint firstItem="NIm-53-hOq" firstAttribute="top" secondItem="4Uc-pc-C4D" secondAttribute="top" id="XCa-2D-dlZ"/>
                                     <constraint firstAttribute="trailing" secondItem="NIm-53-hOq" secondAttribute="trailing" id="hWJ-E0-o94"/>
                                 </constraints>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -258,6 +259,7 @@
                         <outlet property="daysLabel" destination="p2M-fu-5Ph" id="uGZ-KM-4ye"/>
                         <outlet property="hoursLabel" destination="4Cp-jm-wud" id="XOW-Ce-yJN"/>
                         <outlet property="minutesLabel" destination="18J-eV-OzP" id="Ocq-dB-IB2"/>
+                        <outlet property="scrollView" destination="4Uc-pc-C4D" id="qr7-tq-5Qb"/>
                         <outlet property="secondsLabel" destination="NIl-7K-gVk" id="p9g-fh-qfN"/>
                     </connections>
                 </viewController>

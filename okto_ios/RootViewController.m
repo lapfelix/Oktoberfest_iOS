@@ -29,6 +29,10 @@
     [[OKTAPIWrapper sharedWrapper] syncWithServer];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 /*
 #pragma mark - Navigation
 

@@ -68,6 +68,8 @@
 		DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E21D7205C400C19FA8 /* OKTBaseTableViewController.m */; };
 		DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7E51D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m */; };
 		DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */; };
+		DCCA975A1D85B2E600DF1995 /* OKTAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCA97591D85B2E600DF1995 /* OKTAppearance.m */; };
+		DCCA975D1D85B44600DF1995 /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCA975C1D85B44600DF1995 /* UIColor+HexColors.m */; };
 		DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */; };
 		DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC21D70CDFB00BCC342 /* ScheduleItem+Methods.m */; };
 		DCDABDC61D70CE1000BCC342 /* PathPosition+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC51D70CE1000BCC342 /* PathPosition+Methods.m */; };
@@ -226,6 +228,10 @@
 		DCA9F7EA1D7209CF00C19FA8 /* ScheduleItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItemTableViewCell.h; sourceTree = "<group>"; };
 		DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItemTableViewCell.m; sourceTree = "<group>"; };
 		DCA9F7F31D720A4B00C19FA8 /* OKTObjectConfigurableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTObjectConfigurableProtocol.h; sourceTree = "<group>"; };
+		DCCA97581D85B2E600DF1995 /* OKTAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTAppearance.h; sourceTree = "<group>"; };
+		DCCA97591D85B2E600DF1995 /* OKTAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTAppearance.m; sourceTree = "<group>"; };
+		DCCA975B1D85B44600DF1995 /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
+		DCCA975C1D85B44600DF1995 /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
 		DCDABDBC1D70CB9600BCC342 /* Beer+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+Methods.h"; sourceTree = "<group>"; };
 		DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+Methods.m"; sourceTree = "<group>"; };
 		DCDABDC01D70CD5200BCC342 /* OKTModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTModelProtocol.h; sourceTree = "<group>"; };
@@ -443,6 +449,8 @@
 				DC7454421D61155F00D87656 /* AppDelegate.m */,
 				DC74548C1D611AFB00D87656 /* OKTFlowController.h */,
 				DC74548D1D611AFB00D87656 /* OKTFlowController.m */,
+				DCCA97581D85B2E600DF1995 /* OKTAppearance.h */,
+				DCCA97591D85B2E600DF1995 /* OKTAppearance.m */,
 				DC74548F1D61483200D87656 /* OKTAPIWrapper.h */,
 				DC7454901D61483200D87656 /* OKTAPIWrapper.m */,
 				DC7454921D61487E00D87656 /* OKTNetworkMethods.h */,
@@ -458,10 +466,7 @@
 				DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */,
 				DC372D5C1D73955E0023270F /* DismissSegue.h */,
 				DC372D5D1D73955E0023270F /* DismissSegue.m */,
-				DC372D591D7387190023270F /* UICollectionView+NSFetchedResultsController.h */,
-				DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */,
-				DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */,
-				DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */,
+				DCCA975E1D85B45D00DF1995 /* Helpers */,
 				DCFBAAA51D74E01E006AEEE8 /* Tommaso.ttf */,
 				DC74543E1D61155F00D87656 /* Supporting Files */,
 			);
@@ -535,6 +540,19 @@
 			);
 			name = Model;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		DCCA975E1D85B45D00DF1995 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC372D591D7387190023270F /* UICollectionView+NSFetchedResultsController.h */,
+				DC372D5A1D7387190023270F /* UICollectionView+NSFetchedResultsController.m */,
+				DCDABDCD1D70D9EF00BCC342 /* NSDictionary+NilSupport.h */,
+				DCDABDCE1D70D9EF00BCC342 /* NSDictionary+NilSupport.m */,
+				DCCA975B1D85B44600DF1995 /* UIColor+HexColors.h */,
+				DCCA975C1D85B44600DF1995 /* UIColor+HexColors.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		DCDABDBF1D70CB9B00BCC342 /* Classes */ = {
@@ -917,6 +935,7 @@
 				DC9078ED1D790BEE0035715C /* BusPath+CoreDataClass.m in Sources */,
 				DC5B008B1D712869001C5A83 /* RootViewController.m in Sources */,
 				DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */,
+				DCCA975D1D85B44600DF1995 /* UIColor+HexColors.m in Sources */,
 				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DC9078EE1D790BEE0035715C /* BusPath+CoreDataProperties.m in Sources */,
 				DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */,
@@ -939,6 +958,7 @@
 				DCDABDC91D70CE1900BCC342 /* BusPath+Methods.m in Sources */,
 				DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */,
 				DC0EEA3D1D81184D00738A9A /* ImportantPlace+Methods.m in Sources */,
+				DCCA975A1D85B2E600DF1995 /* OKTAppearance.m in Sources */,
 				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
 				DC078ED71D84659F002229F3 /* ImportantPlaceAnnotation.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
