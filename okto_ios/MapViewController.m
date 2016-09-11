@@ -30,6 +30,7 @@
     _mapView = [GMSMapView mapWithFrame:self.view.bounds camera:[GMSCameraPosition cameraWithTarget:CLLocationCoordinate2DMake(45.421667, -71.963151)  zoom:17.299424 bearing:37 viewingAngle:0]];
     
     [self.view addSubview:self.mapView];
+    [self.view sendSubviewToBack:self.mapView];
     
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.mapView.buildingsEnabled = false;
@@ -46,7 +47,6 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"%f - %f",self.mapView.camera.target.latitude, self.mapView.camera.target.longitude);
     self.mapView.camera = [GMSCameraPosition cameraWithTarget:CLLocationCoordinate2DMake(45.421687, -71.962817)  zoom:17.603 bearing:36.8063 viewingAngle:0];
     [self updateMap];
 }
@@ -108,6 +108,10 @@
         NSLog(@"Failed to initialize FetchedResultsController: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleDefault;
 }
 
 @end

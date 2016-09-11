@@ -106,6 +106,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="mw7-Ci-703"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OpS-ID-X2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

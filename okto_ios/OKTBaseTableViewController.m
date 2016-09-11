@@ -12,8 +12,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end

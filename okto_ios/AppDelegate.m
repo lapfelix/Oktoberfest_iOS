@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OKTAppearance.h"
 @import GoogleMaps;
 
 @interface AppDelegate ()
@@ -20,6 +21,8 @@
     // Override point for customization after application launch.
     
     [GMSServices provideAPIKey:@"AIzaSyCXisa3U98ni2Efls-_c794y-T_gZNICgU"];
+    
+    [OKTAppearance setupAppearances];
     
     return YES;
 }
