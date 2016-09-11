@@ -555,6 +555,87 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		DCCA975F1D85DC4F00DF1995 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				DCCA97601D85DC5B00DF1995 /* Contest */,
+				DC372D511D73800B0023270F /* WelcomeViewController.h */,
+				DC372D521D73800B0023270F /* WelcomeViewController.m */,
+			);
+			name = Welcome;
+			sourceTree = "<group>";
+		};
+		DCCA97601D85DC5B00DF1995 /* Contest */ = {
+			isa = PBXGroup;
+			children = (
+				F0996E5C1D80F59000F84CE7 /* ContestViewController.h */,
+				F0996E5D1D80F59000F84CE7 /* ContestViewController.m */,
+				F0996E5F1D80FB6600F84CE7 /* ContestStepViewController.h */,
+				F0996E601D80FB6600F84CE7 /* ContestStepViewController.m */,
+				F0996E621D80FB8B00F84CE7 /* ContestDoneViewController.h */,
+				F0996E631D80FB8B00F84CE7 /* ContestDoneViewController.m */,
+			);
+			name = Contest;
+			sourceTree = "<group>";
+		};
+		DCCA97611D85DC6300DF1995 /* Beers */ = {
+			isa = PBXGroup;
+			children = (
+				DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */,
+				DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */,
+			);
+			name = Beers;
+			sourceTree = "<group>";
+		};
+		DCCA97621D85DC6C00DF1995 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */,
+				DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
+		DCCA97631D85DC7200DF1995 /* Infos */ = {
+			isa = PBXGroup;
+			children = (
+				DCCA97641D85DC8100DF1995 /* BusPaths */,
+				DCCA97651D85DC8800DF1995 /* FAQ */,
+				DC98ED051D773AE60016DDF4 /* InfoViewController.h */,
+				DC98ED061D773AE60016DDF4 /* InfoViewController.m */,
+			);
+			name = Infos;
+			sourceTree = "<group>";
+		};
+		DCCA97641D85DC8100DF1995 /* BusPaths */ = {
+			isa = PBXGroup;
+			children = (
+				DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */,
+				DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */,
+				DC0EEA321D80FD8F00738A9A /* BusPathMapViewController.h */,
+				DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */,
+			);
+			name = BusPaths;
+			sourceTree = "<group>";
+		};
+		DCCA97651D85DC8800DF1995 /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				DC372D601D7399580023270F /* FAQViewController.h */,
+				DC372D611D7399580023270F /* FAQViewController.m */,
+			);
+			name = FAQ;
+			sourceTree = "<group>";
+		};
+		DCCA97661D85DC9000DF1995 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DCFFC12E1D7BC27D0008C501 /* MapViewController.h */,
+				DCFFC12F1D7BC27D0008C501 /* MapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
 		DCDABDBF1D70CB9B00BCC342 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,28 +671,11 @@
 			children = (
 				DC5B00891D712869001C5A83 /* RootViewController.h */,
 				DC5B008A1D712869001C5A83 /* RootViewController.m */,
-				DC372D511D73800B0023270F /* WelcomeViewController.h */,
-				DC372D521D73800B0023270F /* WelcomeViewController.m */,
-				DCA9F7D71D7200FA00C19FA8 /* ScheduleTableViewController.h */,
-				DCA9F7D81D7200FA00C19FA8 /* ScheduleTableViewController.m */,
-				DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */,
-				DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */,
-				DC0EEA321D80FD8F00738A9A /* BusPathMapViewController.h */,
-				DC0EEA331D80FD8F00738A9A /* BusPathMapViewController.m */,
-				DCDABDD11D7115A100BCC342 /* BeersTableViewController.h */,
-				DCDABDD21D7115A100BCC342 /* BeersTableViewController.m */,
-				DC372D601D7399580023270F /* FAQViewController.h */,
-				DC372D611D7399580023270F /* FAQViewController.m */,
-				DC98ED051D773AE60016DDF4 /* InfoViewController.h */,
-				DC98ED061D773AE60016DDF4 /* InfoViewController.m */,
-				DCFFC12E1D7BC27D0008C501 /* MapViewController.h */,
-				DCFFC12F1D7BC27D0008C501 /* MapViewController.m */,
-				F0996E5C1D80F59000F84CE7 /* ContestViewController.h */,
-				F0996E5D1D80F59000F84CE7 /* ContestViewController.m */,
-				F0996E5F1D80FB6600F84CE7 /* ContestStepViewController.h */,
-				F0996E601D80FB6600F84CE7 /* ContestStepViewController.m */,
-				F0996E621D80FB8B00F84CE7 /* ContestDoneViewController.h */,
-				F0996E631D80FB8B00F84CE7 /* ContestDoneViewController.m */,
+				DCCA975F1D85DC4F00DF1995 /* Welcome */,
+				DCCA97611D85DC6300DF1995 /* Beers */,
+				DCCA97621D85DC6C00DF1995 /* Schedule */,
+				DCCA97661D85DC9000DF1995 /* Map */,
+				DCCA97631D85DC7200DF1995 /* Infos */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
