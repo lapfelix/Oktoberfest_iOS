@@ -14,6 +14,12 @@
 
 @import GoogleMaps;
 
+@protocol LabelsEntityProviderLabeling <NSObject>
+
+@property (assign, nonatomic) bool labelingEnabled;
+
+@end
+
 @interface MapViewController ()
 
 @property (copy, nonatomic) IBOutlet GMSMapView *mapView;
@@ -76,9 +82,17 @@
             
             [self.mapView clear];
             overlay.map = self.mapView;
+            
+            [self forceRemoveLabelsFromMap:self.mapView];
         }];
-        
     }
+}
+
+- (void)forceRemoveLabelsFromMap:(GMSMapView *)mapView {
+    GMSUISettings *settings = mapView.settings;
+    NSObject *vectorMapView = [settings valueForKey:@"_vectorMapView"];
+    NSObject<LabelsEntityProviderLabeling> *labelsEntityProvider = [vectorMapView valueForKey:@"_labelsEntityProvider"];
+    labelsEntityProvider.labelingEnabled = false;
 }
 
 #pragma mark - Fetched Results Controller Delegate methods
