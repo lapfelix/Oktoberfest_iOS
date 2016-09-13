@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="MiL-Kl-WQy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gVq-H4-dtI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IJ-Ec-gnf">
@@ -36,14 +36,12 @@
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2L0-5w-YvS">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2M-fu-5Ph">
-                                                                        <frame key="frameInset" width="76" height="79"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2M-fu-5Ph">
                                                                         <fontDescription key="fontDescription" name="Tommaso" family="Tommaso" pointSize="68"/>
                                                                         <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text="Jours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-BE-Bjf">
-                                                                        <frame key="frameInset" minY="79" width="76" height="9"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Jours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcj-BE-Bjf">
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                         <color key="textColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -52,14 +50,12 @@
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j7p-hS-50d">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cp-jm-wud">
-                                                                        <frame key="frameInset" width="76" height="79"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Cp-jm-wud">
                                                                         <fontDescription key="fontDescription" name="Tommaso" family="Tommaso" pointSize="68"/>
                                                                         <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text="Heures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-KK-LIv">
-                                                                        <frame key="frameInset" minY="79" width="76" height="9"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Heures" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-KK-LIv">
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                         <color key="textColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -68,14 +64,12 @@
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aS2-cx-flE">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" ambiguous="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18J-eV-OzP">
-                                                                        <frame key="frameInset" width="76" height="79"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18J-eV-OzP">
                                                                         <fontDescription key="fontDescription" name="Tommaso" family="Tommaso" pointSize="68"/>
                                                                         <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" ambiguous="YES" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V29-Pi-AWh">
-                                                                        <frame key="frameInset" minY="79" width="76" height="9"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V29-Pi-AWh">
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                         <color key="textColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -84,14 +78,12 @@
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zKt-aH-zgd">
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" ambiguous="YES" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-7K-gVk">
-                                                                        <frame key="frameInset" width="76" height="79"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-7K-gVk">
                                                                         <fontDescription key="fontDescription" name="Tommaso" family="Tommaso" pointSize="68"/>
                                                                         <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text="Secondes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-mG-zRS">
-                                                                        <frame key="frameInset" minY="79" width="76" height="9"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Secondes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYU-mG-zRS">
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                         <color key="textColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -181,9 +173,10 @@
                                                             <segue destination="bx1-Bb-84j" kind="presentation" id="ONQ-rJ-iVW"/>
                                                         </connections>
                                                     </button>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="AUF-nh-FKO">
-                                                        <frame key="frameInset" minY="60" width="359" height="1"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="AUF-nh-FKO">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="mJO-Ff-3CX"/>
+                                                        </constraints>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="q3l-mP-PlM">
                                                         <constraints>
@@ -194,12 +187,15 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="AUF-nh-FKO" secondAttribute="trailing" id="39v-3n-DzK"/>
                                                     <constraint firstAttribute="trailing" secondItem="q3l-mP-PlM" secondAttribute="trailing" constant="8" id="3Ui-rL-t0l"/>
+                                                    <constraint firstAttribute="bottom" secondItem="AUF-nh-FKO" secondAttribute="bottom" id="Fsy-hy-0C3"/>
                                                     <constraint firstAttribute="trailing" secondItem="7np-Hk-U9K" secondAttribute="trailing" id="H02-vw-OIB"/>
                                                     <constraint firstItem="q3l-mP-PlM" firstAttribute="centerY" secondItem="X05-ZZ-Gv1" secondAttribute="centerY" id="Kdt-ir-jAt"/>
                                                     <constraint firstAttribute="bottom" secondItem="7np-Hk-U9K" secondAttribute="bottom" id="OCr-yU-FwS"/>
                                                     <constraint firstAttribute="height" constant="61" id="bcG-vd-Y59"/>
                                                     <constraint firstItem="7np-Hk-U9K" firstAttribute="top" secondItem="X05-ZZ-Gv1" secondAttribute="top" id="nCt-OS-15M"/>
+                                                    <constraint firstItem="AUF-nh-FKO" firstAttribute="leading" secondItem="X05-ZZ-Gv1" secondAttribute="leading" id="olX-XR-GCE"/>
                                                     <constraint firstItem="Dds-41-kcy" firstAttribute="leading" secondItem="X05-ZZ-Gv1" secondAttribute="leading" constant="15" id="rSd-N4-0dm"/>
                                                     <constraint firstItem="7np-Hk-U9K" firstAttribute="leading" secondItem="X05-ZZ-Gv1" secondAttribute="leading" id="tKD-zh-M46"/>
                                                     <constraint firstItem="Dds-41-kcy" firstAttribute="centerY" secondItem="X05-ZZ-Gv1" secondAttribute="centerY" id="vLS-24-b19"/>
@@ -280,7 +276,7 @@ Centre des Foires de Sherbrooke</string>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYp-hI-Qx9">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="81" id="Jhy-lZ-ZAk"/>
-                                                    <constraint firstAttribute="width" constant="375" id="n4F-0H-o1E"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="375" id="n4F-0H-o1E"/>
                                                 </constraints>
                                                 <string key="text">L’Oktoberfest, c’est le plus gros party universitaire thématique au Canada!
 </string>
@@ -299,7 +295,9 @@ Centre des Foires de Sherbrooke</string>
                                             <constraint firstItem="h2O-XU-8RI" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" constant="8" id="DKN-Np-Aju"/>
                                             <constraint firstItem="VYp-hI-Qx9" firstAttribute="top" secondItem="X05-ZZ-Gv1" secondAttribute="bottom" constant="8" id="K6k-62-Vkg"/>
                                             <constraint firstItem="2N7-q3-ggA" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" id="Llz-Mv-aI8"/>
+                                            <constraint firstAttribute="trailing" secondItem="VYp-hI-Qx9" secondAttribute="trailing" constant="8" id="Pt2-zI-uWr"/>
                                             <constraint firstItem="Ogx-In-bdh" firstAttribute="centerX" secondItem="NIm-53-hOq" secondAttribute="centerX" id="S0K-d8-t05"/>
+                                            <constraint firstItem="VYp-hI-Qx9" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" constant="8" id="Ydh-gx-EiZ"/>
                                             <constraint firstItem="X05-ZZ-Gv1" firstAttribute="top" secondItem="2N7-q3-ggA" secondAttribute="bottom" id="Zlh-KF-uNK"/>
                                             <constraint firstAttribute="trailing" secondItem="2N7-q3-ggA" secondAttribute="trailing" id="daI-F9-ZbA"/>
                                             <constraint firstItem="2N7-q3-ggA" firstAttribute="top" secondItem="NIm-53-hOq" secondAttribute="top" id="eiW-nk-Wxs"/>
@@ -307,7 +305,6 @@ Centre des Foires de Sherbrooke</string>
                                             <constraint firstAttribute="trailing" secondItem="2N7-q3-ggA" secondAttribute="trailing" id="j20-GV-R2t"/>
                                             <constraint firstItem="QqG-0E-Qri" firstAttribute="top" secondItem="Ogx-In-bdh" secondAttribute="bottom" constant="21" id="k1l-UL-Ia2"/>
                                             <constraint firstAttribute="bottom" secondItem="h2O-XU-8RI" secondAttribute="bottom" constant="16" id="kUI-3Y-xJE"/>
-                                            <constraint firstItem="VYp-hI-Qx9" firstAttribute="centerX" secondItem="NIm-53-hOq" secondAttribute="centerX" id="l85-Op-2LD"/>
                                             <constraint firstItem="lUz-He-5r9" firstAttribute="top" secondItem="Ogx-In-bdh" secondAttribute="bottom" constant="3" id="loc-5C-Ej4"/>
                                             <constraint firstItem="X05-ZZ-Gv1" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" id="mSd-Ew-Hjl"/>
                                             <constraint firstAttribute="trailing" secondItem="h2O-XU-8RI" secondAttribute="trailing" constant="8" id="oom-Yj-iTG"/>
@@ -353,7 +350,7 @@ Centre des Foires de Sherbrooke</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DX1-0W-ey5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118.840579710145" y="900.81521739130437"/>
+            <point key="canvasLocation" x="1117.5999999999999" y="900.00000000000011"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yso-P8-OLj">
@@ -380,7 +377,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="c4n-Qs-Swo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lBm-r6-hHv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Une entrée gratuite pour l’OKTOBERFEST comprennant un boque et un remplissage." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhB-rt-IQX">
@@ -437,7 +434,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="6CX-bE-Mcv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b0N-Ei-ZTD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-hT-c1Z">
@@ -493,7 +490,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="LMN-ay-k4j"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWg-p1-02v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRT-ZQ-Im2">
