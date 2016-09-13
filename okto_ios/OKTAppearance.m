@@ -20,7 +20,6 @@
     [[UINavigationBar appearance] setTintColor:[[self class] yellowColor]];
     [[UITabBar appearance] setTintColor:[[self class] yellowColor]];
     [[UITabBar appearance] setBarTintColor:[[self class] greenColor]];
-    [[UITabBar appearance] setUnselectedItemTintColor:[UIColor whiteColor]];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }
                                              forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [[self class] yellowColor] }
