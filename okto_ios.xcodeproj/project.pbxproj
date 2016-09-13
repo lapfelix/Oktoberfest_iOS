@@ -85,9 +85,15 @@
 		DCFFE76F1D73A5B8002302A1 /* BusPathTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE76E1D73A5B8002302A1 /* BusPathTableViewCell.m */; };
 		DCFFE7721D73A632002302A1 /* BusPathTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */; };
 		DCFFE7771D74B925002302A1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE7761D74B925002302A1 /* MapKit.framework */; };
+		F052D5D81D87BBDD00E28092 /* Contest+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F052D5D51D87BBDD00E28092 /* Contest+CoreDataClass.m */; };
+		F052D5D91D87BBDD00E28092 /* ContestStep+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F052D5D71D87BBDD00E28092 /* ContestStep+CoreDataClass.m */; };
 		F0996E5E1D80F59000F84CE7 /* ContestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0996E5D1D80F59000F84CE7 /* ContestViewController.m */; };
 		F0996E611D80FB6600F84CE7 /* ContestStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0996E601D80FB6600F84CE7 /* ContestStepViewController.m */; };
 		F0996E641D80FB8B00F84CE7 /* ContestDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0996E631D80FB8B00F84CE7 /* ContestDoneViewController.m */; };
+		F0A103211D87B43B008324CA /* Contest+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A103201D87B43B008324CA /* Contest+Methods.m */; };
+		F0A103241D87B44B008324CA /* ContestStep+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A103231D87B44A008324CA /* ContestStep+Methods.m */; };
+		F0A1032D1D87B60D008324CA /* ContestStep+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A103261D87B60D008324CA /* ContestStep+CoreDataProperties.m */; };
+		F0A1032F1D87B60D008324CA /* Contest+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1032A1D87B60D008324CA /* Contest+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,12 +267,24 @@
 		DCFFE7701D73A632002302A1 /* BusPathTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPathTableViewController.h; sourceTree = "<group>"; };
 		DCFFE7711D73A632002302A1 /* BusPathTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPathTableViewController.m; sourceTree = "<group>"; };
 		DCFFE7761D74B925002302A1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F052D5D41D87BBDD00E28092 /* Contest+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contest+CoreDataClass.h"; sourceTree = "<group>"; };
+		F052D5D51D87BBDD00E28092 /* Contest+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contest+CoreDataClass.m"; sourceTree = "<group>"; };
+		F052D5D61D87BBDD00E28092 /* ContestStep+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContestStep+CoreDataClass.h"; sourceTree = "<group>"; };
+		F052D5D71D87BBDD00E28092 /* ContestStep+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContestStep+CoreDataClass.m"; sourceTree = "<group>"; };
 		F0996E5C1D80F59000F84CE7 /* ContestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestViewController.h; sourceTree = "<group>"; };
 		F0996E5D1D80F59000F84CE7 /* ContestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestViewController.m; sourceTree = "<group>"; };
 		F0996E5F1D80FB6600F84CE7 /* ContestStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestStepViewController.h; sourceTree = "<group>"; };
 		F0996E601D80FB6600F84CE7 /* ContestStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestStepViewController.m; sourceTree = "<group>"; };
 		F0996E621D80FB8B00F84CE7 /* ContestDoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestDoneViewController.h; sourceTree = "<group>"; };
 		F0996E631D80FB8B00F84CE7 /* ContestDoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestDoneViewController.m; sourceTree = "<group>"; };
+		F0A1031F1D87B43B008324CA /* Contest+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contest+Methods.h"; sourceTree = "<group>"; };
+		F0A103201D87B43B008324CA /* Contest+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contest+Methods.m"; sourceTree = "<group>"; };
+		F0A103221D87B44A008324CA /* ContestStep+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContestStep+Methods.h"; sourceTree = "<group>"; };
+		F0A103231D87B44A008324CA /* ContestStep+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContestStep+Methods.m"; sourceTree = "<group>"; };
+		F0A103251D87B60D008324CA /* ContestStep+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContestStep+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0A103261D87B60D008324CA /* ContestStep+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContestStep+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F0A103291D87B60D008324CA /* Contest+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contest+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F0A1032A1D87B60D008324CA /* Contest+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contest+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +343,14 @@
 		DC372CE71D7378430023270F /* Automatically generated */ = {
 			isa = PBXGroup;
 			children = (
+				F052D5D41D87BBDD00E28092 /* Contest+CoreDataClass.h */,
+				F052D5D51D87BBDD00E28092 /* Contest+CoreDataClass.m */,
+				F052D5D61D87BBDD00E28092 /* ContestStep+CoreDataClass.h */,
+				F052D5D71D87BBDD00E28092 /* ContestStep+CoreDataClass.m */,
+				F0A103251D87B60D008324CA /* ContestStep+CoreDataProperties.h */,
+				F0A103261D87B60D008324CA /* ContestStep+CoreDataProperties.m */,
+				F0A103291D87B60D008324CA /* Contest+CoreDataProperties.h */,
+				F0A1032A1D87B60D008324CA /* Contest+CoreDataProperties.m */,
 				DC078ED81D84A1F4002229F3 /* Map+CoreDataClass.h */,
 				DC078ED91D84A1F4002229F3 /* Map+CoreDataClass.m */,
 				DC078EDA1D84A1F4002229F3 /* Map+CoreDataProperties.h */,
@@ -662,6 +688,10 @@
 				DC372D1F1D737A500023270F /* FAQ+Methods.m */,
 				DC078EDE1D84A207002229F3 /* Map+Methods.h */,
 				DC078EDF1D84A207002229F3 /* Map+Methods.m */,
+				F0A1031F1D87B43B008324CA /* Contest+Methods.h */,
+				F0A103201D87B43B008324CA /* Contest+Methods.m */,
+				F0A103221D87B44A008324CA /* ContestStep+Methods.h */,
+				F0A103231D87B44A008324CA /* ContestStep+Methods.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -972,6 +1002,8 @@
 				DC1CB8041D7FB8300004E145 /* Beer+CoreDataClass.m in Sources */,
 				DC372D581D7382C30023270F /* SponsorCollectionViewCell.m in Sources */,
 				DC74544C1D61155F00D87656 /* okto_ios.xcdatamodeld in Sources */,
+				F052D5D91D87BBDD00E28092 /* ContestStep+CoreDataClass.m in Sources */,
+				F0A1032F1D87B60D008324CA /* Contest+CoreDataProperties.m in Sources */,
 				DC9079011D790C650035715C /* BeerCategory+Methods.m in Sources */,
 				DC078EE01D84A207002229F3 /* Map+Methods.m in Sources */,
 				DC9079161D7A23E70035715C /* ContactInfo+CoreDataProperties.m in Sources */,
@@ -979,6 +1011,7 @@
 				DCDABDCC1D70CE2200BCC342 /* ContactInfo+Methods.m in Sources */,
 				F0996E5E1D80F59000F84CE7 /* ContestViewController.m in Sources */,
 				DC372D1A1D737A340023270F /* WelcomeInfo+Methods.m in Sources */,
+				F0A103241D87B44B008324CA /* ContestStep+Methods.m in Sources */,
 				DC9078FA1D790BEE0035715C /* ScheduleItem+CoreDataProperties.m in Sources */,
 				DC9078FB1D790BEE0035715C /* Sponsor+CoreDataClass.m in Sources */,
 				DC9078F31D790BEE0035715C /* BeerCategory+CoreDataClass.m in Sources */,
@@ -1002,10 +1035,12 @@
 				DCCA975D1D85B44600DF1995 /* UIColor+HexColors.m in Sources */,
 				DCDABDD31D7115A100BCC342 /* BeersTableViewController.m in Sources */,
 				DC9078EE1D790BEE0035715C /* BusPath+CoreDataProperties.m in Sources */,
+				F052D5D81D87BBDD00E28092 /* Contest+CoreDataClass.m in Sources */,
 				DCA9F7E31D7205C400C19FA8 /* OKTBaseTableViewController.m in Sources */,
 				DC9079041D79C7D90035715C /* RoundedRectangle.m in Sources */,
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
+				F0A103211D87B43B008324CA /* Contest+Methods.m in Sources */,
 				DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */,
 				DC078EDD1D84A1F4002229F3 /* Map+CoreDataProperties.m in Sources */,
 				DC372D531D73800B0023270F /* WelcomeViewController.m in Sources */,
@@ -1024,6 +1059,7 @@
 				DC0EEA3D1D81184D00738A9A /* ImportantPlace+Methods.m in Sources */,
 				DCCA975A1D85B2E600DF1995 /* OKTAppearance.m in Sources */,
 				DCFFC12A1D7B352C0008C501 /* OKTLetterView.m in Sources */,
+				F0A1032D1D87B60D008324CA /* ContestStep+CoreDataProperties.m in Sources */,
 				DC078ED71D84659F002229F3 /* ImportantPlaceAnnotation.m in Sources */,
 				DCDABDD61D71170600BCC342 /* BeerTableViewCell.m in Sources */,
 				F0996E611D80FB6600F84CE7 /* ContestStepViewController.m in Sources */,
