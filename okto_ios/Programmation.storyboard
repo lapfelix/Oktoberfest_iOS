@@ -35,7 +35,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="141" sectionHeaderHeight="28" sectionFooterHeight="28" id="YtY-KC-swr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleitem" rowHeight="141" id="nel-H8-qN2" customClass="ScheduleItemTableViewCell">
@@ -45,10 +45,7 @@
                                     <frame key="frameInset" width="375" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-fF-3qF">
-                                            <frame key="frameInset" width="375" height="140"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gZ-fF-3qF"/>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-BA-ORb">
                                             <frame key="frameInset" minX="267" minY="99" width="144" height="52"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -105,13 +102,17 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="hr9-ZX-xTR" firstAttribute="trailing" secondItem="kEY-pg-bfD" secondAttribute="trailingMargin" id="27A-ok-bxc"/>
+                                        <constraint firstAttribute="trailing" secondItem="3gZ-fF-3qF" secondAttribute="trailing" id="28X-P3-3FU"/>
+                                        <constraint firstAttribute="bottom" secondItem="3gZ-fF-3qF" secondAttribute="bottom" id="8Ox-1c-dvv"/>
                                         <constraint firstItem="W3m-5e-gOb" firstAttribute="centerY" secondItem="kEY-pg-bfD" secondAttribute="centerY" id="Ams-OK-gFd"/>
                                         <constraint firstItem="lvh-e0-xFz" firstAttribute="leading" secondItem="W3m-5e-gOb" secondAttribute="trailing" constant="8" id="EkA-GW-OyA"/>
                                         <constraint firstItem="hr9-ZX-xTR" firstAttribute="centerY" secondItem="kEY-pg-bfD" secondAttribute="centerY" id="HPo-Vx-P96"/>
                                         <constraint firstItem="W3m-5e-gOb" firstAttribute="leading" secondItem="kEY-pg-bfD" secondAttribute="leadingMargin" constant="6" id="NNA-79-cS9"/>
                                         <constraint firstItem="hr9-ZX-xTR" firstAttribute="leading" secondItem="lvh-e0-xFz" secondAttribute="trailing" constant="8" id="Ro5-TG-qMY"/>
+                                        <constraint firstItem="3gZ-fF-3qF" firstAttribute="leading" secondItem="kEY-pg-bfD" secondAttribute="leading" id="e4d-7b-ydl"/>
                                         <constraint firstItem="lvh-e0-xFz" firstAttribute="bottom" secondItem="kEY-pg-bfD" secondAttribute="bottomMargin" id="nnM-RB-uCi"/>
                                         <constraint firstItem="lvh-e0-xFz" firstAttribute="top" secondItem="kEY-pg-bfD" secondAttribute="topMargin" id="u2F-tf-wTs"/>
+                                        <constraint firstItem="3gZ-fF-3qF" firstAttribute="top" secondItem="kEY-pg-bfD" secondAttribute="top" id="x5L-NL-95q"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.74031355570000001" colorSpace="calibratedWhite"/>
