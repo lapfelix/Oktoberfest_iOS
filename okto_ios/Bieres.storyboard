@@ -26,69 +26,78 @@
         <scene sceneID="3l0-2W-9GG">
             <objects>
                 <tableViewController title="Bières" id="fqa-8S-1Tz" customClass="BeersTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="301" sectionHeaderHeight="28" sectionFooterHeight="28" id="1rI-Wy-UZO">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="237" sectionHeaderHeight="28" sectionFooterHeight="28" id="1rI-Wy-UZO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="beer" rowHeight="301" id="BL4-G6-wyr" customClass="BeerTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="375" height="301"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="beer" rowHeight="237" id="BL4-G6-wyr" customClass="BeerTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="375" height="237"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BL4-G6-wyr" id="S2u-AJ-nia">
-                                    <frame key="frameInset" width="375" height="300"/>
+                                    <frame key="frameInset" width="375" height="236"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5A-Ff-eKk">
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Molson Dry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-aE-58D">
-                                                    <frame key="frameInset" width="314" height="39"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <color key="textColor" red="0.27344203185623189" green="0.28989449599091199" blue="0.32232421874999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5.5%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxH-oq-Z5M">
-                                                    <frame key="frameInset" minX="314" width="45" height="39"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="243" horizontalCompressionResistancePriority="752" text="GOOSE ISLAND HONKERS ALE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-aE-58D">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="aVc-Vb-0ZY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="32"/>
+                                            <color key="textColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="260" verticalHuggingPriority="251" horizontalCompressionResistancePriority="756" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxH-oq-Z5M">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="UFP-4a-veL"/>
+                                            </constraints>
+                                            <attributedString key="attributedText">
+                                                <fragment content="5.5%">
+                                                    <attributes>
+                                                        <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sza-0O-52d">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="154" id="lUn-RN-d36"/>
+                                                <constraint firstAttribute="height" constant="75" id="D0X-NR-Jog"/>
+                                                <constraint firstAttribute="width" constant="67" id="Y3X-Mg-9BK"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="locationlabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDq-Wy-Vew">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="VzW-39-7Mz"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.61564453125000007" green="0.61564453125000007" blue="0.61564453125000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-b6-ech">
-                                            <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="tHC-CL-VDC"/>
-                                            </constraints>
-                                            <string key="text">Inspirée par des visites dans les pubs anglais, cette bière bitter parfaitement équilibrée dévoile un arôme houblonné et fruité au cœur riche et malté.</string>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-b6-ech">
+                                            <mutableString key="text">La Joufflue est servie avec sa levure, ce qui lui donne en partie son apparence opaque et trouble. Au nez, on décèle des agrumes et de la coriandre. En bouche, la rondeur de la céréale crue est balancée par une amertume légère. Bière légère aux allures pleines et rondes, la Joufflue est très rafraîchissante. Idéale avec les crudités, les fromages frais et les entrées fruitées.</mutableString>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.16230384297950046" green="0.17200378838204214" blue="0.19596354166666663" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="sza-0O-52d" firstAttribute="top" secondItem="s5A-Ff-eKk" secondAttribute="bottom" constant="20.5" id="2Lc-mR-xCD"/>
-                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="7cU-b6-ech" secondAttribute="bottom" constant="5" id="2Qa-MZ-sBk"/>
-                                        <constraint firstItem="s5A-Ff-eKk" firstAttribute="leading" secondItem="S2u-AJ-nia" secondAttribute="leadingMargin" id="2hs-pa-RGd"/>
-                                        <constraint firstItem="s5A-Ff-eKk" firstAttribute="top" secondItem="S2u-AJ-nia" secondAttribute="topMargin" id="6Gs-0K-vBZ"/>
-                                        <constraint firstItem="sza-0O-52d" firstAttribute="leading" secondItem="S2u-AJ-nia" secondAttribute="leadingMargin" id="6t5-g6-jft"/>
-                                        <constraint firstItem="lDq-Wy-Vew" firstAttribute="top" secondItem="S2u-AJ-nia" secondAttribute="topMargin" constant="32" id="8V6-dU-QTT"/>
-                                        <constraint firstItem="7cU-b6-ech" firstAttribute="top" secondItem="s5A-Ff-eKk" secondAttribute="bottom" constant="20.5" id="NU3-fJ-4Zo"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="lDq-Wy-Vew" secondAttribute="trailing" id="Ofs-5B-p71"/>
-                                        <constraint firstItem="7cU-b6-ech" firstAttribute="leading" secondItem="sza-0O-52d" secondAttribute="trailing" constant="8" id="TkQ-fN-WAu"/>
-                                        <constraint firstItem="lDq-Wy-Vew" firstAttribute="leading" secondItem="S2u-AJ-nia" secondAttribute="leadingMargin" id="aSA-ej-sg9"/>
-                                        <constraint firstItem="sza-0O-52d" firstAttribute="bottom" secondItem="S2u-AJ-nia" secondAttribute="bottomMargin" id="g4n-zj-Sj2"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="s5A-Ff-eKk" secondAttribute="trailing" id="nSN-UX-qOW"/>
-                                        <constraint firstItem="sza-0O-52d" firstAttribute="top" secondItem="lDq-Wy-Vew" secondAttribute="bottom" constant="1" id="xV6-to-uG4"/>
-                                        <constraint firstAttribute="trailing" secondItem="7cU-b6-ech" secondAttribute="trailing" constant="8" id="yZY-ii-uP5"/>
+                                        <constraint firstItem="7cU-b6-ech" firstAttribute="top" secondItem="sza-0O-52d" secondAttribute="bottom" constant="3" id="7Vf-WY-PRF"/>
+                                        <constraint firstItem="lDq-Wy-Vew" firstAttribute="top" secondItem="kgR-aE-58D" secondAttribute="bottom" id="AXG-1Z-Wvr"/>
+                                        <constraint firstAttribute="trailing" secondItem="7cU-b6-ech" secondAttribute="trailing" constant="8" id="Gbz-dn-zpd"/>
+                                        <constraint firstItem="sza-0O-52d" firstAttribute="top" secondItem="S2u-AJ-nia" secondAttribute="topMargin" id="JIw-lD-UPK"/>
+                                        <constraint firstItem="kgR-aE-58D" firstAttribute="leading" secondItem="sza-0O-52d" secondAttribute="trailing" constant="5" id="SWu-pU-mWo"/>
+                                        <constraint firstItem="kgR-aE-58D" firstAttribute="trailing" secondItem="S2u-AJ-nia" secondAttribute="trailingMargin" id="Sve-C0-3vw"/>
+                                        <constraint firstItem="lDq-Wy-Vew" firstAttribute="leading" secondItem="sza-0O-52d" secondAttribute="trailing" constant="5" id="UN9-Xt-yNs"/>
+                                        <constraint firstItem="sza-0O-52d" firstAttribute="leading" secondItem="S2u-AJ-nia" secondAttribute="leadingMargin" id="Vcj-2r-Lvo"/>
+                                        <constraint firstItem="pxH-oq-Z5M" firstAttribute="trailing" secondItem="S2u-AJ-nia" secondAttribute="trailingMargin" id="cvk-S1-qDt"/>
+                                        <constraint firstItem="kgR-aE-58D" firstAttribute="top" secondItem="S2u-AJ-nia" secondAttribute="topMargin" id="hwR-Ix-Zei"/>
+                                        <constraint firstItem="7cU-b6-ech" firstAttribute="leading" secondItem="S2u-AJ-nia" secondAttribute="leading" constant="18" id="jks-KG-8Yc"/>
+                                        <constraint firstItem="pxH-oq-Z5M" firstAttribute="top" secondItem="lDq-Wy-Vew" secondAttribute="bottom" id="oLT-Fd-Rc9"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7cU-b6-ech" secondAttribute="bottom" constant="5" id="oLi-t4-SOY"/>
+                                        <constraint firstItem="pxH-oq-Z5M" firstAttribute="leading" secondItem="sza-0O-52d" secondAttribute="trailing" constant="5" id="vLb-GD-Xgq"/>
+                                        <constraint firstItem="lDq-Wy-Vew" firstAttribute="trailing" secondItem="S2u-AJ-nia" secondAttribute="trailingMargin" id="yRS-U9-kx3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -110,7 +119,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OpS-ID-X2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="317.99100449775113"/>
+            <point key="canvasLocation" x="112.8" y="317.09145427286359"/>
         </scene>
     </scenes>
 </document>
