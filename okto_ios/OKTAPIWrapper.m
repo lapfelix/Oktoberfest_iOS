@@ -68,6 +68,10 @@ static NSDictionary *endpoints;
     for (NSString *classString in endpoints.allKeys) {
         [self downloadForClass:NSClassFromString(classString) withCompletionHandler:^(NSObject *object, NSError * _Nullable error) {
             //nothing to do with the returned object
+            
+            [[NSNotificationCenter defaultCenter]
+             postNotificationName:[NSString stringWithFormat:@"done_%@",classString]
+             object:self];
         }];
     }
 }
@@ -119,12 +123,14 @@ static NSDictionary *endpoints;
                 }
             }
         }
-        
+
         [self saveContext:self.managedObjectContext];
-        
+
         SDWebImagePrefetcher *prefetcher = [SDWebImagePrefetcher new];
         //TODO: show prefetch status somewhere ?
         [prefetcher prefetchURLs:imageURLs];
+        
+        completionHandler(nil, nil);
     }];
 }
 
