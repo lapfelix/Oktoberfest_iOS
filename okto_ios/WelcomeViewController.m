@@ -27,6 +27,8 @@
 @property (nonatomic, strong) NSDate *startDate;
 @property (nonatomic, strong) NSTimer *countdownTimer;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contestHeight;
+
 @end
 
 @implementation WelcomeViewController
@@ -35,6 +37,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 70, 0);
     [self initializeFetchedResultsControllers];
     [self updateWelcomeInfo];
     [[NSNotificationCenter defaultCenter]
