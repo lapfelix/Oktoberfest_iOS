@@ -8,6 +8,7 @@
 
 #import "ScheduleItemTableViewCell.h"
 #import "ScheduleItem+Methods.h"
+#import "UIColor+HexColors.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -47,6 +48,13 @@
         [dateFormatter setDateFormat:@"HH:mm"];
         self.startLabel.text = [@"À partir de " stringByAppendingString:[dateFormatter stringFromDate:scheduleItem.startTime]];
         self.endLabel.text = [dateFormatter stringFromDate:scheduleItem.endTime];
+        
+        UIColor *textColor = [UIColor colorWithHexString:scheduleItem.textColorHex];
+        
+        self.startLabel.textColor = textColor;
+        self.endLabel.textColor = textColor;
+        self.nameLabel.textColor = textColor;
+        self.descriptionLabel.textColor = textColor;
         
         if (scheduleItem.largeImage != nil) {
             NSURL *imageURL = [NSURL URLWithString:scheduleItem.largeImage];
