@@ -15,7 +15,7 @@
 
 @interface WelcomeViewController ()
 
-@property (weak, nonatomic) IBOutlet UICollectionView *sponsorsCollectionView;
+@property (strong, nonatomic) IBOutlet UICollectionView *sponsorsCollectionView;
 @property (nonatomic, strong) NSFetchedResultsController *sponsorsFetchedResultsController;
 @property (nonatomic, strong) NSFetchedResultsController *welcomeInfoFetchedResultsController;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -38,8 +38,6 @@
     // Do any additional setup after loading the view.
     
     self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 70, 0);
-    [self initializeFetchedResultsControllers];
-    [self updateWelcomeInfo];
     [[NSNotificationCenter defaultCenter]
      addObserverForName:@"done_WelcomeInfo"
      object:nil
@@ -48,6 +46,9 @@
      {
          [self initializeFetchedResultsControllers];
          [self updateWelcomeInfo];
+         [self.sponsorsCollectionView invalidateIntrinsicContentSize];
+         [self.sponsorsCollectionView reloadData];
+         [self.sponsorsCollectionView layoutSubviews];
      }];
 }
 
