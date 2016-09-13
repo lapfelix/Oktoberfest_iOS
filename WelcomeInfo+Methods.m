@@ -1,3 +1,4 @@
+
 //
 //  WelcomeInfo+Methods.m
 //  okto_ios
@@ -52,7 +53,7 @@ static NSString *entityName = @"WelcomeInfo";
     NSMutableArray *sponsorsImages = [NSMutableArray array];
     
     for (Sponsor *sponsor in self.sponsors) {
-        [sponsorsImages addObject:[sponsor getImageURLs]];
+        [sponsorsImages addObjectsFromArray:[sponsor getImageURLs]];
     }
     
     return sponsorsImages.copy;

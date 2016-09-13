@@ -37,8 +37,15 @@
     
     [self initializeFetchedResultsControllers];
     [self updateWelcomeInfo];
-    
-    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 25, 0);
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:@"done_WelcomeInfo"
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *notification)
+     {
+         [self initializeFetchedResultsControllers];
+         [self updateWelcomeInfo];
+     }];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
