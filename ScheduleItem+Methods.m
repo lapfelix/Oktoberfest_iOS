@@ -37,10 +37,10 @@ static NSString *entityName = @"ScheduleItem";
         
         self.id = [dict[@"id"] intValue];
         self.startTime = [self.class.dateFormatter dateFromString:[dict objectOrNilForKey:@"start_time"]];
-        self.endTime = [self.class.dateFormatter dateFromString:[dict objectOrNilForKey:@"end_time"]];
+        //self.endTime = [self.class.dateFormatter dateFromString:[dict objectOrNilForKey:@"end_time"]];
         self.name = [dict objectOrNilForKey:@"name"];
-        self.scheduleItemDescription = [dict objectOrNilForKey:@"description"];
-        
+        //self.scheduleItemDescription = [dict objectOrNilForKey:@"description"];
+        self.textColorHex = [dict objectForKey:@"text_color_hex"];
         self.largeImage = [dict objectOrNilForKey:@"large_image_url"];
         self.smallImage =  [dict objectOrNilForKey:@"small_image_url"];
         

@@ -59,6 +59,7 @@
         <attribute name="scheduleItemDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="smallImage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="textColorHex" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Sponsor" representedClassName="Sponsor" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -79,7 +80,7 @@
         <element name="FAQ" positionX="-4536" positionY="-4281" width="128" height="58"/>
         <element name="ImportantPlace" positionX="-4205" positionY="-4455" width="128" height="103"/>
         <element name="Map" positionX="-4205" positionY="-4329" width="128" height="135"/>
-        <element name="ScheduleItem" positionX="-4538" positionY="-4545" width="128" height="150"/>
+        <element name="ScheduleItem" positionX="-4538" positionY="-4545" width="128" height="165"/>
         <element name="Sponsor" positionX="-4203" positionY="-4590" width="128" height="120"/>
         <element name="WelcomeInfo" positionX="-4392" positionY="-4545" width="128" height="73"/>
     </elements>
