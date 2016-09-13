@@ -180,7 +180,7 @@ static NSDictionary *endpoints;
     if (!coordinator) {
         return nil;
     }
-    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
     _managedObjectContext.persistentStoreCoordinator = coordinator;
     return _managedObjectContext;
 }
