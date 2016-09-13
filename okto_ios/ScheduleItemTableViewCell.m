@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *endLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIImageView *smallImage;
-
+@property (weak, nonatomic) IBOutlet UIImageView *smallImage2;
 
 @end
 
@@ -45,7 +45,7 @@
         //TODO: fix this if it causes a skipped frame on slow devices
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         [dateFormatter setDateFormat:@"HH:mm"];
-        self.startLabel.text = [dateFormatter stringFromDate:scheduleItem.startTime];
+        self.startLabel.text = [@"À partir de " stringByAppendingString:[dateFormatter stringFromDate:scheduleItem.startTime]];
         self.endLabel.text = [dateFormatter stringFromDate:scheduleItem.endTime];
         
         if (scheduleItem.largeImage != nil) {
@@ -57,8 +57,11 @@
         if (scheduleItem.smallImage != nil) {
             NSURL *imageURL = [NSURL URLWithString:scheduleItem.smallImage];
             [self.smallImage sd_setImageWithURL:imageURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                //cached! or taken from cache
+                self.smallImage2.image = [UIImage imageWithCGImage:image.CGImage
+                                                       scale:image.scale
+                                                 orientation:UIImageOrientationUpMirrored];
             }];
+            
         }
     }
 }

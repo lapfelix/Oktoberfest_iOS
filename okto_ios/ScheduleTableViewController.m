@@ -19,6 +19,8 @@ static NSString *CellReuseIdentifier = @"scheduleitem";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Horaire";
+    
     self.tableView.allowsSelection = NO;
     
     [self initializeFetchedResultsController];
@@ -54,6 +56,8 @@ static NSString *CellReuseIdentifier = @"scheduleitem";
     id< NSFetchedResultsSectionInfo> sectionInfo = [[self fetchedResultsController] sections][section];
     return [sectionInfo numberOfObjects];
 }
+
+
 
 #pragma mark - Core Data stack
 
