@@ -24,7 +24,9 @@ static NSString *CellReuseIdentifier = @"beer";
     [super viewDidLoad];
     
     self.tableView.allowsSelection = NO;
-
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 200;
+    
     self.title = @"Bières";
     
     [self initializeFetchedResultsController];
@@ -66,6 +68,8 @@ static NSString *CellReuseIdentifier = @"beer";
     id< NSFetchedResultsSectionInfo> sectionInfo = [[self fetchedResultsController] sections][section];
     return [sectionInfo numberOfObjects];
 }
+
+
 
 #pragma mark - Core Data stack
 

@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="237"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BL4-G6-wyr" id="S2u-AJ-nia">
-                                    <frame key="frameInset" width="375" height="236"/>
+                                    <frame key="frameInset" width="375" height="236.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="243" horizontalCompressionResistancePriority="752" text="GOOSE ISLAND HONKERS ALE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-aE-58D">
@@ -76,7 +76,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-b6-ech">
-                                            <mutableString key="text">La Joufflue est servie avec sa levure, ce qui lui donne en partie son apparence opaque et trouble. Au nez, on décèle des agrumes et de la coriandre. En bouche, la rondeur de la céréale crue est balancée par une amertume légère. Bière légère aux allures pleines et rondes, la Joufflue est très rafraîchissante. Idéale avec les crudités, les fromages frais et les entrées fruitées.</mutableString>
+                                            <string key="text">La Joufflue est servie avec sa levure, ce qui lui donne en partie son apparence opaque et trouble. Au nez, on décèle des agrumes et de la coriandre. En bouche, la rondeur de la céréale crue est balancée par une amertume légère. Bière légère aux allures pleines et rondes, la Joufflue est très rafraîchissante. Idéale avec les crudités, les fromages frais et les entrées fruitées.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.16230384297950046" green="0.17200378838204214" blue="0.19596354166666663" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
