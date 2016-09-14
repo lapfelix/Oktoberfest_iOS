@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="okto_logo" translatesAutoresizingMaskIntoConstraints="NO" id="p92-kH-FLS">
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="okto_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="p92-kH-FLS">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="412" id="9zB-ql-gFV"/>
-                                    <constraint firstAttribute="width" constant="375" id="vqd-nM-WAu"/>
+                                    <constraint firstAttribute="width" constant="320" id="vqd-nM-WAu"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="okto_logo" width="736" height="744"/>
+        <image name="okto_logo.png" width="736" height="744"/>
     </resources>
 </document>
