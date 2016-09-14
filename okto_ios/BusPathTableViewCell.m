@@ -39,7 +39,12 @@
         BusPath *busPath = (BusPath *)object;
         
         self.titleLabel.text = busPath.title;
-        self.additionalLabel.text = busPath.additionalString;
+        if (busPath.additionalString.length > 1) {
+            self.additionalLabel.hidden = false;
+            self.additionalLabel.text = busPath.additionalString;
+        } else {
+            self.additionalLabel.hidden = true;
+        }
         self.intervalLabel.text = [NSString stringWithFormat:@"Passage aux %.0f minutes",busPath.interval];
         
         //TODO: fix this if it causes a skipped frame on slow devices
