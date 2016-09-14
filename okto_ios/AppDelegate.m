@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "OKTAppearance.h"
+#import "OKTAPIWrapper.h"
+#import "RootViewController.h"
+#import "LoadingViewController.h"
+
 @import GoogleMaps;
 
 @interface AppDelegate ()
@@ -23,6 +27,40 @@
     [GMSServices provideAPIKey:@"***REMOVED***"];
     
     [OKTAppearance setupAppearances];
+    
+    
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:screenBounds];
+    
+    [window makeKeyAndVisible];
+    [self setWindow:window];
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    LoadingViewController *loadingVC = [mainStoryboard instantiateInitialViewController];
+    
+    RootViewController *rootViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"root"];
+    [rootViewController view];
+    
+    if ([[[NSUserDefaults standardUserDefaults] valueForKey:@"didDownload"] boolValue] == YES) {
+        
+        window.rootViewController = rootViewController;
+    } else {
+        
+        window.rootViewController = loadingVC;
+        
+        [[NSNotificationCenter defaultCenter]
+         addObserverForName:@"done_WelcomeInfo"
+         object:nil
+         queue:[NSOperationQueue mainQueue]
+         usingBlock:^(NSNotification *notification)
+         {
+             [rootViewController setModalPresentationStyle:UIModalPresentationCustom];
+             [rootViewController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+             [loadingVC presentViewController:rootViewController animated:YES completion:nil];
+         }];
+    }
     
     return YES;
 }
@@ -42,11 +80,14 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    
 }
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [[OKTAPIWrapper sharedWrapper] syncWithServer];
 }
 
 
