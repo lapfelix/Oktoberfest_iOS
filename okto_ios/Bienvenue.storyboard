@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="MiL-Kl-WQy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gVq-H4-dtI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IJ-Ec-gnf">
@@ -95,6 +95,7 @@
                                                             <constraint firstItem="aS2-cx-flE" firstAttribute="width" secondItem="2L0-5w-YvS" secondAttribute="width" id="8z0-dt-QkA"/>
                                                             <constraint firstItem="j7p-hS-50d" firstAttribute="width" secondItem="2L0-5w-YvS" secondAttribute="width" id="FJb-y3-tGE"/>
                                                             <constraint firstAttribute="height" constant="88" id="LJh-36-T9e"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="LiC-yS-Mtn"/>
                                                             <constraint firstItem="zKt-aH-zgd" firstAttribute="width" secondItem="2L0-5w-YvS" secondAttribute="width" id="YQx-yK-9H1"/>
                                                         </constraints>
                                                     </stackView>
@@ -139,11 +140,12 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="8WL-XG-6tC" firstAttribute="leading" secondItem="2N7-q3-ggA" secondAttribute="leading" constant="10" id="2eB-dG-0hO"/>
+                                                    <constraint firstItem="8WL-XG-6tC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2N7-q3-ggA" secondAttribute="leading" constant="10" id="2eB-dG-0hO"/>
                                                     <constraint firstAttribute="trailing" secondItem="ZYl-R0-ulK" secondAttribute="trailing" constant="8" id="6kX-eu-C9Q"/>
                                                     <constraint firstItem="c6f-hE-C3z" firstAttribute="leading" secondItem="2N7-q3-ggA" secondAttribute="leading" constant="8" id="BiL-gJ-PVC"/>
+                                                    <constraint firstItem="8WL-XG-6tC" firstAttribute="centerX" secondItem="2N7-q3-ggA" secondAttribute="centerX" id="CyT-cU-JP8"/>
                                                     <constraint firstItem="8WL-XG-6tC" firstAttribute="top" secondItem="c6f-hE-C3z" secondAttribute="bottom" constant="3" id="L4g-4i-qCW"/>
-                                                    <constraint firstAttribute="trailing" secondItem="8WL-XG-6tC" secondAttribute="trailing" constant="10" id="NBl-hd-MfQ"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8WL-XG-6tC" secondAttribute="trailing" constant="10" id="NBl-hd-MfQ"/>
                                                     <constraint firstItem="c6f-hE-C3z" firstAttribute="top" secondItem="2N7-q3-ggA" secondAttribute="top" constant="29" id="Q3i-Hp-02b"/>
                                                     <constraint firstAttribute="height" constant="325" id="a5Z-8h-WXU"/>
                                                     <constraint firstAttribute="trailing" secondItem="c6f-hE-C3z" secondAttribute="trailing" constant="8" id="bBS-3D-GLe"/>
@@ -161,9 +163,6 @@
                                                         </constraints>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7np-Hk-U9K">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="61" id="USC-Qc-hTk"/>
-                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
                                                         <inset key="titleEdgeInsets" minX="76" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="Concours">
@@ -202,18 +201,17 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogx-In-bdh">
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="398" id="Ioi-bR-MSZ"/>
-                                                    <constraint firstAttribute="height" constant="67" id="JKn-U2-LZP"/>
-                                                </constraints>
                                                 <string key="text">Vendredi 7 octobre 2016, dès 18h
 Centre des Foires de Sherbrooke</string>
-                                                <fontDescription key="fontDescription" name="Tommaso" family="Tommaso" pointSize="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h2O-XU-8RI">
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="2pO-Cb-2fZ"/>
+                                                </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A6X-pq-eh5">
                                                     <size key="itemSize" width="75" height="75"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -247,6 +245,7 @@ Centre des Foires de Sherbrooke</string>
                                                             <constraint firstAttribute="bottom" secondItem="QJl-dq-SVP" secondAttribute="bottom" id="apW-2L-GnP"/>
                                                             <constraint firstItem="QJl-dq-SVP" firstAttribute="top" secondItem="jcC-wv-KjV" secondAttribute="top" id="rLr-pf-Hk1"/>
                                                         </constraints>
+                                                        <size key="customSize" width="75" height="75"/>
                                                         <connections>
                                                             <outlet property="imageView" destination="h1h-BE-NNh" id="Qkz-QU-8e4"/>
                                                             <outlet property="nameLabel" destination="QJl-dq-SVP" id="yBc-hm-JAq"/>
@@ -261,7 +260,7 @@ Centre des Foires de Sherbrooke</string>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ble" translatesAutoresizingMaskIntoConstraints="NO" id="lUz-He-5r9">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="mE2-OS-NsI"/>
-                                                    <constraint firstAttribute="width" constant="341" id="mi9-Hy-ylN"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="341" id="mi9-Hy-ylN"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partenaires officiels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqG-0E-Qri">
@@ -273,42 +272,40 @@ Centre des Foires de Sherbrooke</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYp-hI-Qx9">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="81" id="Jhy-lZ-ZAk"/>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="375" id="n4F-0H-o1E"/>
-                                                </constraints>
-                                                <string key="text">L’Oktoberfest, c’est le plus gros party universitaire thématique au Canada!
-</string>
-                                                <fontDescription key="fontDescription" name="Tommaso" family="Tommaso" pointSize="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L’Oktoberfest, c’est le plus gros party universitaire thématique au Canada!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYp-hI-Qx9">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="h2O-XU-8RI" firstAttribute="top" secondItem="QqG-0E-Qri" secondAttribute="bottom" constant="6" id="1ca-yC-Oax"/>
                                             <constraint firstAttribute="height" constant="761" id="1qx-i0-gNG"/>
                                             <constraint firstItem="2N7-q3-ggA" firstAttribute="top" secondItem="NIm-53-hOq" secondAttribute="top" id="3Uc-AH-M6b"/>
-                                            <constraint firstItem="Ogx-In-bdh" firstAttribute="top" secondItem="X05-ZZ-Gv1" secondAttribute="bottom" constant="63" id="5Dh-Hb-Gj0"/>
+                                            <constraint firstAttribute="bottom" secondItem="h2O-XU-8RI" secondAttribute="bottom" constant="16" id="6h9-Kl-lHk"/>
                                             <constraint firstItem="2N7-q3-ggA" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" id="6hd-Gx-Rwb"/>
-                                            <constraint firstItem="h2O-XU-8RI" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" constant="8" id="DKN-Np-Aju"/>
+                                            <constraint firstItem="Ogx-In-bdh" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" constant="8" id="BLg-l0-NGS"/>
+                                            <constraint firstItem="lUz-He-5r9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NIm-53-hOq" secondAttribute="leading" constant="17" id="Fxt-yG-YeC"/>
+                                            <constraint firstAttribute="trailing" secondItem="h2O-XU-8RI" secondAttribute="trailing" constant="17" id="GWk-jK-3Xi"/>
+                                            <constraint firstItem="h2O-XU-8RI" firstAttribute="top" secondItem="QqG-0E-Qri" secondAttribute="bottom" constant="6" id="ICf-q7-Zcr"/>
                                             <constraint firstItem="VYp-hI-Qx9" firstAttribute="top" secondItem="X05-ZZ-Gv1" secondAttribute="bottom" constant="8" id="K6k-62-Vkg"/>
                                             <constraint firstItem="2N7-q3-ggA" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" id="Llz-Mv-aI8"/>
-                                            <constraint firstAttribute="trailing" secondItem="VYp-hI-Qx9" secondAttribute="trailing" constant="8" id="Pt2-zI-uWr"/>
+                                            <constraint firstItem="Ogx-In-bdh" firstAttribute="top" secondItem="VYp-hI-Qx9" secondAttribute="bottom" constant="1" id="Ojx-jK-pWI"/>
+                                            <constraint firstAttribute="trailing" secondItem="VYp-hI-Qx9" secondAttribute="trailing" constant="17" id="Pt2-zI-uWr"/>
                                             <constraint firstItem="Ogx-In-bdh" firstAttribute="centerX" secondItem="NIm-53-hOq" secondAttribute="centerX" id="S0K-d8-t05"/>
-                                            <constraint firstItem="VYp-hI-Qx9" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" constant="8" id="Ydh-gx-EiZ"/>
+                                            <constraint firstItem="VYp-hI-Qx9" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" constant="17" id="Ydh-gx-EiZ"/>
                                             <constraint firstItem="X05-ZZ-Gv1" firstAttribute="top" secondItem="2N7-q3-ggA" secondAttribute="bottom" id="Zlh-KF-uNK"/>
                                             <constraint firstAttribute="trailing" secondItem="2N7-q3-ggA" secondAttribute="trailing" id="daI-F9-ZbA"/>
                                             <constraint firstItem="2N7-q3-ggA" firstAttribute="top" secondItem="NIm-53-hOq" secondAttribute="top" id="eiW-nk-Wxs"/>
                                             <constraint firstItem="QqG-0E-Qri" firstAttribute="centerX" secondItem="NIm-53-hOq" secondAttribute="centerX" id="es4-1K-NRn"/>
                                             <constraint firstAttribute="trailing" secondItem="2N7-q3-ggA" secondAttribute="trailing" id="j20-GV-R2t"/>
-                                            <constraint firstItem="QqG-0E-Qri" firstAttribute="top" secondItem="Ogx-In-bdh" secondAttribute="bottom" constant="21" id="k1l-UL-Ia2"/>
-                                            <constraint firstAttribute="bottom" secondItem="h2O-XU-8RI" secondAttribute="bottom" constant="16" id="kUI-3Y-xJE"/>
-                                            <constraint firstItem="lUz-He-5r9" firstAttribute="top" secondItem="Ogx-In-bdh" secondAttribute="bottom" constant="3" id="loc-5C-Ej4"/>
+                                            <constraint firstItem="QqG-0E-Qri" firstAttribute="top" secondItem="Ogx-In-bdh" secondAttribute="bottom" constant="26" id="k1l-UL-Ia2"/>
+                                            <constraint firstItem="lUz-He-5r9" firstAttribute="top" secondItem="Ogx-In-bdh" secondAttribute="bottom" constant="8" id="loc-5C-Ej4"/>
                                             <constraint firstItem="X05-ZZ-Gv1" firstAttribute="leading" secondItem="NIm-53-hOq" secondAttribute="leading" id="mSd-Ew-Hjl"/>
-                                            <constraint firstAttribute="trailing" secondItem="h2O-XU-8RI" secondAttribute="trailing" constant="8" id="oom-Yj-iTG"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lUz-He-5r9" secondAttribute="trailing" constant="17" id="pt1-yf-8W5"/>
                                             <constraint firstItem="lUz-He-5r9" firstAttribute="centerX" secondItem="NIm-53-hOq" secondAttribute="centerX" id="t99-Zb-6lg"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ogx-In-bdh" secondAttribute="trailing" constant="8" id="w4C-Sv-rRt"/>
+                                            <constraint firstItem="h2O-XU-8RI" firstAttribute="centerX" secondItem="NIm-53-hOq" secondAttribute="centerX" id="y9I-Dh-Njg"/>
                                             <constraint firstAttribute="trailing" secondItem="X05-ZZ-Gv1" secondAttribute="trailing" id="zv3-Lr-NJl"/>
                                         </constraints>
                                     </view>
@@ -339,7 +336,8 @@ Centre des Foires de Sherbrooke</string>
                     <navigationItem key="navigationItem" id="TXK-ta-Rr2"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="contestHeight" destination="USC-Qc-hTk" id="Rve-oa-Zt7"/>
+                        <outlet property="contestHeight" destination="bcG-vd-Y59" id="FuP-XM-8ai"/>
+                        <outlet property="contestHeightConstraint" destination="bcG-vd-Y59" id="EAr-5C-lSc"/>
                         <outlet property="daysLabel" destination="p2M-fu-5Ph" id="uGZ-KM-4ye"/>
                         <outlet property="hoursLabel" destination="4Cp-jm-wud" id="XOW-Ce-yJN"/>
                         <outlet property="minutesLabel" destination="18J-eV-OzP" id="Ocq-dB-IB2"/>
@@ -350,13 +348,13 @@ Centre des Foires de Sherbrooke</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DX1-0W-ey5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117.5999999999999" y="900.00000000000011"/>
+            <point key="canvasLocation" x="1117.1875" y="899.99999999999989"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yso-P8-OLj">
             <objects>
                 <navigationController id="bx1-Bb-84j" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="95K-hb-hGe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="95K-hb-hGe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -377,7 +375,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="c4n-Qs-Swo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lBm-r6-hHv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Une entrée gratuite pour l’OKTOBERFEST comprennant un boque et un remplissage." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhB-rt-IQX">
@@ -434,7 +432,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="6CX-bE-Mcv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b0N-Ei-ZTD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-hT-c1Z">
@@ -490,7 +488,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="LMN-ay-k4j"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWg-p1-02v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRT-ZQ-Im2">
