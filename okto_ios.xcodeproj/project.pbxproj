@@ -10,6 +10,7 @@
 		2127C8221819815E31E87DE1 /* libPods-okto_iosUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6412A411285FFBDA944AA26A /* libPods-okto_iosUITests.a */; };
 		36563FFFB45F24F0FA3F9B10 /* libPods-okto_iosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */; };
 		7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54181C1615D7226B2E4B365C /* libPods-okto_ios.a */; };
+		DC0163231D8A0FCB00D9D10F /* okto_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0163221D8A0FCB00D9D10F /* okto_logo.png */; };
 		DC078ED71D84659F002229F3 /* ImportantPlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078ED61D84659F002229F3 /* ImportantPlaceAnnotation.m */; };
 		DC078EDC1D84A1F4002229F3 /* Map+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078ED91D84A1F4002229F3 /* Map+CoreDataClass.m */; };
 		DC078EDD1D84A1F4002229F3 /* Map+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC078EDB1D84A1F4002229F3 /* Map+CoreDataProperties.m */; };
@@ -124,6 +125,7 @@
 		9BEAA1A84801F6EC1CB9BE26 /* Pods-okto_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_iosUITests/Pods-okto_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3CE05E2EA3DC44C7CECA6EC /* Pods-okto_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.release.xcconfig"; sourceTree = "<group>"; };
 		C77115BDDE96F5E61082E601 /* Pods-okto_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okto_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-okto_ios/Pods-okto_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DC0163221D8A0FCB00D9D10F /* okto_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = okto_logo.png; sourceTree = "<group>"; };
 		DC078ED51D84659F002229F3 /* ImportantPlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImportantPlaceAnnotation.h; sourceTree = "<group>"; };
 		DC078ED61D84659F002229F3 /* ImportantPlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImportantPlaceAnnotation.m; sourceTree = "<group>"; };
 		DC078ED81D84A1F4002229F3 /* Map+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Map+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -490,6 +492,7 @@
 				DCDABDD01D71154C00BCC342 /* View Controllers */,
 				DC5B00871D711800001C5A83 /* Views */,
 				DC74544D1D61155F00D87656 /* Assets.xcassets */,
+				DC0163221D8A0FCB00D9D10F /* okto_logo.png */,
 				DC74544F1D61155F00D87656 /* LaunchScreen.storyboard */,
 				DC7454521D61155F00D87656 /* Info.plist */,
 				DC74544A1D61155F00D87656 /* okto_ios.xcdatamodeld */,
@@ -833,6 +836,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0163231D8A0FCB00D9D10F /* okto_logo.png in Resources */,
 				DC7454831D6115B400D87656 /* Bienvenue.storyboard in Resources */,
 				DC7454851D6115B400D87656 /* Programmation.storyboard in Resources */,
 				DC7454891D6115F500D87656 /* Info.storyboard in Resources */,
