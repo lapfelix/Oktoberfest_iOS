@@ -11,6 +11,7 @@ target 'okto_ios' do
   pod 'SDWebImage', '~>3.8'
   pod 'IntentKit', :git => 'git@github.com:lapfelix/IntentKit.git', :commit => '2fcad6fc2a7024348153d5e055c7aff7319c1268'
   pod 'GoogleMaps'
+  pod 'RKDropdownAlert', :git => 'git@github.com:lapfelix/RKDropdownAlert.git'
   
   target 'okto_iosTests' do
     inherit! :search_paths

@@ -25,6 +25,7 @@ PODS:
     - IntentKit/Core
   - Masonry (1.0.1)
   - MWLayoutHelpers (1.1.0)
+  - RKDropdownAlert (0.3.0)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - GoogleMaps
   - IntentKit (from `git@github.com:lapfelix/IntentKit.git`, commit `2fcad6fc2a7024348153d5e055c7aff7319c1268`)
   - Masonry
+  - RKDropdownAlert (from `git@github.com:lapfelix/RKDropdownAlert.git`)
   - SDWebImage (~> 3.8)
   - TSMarkdownParser (~> 2.1)
 
@@ -41,20 +43,26 @@ EXTERNAL SOURCES:
   IntentKit:
     :commit: 2fcad6fc2a7024348153d5e055c7aff7319c1268
     :git: git@github.com:lapfelix/IntentKit.git
+  RKDropdownAlert:
+    :git: git@github.com:lapfelix/RKDropdownAlert.git
 
 CHECKOUT OPTIONS:
   IntentKit:
     :commit: 2fcad6fc2a7024348153d5e055c7aff7319c1268
     :git: git@github.com:lapfelix/IntentKit.git
+  RKDropdownAlert:
+    :commit: a1e0e9673e7121ca57d69e2bad05dc032325df58
+    :git: git@github.com:lapfelix/RKDropdownAlert.git
 
 SPEC CHECKSUMS:
   GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
   IntentKit: 0ae146dd4eb439279fbd6eb5c5bdfb161c4dc0b0
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MWLayoutHelpers: 8af2eedae30fe06b75106b7be28b9fee1298512a
+  RKDropdownAlert: d0a662ad524d2712b1661e483a878a28259ca7e1
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   TSMarkdownParser: 64cb52fe5a518b4875a6167a650cb0ed4b18cea5
 
-PODFILE CHECKSUM: 673451b6b30bdd8d2e27dd29ced42a51165f9f00
+PODFILE CHECKSUM: 7684e6a41168d69f4eb629fc5fb0ea4abce12385
 
 COCOAPODS: 1.0.1

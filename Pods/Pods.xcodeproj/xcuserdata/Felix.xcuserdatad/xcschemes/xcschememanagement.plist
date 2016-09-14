@@ -79,6 +79,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RKDropdownAlert.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -112,11 +117,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34C5007009964799F6955670ACE7DF1C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3A04D1E6D343D06DBF6E30482E64F627</key>
 		<dict>
 			<key>primary</key>
@@ -128,6 +128,16 @@
 			<true/>
 		</dict>
 		<key>4E6BFE7C03F28011679409C3E2DE2603</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4EE54857131828D807EE1FE2D844B8CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F3BFC5099CAE5E2EB0A354A1C6BD670</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,12 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A39F6B0B29D606097589C051D67A76A4</key>
+		<key>8E51EDF3185DFC1BF08833541301F430</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C04566A97C6FD8C5EB4618C71A70D46D</key>
+		<key>A39F6B0B29D606097589C051D67A76A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,12 +177,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E5B10167A9038189AEF30FC68709DBAA</key>
+		<key>F209A47AE564AC5EEE3503C4D583F0D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F209A47AE564AC5EEE3503C4D583F0D6</key>
+		<key>F7FD38193DC8F1AF35E606773C4BB46C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
