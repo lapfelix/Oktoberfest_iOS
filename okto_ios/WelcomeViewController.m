@@ -12,12 +12,14 @@
 #import "Sponsor+Methods.h"
 #import "OKTObjectConfigurableProtocol.h"
 #import "AppDelegate.h"
+#import "Contest+Methods.h"
 
 @interface WelcomeViewController ()
 
 @property (strong, nonatomic) IBOutlet UICollectionView *sponsorsCollectionView;
 @property (nonatomic, strong) NSFetchedResultsController *sponsorsFetchedResultsController;
 @property (nonatomic, strong) NSFetchedResultsController *welcomeInfoFetchedResultsController;
+@property (nonatomic, strong) NSFetchedResultsController *contestFetchedResultsController;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *daysLabel;
 @property (weak, nonatomic) IBOutlet UILabel *hoursLabel;
@@ -25,9 +27,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondsLabel;
 
 @property (nonatomic, strong) NSDate *startDate;
+@property (nonatomic, strong) NSDate *contestEndDate;
 @property (nonatomic, strong) NSTimer *countdownTimer;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contestHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *contestHeightConstraint;
 
 @end
 
@@ -36,8 +40,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 70, 0);
+    
+    self.contestHeight.constant = 0;
+    
+    [self initializeFetchedResultsControllers];
+    [self initializeContestFetchedResultsControllers];
+    [self updateWelcomeInfo];
     [[NSNotificationCenter defaultCenter]
      addObserverForName:@"done_WelcomeInfo"
      object:nil
@@ -49,6 +58,16 @@
          [self.sponsorsCollectionView invalidateIntrinsicContentSize];
          [self.sponsorsCollectionView reloadData];
          [self.sponsorsCollectionView layoutSubviews];
+     }];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:@"done_Contest"
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *notification)
+     {
+         [self initializeContestFetchedResultsControllers];
+         [self updateContestInfo];
      }];
 }
 
@@ -66,6 +85,14 @@
     if (fetchedObjects.count > 0) {
         WelcomeInfo *info = fetchedObjects.firstObject;
         self.startDate = info.startDate;
+    }
+}
+
+- (void)updateContestInfo {
+    NSArray *fetchedObjects = [self.contestFetchedResultsController fetchedObjects];
+    if (fetchedObjects.count > 0) {
+        Contest *contestInfo = fetchedObjects.firstObject;
+        self.contestEndDate = contestInfo.endTime;
     }
 }
 
@@ -92,7 +119,21 @@
     self.secondsLabel.text = [NSString stringWithFormat:@"%02li",seconds];
     
     //TODO: do something when ti hits 0
-    
+    [self checkContestDate];
+}
+
+- (void)checkContestDate {
+    if (self.contestEndDate != nil) {
+        NSInteger ti = MAX([self.contestEndDate timeIntervalSinceNow],0);
+        [UIView animateWithDuration:0.2 animations:^{
+            if (ti < 0) {
+                self.contestHeight.constant = 0;
+            } else {
+                self.contestHeight.constant = 61;
+            }
+            [self.view layoutIfNeeded];
+        }];
+    }
 }
 
 - (void)configureCell:(id)cell atIndexPath:(NSIndexPath*)indexPath {
@@ -119,8 +160,10 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     if (controller == self.sponsorsFetchedResultsController) {
         [self.sponsorsCollectionView commitChanges];
-    } else {
+    } else if (controller == self.sponsorsFetchedResultsController) {
         [self updateWelcomeInfo];
+    } else if (controller == self.contestFetchedResultsController) {
+        [self updateContestInfo];
     }
 }
 
@@ -175,5 +218,23 @@
     }
 }
 
+- (void)initializeContestFetchedResultsControllers {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[Contest entityName]];
+    
+    NSSortDescriptor *idSort = [NSSortDescriptor sortDescriptorWithKey:@"endTime" ascending:YES];
+    
+    [request setSortDescriptors:@[idSort]];
+    
+    NSManagedObjectContext *moc = ((AppDelegate *)UIApplication.sharedApplication.delegate).managedObjectContext;
+    
+    [self setContestFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:nil cacheName:nil]];
+    [[self contestFetchedResultsController] setDelegate:self];
+    
+    NSError *error = nil;
+    if (![[self contestFetchedResultsController] performFetch:&error]) {
+        NSLog(@"Failed to initialize FetchedResultsController: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
+}
 
 @end
