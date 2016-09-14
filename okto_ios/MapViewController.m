@@ -49,11 +49,23 @@
     whitePolygon.zIndex = 0;
     whitePolygon.map = _mapView;
     
+    [self forceRemoveLabelsFromMap:self.mapView];
     [self initializeFetchedResultsController];
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:@"done_Map"
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *notification)
+     {
+         [self initializeFetchedResultsController];
+         [self updateMap];
+     }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     self.mapView.camera = [GMSCameraPosition cameraWithTarget:CLLocationCoordinate2DMake(45.421687, -71.962817)  zoom:17.603 bearing:36.8063 viewingAngle:0];
+    
+    [self forceRemoveLabelsFromMap:self.mapView];
     [self updateMap];
 }
 
