@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@class UIColor;
 
 @interface OKTAppearance : NSObject
 
 + (void)setupAppearances;
+
++ (UIColor *)greenColor;
++ (UIColor *)yellowColor;
++ (UIColor *)orangeColor;
 
 @end
