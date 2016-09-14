@@ -33,7 +33,7 @@
 #pragma mark - Colors
 
 + (UIColor *)greenColor {
-    return [UIColor colorWithHexString:@"008044"];
+    return [UIColor colorWithHexString:@"006821"];
 }
 
 + (UIColor *)yellowColor {
