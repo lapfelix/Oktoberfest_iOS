@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8vY-1p-qhT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sFp-I9-CoV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,7 +53,7 @@
         <!--Root View Controller-->
         <scene sceneID="Y5j-Z5-o0Y">
             <objects>
-                <tabBarController id="8vY-1p-qhT" customClass="RootViewController" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="root" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8vY-1p-qhT" customClass="RootViewController" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3m2-lP-ZNN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -83,5 +84,49 @@
             </objects>
             <point key="canvasLocation" x="-1247" y="1902"/>
         </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="wlB-XU-zds">
+            <objects>
+                <viewController id="sFp-I9-CoV" customClass="LoadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oyi-6g-tO4"/>
+                        <viewControllerLayoutGuide type="bottom" id="8wr-I9-cCH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vik-dX-Gfe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tmp-Jv-BmZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="pqN-YT-zSr"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tU4-P9-Er7"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Téléchargement des informations..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBi-9b-PDU">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1019607843" green="0.4431372549" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tU4-P9-Er7" firstAttribute="centerY" secondItem="vik-dX-Gfe" secondAttribute="centerY" id="8LU-bR-jkh"/>
+                            <constraint firstItem="yBi-9b-PDU" firstAttribute="trailing" secondItem="vik-dX-Gfe" secondAttribute="trailingMargin" id="KDn-lf-o9m"/>
+                            <constraint firstItem="tU4-P9-Er7" firstAttribute="top" secondItem="yBi-9b-PDU" secondAttribute="bottom" constant="8" id="dpL-Rn-cwV"/>
+                            <constraint firstItem="yBi-9b-PDU" firstAttribute="leading" secondItem="vik-dX-Gfe" secondAttribute="leadingMargin" id="eMn-AZ-Qqo"/>
+                            <constraint firstItem="tU4-P9-Er7" firstAttribute="centerX" secondItem="vik-dX-Gfe" secondAttribute="centerX" id="iEf-XO-H8y"/>
+                            <constraint firstItem="tmp-Jv-BmZ" firstAttribute="top" secondItem="vik-dX-Gfe" secondAttribute="topMargin" constant="29" id="wkI-QO-Odd"/>
+                            <constraint firstItem="tmp-Jv-BmZ" firstAttribute="leading" secondItem="vik-dX-Gfe" secondAttribute="leading" constant="8" id="xeY-Qh-aVV"/>
+                            <constraint firstAttribute="trailing" secondItem="tmp-Jv-BmZ" secondAttribute="trailing" constant="8" id="yrg-Bh-drX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1D-R5-DGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3386.4000000000001" y="2101.7991004497753"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="2611" height="854"/>
+    </resources>
 </document>
