@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreData;
 
-@interface ContestStepViewController : UIViewController
+@interface ContestStepViewController : UIViewController<NSFetchedResultsControllerDelegate>
 
 @end
