@@ -24,6 +24,10 @@
                                              forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [[self class] yellowColor] }
                                              forState:UIControlStateSelected];
+    [[UILabel appearanceWhenContainedInInstancesOfClasses:@[[UITableViewHeaderFooterView class]]] setTextColor:[[self class] greenColor]];
+    [[UILabel appearanceWhenContainedInInstancesOfClasses:@[[UITableViewHeaderFooterView class]]] setFont:[UIFont fontWithName:@"Tommaso" size:45]];
+    [[UITableViewHeaderFooterView appearance] setTintColor:[[self class] yellowColor]];
+
 }
 
 #pragma mark - Colors
