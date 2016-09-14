@@ -65,15 +65,20 @@ static NSDictionary *endpoints;
 }
 
 - (void)syncWithServer {
-    for (NSString *classString in endpoints.allKeys) {
+    [endpoints enumerateKeysAndObjectsUsingBlock:^(NSString * classString, id  _Nonnull obj, BOOL * _Nonnull stop) {
         [self downloadForClass:NSClassFromString(classString) withCompletionHandler:^(NSObject *object, NSError * _Nullable error) {
             //nothing to do with the returned object
             
             [[NSNotificationCenter defaultCenter]
              postNotificationName:[NSString stringWithFormat:@"done_%@",classString]
              object:self];
+            
+            if ([classString isEqualToString:endpoints.allKeys[endpoints.count-1]]) {
+                [[NSUserDefaults standardUserDefaults] setValue:@(YES) forKey:@"didDownload"];
+            }
         }];
-    }
+    }];
+    
 }
 
 - (void)downloadForClass:(Class)class withCompletionHandler:(void (^)(NSObject *object, NSError * _Nullable error))completionHandler {
