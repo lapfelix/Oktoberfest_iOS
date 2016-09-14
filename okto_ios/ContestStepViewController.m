@@ -7,6 +7,8 @@
 //
 
 #import "ContestStepViewController.h"
+#import "AppDelegate.h"
+#import "ContestStep+Methods.h"
 
 @interface ContestStepViewController ()
 
@@ -14,19 +16,23 @@
 @property (weak, nonatomic) IBOutlet UIImageView *beerImage;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+
 - (IBAction)validateTap:(UIButton *)sender;
 
 @end
 
 @implementation ContestStepViewController
 
-NSString *correctAnswer = @"Pabst";
+NSArray *contestSteps;
 int currentStep = 0;
-int totalStep = 6;
+long totalStep = 8;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initializeFetchedResultsController];
+    contestSteps = [[self fetchedResultsController] fetchedObjects];
+    totalStep = contestSteps.count;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,19 +40,10 @@ int totalStep = 6;
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)validateTap:(UIButton *)sender {
+    ContestStep *currentContestStep = contestSteps[currentStep];
     
-    if ([[_answerTextField.text lowercaseString] isEqualToString:[correctAnswer lowercaseString]]) {
+    if ([[_answerTextField.text lowercaseString] isEqualToString:[currentContestStep.answer lowercaseString]]) {
         
         currentStep++;
         
@@ -60,7 +57,6 @@ int totalStep = 6;
     } else {
         [_resultLabel setText:@"Mauvaise réponse..."];
     }
-    
 }
 
 - (void)resetLabels {
@@ -68,10 +64,33 @@ int totalStep = 6;
     [_answerTextField setText:@""];
 }
 
+#pragma mark - Navigation
+
 - (void)showSuccessStep {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Bienvenue" bundle:nil];
     UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ContestDoneViewControllerIdentifier"];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - Core Data stack
+
+- (void)initializeFetchedResultsController {
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:[ContestStep entityName]];
+    
+    NSSortDescriptor *idSort = [NSSortDescriptor sortDescriptorWithKey:@"id" ascending:YES];
+    
+    [request setSortDescriptors:@[idSort]];
+    
+    NSManagedObjectContext *moc = ((AppDelegate *)UIApplication.sharedApplication.delegate).managedObjectContext;
+    
+    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:moc sectionNameKeyPath:nil cacheName:nil]];
+    [[self fetchedResultsController] setDelegate:self];
+    
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        NSLog(@"Failed to initialize FetchedResultsController: %@\n%@", [error localizedDescription], [error userInfo]);
+        abort();
+    }
 }
 
 @end

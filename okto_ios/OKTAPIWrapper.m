@@ -97,13 +97,16 @@ static NSDictionary *endpoints;
         [self deleteEntityWithName:NSStringFromClass(class)];
         
         //special cases. There's probably a better way to do this but _gotta go fast_
-        // (IS IT EVEN NECESSARY?)
         if ([NSStringFromClass(class) isEqual: @"WelcomeInfo"]) {
             [self deleteEntityWithName:@"Sponsor"];
         }
         
         if ([NSStringFromClass(class) isEqual: @"BeerCategory"]) {
             [self deleteEntityWithName:@"Beer"];
+        }
+        
+        if ([NSStringFromClass(class) isEqual: @"Contest"]) {
+            [self deleteEntityWithName:@"ContestStep"];
         }
         
         for (NSDictionary *obj in (NSArray *)objectArray) {
