@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="MiL-Kl-WQy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gVq-H4-dtI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IJ-Ec-gnf">
@@ -405,7 +405,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="c4n-Qs-Swo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lBm-r6-hHv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYt-m7-LZJ">
@@ -498,61 +498,87 @@ Centre des Foires de Sherbrooke</string>
             </objects>
             <point key="canvasLocation" x="2152.5" y="-88.75"/>
         </scene>
-        <!--Contest Step View Controller-->
+        <!--Deviner-->
         <scene sceneID="Ir3-oO-kba">
             <objects>
-                <viewController id="nU0-kW-2zo" customClass="ContestStepViewController" sceneMemberID="viewController">
+                <viewController title="Deviner" id="nU0-kW-2zo" customClass="ContestStepViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FjV-Nl-i4Y"/>
                         <viewControllerLayoutGuide type="bottom" id="6CX-bE-Mcv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b0N-Ei-ZTD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-hT-c1Z">
-                                <frame key="frameInset" minX="40" minY="82" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Réponse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-yv-PYz">
-                                <frame key="frameInset" minX="112" minY="247" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deviner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvA-B7-4oN">
-                                <frame key="frameInset" minX="131" minY="218" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-lX-1jm">
-                                <frame key="frameInset" minX="85" minY="72" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87s-sI-ruK">
-                                <frame key="frameInset" minX="137" minY="285" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Valider"/>
-                                <connections>
-                                    <action selector="validateTap:" destination="nU0-kW-2zo" eventType="touchUpInside" id="Bmy-fM-IDn"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtG-b4-q49">
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-lX-1jm">
+                                        <color key="tintColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1.5" id="cke-mF-Yhv"/>
+                                            <constraint firstAttribute="width" constant="150" id="iTM-Yz-8gQ"/>
+                                        </constraints>
+                                        <color key="progressTintColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="trackTintColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Réponse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-yv-PYz">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="vHG-GN-xYd"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87s-sI-ruK">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="Yob-9N-q7V"/>
+                                            <constraint firstAttribute="height" constant="30" id="xGp-gC-z4a"/>
+                                        </constraints>
+                                        <state key="normal" title="Valider"/>
+                                        <connections>
+                                            <action selector="validateTap:" destination="nU0-kW-2zo" eventType="touchUpInside" id="Bmy-fM-IDn"/>
+                                        </connections>
+                                    </button>
+                                    <imageView verifyAmbiguity="off" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="248" verticalHuggingPriority="260" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="754" translatesAutoresizingMaskIntoConstraints="NO" id="9pN-hT-c1Z"/>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="9pN-hT-c1Z" firstAttribute="top" secondItem="qfe-lX-1jm" secondAttribute="bottom" constant="8.5" id="6xu-mX-3GE"/>
+                                    <constraint firstItem="87s-sI-ruK" firstAttribute="top" secondItem="9pN-hT-c1Z" secondAttribute="bottom" constant="8" id="AZ7-cK-eVR"/>
+                                    <constraint firstItem="87s-sI-ruK" firstAttribute="leading" secondItem="r4w-yv-PYz" secondAttribute="trailing" constant="8" id="H3T-yr-y1Q"/>
+                                    <constraint firstItem="qfe-lX-1jm" firstAttribute="top" secondItem="dtG-b4-q49" secondAttribute="top" constant="8" id="HEu-XY-0Xh"/>
+                                    <constraint firstAttribute="trailing" secondItem="9pN-hT-c1Z" secondAttribute="trailing" constant="8" id="Jh0-2X-MAa"/>
+                                    <constraint firstItem="r4w-yv-PYz" firstAttribute="leading" secondItem="dtG-b4-q49" secondAttribute="leading" constant="8" id="KzQ-n6-Gp9"/>
+                                    <constraint firstItem="9pN-hT-c1Z" firstAttribute="leading" secondItem="dtG-b4-q49" secondAttribute="leading" constant="8" id="MWx-G9-VRq"/>
+                                    <constraint firstItem="87s-sI-ruK" firstAttribute="top" secondItem="9pN-hT-c1Z" secondAttribute="bottom" constant="8" id="VCi-MW-UjQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="87s-sI-ruK" secondAttribute="trailing" constant="8" id="an4-27-sYJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="87s-sI-ruK" secondAttribute="bottom" constant="8" id="cYR-Wv-VBO"/>
+                                    <constraint firstItem="qfe-lX-1jm" firstAttribute="centerX" secondItem="dtG-b4-q49" secondAttribute="centerX" id="d0p-6Q-TSP"/>
+                                    <constraint firstItem="87s-sI-ruK" firstAttribute="leading" secondItem="r4w-yv-PYz" secondAttribute="trailing" constant="8" id="pIJ-n9-dpD"/>
+                                    <constraint firstAttribute="bottom" secondItem="r4w-yv-PYz" secondAttribute="bottom" constant="8" id="ybN-kD-WfO"/>
+                                    <constraint firstItem="r4w-yv-PYz" firstAttribute="top" secondItem="9pN-hT-c1Z" secondAttribute="bottom" constant="8" id="yya-VW-RVd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6CX-bE-Mcv" firstAttribute="top" secondItem="dtG-b4-q49" secondAttribute="bottom" id="4kJ-7U-Fkg"/>
+                            <constraint firstItem="dtG-b4-q49" firstAttribute="top" secondItem="FjV-Nl-i4Y" secondAttribute="bottom" id="Ts6-6t-noZ"/>
+                            <constraint firstAttribute="trailing" secondItem="dtG-b4-q49" secondAttribute="trailing" id="nvL-7w-UXE"/>
+                            <constraint firstItem="dtG-b4-q49" firstAttribute="leading" secondItem="b0N-Ei-ZTD" secondAttribute="leading" id="qX6-Oj-qN3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="r4w-yv-PYz" id="B3i-SU-Rjy"/>
                         <outlet property="beerImage" destination="9pN-hT-c1Z" id="cKg-os-19T"/>
-                        <outlet property="resultLabel" destination="zvA-B7-4oN" id="nC5-Hk-0Oa"/>
+                        <outlet property="bottomLayoutConstraint" destination="4kJ-7U-Fkg" id="m4h-Q1-k9e"/>
+                        <outlet property="containerView" destination="dtG-b4-q49" id="JMS-JF-DvS"/>
                         <outlet property="stepProgressView" destination="qfe-lX-1jm" id="HJ3-zO-sOE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kx-4r-Crb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2899" y="-89"/>
+            <point key="canvasLocation" x="2898.75" y="-90"/>
         </scene>
         <!--Contest Done View Controller-->
         <scene sceneID="Ciu-as-Kd1">
@@ -563,7 +589,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="LMN-ay-k4j"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWg-p1-02v">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRT-ZQ-Im2">
