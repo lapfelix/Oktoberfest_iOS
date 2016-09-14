@@ -31,13 +31,13 @@
 
 NSArray *contestSteps;
 int currentStep = 0;
-long totalStep = 8;
+long totalSteps = 8;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initializeFetchedResultsController];
     contestSteps = [[self fetchedResultsController] fetchedObjects];
-    totalStep = contestSteps.count;
+    totalSteps = contestSteps.count;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardDidShow:)
@@ -62,14 +62,14 @@ long totalStep = 8;
         
         currentStep++;
         
-        if (currentStep >= totalStep) {
+        if (currentStep >= totalSteps) {
             
             [RKDropdownAlert title:@"Mauvaise réponse..." message:@"Essayez à nouveau!" backgroundColor:[OKTAppearance greenColor] textColor:UIColor.whiteColor time:1 completionHandler:^{
                 [self showSuccessStep];
             }];
         }
 
-        [_stepProgressView setProgress:(float)currentStep/totalStep];
+        [_stepProgressView setProgress:(float)currentStep/totalSteps];
         [self resetLabels];
         
     } else {
@@ -113,7 +113,7 @@ long totalStep = 8;
 - (void)keyboardDidShow:(NSNotification *)notification
 {
     NSDictionary* info = [notification userInfo];
-    CGRect kbRect = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGRect kbRect = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     
     self.bottomLayoutConstraint.constant = CGRectGetHeight(kbRect);
 }
