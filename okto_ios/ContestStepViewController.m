@@ -33,6 +33,16 @@ long totalStep = 8;
     [self initializeFetchedResultsController];
     contestSteps = [[self fetchedResultsController] fetchedObjects];
     totalStep = contestSteps.count;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardDidShow:)
+                                                 name:UIKeyboardWillChangeFrameNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,6 +101,22 @@ long totalStep = 8;
         NSLog(@"Failed to initialize FetchedResultsController: %@\n%@", [error localizedDescription], [error userInfo]);
         abort();
     }
+}
+
+- (void)keyboardDidShow:(NSNotification *)notification
+{
+    NSDictionary* info = [notification userInfo];
+    CGRect kbRect = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    
+    self.bottomLayoutConstraint.constant = CGRectGetHeight(kbRect);
+}
+
+- (void)keyboardWillBeHidden:(NSNotification *)notification
+{
+    NSDictionary* info = [notification userInfo];
+    CGRect kbRect = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    
+    self.bottomLayoutConstraint.constant = CGRectGetHeight(kbRect);
 }
 
 @end
