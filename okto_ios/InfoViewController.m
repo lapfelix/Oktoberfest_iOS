@@ -32,6 +32,7 @@
     // Do any additional setup after loading the view.
     
     self.title = @"Infos";
+    self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 140, 0);
     
     [self initializeFetchedResultsController];
     [self fetchUpdatedContactInfo];

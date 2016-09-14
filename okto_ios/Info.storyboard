@@ -3,8 +3,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tommaso.ttf">
+            <string>Tommaso</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Infos-->
         <scene sceneID="kad-xT-y9M">
@@ -19,14 +25,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="damier" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-QQ-d02"/>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BAf-z5-yjG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BAf-z5-yjG">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wZ-Ez-4J1">
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="Mv5-1U-JrS"/>
+                                            <constraint firstAttribute="height" constant="37" id="7Hm-Zn-Xub"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Tommaso" family="Tommaso" pointSize="44"/>
+                                        <color key="textColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzs-zM-JyG" customClass="RoundedRectangle">
@@ -53,11 +59,12 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="SW3-g3-2Ef" secondAttribute="trailing" id="6qk-mL-mii"/>
-                                            <constraint firstAttribute="bottom" secondItem="SW3-g3-2Ef" secondAttribute="bottom" id="AHz-cv-ZcC"/>
-                                            <constraint firstItem="SW3-g3-2Ef" firstAttribute="top" secondItem="kzs-zM-JyG" secondAttribute="top" id="D4Z-cN-AgD"/>
-                                            <constraint firstAttribute="height" constant="149" id="PwE-de-RhR"/>
-                                            <constraint firstItem="SW3-g3-2Ef" firstAttribute="leading" secondItem="kzs-zM-JyG" secondAttribute="leading" id="b5B-Qx-jko"/>
+                                            <constraint firstItem="SW3-g3-2Ef" firstAttribute="leading" secondItem="kzs-zM-JyG" secondAttribute="leading" id="1qG-KN-qzf"/>
+                                            <constraint firstAttribute="trailing" secondItem="SW3-g3-2Ef" secondAttribute="trailing" id="GTA-1I-tJ5"/>
+                                            <constraint firstAttribute="height" constant="149" id="Gv6-bm-kA9"/>
+                                            <constraint firstAttribute="bottom" secondItem="SW3-g3-2Ef" secondAttribute="bottom" id="LpY-Nl-ZIz"/>
+                                            <constraint firstItem="SW3-g3-2Ef" firstAttribute="top" secondItem="kzs-zM-JyG" secondAttribute="top" id="TKt-ma-frs"/>
+                                            <constraint firstAttribute="width" constant="288" id="phL-N9-CBg"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
@@ -302,57 +309,69 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="kzs-zM-JyG" firstAttribute="top" secondItem="2wZ-Ez-4J1" secondAttribute="bottom" constant="8" id="00d-EB-12Q"/>
                                     <constraint firstItem="9PB-yu-V6I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BAf-z5-yjG" secondAttribute="leading" constant="49" id="0fn-lR-8tf"/>
-                                    <constraint firstItem="2wZ-Ez-4J1" firstAttribute="leading" secondItem="BAf-z5-yjG" secondAttribute="leading" constant="16" id="1t8-Y0-UXK"/>
-                                    <constraint firstAttribute="trailing" secondItem="2wZ-Ez-4J1" secondAttribute="trailing" constant="16" id="M6j-af-lI8"/>
-                                    <constraint firstItem="2wZ-Ez-4J1" firstAttribute="top" secondItem="BAf-z5-yjG" secondAttribute="top" constant="78" id="P4D-AQ-m0Y"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="2wZ-Ez-4J1" secondAttribute="trailing" constant="8" id="4lA-fx-PlD"/>
+                                    <constraint firstItem="2wZ-Ez-4J1" firstAttribute="leading" secondItem="BAf-z5-yjG" secondAttribute="leadingMargin" constant="8" id="7U4-1Z-kMu"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9PB-yu-V6I" secondAttribute="trailing" constant="48" id="Ra0-Pb-0u9"/>
-                                    <constraint firstAttribute="trailing" secondItem="kzs-zM-JyG" secondAttribute="trailing" constant="16" id="VMl-Qa-ybD"/>
-                                    <constraint firstItem="9PB-yu-V6I" firstAttribute="top" secondItem="kzs-zM-JyG" secondAttribute="bottom" constant="16" id="eLt-wb-ypY"/>
-                                    <constraint firstItem="9PB-yu-V6I" firstAttribute="top" secondItem="kzs-zM-JyG" secondAttribute="bottom" constant="16" id="gXm-o2-yGg"/>
-                                    <constraint firstAttribute="bottom" secondItem="9PB-yu-V6I" secondAttribute="bottom" constant="159" id="vFq-VZ-Pdj"/>
-                                    <constraint firstItem="kzs-zM-JyG" firstAttribute="leading" secondItem="BAf-z5-yjG" secondAttribute="leading" constant="16" id="vhW-d6-4nn"/>
+                                    <constraint firstItem="9PB-yu-V6I" firstAttribute="centerX" secondItem="2wZ-Ez-4J1" secondAttribute="centerX" id="SLq-fw-OPr"/>
+                                    <constraint firstAttribute="trailing" secondItem="9PB-yu-V6I" secondAttribute="trailing" constant="48" id="V6N-rz-jJ9"/>
+                                    <constraint firstItem="kzs-zM-JyG" firstAttribute="top" secondItem="2wZ-Ez-4J1" secondAttribute="bottom" constant="8" id="czl-hN-CLD"/>
+                                    <constraint firstItem="kzs-zM-JyG" firstAttribute="centerX" secondItem="BAf-z5-yjG" secondAttribute="centerX" id="dho-fy-ULj"/>
+                                    <constraint firstItem="9PB-yu-V6I" firstAttribute="top" secondItem="kzs-zM-JyG" secondAttribute="bottom" constant="16" id="g2C-ps-ExW"/>
+                                    <constraint firstItem="9PB-yu-V6I" firstAttribute="top" secondItem="BAf-z5-yjG" secondAttribute="top" constant="288" id="oBD-Xy-Cv1"/>
+                                    <constraint firstItem="2wZ-Ez-4J1" firstAttribute="top" secondItem="BAf-z5-yjG" secondAttribute="topMargin" constant="70" id="qlh-Hu-iyG"/>
+                                    <constraint firstAttribute="bottom" secondItem="9PB-yu-V6I" secondAttribute="bottom" constant="46" id="vFq-VZ-Pdj"/>
                                     <constraint firstItem="9PB-yu-V6I" firstAttribute="centerX" secondItem="BAf-z5-yjG" secondAttribute="centerX" id="zaf-aZ-SLQ"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foM-IL-tFI">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="FAQ">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tJF-Kf-LfF" kind="show" id="8Eg-lS-odk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-y2-oDo">
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Horaire autobus">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cHj-6U-Fon" kind="show" id="DHc-0K-x6l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BN2-cg-LDR"/>
-                                    <constraint firstAttribute="width" constant="89" id="RWy-cD-mbY"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZQw-O6-U3W" secondAttribute="trailing" id="6AU-af-kyM"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZQw-O6-U3W" secondAttribute="bottom" id="Goz-sO-MgQ"/>
+                                    <constraint firstItem="DPi-y2-oDo" firstAttribute="top" secondItem="foM-IL-tFI" secondAttribute="top" id="HMe-Ev-iaq"/>
+                                    <constraint firstAttribute="height" constant="122" id="JYx-7q-TfY"/>
+                                    <constraint firstAttribute="trailing" secondItem="DPi-y2-oDo" secondAttribute="trailing" id="KeY-8A-krf"/>
+                                    <constraint firstItem="ZQw-O6-U3W" firstAttribute="top" secondItem="DPi-y2-oDo" secondAttribute="bottom" id="VdC-IJ-9R7"/>
+                                    <constraint firstItem="DPi-y2-oDo" firstAttribute="leading" secondItem="foM-IL-tFI" secondAttribute="leading" id="bM4-xO-b6t"/>
+                                    <constraint firstItem="ZQw-O6-U3W" firstAttribute="height" secondItem="DPi-y2-oDo" secondAttribute="height" id="t7o-ap-gvf"/>
+                                    <constraint firstItem="ZQw-O6-U3W" firstAttribute="leading" secondItem="foM-IL-tFI" secondAttribute="leading" id="yGy-JO-1CF"/>
                                 </constraints>
-                                <state key="normal" title="Horaire autobus"/>
-                                <connections>
-                                    <segue destination="cHj-6U-Fon" kind="show" id="DHc-0K-x6l"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-O6-U3W">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8XN-8h-nak"/>
-                                    <constraint firstAttribute="width" constant="30" id="k21-bZ-vVv"/>
-                                </constraints>
-                                <state key="normal" title="FAQ"/>
-                                <connections>
-                                    <segue destination="tJF-Kf-LfF" kind="show" id="8Eg-lS-odk"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Nkz-QQ-d02" secondAttribute="trailing" id="3cj-uS-CIh"/>
                             <constraint firstAttribute="bottom" secondItem="BAf-z5-yjG" secondAttribute="bottom" id="56I-c9-EKc"/>
-                            <constraint firstItem="ZQw-O6-U3W" firstAttribute="top" secondItem="DPi-y2-oDo" secondAttribute="bottom" constant="2" id="9Gm-3d-vdk"/>
                             <constraint firstItem="b4e-i3-abl" firstAttribute="top" secondItem="Nkz-QQ-d02" secondAttribute="bottom" id="KRK-DW-Rr1"/>
                             <constraint firstItem="Nkz-QQ-d02" firstAttribute="top" secondItem="Fql-fa-ADT" secondAttribute="top" id="LAN-5F-7J5"/>
-                            <constraint firstItem="BAf-z5-yjG" firstAttribute="centerX" secondItem="DPi-y2-oDo" secondAttribute="centerX" id="UNy-8K-yYX"/>
-                            <constraint firstItem="ZQw-O6-U3W" firstAttribute="centerX" secondItem="Fql-fa-ADT" secondAttribute="centerX" id="WSb-7Z-5Ij"/>
+                            <constraint firstItem="foM-IL-tFI" firstAttribute="leading" secondItem="Fql-fa-ADT" secondAttribute="leading" id="YtU-Z3-TUZ"/>
                             <constraint firstItem="BAf-z5-yjG" firstAttribute="leading" secondItem="Fql-fa-ADT" secondAttribute="leading" id="Z7F-YH-cg2"/>
                             <constraint firstItem="Nkz-QQ-d02" firstAttribute="leading" secondItem="Fql-fa-ADT" secondAttribute="leading" id="a5A-Pj-JOb"/>
                             <constraint firstItem="BAf-z5-yjG" firstAttribute="top" secondItem="Fql-fa-ADT" secondAttribute="top" id="e0f-eo-ogE"/>
-                            <constraint firstItem="DPi-y2-oDo" firstAttribute="centerX" secondItem="Fql-fa-ADT" secondAttribute="centerX" id="itX-8D-RrT"/>
                             <constraint firstAttribute="trailing" secondItem="BAf-z5-yjG" secondAttribute="trailing" id="jH1-EG-8Df"/>
-                            <constraint firstItem="b4e-i3-abl" firstAttribute="top" secondItem="ZQw-O6-U3W" secondAttribute="bottom" constant="37" id="tGL-De-9SN"/>
-                            <constraint firstItem="BAf-z5-yjG" firstAttribute="centerX" secondItem="ZQw-O6-U3W" secondAttribute="centerX" id="toH-0C-gCK"/>
+                            <constraint firstAttribute="trailing" secondItem="foM-IL-tFI" secondAttribute="trailing" id="sht-IW-xaV"/>
+                            <constraint firstItem="b4e-i3-abl" firstAttribute="top" secondItem="foM-IL-tFI" secondAttribute="bottom" id="uiV-zt-UnF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ceK-Iu-7F9"/>
@@ -363,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HP1-0G-Hlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.875" y="164.78873239436621"/>
+            <point key="canvasLocation" x="61.875" y="163.75"/>
         </scene>
         <!--Horaire Autobus-->
         <scene sceneID="NOi-lb-2UM">
@@ -481,7 +500,7 @@
             <objects>
                 <navigationController title="Infos" id="2rF-LF-GJ9" sceneMemberID="viewController">
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c5a-pS-XAS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="c5a-pS-XAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
