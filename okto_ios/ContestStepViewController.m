@@ -9,14 +9,19 @@
 #import "ContestStepViewController.h"
 #import "AppDelegate.h"
 #import "ContestStep+Methods.h"
+#import "OKTAppearance.h"
+
+#import <RKDropdownAlert/RKDropdownAlert.h>
 
 @interface ContestStepViewController ()
 
 @property (weak, nonatomic) IBOutlet UIProgressView *stepProgressView;
 @property (weak, nonatomic) IBOutlet UIImageView *beerImage;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
-@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomLayoutConstraint;
 
 - (IBAction)validateTap:(UIButton *)sender;
 
@@ -58,19 +63,21 @@ long totalStep = 8;
         currentStep++;
         
         if (currentStep >= totalStep) {
-            [self showSuccessStep];
+            
+            [RKDropdownAlert title:@"Mauvaise réponse..." message:@"Essayez à nouveau!" backgroundColor:[OKTAppearance greenColor] textColor:UIColor.whiteColor time:1 completionHandler:^{
+                [self showSuccessStep];
+            }];
         }
 
         [_stepProgressView setProgress:(float)currentStep/totalStep];
         [self resetLabels];
         
     } else {
-        [_resultLabel setText:@"Mauvaise réponse..."];
+        [RKDropdownAlert title:@"Mauvaise réponse..." message:@"Essayez à nouveau!" backgroundColor:[OKTAppearance yellowColor] textColor:UIColor.blackColor time:2];
     }
 }
 
 - (void)resetLabels {
-    [_resultLabel setText:@"Deviner"];
     [_answerTextField setText:@""];
 }
 
