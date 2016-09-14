@@ -31,4 +31,8 @@ static NSString *entityName = @"ContestStep";
     return self;
 }
 
+- (NSArray<NSString *> *)getImageURLs {
+    return @[self.answerImageUrl, self.questionImageUrl];
+}
+
 @end

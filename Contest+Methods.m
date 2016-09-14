@@ -58,4 +58,16 @@ static NSString *entityName = @"Contest";
     return date;
 }
 
+- (NSArray<NSString *> *)getImageURLs {
+    
+    NSMutableArray *contestStepImages = [NSMutableArray array];
+    
+    for (ContestStep *contestStep in self.contestSteps) {
+        [contestStepImages addObjectsFromArray:[contestStep getImageURLs]];
+    }
+        
+    return contestStepImages.copy;
+}
+
+
 @end
