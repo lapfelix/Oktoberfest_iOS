@@ -9,6 +9,7 @@
 #import "InfoViewController.h"
 #import "AppDelegate.h"
 #import "ContactInfo+Methods.h"
+#import "OKTAppearance.h"
 #import <IntentKit/INKMailHandler.h>
 #import <IntentKit/INKTwitterHandler.h>
 #import <IntentKit/INKFacebookHandler.h>
@@ -22,6 +23,8 @@
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @property (copy, nonatomic) ContactInfo *contactInfo;
+@property (weak, nonatomic) IBOutlet UIImageView *busImage;
+@property (weak, nonatomic) IBOutlet UIImageView *faqImage;
 
 @end
 
@@ -36,6 +39,12 @@
     
     [self initializeFetchedResultsController];
     [self fetchUpdatedContactInfo];
+    
+    self.busImage.image = [[UIImage imageNamed:@"bus"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    self.busImage.tintColor = [OKTAppearance greenColor];
+    self.faqImage.image = [[UIImage imageNamed:@"faq"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    self.faqImage.tintColor = [OKTAppearance greenColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
