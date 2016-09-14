@@ -7,7 +7,6 @@
 //
 
 #import "RootViewController.h"
-#import "OKTAPIWrapper.h"
 
 @interface RootViewController ()
 
@@ -23,8 +22,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    [[OKTAPIWrapper sharedWrapper] syncWithServer];
     
     self.tabBar.items[0].image = [UIImage imageNamed:@"bienvenue"];
     self.tabBar.items[0].selectedImage = [UIImage imageNamed:@"bienvenue_selected"];
