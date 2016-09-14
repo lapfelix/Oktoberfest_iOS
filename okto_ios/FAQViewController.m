@@ -9,6 +9,7 @@
 #import "FAQViewController.h"
 #import "FAQ+Methods.h"
 #import "AppDelegate.h"
+#import "OKTAppearance.h"
 #import <TSMarkdownParser/TSMarkdownParser.h>
 
 @interface FAQViewController ()
@@ -42,8 +43,24 @@
     if (fetchedObjects.count > 0) {
         FAQ *faq = fetchedObjects[0];
         
-        NSAttributedString *attributedString = [[TSMarkdownParser standardParser] attributedStringFromMarkdown:faq.markdown];
-
+        TSMarkdownParser *parser = [TSMarkdownParser standardParser];
+        parser.headerAttributes = @[
+                                    @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:33],
+                                       NSForegroundColorAttributeName: [OKTAppearance greenColor]},
+                                    @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:28],
+                                       NSForegroundColorAttributeName: [OKTAppearance greenColor]},
+                                    @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:26],
+                                       NSForegroundColorAttributeName: [OKTAppearance greenColor]},
+                                    @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:23],
+                                       NSForegroundColorAttributeName: [OKTAppearance greenColor]},
+                                    @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:21],
+                                       NSForegroundColorAttributeName: [OKTAppearance greenColor]},
+                                    ];
+        parser.defaultAttributes = @{
+                                     NSFontAttributeName: [UIFont systemFontOfSize:18 weight:UIFontWeightLight],
+                                     NSForegroundColorAttributeName: [UIColor darkGrayColor]};
+        NSAttributedString *attributedString = [parser attributedStringFromMarkdown:faq.markdown];
+        
         self.textView.attributedText = attributedString;
     }
 }
