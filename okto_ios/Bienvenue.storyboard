@@ -432,21 +432,19 @@ Centre des Foires de Sherbrooke</string>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="288" id="Mqy-Xj-44m"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
                                         <color key="textColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Comment participer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4MI-KF-9fW">
-                                        <frame key="frameInset" width="1000" height="1000"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment participer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4MI-KF-9fW">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="288" id="YZx-Oi-cHB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
                                         <color key="textColor" red="0.0" green="0.50196078430000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Une entrée gratuite pour l’OKTOBERFEST comprennant un boque et un remplissage." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jhB-rt-IQX">
-                                        <frame key="frameInset" width="1000" height="1000"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Une entrée gratuite pour l’OKTOBERFEST comprennant un boque et un remplissage." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jhB-rt-IQX">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="288" id="LdF-zL-xsT"/>
                                         </constraints>
@@ -454,8 +452,7 @@ Centre des Foires de Sherbrooke</string>
                                         <color key="textColor" red="0.38431372549999998" green="0.40784313729999999" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="En trouvant la marque des 8 bières suivantes." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-pk-zDg">
-                                        <frame key="frameInset" width="1000" height="1000"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En trouvant la marque des 8 bières suivantes." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9gi-pk-zDg">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="285" id="l6q-pd-dw1"/>
                                         </constraints>
@@ -469,14 +466,14 @@ Centre des Foires de Sherbrooke</string>
                                     <constraint firstAttribute="bottom" secondItem="9gi-pk-zDg" secondAttribute="bottom" constant="9" id="ExZ-yu-RSy"/>
                                     <constraint firstItem="9gi-pk-zDg" firstAttribute="top" secondItem="4MI-KF-9fW" secondAttribute="bottom" constant="2" id="Gl0-YJ-E32"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="207" id="NiE-tR-j0Y"/>
+                                    <constraint firstItem="jhB-rt-IQX" firstAttribute="top" secondItem="Oge-S1-CdH" secondAttribute="bottom" constant="2" id="PTB-nn-Kbc"/>
                                     <constraint firstItem="9gi-pk-zDg" firstAttribute="centerX" secondItem="jCu-9Z-9hU" secondAttribute="centerX" id="SRc-Ca-rKC"/>
                                     <constraint firstAttribute="width" constant="288" id="TTr-B9-9ia"/>
                                     <constraint firstItem="Oge-S1-CdH" firstAttribute="centerX" secondItem="jCu-9Z-9hU" secondAttribute="centerX" id="Uqs-ZP-HKf"/>
-                                    <constraint firstItem="jhB-rt-IQX" firstAttribute="top" secondItem="jCu-9Z-9hU" secondAttribute="top" constant="26" id="a4v-s6-nDx"/>
                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9gi-pk-zDg" secondAttribute="bottom" id="auX-q3-zP9"/>
                                     <constraint firstItem="4MI-KF-9fW" firstAttribute="centerX" secondItem="jCu-9Z-9hU" secondAttribute="centerX" id="dT5-Oe-lRp"/>
                                     <constraint firstItem="jhB-rt-IQX" firstAttribute="centerX" secondItem="jCu-9Z-9hU" secondAttribute="centerX" id="u3K-px-8RK"/>
-                                    <constraint firstItem="Oge-S1-CdH" firstAttribute="top" secondItem="jCu-9Z-9hU" secondAttribute="top" constant="2" id="uLQ-wj-DBi"/>
+                                    <constraint firstItem="Oge-S1-CdH" firstAttribute="top" secondItem="jCu-9Z-9hU" secondAttribute="top" id="uLQ-wj-DBi"/>
                                     <constraint firstItem="4MI-KF-9fW" firstAttribute="top" secondItem="jhB-rt-IQX" secondAttribute="bottom" constant="23" id="vBa-Zt-I2j"/>
                                 </constraints>
                             </view>
