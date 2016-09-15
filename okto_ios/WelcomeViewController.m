@@ -135,7 +135,7 @@
     if (self.contestEndDate != nil) {
         NSInteger ti = MAX([self.contestEndDate timeIntervalSinceNow],0);
         [UIView animateWithDuration:0.2 animations:^{
-            if (ti < 0) {
+            if (ti < 0 || [[NSUserDefaults standardUserDefaults] valueForKey:@"didContest"] == nil) {
                 self.contestHeight.constant = 0;
             } else {
                 self.contestHeight.constant = 61;

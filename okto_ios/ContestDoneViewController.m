@@ -100,6 +100,8 @@
                                          [RKDropdownAlert title:@"Succès!" message:@"Nous allons vous contacter si vous avez gagné!" backgroundColor:[OKTAppearance greenColor] textColor:UIColor.whiteColor time:2 completionHandler:^{
                                              [self dismissContest];
                                          }];
+                                         
+                                         [[NSUserDefaults standardUserDefaults] setValue:@(YES) forKey:@"didContest"];
                                      }
                                          
                                      });
