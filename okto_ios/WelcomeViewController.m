@@ -56,7 +56,6 @@
      {
          [self initializeFetchedResultsControllers];
          [self updateWelcomeInfo];
-         [self.sponsorsCollectionView reloadData];
      }];
     
     [[NSNotificationCenter defaultCenter]
@@ -134,13 +133,12 @@
     if (self.contestEndDate != nil) {
         NSInteger ti = MAX([self.contestEndDate timeIntervalSinceNow],0);
         [UIView animateWithDuration:0.2 animations:^{
-            if (ti < 0 || [[NSUserDefaults standardUserDefaults] valueForKey:@"didContest"] == nil) {                self.contestHeight.constant = 0;
+            if (ti < 0 || [[NSUserDefaults standardUserDefaults] valueForKey:@"didContest"] != nil) {                self.contestHeight.constant = 0;
                 self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 11, 0);
             } else {
                 self.contestHeight.constant = 61;
                 self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 70, 0);
             }
-            [self.view layoutIfNeeded];
         }];
     }
 }
