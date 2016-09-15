@@ -141,14 +141,20 @@ long totalSteps = 8;
     NSDictionary* info = [notification userInfo];
     CGRect kbRect = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     
-    self.bottomLayoutConstraint.constant = CGRectGetHeight(kbRect);
+    [UIView animateWithDuration:0.2 animations:^{
+        self.bottomLayoutConstraint.constant = CGRectGetHeight(kbRect);
+        [self.view layoutIfNeeded];
+    }];
 }
 
 - (void)keyboardWillBeHidden:(NSNotification *)notification {
     NSDictionary* info = [notification userInfo];
     CGRect kbRect = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
     
-    self.bottomLayoutConstraint.constant = CGRectGetHeight(kbRect);
+    [UIView animateWithDuration:0.2 animations:^{
+        self.bottomLayoutConstraint.constant = CGRectGetHeight(kbRect);
+        [self.view layoutIfNeeded];
+    }];
 }
 
 @end
