@@ -11,7 +11,7 @@ target 'okto_ios' do
   pod 'SDWebImage', '~>3.8'
   pod 'IntentKit', :git => 'git@github.com:lapfelix/IntentKit.git', :commit => '2fcad6fc2a7024348153d5e055c7aff7319c1268'
   pod 'GoogleMaps'
-  pod 'RKDropdownAlert', :git => 'git@github.com:lapfelix/RKDropdownAlert.git', :commit => 'cebe87107b81e5515b7b60d5694d591f0e7e83d4'
+  pod 'RKDropdownAlert', :git => 'git@github.com:lapfelix/RKDropdownAlert.git', :commit => '16fa7a7055e8e618bb995849c673ffeddbbcd3ae'
   pod 'Fabric'
   
   target 'okto_iosTests' do

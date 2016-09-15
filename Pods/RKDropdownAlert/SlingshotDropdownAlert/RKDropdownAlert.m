@@ -91,8 +91,15 @@ NSString *DEFAULT_TITLE;
 }
 
 //%%% button method (what happens when you touch the drop down view)
--(void)viewWasTapped:(UIButton *)alertView
+-(void)viewWasTapped:(NSArray *)alertViewAndCompletionHandler
 {
+    UIButton *alertView = alertViewAndCompletionHandler[0];
+    
+    if (alertViewAndCompletionHandler.count == 2) {
+        void (^completionBlock)(void) = alertViewAndCompletionHandler[1];
+        completionBlock();
+    }
+    
     if (self.delegate) {
         if ([self.delegate dropdownAlertWasTapped:self]) {
             [self hideView:alertView];
@@ -299,13 +306,9 @@ NSString *DEFAULT_TITLE;
         CGRect frame = self.frame;
         frame.origin.y = 0;
         self.frame = frame;
-    } completion:^(BOOL finished) {
-        if (completionBlock != nil) {
-            completionBlock();
-        }
     }];
     
-    [self performSelector:@selector(viewWasTapped:) withObject:self afterDelay:time+ANIMATION_TIME];
+    [self performSelector:@selector(viewWasTapped:) withObject:completionBlock != nil ? @[self,completionBlock] : @[self] afterDelay:time+ANIMATION_TIME];
 }
 
 
