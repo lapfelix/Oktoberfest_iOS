@@ -38,6 +38,8 @@ long totalSteps = 8;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+    
     [self.confettiView setup];
     
     [self initializeFetchedResultsController];
