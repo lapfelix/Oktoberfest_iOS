@@ -56,9 +56,7 @@
      {
          [self initializeFetchedResultsControllers];
          [self updateWelcomeInfo];
-         [self.sponsorsCollectionView invalidateIntrinsicContentSize];
          [self.sponsorsCollectionView reloadData];
-         [self.sponsorsCollectionView layoutSubviews];
      }];
     
     [[NSNotificationCenter defaultCenter]
