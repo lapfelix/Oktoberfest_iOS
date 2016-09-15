@@ -61,6 +61,7 @@
              [rootViewController setModalPresentationStyle:UIModalPresentationCustom];
              [rootViewController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
              [loadingVC presentViewController:rootViewController animated:YES completion:nil];
+             return;
          }];
     }
     
