@@ -192,6 +192,12 @@ NSString *DEFAULT_TITLE;
   completionHandler:nil];
 }
 
++(void)title:(NSString*)title message:(NSString*)message backgroundColor:(UIColor*)backgroundColor textColor:(UIColor*)textColor time:(NSInteger)seconds completionHandler:(void (^)(void))completionBlock {
+    [[self alertView]title:title message:message backgroundColor:backgroundColor textColor:textColor time:seconds
+         completionHandler:completionBlock];
+}
+
+
 
 
 +(void)showWithDelegate:(id<RKDropdownAlertDelegate>)delegate
