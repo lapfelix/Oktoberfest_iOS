@@ -72,6 +72,12 @@
 		DCA9F7EC1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA9F7EB1D7209CF00C19FA8 /* ScheduleItemTableViewCell.m */; };
 		DCCA975A1D85B2E600DF1995 /* OKTAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCA97591D85B2E600DF1995 /* OKTAppearance.m */; };
 		DCCA975D1D85B44600DF1995 /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCA975C1D85B44600DF1995 /* UIColor+HexColors.m */; };
+		DCCCD4D41D8A3BF500F8C7F8 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = DCCCD4CE1D8A3BF500F8C7F8 /* confetti.png */; };
+		DCCCD4D51D8A3BF500F8C7F8 /* diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = DCCCD4CF1D8A3BF500F8C7F8 /* diamond.png */; };
+		DCCCD4D61D8A3BF500F8C7F8 /* KRConfettiView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCCD4D11D8A3BF500F8C7F8 /* KRConfettiView.m */; };
+		DCCCD4D71D8A3BF500F8C7F8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DCCCD4D21D8A3BF500F8C7F8 /* star.png */; };
+		DCCCD4D81D8A3BF500F8C7F8 /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = DCCCD4D31D8A3BF500F8C7F8 /* triangle.png */; };
+		DCCCD4DA1D8A3D2900F8C7F8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCCD4D91D8A3D2900F8C7F8 /* QuartzCore.framework */; };
 		DCDABDBE1D70CB9600BCC342 /* Beer+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */; };
 		DCDABDC31D70CDFB00BCC342 /* ScheduleItem+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC21D70CDFB00BCC342 /* ScheduleItem+Methods.m */; };
 		DCDABDC61D70CE1000BCC342 /* PathPosition+Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDABDC51D70CE1000BCC342 /* PathPosition+Methods.m */; };
@@ -243,6 +249,13 @@
 		DCCA97591D85B2E600DF1995 /* OKTAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKTAppearance.m; sourceTree = "<group>"; };
 		DCCA975B1D85B44600DF1995 /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
 		DCCA975C1D85B44600DF1995 /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
+		DCCCD4CE1D8A3BF500F8C7F8 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		DCCCD4CF1D8A3BF500F8C7F8 /* diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diamond.png; sourceTree = "<group>"; };
+		DCCCD4D01D8A3BF500F8C7F8 /* KRConfettiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRConfettiView.h; sourceTree = "<group>"; };
+		DCCCD4D11D8A3BF500F8C7F8 /* KRConfettiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRConfettiView.m; sourceTree = "<group>"; };
+		DCCCD4D21D8A3BF500F8C7F8 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		DCCCD4D31D8A3BF500F8C7F8 /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		DCCCD4D91D8A3D2900F8C7F8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DCDABDBC1D70CB9600BCC342 /* Beer+Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Beer+Methods.h"; sourceTree = "<group>"; };
 		DCDABDBD1D70CB9600BCC342 /* Beer+Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Beer+Methods.m"; sourceTree = "<group>"; };
 		DCDABDC01D70CD5200BCC342 /* OKTModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKTModelProtocol.h; sourceTree = "<group>"; };
@@ -297,6 +310,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCCCD4DA1D8A3D2900F8C7F8 /* QuartzCore.framework in Frameworks */,
 				DCFFE7771D74B925002302A1 /* MapKit.framework in Frameworks */,
 				7F1295B09EF918267C9594BA /* libPods-okto_ios.a in Frameworks */,
 			);
@@ -324,6 +338,7 @@
 		868A499115D2F8FC33969595 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCCCD4D91D8A3D2900F8C7F8 /* QuartzCore.framework */,
 				DCFFE7761D74B925002302A1 /* MapKit.framework */,
 				54181C1615D7226B2E4B365C /* libPods-okto_ios.a */,
 				1680EAE83EF164AF686CA265 /* libPods-okto_iosTests.a */,
@@ -508,6 +523,7 @@
 		DC74543E1D61155F00D87656 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCCCD4CD1D8A3BEC00F8C7F8 /* KRConfettiView */,
 				DC74543F1D61155F00D87656 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -666,6 +682,19 @@
 				DCFFC12F1D7BC27D0008C501 /* MapViewController.m */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		DCCCD4CD1D8A3BEC00F8C7F8 /* KRConfettiView */ = {
+			isa = PBXGroup;
+			children = (
+				DCCCD4CE1D8A3BF500F8C7F8 /* confetti.png */,
+				DCCCD4CF1D8A3BF500F8C7F8 /* diamond.png */,
+				DCCCD4D01D8A3BF500F8C7F8 /* KRConfettiView.h */,
+				DCCCD4D11D8A3BF500F8C7F8 /* KRConfettiView.m */,
+				DCCCD4D21D8A3BF500F8C7F8 /* star.png */,
+				DCCCD4D31D8A3BF500F8C7F8 /* triangle.png */,
+			);
+			name = KRConfettiView;
 			sourceTree = "<group>";
 		};
 		DCDABDBF1D70CB9B00BCC342 /* Classes */ = {
@@ -841,9 +870,13 @@
 				DC7454851D6115B400D87656 /* Programmation.storyboard in Resources */,
 				DC7454891D6115F500D87656 /* Info.storyboard in Resources */,
 				DC7454871D6115DD00D87656 /* Plan.storyboard in Resources */,
+				DCCCD4D81D8A3BF500F8C7F8 /* triangle.png in Resources */,
 				DC74547F1D6115AD00D87656 /* Main.storyboard in Resources */,
+				DCCCD4D51D8A3BF500F8C7F8 /* diamond.png in Resources */,
 				DC7454511D61155F00D87656 /* LaunchScreen.storyboard in Resources */,
 				DCFBAAA61D74E01E006AEEE8 /* Tommaso.ttf in Resources */,
+				DCCCD4D71D8A3BF500F8C7F8 /* star.png in Resources */,
+				DCCCD4D41D8A3BF500F8C7F8 /* confetti.png in Resources */,
 				DC7454841D6115B400D87656 /* Bieres.storyboard in Resources */,
 				DC74544E1D61155F00D87656 /* Assets.xcassets in Resources */,
 			);
@@ -1050,6 +1083,7 @@
 				DC9079041D79C7D90035715C /* RoundedRectangle.m in Sources */,
 				DCA9F7E61D72060800C19FA8 /* OKTBaseTableViewController+FetchedResultsController.m in Sources */,
 				DC372D5E1D73955E0023270F /* DismissSegue.m in Sources */,
+				DCCCD4D61D8A3BF500F8C7F8 /* KRConfettiView.m in Sources */,
 				F0A103211D87B43B008324CA /* Contest+Methods.m in Sources */,
 				DC9078FD1D790BEE0035715C /* PathPosition+CoreDataClass.m in Sources */,
 				DC078EDD1D84A1F4002229F3 /* Map+CoreDataProperties.m in Sources */,
