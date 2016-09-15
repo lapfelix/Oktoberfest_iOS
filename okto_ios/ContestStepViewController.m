@@ -89,13 +89,29 @@ long totalSteps = 8;
         [self loadCurrentAnswerImage];
         currentStep++;
         
+        self.answerTextField.alpha = 0.5;
+        self.answerTextField.userInteractionEnabled = NO;
+        sender.alpha = 0.5;
+        sender.userInteractionEnabled = NO;
+        
         if (currentStep >= totalSteps) {
+            self.confettiView.alpha = 1;
+            [self.answerTextField resignFirstResponder];
+            
             [RKDropdownAlert title:@"Félicitations!" message:@"Vous avez réussi!" backgroundColor:[OKTAppearance greenColor] textColor:UIColor.whiteColor time:2.5 completionHandler:^{
                 [self showSuccessStep];
             }];
         } else {
-            [RKDropdownAlert title:@"Bravo!" message:@"Bonne réponse!" backgroundColor:[OKTAppearance greenColor] textColor:UIColor.whiteColor time:2.5 completionHandler:^{
-                [self loadCurrentQuestionImage];
+            
+            [RKDropdownAlert title:@"Bravo!" message:@"Bonne réponse!" backgroundColor:[OKTAppearance greenColor] textColor:UIColor.whiteColor time:2 completionHandler:^{
+                if (currentStep < totalSteps) {
+                    
+                    self.answerTextField.alpha = 1;
+                    self.answerTextField.userInteractionEnabled = YES;
+                    sender.alpha = 1;
+                    sender.userInteractionEnabled = YES;
+                    [self loadCurrentQuestionImage];
+                }
             }];
         }
 
