@@ -89,6 +89,7 @@
         
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         dateFormatter.dateFormat = @"dd MMMM yyyy";
+        dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"fr"];
         
         NSDateFormatter *hourFormatter = [[NSDateFormatter alloc] init];
         hourFormatter.dateFormat = @"HH";
