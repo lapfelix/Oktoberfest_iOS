@@ -11,26 +11,23 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 
 + Response 200 (application/json)
     + Attributes
-        - start_time: `11-11-2016 21:00` (string)
+        - start_time: `09-30-2016 18:00` (string)
         - sponsors (array)
           - (Sponsor)
               - id: 1
-              - image_url: `https://unsplash.it/74/75?random`
+              - image_url: `http://cryptoalertsapp.com/okto/drawable-hdpi/desjardins_logo.png`
           - (Sponsor)
               - id: 2
-              - image_url: `https://unsplash.it/75/75?random`
+              - image_url: `https://oktoberfest.ageg.ca/xvi/assets/images/partenaire_voltaic.png`
           - (Sponsor)
               - id: 3
-              - image_url: `https://unsplash.it/75/74?random`
+              - image_url: `https://oktoberfest.ageg.ca/xvi/assets/images/partenaire_keith.png`
           - (Sponsor)
               - id: 4
-              - image_url: `https://unsplash.it/76/75?random`  
+              - image_url: `https://oktoberfest.ageg.ca/xvi/assets/images/partenaire_saucisse.png`  
           - (Sponsor)
               - id: 5
-              - image_url: `https://unsplash.it/75/76?random`
-          - (Sponsor)
-              - id: 6
-              - image_url: `https://unsplash.it/74/76?random`
+              - image_url: `https://oktoberfest.ageg.ca/xvi/assets/images/partenaire_ageg.png`
 
 ## Programmation [/schedule_items]
 
@@ -95,6 +92,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
                 - (Beer)
                   - id: 2
                   - name: aha ahaha aha
+                  - description: Voici une bière avec une longue description pour voir ce que ça donne et si la taille de la cell s'adjuste.
                 - (Beer)
                   - id: 3
                   - name: oohohohoewo
@@ -119,7 +117,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 + Response 200 (application/json)
 
         {
-          "markdown": "### Quoi?\nOkay\n\n### Où?\nLà!"
+          "markdown": "### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n### Quoi?\nOkay\n\n### Où?\nLà!\n\n"
         }
         
 ## Plan [/map]
@@ -148,7 +146,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
             - (ContestStep)
                 - id: 1
                 - answer: `Keith` (required)
-                - question_image_url: `http://felixlapal.me/okto/keith_1.png`
+                - question_image_url: `http://felixlapal.me/okto/keith_1.jpg`
                 - answer_image_url: `http://felixlapal.me/okto/keith_2.png`
             - (ContestStep)
                 - id: 2
@@ -161,11 +159,11 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 ## Schedule Item (object)
 
 - id: 123 (number, required)
-- name: `Led Zeppelin` (string, required)
+- name: `Quelque chose de bien` (string, required)
 - start_time: `08-08-2016 03:00` (string, required)
 - large_image_url: `http://lorempixel.com/400/200/` (string, required)
 - small_image_url: `http://felixlapal.me/okto/beer.png` (string, required)
-- text_color_hex: `00FF00`
+- text_color_hex: `DDDDDD`
 
 ## Bus Path (object)
 
