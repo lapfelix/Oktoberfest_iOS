@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="237"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BL4-G6-wyr" id="S2u-AJ-nia">
-                                    <frame key="frameInset" width="375" height="236.5"/>
+                                    <frame key="frameInset" width="375" height="236"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="243" horizontalCompressionResistancePriority="752" text="GOOSE ISLAND HONKERS ALE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-aE-58D">
