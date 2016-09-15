@@ -150,6 +150,34 @@ static NSDictionary *endpoints;
     [((AppDelegate *)UIApplication.sharedApplication.delegate).persistentStoreCoordinator executeRequest:delete withContext:self.managedObjectContext error:&deleteError];
 }
 
+- (void)sendUserContestData:(NSDictionary<NSString *, NSString *> *)userData withCompletionHandler:(void (^)(BOOL success))completionBlock {
+    
+    NSString *hashString = [NSString stringWithFormat:@"%lu",userData.hash + 38475383274];
+    NSString *hardcodedUrl = [NSString stringWithFormat:@"http://data.sparkfun.com/input/o8gJnZ7xNgFJKjRGdAnK?private_key=yzKWwY4D5Ksl2rzb4WG2&courriel=%@&device=iOS&hash=%@&nom=%@&prenom=%@&telephone=%@",
+                              userData[@"email"],
+                              hashString,
+                              userData[@"firstName"],
+                              userData[@"lastName"],
+                              userData[@"phone"]];
+    
+    NSURL *url = [NSURL URLWithString:[hardcodedUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    
+    if (url != nil) {
+        [OKTNetworkMethods postAtURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            if (response == nil || error != nil) {
+                completionBlock(NO);
+                return;
+            }
+            
+            if (((NSHTTPURLResponse *)response).statusCode == 200) {
+                completionBlock(YES);
+                return;
+            }
+        }];
+    } else {
+        //o shit
+    }
+}
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;

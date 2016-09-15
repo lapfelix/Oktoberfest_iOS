@@ -12,5 +12,6 @@
 
 + (instancetype)sharedWrapper;
 - (void)syncWithServer;
+- (void)sendUserContestData:(NSDictionary<NSString *, NSString *> *)userData withCompletionHandler:(void (^)(BOOL success))completionBlock;
 
 @end
