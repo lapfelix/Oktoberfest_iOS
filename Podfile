@@ -13,7 +13,8 @@ target 'okto_ios' do
   pod 'GoogleMaps'
   pod 'RKDropdownAlert', :git => 'git@github.com:lapfelix/RKDropdownAlert.git', :commit => '16fa7a7055e8e618bb995849c673ffeddbbcd3ae'
   pod 'Fabric'
-  
+  pod 'Crashlytics'
+
   target 'okto_iosTests' do
     inherit! :search_paths
     # Pods for testing

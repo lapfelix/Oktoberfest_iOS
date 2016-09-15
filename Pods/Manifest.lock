@@ -1,4 +1,6 @@
 PODS:
+  - Crashlytics (3.8.0):
+    - Fabric (~> 1.6.3)
   - Fabric (1.6.8)
   - GoogleMaps (2.0.1):
     - GoogleMaps/Maps (= 2.0.1)
@@ -33,6 +35,7 @@ PODS:
   - TSMarkdownParser (2.1.1)
 
 DEPENDENCIES:
+  - Crashlytics
   - Fabric
   - GoogleMaps
   - IntentKit (from `git@github.com:lapfelix/IntentKit.git`, commit `2fcad6fc2a7024348153d5e055c7aff7319c1268`)
@@ -58,6 +61,7 @@ CHECKOUT OPTIONS:
     :git: git@github.com:lapfelix/RKDropdownAlert.git
 
 SPEC CHECKSUMS:
+  Crashlytics: 8601d9c74a4c4d28f3e7f408bf4c0e490c70e8b4
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
   IntentKit: 0ae146dd4eb439279fbd6eb5c5bdfb161c4dc0b0
@@ -67,6 +71,6 @@ SPEC CHECKSUMS:
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   TSMarkdownParser: 64cb52fe5a518b4875a6167a650cb0ed4b18cea5
 
-PODFILE CHECKSUM: c339617f7dd0f423d933d83a50a05109fb5d3ae8
+PODFILE CHECKSUM: 4a45ed70845521108d8d60aff421ae6be2e2edaf
 
 COCOAPODS: 1.0.1
