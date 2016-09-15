@@ -21,7 +21,7 @@
                         <viewControllerLayoutGuide type="bottom" id="MiL-Kl-WQy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gVq-H4-dtI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IJ-Ec-gnf">
@@ -59,8 +59,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8WL-XG-6tC">
-                                                        <frame key="frameInset" minX="20" minY="144" width="280" height="88"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8WL-XG-6tC">
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2L0-5w-YvS">
                                                                 <subviews>
@@ -386,7 +385,7 @@ Centre des Foires de Sherbrooke</string>
         <scene sceneID="Yso-P8-OLj">
             <objects>
                 <navigationController id="bx1-Bb-84j" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="95K-hb-hGe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="95K-hb-hGe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -407,7 +406,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="c4n-Qs-Swo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lBm-r6-hHv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYt-m7-LZJ">
@@ -478,7 +477,7 @@ Centre des Foires de Sherbrooke</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="c4n-Qs-Swo" firstAttribute="top" secondItem="pYt-m7-LZJ" secondAttribute="bottom" id="6jY-ZL-9DE"/>
                             <constraint firstAttribute="trailing" secondItem="pYt-m7-LZJ" secondAttribute="trailing" id="H4o-lf-NKv"/>
@@ -508,7 +507,7 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="6CX-bE-Mcv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b0N-Ei-ZTD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtG-b4-q49">
@@ -568,26 +567,32 @@ Centre des Foires de Sherbrooke</string>
                                     <constraint firstItem="r4w-yv-PYz" firstAttribute="top" secondItem="9pN-hT-c1Z" secondAttribute="bottom" constant="8" id="yya-VW-RVd"/>
                                 </constraints>
                             </view>
+                            <view opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SL-Gc-QNG" customClass="KRConfettiView"/>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7SL-Gc-QNG" secondAttribute="trailing" id="1zY-8N-8uN"/>
                             <constraint firstItem="6CX-bE-Mcv" firstAttribute="top" secondItem="dtG-b4-q49" secondAttribute="bottom" id="4kJ-7U-Fkg"/>
+                            <constraint firstItem="7SL-Gc-QNG" firstAttribute="top" secondItem="b0N-Ei-ZTD" secondAttribute="top" id="EW2-iN-WgG"/>
                             <constraint firstItem="dtG-b4-q49" firstAttribute="top" secondItem="FjV-Nl-i4Y" secondAttribute="bottom" id="Ts6-6t-noZ"/>
+                            <constraint firstItem="7SL-Gc-QNG" firstAttribute="leading" secondItem="b0N-Ei-ZTD" secondAttribute="leading" id="g8h-eH-Er2"/>
                             <constraint firstAttribute="trailing" secondItem="dtG-b4-q49" secondAttribute="trailing" id="nvL-7w-UXE"/>
                             <constraint firstItem="dtG-b4-q49" firstAttribute="leading" secondItem="b0N-Ei-ZTD" secondAttribute="leading" id="qX6-Oj-qN3"/>
+                            <constraint firstItem="6CX-bE-Mcv" firstAttribute="top" secondItem="7SL-Gc-QNG" secondAttribute="bottom" id="rwt-iS-y9e"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="r4w-yv-PYz" id="B3i-SU-Rjy"/>
                         <outlet property="beerImage" destination="9pN-hT-c1Z" id="cKg-os-19T"/>
                         <outlet property="bottomLayoutConstraint" destination="4kJ-7U-Fkg" id="m4h-Q1-k9e"/>
+                        <outlet property="confettiView" destination="7SL-Gc-QNG" id="ynw-H5-hYK"/>
                         <outlet property="containerView" destination="dtG-b4-q49" id="JMS-JF-DvS"/>
                         <outlet property="stepProgressView" destination="qfe-lX-1jm" id="HJ3-zO-sOE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kx-4r-Crb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2898.75" y="-90.845070422535215"/>
+            <point key="canvasLocation" x="2898.4000000000001" y="-91.304347826086968"/>
         </scene>
         <!--Contest Done View Controller-->
         <scene sceneID="Ciu-as-Kd1">
@@ -598,28 +603,40 @@ Centre des Foires de Sherbrooke</string>
                         <viewControllerLayoutGuide type="bottom" id="LMN-ay-k4j"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UWg-p1-02v">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prénom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fRT-ZQ-Im2">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="firstNameNextTap" destination="Iwx-fl-7VC" eventType="primaryActionTriggered" id="bgs-uk-SRy"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I7M-QM-1nP">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="lastNameNextTap" destination="Iwx-fl-7VC" eventType="primaryActionTriggered" id="7dN-Jz-VTg"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XtL-8V-4Mz">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="emailNextTap" destination="Iwx-fl-7VC" eventType="primaryActionTriggered" id="1KW-Ah-Dfe"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numéro de téléphone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mzi-dt-j6D">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="phoneReturnTap" destination="Iwx-fl-7VC" eventType="primaryActionTriggered" id="o6y-hO-b4s"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8RD-g1-thu">
                                 <color key="backgroundColor" red="0.1019607843" green="0.4431372549" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -635,16 +652,19 @@ Centre des Foires de Sherbrooke</string>
                                     <action selector="sendTap:" destination="Iwx-fl-7VC" eventType="touchUpInside" id="ueC-0G-vRx"/>
                                 </connections>
                             </button>
+                            <view opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NW0-Mw-w30" customClass="KRConfettiView"/>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XtL-8V-4Mz" firstAttribute="top" secondItem="I7M-QM-1nP" secondAttribute="bottom" constant="4" id="0zo-Jb-1Em"/>
                             <constraint firstItem="Mzi-dt-j6D" firstAttribute="trailing" secondItem="UWg-p1-02v" secondAttribute="trailingMargin" id="2dO-ih-Nwi"/>
+                            <constraint firstItem="LMN-ay-k4j" firstAttribute="top" secondItem="NW0-Mw-w30" secondAttribute="bottom" id="64U-Vo-bx9"/>
                             <constraint firstItem="Ebm-Uu-rcH" firstAttribute="trailing" secondItem="UWg-p1-02v" secondAttribute="trailingMargin" id="7yn-cl-txd"/>
                             <constraint firstItem="I7M-QM-1nP" firstAttribute="leading" secondItem="UWg-p1-02v" secondAttribute="leadingMargin" id="A5L-sg-GGX"/>
                             <constraint firstItem="Ebm-Uu-rcH" firstAttribute="leading" secondItem="8RD-g1-thu" secondAttribute="leading" id="Anb-se-WTc"/>
                             <constraint firstItem="Ebm-Uu-rcH" firstAttribute="bottom" secondItem="8RD-g1-thu" secondAttribute="bottom" id="BXG-RI-Lr6"/>
                             <constraint firstItem="XtL-8V-4Mz" firstAttribute="leading" secondItem="UWg-p1-02v" secondAttribute="leadingMargin" id="BiP-jh-Dtv"/>
+                            <constraint firstItem="NW0-Mw-w30" firstAttribute="leading" secondItem="UWg-p1-02v" secondAttribute="leading" id="E5a-xZ-8xk"/>
                             <constraint firstItem="Ebm-Uu-rcH" firstAttribute="leading" secondItem="UWg-p1-02v" secondAttribute="leadingMargin" id="GUY-eh-W74"/>
                             <constraint firstItem="fRT-ZQ-Im2" firstAttribute="top" secondItem="UNn-K5-AfD" secondAttribute="bottom" constant="8" id="GrI-Cy-GY5"/>
                             <constraint firstItem="Ebm-Uu-rcH" firstAttribute="trailing" secondItem="8RD-g1-thu" secondAttribute="trailing" id="RhZ-Gz-yZN"/>
@@ -653,17 +673,22 @@ Centre des Foires de Sherbrooke</string>
                             <constraint firstItem="Ebm-Uu-rcH" firstAttribute="top" secondItem="Mzi-dt-j6D" secondAttribute="bottom" constant="4" id="eEk-Vo-IqI"/>
                             <constraint firstItem="I7M-QM-1nP" firstAttribute="trailing" secondItem="UWg-p1-02v" secondAttribute="trailingMargin" id="gd2-zW-V5u"/>
                             <constraint firstItem="I7M-QM-1nP" firstAttribute="top" secondItem="fRT-ZQ-Im2" secondAttribute="bottom" constant="4" id="htU-kU-Eh0"/>
+                            <constraint firstItem="NW0-Mw-w30" firstAttribute="top" secondItem="UWg-p1-02v" secondAttribute="top" id="uvP-VB-Xj3"/>
                             <constraint firstItem="Ebm-Uu-rcH" firstAttribute="top" secondItem="8RD-g1-thu" secondAttribute="top" id="vfX-ZW-xqL"/>
                             <constraint firstItem="fRT-ZQ-Im2" firstAttribute="leading" secondItem="UWg-p1-02v" secondAttribute="leadingMargin" id="w0I-gx-Knb"/>
+                            <constraint firstAttribute="trailing" secondItem="NW0-Mw-w30" secondAttribute="trailing" id="xW2-r3-rU5"/>
                             <constraint firstItem="fRT-ZQ-Im2" firstAttribute="trailing" secondItem="UWg-p1-02v" secondAttribute="trailingMargin" id="ynG-qL-ibn"/>
                             <constraint firstItem="Mzi-dt-j6D" firstAttribute="leading" secondItem="UWg-p1-02v" secondAttribute="leadingMargin" id="zlq-lS-8NN"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="emailTextField" destination="I7M-QM-1nP" id="vQ0-y5-hWQ"/>
-                        <outlet property="nameTextField" destination="fRT-ZQ-Im2" id="1mC-7a-lgE"/>
-                        <outlet property="universityTextField" destination="XtL-8V-4Mz" id="nti-ya-zd2"/>
+                        <outlet property="confettiView" destination="NW0-Mw-w30" id="caE-Ej-C4C"/>
+                        <outlet property="emailField" destination="XtL-8V-4Mz" id="aUu-hg-al4"/>
+                        <outlet property="firstNameField" destination="fRT-ZQ-Im2" id="FLq-nZ-utw"/>
+                        <outlet property="lastNameField" destination="I7M-QM-1nP" id="trM-WA-rNC"/>
+                        <outlet property="phoneNumberField" destination="Mzi-dt-j6D" id="X6l-Qd-dZ6"/>
+                        <outlet property="sendButton" destination="Ebm-Uu-rcH" id="APj-lW-YZV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPH-aQ-ufx" userLabel="First Responder" sceneMemberID="firstResponder"/>

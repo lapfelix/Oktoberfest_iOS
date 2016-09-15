@@ -9,11 +9,13 @@
 #import "ContestDoneViewController.h"
 #import "OKTAPIWrapper.h"
 #import "OKTAppearance.h"
+#import "KRConfettiView.h"
 
 #import <RKDropdownAlert/RKDropdownAlert.h>
 
 @interface ContestDoneViewController ()
 
+@property (weak, nonatomic) IBOutlet KRConfettiView *confettiView;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
@@ -31,6 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.confettiView setup];
     
     _textFields = @[self.firstNameField, self.lastNameField, self.emailField, self.phoneNumberField];
 }

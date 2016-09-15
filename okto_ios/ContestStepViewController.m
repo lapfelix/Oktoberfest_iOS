@@ -11,11 +11,12 @@
 #import "ContestStep+Methods.h"
 #import "OKTAppearance.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-
+#import "KRConfettiView.h"
 #import <RKDropdownAlert/RKDropdownAlert.h>
 
 @interface ContestStepViewController ()
 
+@property (weak, nonatomic) IBOutlet KRConfettiView *confettiView;
 @property (weak, nonatomic) IBOutlet UIProgressView *stepProgressView;
 @property (weak, nonatomic) IBOutlet UIImageView *beerImage;
 @property (weak, nonatomic) IBOutlet UITextField *answerTextField;
@@ -36,6 +37,9 @@ long totalSteps = 8;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.confettiView setup];
+    
     [self initializeFetchedResultsController];
     contestSteps = [[self fetchedResultsController] fetchedObjects];
     totalSteps = contestSteps.count;
@@ -96,9 +100,11 @@ long totalSteps = 8;
         
         if (currentStep >= totalSteps) {
             self.confettiView.alpha = 1;
+            [self.confettiView startConfetti];
             [self.answerTextField resignFirstResponder];
             
             [RKDropdownAlert title:@"Félicitations!" message:@"Vous avez réussi!" backgroundColor:[OKTAppearance greenColor] textColor:UIColor.whiteColor time:2.5 completionHandler:^{
+                [self.confettiView stopConfetti];
                 [self showSuccessStep];
             }];
         } else {
