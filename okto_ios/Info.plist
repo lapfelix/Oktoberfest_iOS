@@ -17,7 +17,21 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>616</string>
+	<string>618</string>
+    <key>Fabric</key>
+    <dict>
+        <key>APIKey</key>
+        <string>***REMOVED***</string>
+        <key>Kits</key>
+        <array>
+            <dict>
+                <key>KitInfo</key>
+                <dict/>
+                <key>KitName</key>
+                <string>Crashlytics</string>
+            </dict>
+        </array>
+    </dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>twitter</string>

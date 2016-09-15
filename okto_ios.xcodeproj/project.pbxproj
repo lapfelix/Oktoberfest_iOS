@@ -761,6 +761,7 @@
 				9FFF18EBC6E183FED7F90111 /* [CP] Embed Pods Frameworks */,
 				7EA2741E839397B0F89A48FF /* [CP] Copy Pods Resources */,
 				DCB80B191D6E64BE00EB8A98 /* Increase build number */,
+				DCCCD4DB1D8A409F00F8C7F8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1032,6 +1033,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PROJECT_DIR}/buildNumIncrement.sh \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		DCCCD4DB1D8A409F00F8C7F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ***REMOVED*** ddbd0cba85c9207a7987335d57e5dde67c921dbdd0a2595c6629dd5a47cdbc0e";
 		};
 /* End PBXShellScriptBuildPhase section */
 

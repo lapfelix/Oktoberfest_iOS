@@ -11,6 +11,8 @@
 #import "OKTAPIWrapper.h"
 #import "RootViewController.h"
 #import "LoadingViewController.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @import GoogleMaps;
 
@@ -23,9 +25,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    [Fabric with:@[[Crashlytics class]]];
+
     [GMSServices provideAPIKey:@"***REMOVED***"];
-    
     [OKTAppearance setupAppearances];
     
     
