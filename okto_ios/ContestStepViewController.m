@@ -94,12 +94,12 @@ long totalSteps = 8;
         currentStep++;
         
         self.answerTextField.alpha = 0.5;
-        self.answerTextField.userInteractionEnabled = NO;
         sender.alpha = 0.5;
         sender.userInteractionEnabled = NO;
         
         if (currentStep >= totalSteps) {
             self.confettiView.alpha = 1;
+            self.answerTextField.userInteractionEnabled = NO;
             [self.confettiView startConfetti];
             [self.answerTextField resignFirstResponder];
             
