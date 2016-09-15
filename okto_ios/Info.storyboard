@@ -21,7 +21,7 @@
                         <viewControllerLayoutGuide type="bottom" id="b4e-i3-abl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fql-fa-ADT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="damier" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-QQ-d02"/>
@@ -314,7 +314,6 @@
                                     <constraint firstItem="2wZ-Ez-4J1" firstAttribute="leading" secondItem="BAf-z5-yjG" secondAttribute="leadingMargin" constant="8" id="7U4-1Z-kMu"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9PB-yu-V6I" secondAttribute="trailing" constant="48" id="Ra0-Pb-0u9"/>
                                     <constraint firstItem="9PB-yu-V6I" firstAttribute="centerX" secondItem="2wZ-Ez-4J1" secondAttribute="centerX" id="SLq-fw-OPr"/>
-                                    <constraint firstAttribute="trailing" secondItem="9PB-yu-V6I" secondAttribute="trailing" constant="48" id="V6N-rz-jJ9"/>
                                     <constraint firstItem="kzs-zM-JyG" firstAttribute="top" secondItem="2wZ-Ez-4J1" secondAttribute="bottom" constant="8" id="czl-hN-CLD"/>
                                     <constraint firstItem="kzs-zM-JyG" firstAttribute="centerX" secondItem="BAf-z5-yjG" secondAttribute="centerX" id="dho-fy-ULj"/>
                                     <constraint firstItem="9PB-yu-V6I" firstAttribute="top" secondItem="kzs-zM-JyG" secondAttribute="bottom" constant="16" id="g2C-ps-ExW"/>
@@ -419,15 +418,15 @@
             <objects>
                 <tableViewController title="Horaire Autobus" id="cHj-6U-Fon" customClass="BusPathTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="143" sectionHeaderHeight="28" sectionFooterHeight="28" id="WLL-oY-6sZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buspath" rowHeight="143" id="FJl-Fy-rcm" customClass="BusPathTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="375" height="143"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="143"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FJl-Fy-rcm" id="mSK-U0-OqW">
-                                    <frame key="frameInset" width="375" height="142"/>
+                                    <frame key="frameInset" width="320" height="142"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zPj-QT-KZF">
@@ -499,7 +498,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gWH-UM-BiK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vaa-gr-CQO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-ja-HRa">
@@ -547,7 +546,7 @@
             <objects>
                 <viewController title="FAQ" id="tJF-Kf-LfF" customClass="FAQViewController" sceneMemberID="viewController">
                     <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="mHP-vh-rvI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
