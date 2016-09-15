@@ -58,6 +58,10 @@ long totalSteps = 8;
     [self updateProgressBar];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self.answerTextField becomeFirstResponder];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
