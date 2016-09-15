@@ -16,6 +16,7 @@
 
 @interface WelcomeViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *eventStartLabel;
 @property (strong, nonatomic) IBOutlet UICollectionView *sponsorsCollectionView;
 @property (nonatomic, strong) NSFetchedResultsController *sponsorsFetchedResultsController;
 @property (nonatomic, strong) NSFetchedResultsController *welcomeInfoFetchedResultsController;
@@ -85,6 +86,14 @@
     if (fetchedObjects.count > 0) {
         WelcomeInfo *info = fetchedObjects.firstObject;
         self.startDate = info.startDate;
+        
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateFormat = @"dd MMMM yyyy";
+        
+        NSDateFormatter *hourFormatter = [[NSDateFormatter alloc] init];
+        hourFormatter.dateFormat = @"HH";
+        
+        self.eventStartLabel.text = [NSString stringWithFormat:@"Le %@ dès %@h\nCentre des Foires de Sherbrooke",[dateFormatter stringFromDate:self.startDate],[hourFormatter stringFromDate:self.startDate]];
     }
 }
 

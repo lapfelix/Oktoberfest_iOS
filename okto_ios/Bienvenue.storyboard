@@ -231,9 +231,7 @@
                                                     <constraint firstItem="Dds-41-kcy" firstAttribute="centerY" secondItem="X05-ZZ-Gv1" secondAttribute="centerY" id="vLS-24-b19"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogx-In-bdh">
-                                                <string key="text">Vendredi 7 octobre 2016, dès 18h
-Centre des Foires de Sherbrooke</string>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogx-In-bdh">
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                 <color key="textColor" red="0.0" green="0.50196078431372548" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -370,6 +368,7 @@ Centre des Foires de Sherbrooke</string>
                         <outlet property="contestHeight" destination="bcG-vd-Y59" id="FuP-XM-8ai"/>
                         <outlet property="contestHeightConstraint" destination="bcG-vd-Y59" id="EAr-5C-lSc"/>
                         <outlet property="daysLabel" destination="p2M-fu-5Ph" id="uGZ-KM-4ye"/>
+                        <outlet property="eventStartLabel" destination="Ogx-In-bdh" id="tbV-FH-bEv"/>
                         <outlet property="hoursLabel" destination="4Cp-jm-wud" id="XOW-Ce-yJN"/>
                         <outlet property="minutesLabel" destination="18J-eV-OzP" id="Ocq-dB-IB2"/>
                         <outlet property="scrollView" destination="4Uc-pc-C4D" id="qr7-tq-5Qb"/>
