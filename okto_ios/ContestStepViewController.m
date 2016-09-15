@@ -40,6 +40,8 @@ long totalSteps = 8;
     
     [self.navigationItem setHidesBackButton:YES animated:YES];
     
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Quitter" style:UIBarButtonItemStylePlain target:self action:@selector(quitTap)];
+    
     [self.confettiView setup];
     
     [self initializeFetchedResultsController];
@@ -55,7 +57,10 @@ long totalSteps = 8;
                                              selector:@selector(keyboardWillBeHidden:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self initialSetup];
 }
 
@@ -65,7 +70,12 @@ long totalSteps = 8;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     [self.answerTextField becomeFirstResponder];
+}
+
+- (void)quitTap {
+    [self.navigationController dismissViewControllerAnimated:true completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
