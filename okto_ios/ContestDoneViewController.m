@@ -81,6 +81,7 @@
 }
 
 - (void)attemptToSendInfo {
+    self.confettiView.alpha = 1;
     [self.confettiView startConfetti];
     [[OKTAPIWrapper sharedWrapper] sendUserContestData:@{
                                                          @"email":self.emailField.text,
