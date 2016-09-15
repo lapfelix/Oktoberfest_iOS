@@ -115,7 +115,7 @@
                             <constraint firstItem="tU4-P9-Er7" firstAttribute="top" secondItem="yBi-9b-PDU" secondAttribute="bottom" constant="8" id="dpL-Rn-cwV"/>
                             <constraint firstItem="yBi-9b-PDU" firstAttribute="leading" secondItem="vik-dX-Gfe" secondAttribute="leadingMargin" id="eMn-AZ-Qqo"/>
                             <constraint firstItem="tU4-P9-Er7" firstAttribute="centerX" secondItem="vik-dX-Gfe" secondAttribute="centerX" id="iEf-XO-H8y"/>
-                            <constraint firstItem="tmp-Jv-BmZ" firstAttribute="top" secondItem="vik-dX-Gfe" secondAttribute="topMargin" constant="29" id="wkI-QO-Odd"/>
+                            <constraint firstItem="tmp-Jv-BmZ" firstAttribute="top" secondItem="vik-dX-Gfe" secondAttribute="topMargin" constant="23" id="wkI-QO-Odd"/>
                             <constraint firstItem="tmp-Jv-BmZ" firstAttribute="leading" secondItem="vik-dX-Gfe" secondAttribute="leading" constant="8" id="xeY-Qh-aVV"/>
                             <constraint firstAttribute="trailing" secondItem="tmp-Jv-BmZ" secondAttribute="trailing" constant="8" id="yrg-Bh-drX"/>
                         </constraints>
