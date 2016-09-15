@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>545</string>
+	<string>616</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>twitter</string>
@@ -35,6 +35,13 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>ageg.ca</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>felixlapal.me</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
@@ -43,6 +50,13 @@
 				<true/>
 			</dict>
 			<key>lorempixel.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+			<key>sparkfun.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>
