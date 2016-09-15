@@ -75,6 +75,7 @@ long totalSteps = 8;
 }
 
 - (void)quitTap {
+    [self.answerTextField resignFirstResponder];
     [self.navigationController dismissViewControllerAnimated:true completion:nil];
 }
 
