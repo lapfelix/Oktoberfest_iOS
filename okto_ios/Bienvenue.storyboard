@@ -260,7 +260,7 @@
                                                                     <color key="textColor" red="0.87202099119999998" green="0.87202099119999998" blue="0.87202099119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h1h-BE-NNh"/>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h1h-BE-NNh"/>
                                                             </subviews>
                                                         </view>
                                                         <color key="backgroundColor" red="0.81581517270000004" green="0.84981496710000004" blue="0.89065069900000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -384,7 +384,7 @@
         <scene sceneID="Yso-P8-OLj">
             <objects>
                 <navigationController id="bx1-Bb-84j" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="95K-hb-hGe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="95K-hb-hGe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
