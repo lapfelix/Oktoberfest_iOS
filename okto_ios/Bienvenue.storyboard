@@ -136,7 +136,7 @@
                                                             <constraint firstAttribute="height" constant="56" id="qsf-fb-vhU"/>
                                                         </constraints>
                                                         <attributedString key="attributedText">
-                                                            <fragment content="Avant la 16">
+                                                            <fragment content="Avant l">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.9137254901960784" green="0.92941176470588238" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <font key="NSFont" size="57" name="Tommaso"/>
@@ -144,16 +144,28 @@
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                 </attributes>
                                                             </fragment>
-                                                            <fragment content="e">
+                                                            <fragment content="'">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.9137254901960784" green="0.92941176470588238" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="48" name="Tommaso"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="édition ">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.9137254901960784" green="0.92941176470588238" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <font key="NSFont" size="57" name="Tommaso"/>
-                                                                    <font key="NSOriginalFont" size="48" name="Tommaso"/>
                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                                                    <integer key="NSSuperScript" value="1"/>
                                                                 </attributes>
                                                             </fragment>
-                                                            <fragment content=" édition!">
+                                                            <fragment content="XVI">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.9137254901960784" green="0.92941176470588238" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="48" name="Tommaso"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="!">
                                                                 <attributes>
                                                                     <color key="NSColor" red="0.9137254901960784" green="0.92941176470588238" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <font key="NSFont" size="57" name="Tommaso"/>
