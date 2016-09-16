@@ -44,6 +44,17 @@
     return UIStatusBarStyleLightContent;
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+    {
+        return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    }
+    else
+    {
+        return YES;
+    }
+}
 /*
 #pragma mark - Navigation
 
