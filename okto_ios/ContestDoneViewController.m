@@ -46,6 +46,13 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [self.firstNameField becomeFirstResponder];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Quitter" style:UIBarButtonItemStylePlain target:self action:@selector(quitTap)];
+}
+
+- (void)quitTap {
+    [self.view endEditing:YES];
+    [self.navigationController dismissViewControllerAnimated:true completion:nil];
 }
 
 - (IBAction)sendTap:(UIButton *)sender {
