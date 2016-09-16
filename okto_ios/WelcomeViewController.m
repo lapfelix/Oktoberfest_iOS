@@ -56,6 +56,7 @@
      {
          [self initializeFetchedResultsControllers];
          [self updateWelcomeInfo];
+         [self.sponsorsCollectionView reloadData];
      }];
     
     [[NSNotificationCenter defaultCenter]
