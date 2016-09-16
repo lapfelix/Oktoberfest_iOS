@@ -58,9 +58,11 @@
          queue:[NSOperationQueue mainQueue]
          usingBlock:^(NSNotification *notification)
          {
-             [rootViewController setModalPresentationStyle:UIModalPresentationCustom];
-             [rootViewController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-             [loadingVC presentViewController:rootViewController animated:YES completion:nil];
+             if (rootViewController.view.window == nil) {
+                 [rootViewController setModalPresentationStyle:UIModalPresentationCustom];
+                 [rootViewController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+                 [loadingVC presentViewController:rootViewController animated:YES completion:nil];
+             }
              return;
          }];
     }
