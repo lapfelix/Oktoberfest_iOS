@@ -30,6 +30,17 @@ static NSString *CellReuseIdentifier = @"beer";
     self.title = @"Bières";
     
     [self initializeFetchedResultsController];
+    
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:@"done_BeerCategory"
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *notification)
+     {
+         [self initializeFetchedResultsController];
+         [self.tableView reloadData];
+     }];
 }
 
 - (void)didReceiveMemoryWarning {

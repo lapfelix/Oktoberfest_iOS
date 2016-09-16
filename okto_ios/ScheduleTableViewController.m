@@ -24,6 +24,17 @@ static NSString *CellReuseIdentifier = @"scheduleitem";
     self.tableView.allowsSelection = NO;
     
     [self initializeFetchedResultsController];
+    
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:@"done_Schedule"
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *notification)
+     {
+         [self initializeFetchedResultsController];
+         [self.tableView reloadData];
+     }];
 }
 
 - (void)didReceiveMemoryWarning {

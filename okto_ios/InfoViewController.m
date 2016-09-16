@@ -46,6 +46,15 @@
     self.faqImage.image = [[UIImage imageNamed:@"faq"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     self.faqImage.tintColor = [OKTAppearance greenColor];
     
+    [[NSNotificationCenter defaultCenter]
+     addObserverForName:@"done_ContactInfo"
+     object:nil
+     queue:[NSOperationQueue mainQueue]
+     usingBlock:^(NSNotification *notification)
+     {
+         [self initializeFetchedResultsController];
+         [self fetchUpdatedContactInfo];
+     }];
 }
 
 - (void)didReceiveMemoryWarning {
