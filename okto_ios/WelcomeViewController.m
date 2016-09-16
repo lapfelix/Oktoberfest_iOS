@@ -140,6 +140,7 @@
                 self.contestHeight.constant = 61;
                 self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 70, 0);
             }
+            [self.contestHeight.firstItem layoutIfNeeded];
         }];
     }
 }
