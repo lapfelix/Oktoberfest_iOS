@@ -130,7 +130,6 @@
     //ARK cest degueu à la fin mais je sauve 30 secondes
     if (self.contactInfo.websiteURL.length != 0 && [NSURL URLWithString:self.contactInfo.websiteURL] != nil) {
         SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:self.contactInfo.websiteURL]];
-        safariVC.modalPresentationStyle = UIModalPresentationPopover;
         //omg ark - GOTTA GO FAST (ca va pas crasher cest gooooooood)
         [self.view.window.rootViewController showViewController:safariVC sender:nil];
     }
