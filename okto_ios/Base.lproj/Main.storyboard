@@ -110,7 +110,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1019607843" green="0.4431372549" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="tU4-P9-Er7" firstAttribute="centerY" secondItem="vik-dX-Gfe" secondAttribute="centerY" id="8LU-bR-jkh"/>
+                            <constraint firstItem="tU4-P9-Er7" firstAttribute="centerY" secondItem="vik-dX-Gfe" secondAttribute="centerY" constant="14" id="8LU-bR-jkh"/>
                             <constraint firstItem="yBi-9b-PDU" firstAttribute="trailing" secondItem="vik-dX-Gfe" secondAttribute="trailingMargin" id="KDn-lf-o9m"/>
                             <constraint firstItem="tU4-P9-Er7" firstAttribute="top" secondItem="yBi-9b-PDU" secondAttribute="bottom" constant="8" id="dpL-Rn-cwV"/>
                             <constraint firstItem="yBi-9b-PDU" firstAttribute="leading" secondItem="vik-dX-Gfe" secondAttribute="leadingMargin" id="eMn-AZ-Qqo"/>
