@@ -124,10 +124,10 @@ BOOL serverRefreshDoneOnce = NO;
     NSInteger hours = (ti / 3600) % 24;
     NSInteger days = ti / (3600 * 24);
     
-    self.daysLabel.text = [NSString stringWithFormat:@"%02li",days];
-    self.hoursLabel.text = [NSString stringWithFormat:@"%02li",hours];
-    self.minutesLabel.text = [NSString stringWithFormat:@"%02li",minutes];
-    self.secondsLabel.text = [NSString stringWithFormat:@"%02li",seconds];
+    self.daysLabel.text = [NSString stringWithFormat:@"%02li",(long)days];
+    self.hoursLabel.text = [NSString stringWithFormat:@"%02li",(long)hours];
+    self.minutesLabel.text = [NSString stringWithFormat:@"%02li",(long)minutes];
+    self.secondsLabel.text = [NSString stringWithFormat:@"%02li",(long)seconds];
     
     //TODO: do something when ti hits 0
     [self checkContestDate];
