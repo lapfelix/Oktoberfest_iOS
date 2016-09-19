@@ -27,7 +27,7 @@
 #import "Map+Methods.h"
 #import "Contest+Methods.h"
 
-static NSString *baseURL = @"https://private-5fca2-oktoberfest.apiary-mock.com/";
+static NSString *baseURL = @"https://private-b54a2-centredefoiresdev.apiary-mock.com/";
 static NSDictionary *endpoints;
 
 @interface OKTAPIWrapper()
