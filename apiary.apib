@@ -53,11 +53,19 @@ L'API du truc de l'évènement où le monde boivent de la bière.
     + Attributes (array)
         - (Bus Path)
             - id: 1
+            - frequency: 15
+            - returnOnly: false
+            - start_time: `09-30-2016 17:00` (string)
         - (Bus Path)
             - id: 2
+            - frequency: 30
+            - returnOnly: false
+            - start_time: `09-30-2016 17:00` (string)
         - (Bus Path)
             - id: 3
-        
+            - frequency: 30
+            - returnOnly: true
+            - start_time: `09-30-2016 23:00` (string)
         
 ## Coordonnées [/contact]
 
@@ -73,7 +81,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
             "facebook_user": "147013865382109",
             "website_url": "http://oktoberfest.ageg.ca/",
             "email": "felix@lapal.me",
-            "physical_address": "Apple\n1 Infinite Loop\nCupertino, California\nUSA",
+            "physical_address": "2500, boulevard de l'Université\nLocal C1-2045\nSherbrooke, QC\nJ1K 1C5",
         }
         
 ## Bières [/bieres]
@@ -84,31 +92,8 @@ L'API du truc de l'évènement où le monde boivent de la bière.
     + Attributes (array)
         - (BeerCategory)
             - id: 1
-            - name: Artisanale
+            - name: Information masquée
             - beers (array[Beer])
-                - (Beer)
-                   - id: 1
-                   - name: blblbll
-                - (Beer)
-                  - id: 2
-                  - name: aha ahaha aha
-                  - description: Voici une bière avec une longue description pour voir ce que ça donne et si la taille de la cell s'adjuste.
-                - (Beer)
-                  - id: 3
-                  - name: oohohohoewo
-        - (BeerCategory)
-            - id: 2
-            - name: Non-artisanales
-            - beers (array[Beer])
-                - (Beer)
-                   - id: 4
-                   - name: blblbll
-                - (Beer)
-                  - id: 5
-                  - name: aha ahaha aha
-                - (Beer)
-                  - id: 6
-                  - name: oohohohoewo
 
 ## FAQ [/faq]
 
@@ -141,18 +126,73 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 
 + Response 200 (application/json)
     + Attributes
-        - end_time: `09-09-2016 21:00` (string)
+        - end_time: `09-09-2017 21:00` (string)
         - contest_steps (array)
             - (ContestStep)
                 - id: 1
-                - answer: `Keith` (required)
-                - question_image_url: `http://felixlapal.me/okto/keith_1.jpg`
-                - answer_image_url: `http://felixlapal.me/okto/keith_2.png`
+                - answer: `IPA` (required)
+                - question_image_url: `http://felixlapal.me/okto/keiths_ipa_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/keiths_ipa_beer.png`
             - (ContestStep)
                 - id: 2
-                - answer: `Pabst` (required)
-                - question_image_url: `http://felixlapal.me/okto/pabst_1.png`
+                - answer: `Red Amber Ale` (required)
+                - question_image_url: `http://felixlapal.me/okto/keiths_red_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/keiths_red_beer.png`
+            - (ContestStep)
+                - id: 3
+                - answer: `Hoegaarden` (required)
+                - question_image_url: `http://felixlapal.me/okto/hoegaarden_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/hoegaarden_beer.png`
+            - (ContestStep)
+                - id: 4
+                - answer: `Shock Top` (required)
+                - question_image_url: `http://felixlapal.me/okto/shocktop_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/shocktop_beer.png`
+            - (ContestStep)
+                - id: 5
+                - answer: `Stella Artois` (required)
+                - question_image_url: `http://felixlapal.me/okto/stella_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/stella_artois_beer.png`
+            - (ContestStep)
+                - id: 6
+                - answer: `Chipie` (required)
+                - question_image_url: `http://felixlapal.me/okto/chipie_contest.png`
                 - answer_image_url: `http://felixlapal.me/okto/pabst_2.png`
+            - (ContestStep)
+                - id: 7
+                - answer: `Joufflue` (required)
+                - question_image_url: `http://felixlapal.me/okto/joufflue_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/pabst_2.png`
+            - (ContestStep)
+                - id: 8
+                - answer: `Valkyrie` (required)
+                - question_image_url: `http://felixlapal.me/okto/valkyrie_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/pabst_2.png`
+            - (ContestStep)
+                - id: 9
+                - answer: `Matante` (required)
+                - question_image_url: `http://felixlapal.me/okto/matante_contest.jpg`
+                - answer_image_url: `http://felixlapal.me/okto/pabst_2.png`
+            - (ContestStep)
+                - id: 10
+                - answer: `Goose IPA` (required)
+                - question_image_url: `http://felixlapal.me/okto/goose_ipa_contest.jpg`
+                - answer_image_url: `http://felixlapal.me/okto/goose_island_ipa_beer.png`
+            - (ContestStep)
+                - id: 11
+                - answer: `Organic` (required)
+                - question_image_url: `http://felixlapal.me/okto/organic_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/organic_beer.png`
+            - (ContestStep)
+                - id: 12
+                - answer: `Oktoberfest` (required)
+                - question_image_url: `http://felixlapal.me/okto/oktoberfest_contest.jpg`
+                - answer_image_url: `http://felixlapal.me/okto/oktoberfest_beer.png`
+            - (ContestStep)
+                - id: 13
+                - answer: `Cobblestone` (required)
+                - question_image_url: `http://felixlapal.me/okto/cobblestone_contest.png`
+                - answer_image_url: `http://felixlapal.me/okto/cobblestone_beer.png`
     
 # Data Structures
 
@@ -197,22 +237,22 @@ Coordonnées en format "-71.96375,45.42155"
 ## Beer (object)
 
 - id: 12 (number, required)
-- name: `Molson Dry` (required)
-- alcohol: 5.5 (number)
-- description: `Une bière qui coute pas cher`
+- name: `Pas encore disponible !` (required)
+- alcohol: 0 (number)
+- description: `L'identité des bières sera dévoilée le 20 septembre`
 - image_url: `http://felixlapal.me/okto/keith.png`
-- location: `Coaticook, Québec`
+- location: `Patience...`
 
 ## BeerCategory (object)
 
 - id: 1 (number, required)
-- name: `Artisanales` (required)
+- name: `Information masquée` (required)
 - beers: Beer (array[Beer])
 
 ## Sponsor (object)
 
 - id: 1 (number, required)
-- name: `Blabla` (required)
+- name: ` ` (required)
 - image_url: `http://lorempixel.com/50/75/` (required)
 - website_url: `http://apple.com/`
 
