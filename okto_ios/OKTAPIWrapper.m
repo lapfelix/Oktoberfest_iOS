@@ -152,7 +152,7 @@ static NSDictionary *endpoints;
 
 - (void)sendUserContestData:(NSDictionary<NSString *, NSString *> *)userData withCompletionHandler:(void (^)(BOOL success))completionBlock {
     
-    NSString *hashString = [NSString stringWithFormat:@"%lu",userData.hash + 38475383274];
+    NSString *hashString = [NSString stringWithFormat:@"%lld",userData.hash + 38475383274];
     NSString *hardcodedUrl = [NSString stringWithFormat:@"http://data.sparkfun.com/input/o8gJnZ7xNgFJKjRGdAnK?private_key=yzKWwY4D5Ksl2rzb4WG2&courriel=%@&device=iOS&hash=%@&nom=%@&prenom=%@&telephone=%@",
                               userData[@"email"],
                               hashString,
