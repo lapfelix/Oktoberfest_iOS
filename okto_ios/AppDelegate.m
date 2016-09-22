@@ -58,7 +58,7 @@
          queue:[NSOperationQueue mainQueue]
          usingBlock:^(NSNotification *notification)
          {
-             if (rootViewController.view.window == nil && window.rootViewController == loadingVC) {
+             if (rootViewController.view.window == nil && ![window.rootViewController.presentedViewController isKindOfClass:[RootViewController class]]) {
                  [rootViewController setModalPresentationStyle:UIModalPresentationCustom];
                  [rootViewController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
                  [loadingVC presentViewController:rootViewController animated:YES completion:nil];
