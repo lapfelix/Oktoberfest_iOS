@@ -59,11 +59,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Masonry.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-okto_ios.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -122,6 +117,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4385A362D623ABFD67A0923EEF871169</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4C23EECC3CAE1A891D086E9230CB6E6A</key>
 		<dict>
 			<key>primary</key>
@@ -153,6 +153,21 @@
 			<true/>
 		</dict>
 		<key>5D64C4C65CB00671F061EECF9D337647</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>638AB3AEFE1BBD78E14AEDC9DED40B0C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6544BAB5EBA26173D36190BECB419FF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>823731D44EC2F410D1E097227D71CD6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

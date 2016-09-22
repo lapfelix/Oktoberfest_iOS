@@ -6,7 +6,6 @@ target 'okto_ios' do
   # use_frameworks!
 
   # Pods for okto_ios
-  pod 'Masonry'
   pod 'TSMarkdownParser', '~> 2.1'
   pod 'SDWebImage', '~>3.8'
   pod 'IntentKit', :git => 'git@github.com:lapfelix/IntentKit.git', :commit => '2fcad6fc2a7024348153d5e055c7aff7319c1268'
