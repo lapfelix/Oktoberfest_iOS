@@ -91,12 +91,13 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    
-    [NSTimer scheduledTimerWithTimeInterval:120 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        [[OKTAPIWrapper sharedWrapper] syncWithServer];
-    }];
+    [[OKTAPIWrapper sharedWrapper] syncWithServer];
+    [NSTimer scheduledTimerWithTimeInterval:120 target:self selector:@selector(syncWithServer) userInfo:nil repeats:YES];
 }
 
+- (void)syncWithServer {
+    [[OKTAPIWrapper sharedWrapper] syncWithServer];
+}
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
