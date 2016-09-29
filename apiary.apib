@@ -37,7 +37,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
     + Attributes (array)
         - (Schedule Item)
             - id: 1
-            - name: `Mu⁠sik⁠meister⁠s`
+            - name: `Mu⁠sik⁠meis⁠ter⁠s`
             - start_time: `08-08-2016 18:15`
             - large_image_url: `http://felixlapal.me/okto/musikmeisters2.jpeg`
             - small_image_url: `http://felixlapal.me/okto/french_horn_96.png`
@@ -110,8 +110,158 @@ L'API du truc de l'évènement où le monde boivent de la bière.
     + Attributes (array)
         - (BeerCategory)
             - id: 1
-            - name: Information masquée
-            - beers (array[Beer])
+            - name: Stout Porter
+            - beers (array)
+                - (Beer)
+                    - id: 17
+                    - name: Cobblestone
+                    - alcohol: 4.2
+                    - description: Cette bière à l'azote s'inspire des traditionnelles stout de style Irlandaises. Mill Street utilise un mélange unique de blé et d'orge torréfié et émietté afin de créer une bière classique et crémeuse d'apparence foncée.
+                    - image_url: http://felixlapal.me/okto/fefewfwe/cobblestone.jpeg
+                    - location: `Toronto, ON`
+        - (BeerCategory)
+            - id: 2
+            - name: Rousse
+            - beers (array)
+                - (Beer)
+                    - id: 16
+                    - name: Keith's Red
+                    - alcohol: 5
+                    - description: `Conçue à partir de trois variétés d’orge et des plus fines fleurs de houblon, cette ale ambrée corsée présente un parfait équilibre entre les saveurs de caramel et d’épices.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/red.jpeg
+                    - location: `Halifax, NS`
+        - (BeerCategory)
+            - id: 3
+            - name: Pale Ale Rousse
+            - beers (array)
+                - (Beer)
+                    - id: 15
+                    - name: Archibald: Chippie
+                    - alcohol: 5
+                    - description: `Bière rousse bien maltée avec du corps et la présence d’amertume. Bel équilibre entre le malt et le houblon. De couleur cuivrée, elle est « Pale » (comparée aux types ancestraux anglais). Elle se marie bien avec les plats plus relevés et les fromages fermes et corsés.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/chipie.jpeg
+                    - location: `Lac-Beauport, Québec`
+        - (BeerCategory)
+            - id: 4
+            - name: Blanche
+            - beers (array)
+                - (Beer)
+                    - id: 3
+                    - name: Shock Top
+                    - alcohol: 5.2
+                    - description: `Cette blanche de style belge à la finale rafraîchissante est brassée avec des zestes d’orange, de citron et de lime ainsi qu’une pincée de coriandre. Étant non filtrée, elle est naturellement trouble.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/shocktop.jpeg
+                    - location: `Fort Collins, Colorado`
+        - (BeerCategory)
+            - id: 4
+            - name: Blanche
+            - beers (array)
+                - (Beer)
+                    - id: 4
+                    - name: Hoegaarden
+                    - alcohol: 5
+                    - description: `Une bière blanche aigre-douce aromatique avec une touche de coriandre et d’agrumes. Ses origines remontent à 1445, dans le village de Hoegaarden, en Belgique. Cette région est célèbre pour ses abondantes récoltes de blé et d’orge.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/hoegaarden.jpeg
+                    - location: `Hoegaarden, Belgique`
+        - (BeerCategory)
+            - id: 4
+            - name: Blanche
+            - beers (array)
+                - (Beer)
+                    - id: 5
+                    - name: Archibald: Joufflue
+                    - alcohol: 4.2
+                    - description: `La Joufflue est servie avec sa levure, ce qui lui donne en partie son apparence opaque et trouble. Au nez, on décèle des agrumes et de la coriandre. En bouche, la rondeur de la céréale crue est balancée par une amertume légère. Bière légère aux allures pleines et rondes, la Joufflue est très rafraîchissante. Idéale avec les crudités, les fromages frais et les entrées fruitées.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/joufflue.jpeg
+                    - location: `Halifax, NS`
+        - (BeerCategory)
+            - id: 4
+            - name: Blonde
+            - beers (array)
+                - (Beer)
+                    - id: 6
+                    - name: Keith's IPA
+                    - alcohol: 5
+                    - description: `Veloutée et dorée, cette ale est brassée seulement avec des houblons et de l’orge maltée de première qualité, ce qui lui donne son goût particulièrement savoureux.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/ipa.jpeg
+                    - location: `Halifax, NS`
+        - (BeerCategory)
+            - id: 4
+            - name: Blonde
+            - beers (array)
+                - (Beer)
+                    - id: 7
+                    - name: Stella Artois
+                    - alcohol: 5
+                    - description: `Brassée selon les normes belges les plus élevées, cette lager présente un goût rond en bouche, un arôme riche et une finale rafraîchissante tout en douceur.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/red.jpeg
+                    - location: `Louvain, Belgique`
+        - (BeerCategory)
+            - id: 4
+            - name: Blonde
+            - beers (array)
+                - (Beer)
+                    - id: 8
+                    - name: Archibald : Matante
+                    - alcohol: 4.9
+                    - description: `Bière légère en bouche avec une mousse onctueuse. Au nez, on sent bien la présence du malt et l’arôme du houblon. En bouche, son amertume légère s’entremêle avec la douceur du malt. Elle se boit seule ou avec tout genre d’entrée et elle accompagne la majorité des fromages doux. Idéale comme bière d’initiation.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/red.jpeg
+                    - location: `Lac-Beauport, Québec`
+        - (BeerCategory)
+            - id: 4
+            - name: English Ale
+            - beers (array)
+                - (Beer)
+                    - id: 9
+                    - name: Goose Island Honkers Ale
+                    - alcohol: 4.3
+                    - description: `Inspirée par des visites dans les pubs anglais, cette bière bitter parfaitement équilibrée dévoile un arôme houblonné et fruité au cœur riche et malté.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/honkers.jpeg
+                    - location: `Illinois, US`
+        - (BeerCategory)
+            - id: 4
+            - name: IPA
+            - beers (array)
+                - (Beer)
+                    - id: 10
+                    - name: Goose Island IPA
+                    - alcohol: 5.9
+                    - description: `L’irrésistible arôme houblonné, épicé, ainsi que la saveur fruitée de cette IPA de style anglais s’allient parfaitement à son corps malté et sec, qui lui assure une longue finale houblonnée.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/goose.jpeg
+                    - location: `Illinois, US`
+        - (BeerCategory)
+            - id: 4
+            - name: Lager
+            - beers (array)
+                - (Beer)
+                    - id: 11
+                    - name: Archibald: Valkyrie
+                    - alcohol: 7
+                    - description: `Lager de style Bavarois, la Valkyrie se démarque avec sa robe cuivrée et ses arômes prononcés de caramel et de houblon épicé. Brassée selon les régulations de l'Ordonnance de pureté allemande «Reinheitsgebot».`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/valkyrie.jpeg
+                    - location: `Lac-Beauport, Québec`
+        - (BeerCategory)
+            - id: 4
+            - name: Lager Européenne
+            - beers (array)
+                - (Beer)
+                    - id: 12
+                    - name: Organic
+                    - alcohol: 4.2
+                    - description: `La première Lager Ontarienne à être certifiée organique et 100% naturelle est un incontournable. Brassée avec du houblon et du malt d'importation, cette Lager de style Européenne offre un goût léger et rafraîchissant avec une finale en douceur.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/organic.jpeg
+                    - location: `Toronto, ON`
+        - (BeerCategory)
+            - id: 4
+            - name: Märzen Lager
+            - beers (array)
+                - (Beer)
+                    - id: 13
+                    - name: Oktoberfest
+                    - alcohol: 5.5
+                    - description: `Brassée pour les grandes occasions, telles que l'Oktoberfest de Munich, cette bière unique aux couleurs cuivrées et à la mousse crémeuse offre un goût délicat et complexe avec ses arômes de malt.`
+                    - image_url: http://felixlapal.me/okto/fefewfwe/oktoberfest.jpeg
+                    - location: `Toronto, ON`
 
 ## FAQ [/faq]
 
@@ -144,7 +294,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
 
 + Response 200 (application/json)
     + Attributes
-        - end_time: `09-25-2016 23:59` (string)
+        - end_time: `09-25-2017 23:59` (string)
         - contest_steps (array)
             - (ContestStep)
                 - id: 1
@@ -193,7 +343,7 @@ L'API du truc de l'évènement où le monde boivent de la bière.
                 - answer_image_url: `http://felixlapal.me/okto/fefewfwe/matante.jpeg`
             - (ContestStep)
                 - id: 10
-                - answer: `Goose IPA` (required)
+                - answer: `IPA` (required)
                 - question_image_url: `http://felixlapal.me/okto/fefewfwe/fouifoui/goose_ipa_contest.jpeg`
                 - answer_image_url: `http://felixlapal.me/okto/fefewfwe/goose.jpeg`
             - (ContestStep)
@@ -250,7 +400,7 @@ Coordonnées en format "-71.96375,45.42155"
 - alcohol: 0 (number)
 - description: `L'identité des bières sera dévoilée le 26 septembre`
 - image_url: `http://felixlapal.me/okto/inconnue.png`
-- location: `Patience...`
+location: ` `
 
 ## BeerCategory (object)
 
@@ -270,4 +420,4 @@ Coordonnées en format "-71.96375,45.42155"
 - id: 1 (number, required)
 - answer: `Keith` (required)
 - question_image_url: `http://felixlapal.me/okto/keith_1.png` (required)
-- answer_image_url: `http://felixlapal.me/okto/keith_2.png` (required)pdate
+- answer_image_url: `http://felixlapal.me/okto/keith_2.png` (required)nt
