@@ -38,7 +38,7 @@
     if ([object isKindOfClass:[Beer class]]) {
         Beer *beer = (Beer *)object;
         self.nameLabel.text = beer.name;
-        self.alcoholLabel.text = [NSString stringWithFormat:@"%.2f%%",beer.alcohol];
+        self.alcoholLabel.text = beer.alcohol == 0 ? @" " : [NSString stringWithFormat:@"%.2f%%",beer.alcohol];
         self.descriptionLabel.text = beer.beerDescription;
         self.locationLabel.text = beer.location;
         if (beer.imageURL != nil) {
