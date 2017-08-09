@@ -11,8 +11,11 @@
 #import "AppDelegate.h"
 #import "OKTAppearance.h"
 #import <TSMarkdownParser/TSMarkdownParser.h>
+#import "OKTAppearance.h"
 
-@interface FAQViewController ()
+@import SafariServices;
+
+@interface FAQViewController() <UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextView *textView;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
@@ -62,6 +65,7 @@
         NSAttributedString *attributedString = [parser attributedStringFromMarkdown:faq.markdown];
         
         self.textView.attributedText = attributedString;
+        self.textView.delegate = self;
     }
 }
 
@@ -94,5 +98,15 @@
     }
 }
 
+#pragma mark - UITextViewDelegate
+
+- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange {
+    SFSafariViewController *safariVC = [[SFSafariViewController alloc] initWithURL:URL];
+    
+    safariVC.preferredBarTintColor = OKTAppearance.greenColor;
+    safariVC.preferredControlTintColor = UIColor.whiteColor;
+    [self presentViewController:safariVC animated:YES completion:nil];
+    return NO;
+}
 
 @end
