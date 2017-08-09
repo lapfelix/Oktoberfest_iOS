@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5KN-4j-LtI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5KN-4j-LtI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +15,6 @@
             <objects>
                 <navigationController title="Bières" id="5KN-4j-LtI" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6ia-5F-ibL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -35,10 +38,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="237"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BL4-G6-wyr" id="S2u-AJ-nia">
-                                    <frame key="frameInset" width="375" height="236"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="243" horizontalCompressionResistancePriority="752" text="GOOSE ISLAND HONKERS ALE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="kgR-aE-58D">
+                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="aVc-Vb-0ZY"/>
                                             </constraints>
@@ -47,6 +51,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="260" verticalHuggingPriority="251" horizontalCompressionResistancePriority="756" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxH-oq-Z5M">
+                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="UFP-4a-veL"/>
                                             </constraints>
@@ -62,12 +67,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sza-0O-52d">
+                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="75" id="D0X-NR-Jog"/>
                                                 <constraint firstAttribute="width" constant="67" id="Y3X-Mg-9BK"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="locationlabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDq-Wy-Vew">
+                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="VzW-39-7Mz"/>
                                             </constraints>
@@ -76,6 +83,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-b6-ech">
+                                            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                                             <string key="text">La Joufflue est servie avec sa levure, ce qui lui donne en partie son apparence opaque et trouble. Au nez, on décèle des agrumes et de la coriandre. En bouche, la rondeur de la céréale crue est balancée par une amertume légère. Bière légère aux allures pleines et rondes, la Joufflue est très rafraîchissante. Idéale avec les crudités, les fromages frais et les entrées fruitées.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.16230384297950046" green="0.17200378838204214" blue="0.19596354166666663" alpha="1" colorSpace="calibratedRGB"/>
