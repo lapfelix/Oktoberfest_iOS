@@ -10,7 +10,7 @@
 
 @interface OKTNetworkMethods : NSObject
 
-+ (void)getObjectAtURL:(NSURL *)url completionHandler:(void (^)(NSObject * object, NSError * error))completionHandler;
++ (void)getJsonObjectAtURL:(NSURL *)url completionHandler:(void (^)(NSObject * object, NSError * error))completionHandler;
 + (void)getDataAtURL:(NSURL *)url completionHandler:(void (^)(NSData * data, NSURLResponse * response, NSError * error))completionHandler;
 + (void)postAtURL:(NSURL *)url completionHandler:(void (^)(NSData * data, NSURLResponse * response, NSError * error))completionHandler;
 

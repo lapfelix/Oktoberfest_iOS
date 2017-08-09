@@ -83,7 +83,7 @@ static NSDictionary *endpoints;
 
 - (void)downloadForClass:(Class)class withCompletionHandler:(void (^)(NSObject *object, NSError * _Nullable error))completionHandler {
     
-    [OKTNetworkMethods getObjectAtURL:[self urlFromClass:class] completionHandler:^(NSObject *objectArray, NSError *error) {
+    [OKTNetworkMethods getJsonObjectAtURL:[self urlFromClass:class] completionHandler:^(NSObject *objectArray, NSError *error) {
         Class<OKTModelProtocol> modelClass = class;
         
         NSMutableArray<NSString *> *imageURLs = [NSMutableArray<NSString *> array];

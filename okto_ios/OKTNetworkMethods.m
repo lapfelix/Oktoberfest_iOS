@@ -10,7 +10,7 @@
 
 @implementation OKTNetworkMethods
 
-+ (void)getObjectAtURL:(NSURL *)url completionHandler:(void (^)(NSObject * _Nullable object, NSError * _Nullable error))completionHandler{
++ (void)getJsonObjectAtURL:(NSURL *)url completionHandler:(void (^)(NSObject * _Nullable object, NSError * _Nullable error))completionHandler{
     [[self class] getDataAtURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error != nil || data == nil) {
             completionHandler(nil, error);
